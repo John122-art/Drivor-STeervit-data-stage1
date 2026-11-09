@@ -1,0 +1,122 @@
+{
+  "tokens": [
+    "00d311c079395e3a",
+    "6717d46a593851f9",
+    "834ecfa57b6d51bc",
+    "8df62d989ca85b43",
+    "ab47d599879e5c77",
+    "eb9be5b77bc25d86"
+  ],
+  "views": [
+    {
+      "token": "6717d46a593851f9",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "a white arrow painted on the road surface",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "ab47d599879e5c77",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "a white arrow painted on the road surface",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "00d311c079395e3a",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a blue car parked ahead on the left side of the road",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "00d311c079395e3a",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "a white arrow painted on the road surface",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        },
+        {
+          "context": "a paved road approaching an intersection",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "eb9be5b77bc25d86",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a ramp junction curving to the right",
+          "category": null,
+          "raw_category": "road",
+          "reason": "unknown_category"
+        }
+      ]
+    },
+    {
+      "token": "8df62d989ca85b43",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a white directional arrow painted on the road surface",
+          "category": "crosswalk",
+          "raw_category": "crosswalk",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "834ecfa57b6d51bc",
+      "camera": "cam_f0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a white directional arrow painted on the road surface",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

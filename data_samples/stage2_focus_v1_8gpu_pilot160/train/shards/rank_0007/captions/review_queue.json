@@ -1,0 +1,39 @@
+{
+  "tokens": [
+    "0b02f74fd95d56a5",
+    "b8edbabaac7f5940"
+  ],
+  "views": [
+    {
+      "token": "0b02f74fd95d56a5",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "pedestrians walking along the sidewalk behind the fence",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "b8edbabaac7f5940",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a pedestrian walking on the sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

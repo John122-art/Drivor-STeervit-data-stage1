@@ -1,0 +1,258 @@
+{
+  "token": "8050e339c1fa55ea",
+  "cache_version": "504eb39f76797ebb754e2f0993c79623848a7f90380bc1160b1a915f4d19e85f",
+  "input_hash": "82e5b63ab941381eb9695de23ef454fb10033fc4e8405cdb4ecdf87d90ac82e2",
+  "rule_status": "passed",
+  "scene_text": {
+    "cam_f0": {
+      "text": "a white sedan in the center of the image, a red traffic light in the upper center of the image, white lane markings on the road surface, a white truck on the right side of the image, a white car on the right side of the image",
+      "categories": [
+        "vehicle",
+        "traffic_light",
+        "lane_boundary",
+        "vehicle",
+        "vehicle"
+      ]
+    },
+    "cam_b0": {
+      "text": "a black van on the right, a pedestrian sitting on a bench, a crosswalk in the distance, dashed white lane markings",
+      "categories": [
+        "vehicle",
+        "pedestrian",
+        "crosswalk",
+        "lane_boundary"
+      ]
+    },
+    "cam_l0": {
+      "text": "a dark grey van in the adjacent lane, a red traffic light on the right, white lane markings on the road surface",
+      "categories": [
+        "vehicle",
+        "traffic_light",
+        "lane_boundary"
+      ]
+    },
+    "cam_r0": {
+      "text": "a white car on the road in the background",
+      "categories": [
+        "vehicle"
+      ]
+    }
+  },
+  "scene_context": {
+    "cam_f0": "a signalized intersection",
+    "cam_b0": "a straight multi-lane road",
+    "cam_l0": "a signalized intersection",
+    "cam_r0": "a city street with a sidewalk"
+  },
+  "audit": {
+    "cam_f0": {
+      "text": "a white sedan in the center of the image, a red traffic light in the upper center of the image, white lane markings on the road surface, a white truck on the right side of the image, a white car on the right side of the image",
+      "categories": [
+        "vehicle",
+        "traffic_light",
+        "lane_boundary",
+        "vehicle",
+        "vehicle"
+      ],
+      "objects": [
+        {
+          "phrase": "a white sedan in the center of the image",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a red traffic light in the upper center of the image",
+          "category": "traffic_light"
+        },
+        {
+          "phrase": "white lane markings on the road surface",
+          "category": "lane_boundary"
+        },
+        {
+          "phrase": "a white truck on the right side of the image",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a white car on the right side of the image",
+          "category": "vehicle"
+        }
+      ],
+      "context": "a signalized intersection",
+      "removed": [],
+      "normalizations": [],
+      "token_count": 53,
+      "status": "ok",
+      "format_normalization": "json_fence_removed",
+      "item_count": 5,
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"focus\": [\n    {\n      \"phrase\": \"a white sedan in the center of the image\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a red traffic light in the upper center of the image\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"white lane markings on the road surface\",\n      \"category\": \"lane_boundary\"\n    },\n    {\n      \"phrase\": \"a white truck on the right side of the image\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a white car on the right side of the image\",\n      \"category\": \"vehicle\"\n    }\n  ],\n  \"context\": \"a signalized intersection\"\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"focus\": [\n    {\n      \"phrase\": \"a white sedan in the center of the image\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a red traffic light in the upper center of the image\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"white lane markings on the road surface\",\n      \"category\": \"lane_boundary\"\n    },\n    {\n      \"phrase\": \"a white truck on the right side of the image\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a white car on the right side of the image\",\n      \"category\": \"vehicle\"\n    }\n  ],\n  \"context\": \"a signalized intersection\"\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 187,
+          "seconds": 5.560022747000062,
+          "question": "You are looking at the front camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nList what in THIS image the driver must watch to follow this navigation\ncommand safely. Choose by relevance to the command:\n- GO STRAIGHT: road users in or next to the visible lane corridor, traffic\n  lights and signs that apply to it, crosswalks and stop lines across it.\n- TURN LEFT / TURN RIGHT: the visible junction or road branch toward that\n  side, road users and pedestrians near it, crosswalks there, and traffic\n  lights or signs that control it.\n- UNKNOWN: the nearest road users and traffic controls.\nIf this view does not show the route, list only nearby road users.\nThe command is route intent, not evidence that any object, lane or sign exists.\n\nEach phrase describes ONE object or area: its appearance/type and its position\nIN THE IMAGE (left, center, right, upper, lower, foreground, background),\nusually 5-12 words. Example style: \"a white car near the center of the image\";\n\"a crosswalk across the lower part of the image\".\nThese are format examples, not facts about the input image.\nPut the most important item first. At most 5 phrases, together within\n60 English words. Fewer is fine.\n\nDo NOT include buildings, walls, fences, billboards, advertisements, trees,\nvegetation, sky, parking lots, street lamps, or parts of the camera vehicle.\nDo not read or quote text written on signs. Do not describe motion or state\n(driving, walking, crossing, moving, stopped, parked, turning), future\nbehavior, intentions, or driving advice. Do not use ego-relative words such as\nahead, directly in front, or directly behind; use image positions in ALL cameras.\n\nReturn JSON only:\n{\"focus\": [{\"phrase\": \"...\", \"category\": \"...\"}], \"context\": \"...\"}\ncategory is one of: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, crosswalk, stop_line, lane_boundary.\ncontext: at most 8 words naming the visible road type, for example\n\"a signalized intersection\" or \"a straight multi-lane road\"; use \"\" if unclear.\nIf nothing relevant can be identified reliably, return {\"focus\": [], \"context\": \"\"}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.08.31.11.47.30_veh-40_01146_01347/CAM_F0/6d52284c3c4a5703.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    },
+    "cam_b0": {
+      "text": "a black van on the right, a pedestrian sitting on a bench, a crosswalk in the distance, dashed white lane markings",
+      "categories": [
+        "vehicle",
+        "pedestrian",
+        "crosswalk",
+        "lane_boundary"
+      ],
+      "objects": [
+        {
+          "phrase": "a black van on the right",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a pedestrian sitting on a bench",
+          "category": "pedestrian"
+        },
+        {
+          "phrase": "a crosswalk in the distance",
+          "category": "crosswalk"
+        },
+        {
+          "phrase": "dashed white lane markings",
+          "category": "lane_boundary"
+        }
+      ],
+      "context": "a straight multi-lane road",
+      "removed": [],
+      "normalizations": [],
+      "token_count": 27,
+      "status": "ok",
+      "format_normalization": "json_fence_removed",
+      "item_count": 4,
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"focus\": [\n    {\n      \"phrase\": \"a black van on the right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a pedestrian sitting on a bench\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"a crosswalk in the distance\",\n      \"category\": \"crosswalk\"\n    },\n    {\n      \"phrase\": \"dashed white lane markings\",\n      \"category\": \"lane_boundary\"\n    }\n  ],\n  \"context\": \"a straight multi-lane road\"\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"focus\": [\n    {\n      \"phrase\": \"a black van on the right\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a pedestrian sitting on a bench\",\n      \"category\": \"pedestrian\"\n    },\n    {\n      \"phrase\": \"a crosswalk in the distance\",\n      \"category\": \"crosswalk\"\n    },\n    {\n      \"phrase\": \"dashed white lane markings\",\n      \"category\": \"lane_boundary\"\n    }\n  ],\n  \"context\": \"a straight multi-lane road\"\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 146,
+          "seconds": 4.498439609999991,
+          "question": "You are looking at the rear camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nList what in THIS image the driver must watch to follow this navigation\ncommand safely. Choose by relevance to the command:\n- GO STRAIGHT: road users in or next to the visible lane corridor, traffic\n  lights and signs that apply to it, crosswalks and stop lines across it.\n- TURN LEFT / TURN RIGHT: the visible junction or road branch toward that\n  side, road users and pedestrians near it, crosswalks there, and traffic\n  lights or signs that control it.\n- UNKNOWN: the nearest road users and traffic controls.\nIf this view does not show the route, list only nearby road users.\nThe command is route intent, not evidence that any object, lane or sign exists.\n\nEach phrase describes ONE object or area: its appearance/type and its position\nIN THE IMAGE (left, center, right, upper, lower, foreground, background),\nusually 5-12 words. Example style: \"a white car near the center of the image\";\n\"a crosswalk across the lower part of the image\".\nThese are format examples, not facts about the input image.\nPut the most important item first. At most 5 phrases, together within\n60 English words. Fewer is fine.\n\nDo NOT include buildings, walls, fences, billboards, advertisements, trees,\nvegetation, sky, parking lots, street lamps, or parts of the camera vehicle.\nDo not read or quote text written on signs. Do not describe motion or state\n(driving, walking, crossing, moving, stopped, parked, turning), future\nbehavior, intentions, or driving advice. Do not use ego-relative words such as\nahead, directly in front, or directly behind; use image positions in ALL cameras.\n\nReturn JSON only:\n{\"focus\": [{\"phrase\": \"...\", \"category\": \"...\"}], \"context\": \"...\"}\ncategory is one of: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, crosswalk, stop_line, lane_boundary.\ncontext: at most 8 words naming the visible road type, for example\n\"a signalized intersection\" or \"a straight multi-lane road\"; use \"\" if unclear.\nIf nothing relevant can be identified reliably, return {\"focus\": [], \"context\": \"\"}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.08.31.11.47.30_veh-40_01146_01347/CAM_B0/795e1d9cc720557d.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    },
+    "cam_l0": {
+      "text": "a dark grey van in the adjacent lane, a red traffic light on the right, white lane markings on the road surface",
+      "categories": [
+        "vehicle",
+        "traffic_light",
+        "lane_boundary"
+      ],
+      "objects": [
+        {
+          "phrase": "a dark grey van in the adjacent lane",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a red traffic light on the right",
+          "category": "traffic_light"
+        },
+        {
+          "phrase": "white lane markings on the road surface",
+          "category": "lane_boundary"
+        }
+      ],
+      "context": "a signalized intersection",
+      "removed": [],
+      "normalizations": [],
+      "token_count": 26,
+      "status": "ok",
+      "format_normalization": "json_fence_removed",
+      "item_count": 3,
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\n  \"focus\": [\n    {\n      \"phrase\": \"a dark grey van in the adjacent lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a red traffic light on the right\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"white lane markings on the road surface\",\n      \"category\": \"lane_boundary\"\n    }\n  ],\n  \"context\": \"a signalized intersection\"\n}\n```",
+          "raw_text": "</think>\n\n```json\n{\n  \"focus\": [\n    {\n      \"phrase\": \"a dark grey van in the adjacent lane\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a red traffic light on the right\",\n      \"category\": \"traffic_light\"\n    },\n    {\n      \"phrase\": \"white lane markings on the road surface\",\n      \"category\": \"lane_boundary\"\n    }\n  ],\n  \"context\": \"a signalized intersection\"\n}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 120,
+          "seconds": 3.712116035000008,
+          "question": "You are looking at the front-left camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nList what in THIS image the driver must watch to follow this navigation\ncommand safely. Choose by relevance to the command:\n- GO STRAIGHT: road users in or next to the visible lane corridor, traffic\n  lights and signs that apply to it, crosswalks and stop lines across it.\n- TURN LEFT / TURN RIGHT: the visible junction or road branch toward that\n  side, road users and pedestrians near it, crosswalks there, and traffic\n  lights or signs that control it.\n- UNKNOWN: the nearest road users and traffic controls.\nIf this view does not show the route, list only nearby road users.\nThe command is route intent, not evidence that any object, lane or sign exists.\n\nEach phrase describes ONE object or area: its appearance/type and its position\nIN THE IMAGE (left, center, right, upper, lower, foreground, background),\nusually 5-12 words. Example style: \"a white car near the center of the image\";\n\"a crosswalk across the lower part of the image\".\nThese are format examples, not facts about the input image.\nPut the most important item first. At most 5 phrases, together within\n60 English words. Fewer is fine.\n\nDo NOT include buildings, walls, fences, billboards, advertisements, trees,\nvegetation, sky, parking lots, street lamps, or parts of the camera vehicle.\nDo not read or quote text written on signs. Do not describe motion or state\n(driving, walking, crossing, moving, stopped, parked, turning), future\nbehavior, intentions, or driving advice. Do not use ego-relative words such as\nahead, directly in front, or directly behind; use image positions in ALL cameras.\n\nReturn JSON only:\n{\"focus\": [{\"phrase\": \"...\", \"category\": \"...\"}], \"context\": \"...\"}\ncategory is one of: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, crosswalk, stop_line, lane_boundary.\ncontext: at most 8 words naming the visible road type, for example\n\"a signalized intersection\" or \"a straight multi-lane road\"; use \"\" if unclear.\nIf nothing relevant can be identified reliably, return {\"focus\": [], \"context\": \"\"}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.08.31.11.47.30_veh-40_01146_01347/CAM_L0/d291092280815136.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    },
+    "cam_r0": {
+      "text": "a white car on the road in the background",
+      "categories": [
+        "vehicle"
+      ],
+      "objects": [
+        {
+          "phrase": "a white car on the road in the background",
+          "category": "vehicle"
+        }
+      ],
+      "context": "a city street with a sidewalk",
+      "removed": [],
+      "normalizations": [],
+      "token_count": 11,
+      "status": "ok",
+      "format_normalization": "json_fence_removed",
+      "item_count": 1,
+      "error": null,
+      "attempts": [
+        {
+          "answer": "```json\n{\"focus\": [{\"phrase\": \"a white car on the road in the background\", \"category\": \"vehicle\"}], \"context\": \"a city street with a sidewalk\"}\n```",
+          "raw_text": "</think>\n\n```json\n{\"focus\": [{\"phrase\": \"a white car on the road in the background\", \"category\": \"vehicle\"}], \"context\": \"a city street with a sidewalk\"}\n```",
+          "finish_reason": "eos",
+          "generated_tokens": 45,
+          "seconds": 1.6127660299999889,
+          "question": "You are looking at the front-right camera image of a self-driving car.\nActive navigation command: [GO STRAIGHT].\n\nList what in THIS image the driver must watch to follow this navigation\ncommand safely. Choose by relevance to the command:\n- GO STRAIGHT: road users in or next to the visible lane corridor, traffic\n  lights and signs that apply to it, crosswalks and stop lines across it.\n- TURN LEFT / TURN RIGHT: the visible junction or road branch toward that\n  side, road users and pedestrians near it, crosswalks there, and traffic\n  lights or signs that control it.\n- UNKNOWN: the nearest road users and traffic controls.\nIf this view does not show the route, list only nearby road users.\nThe command is route intent, not evidence that any object, lane or sign exists.\n\nEach phrase describes ONE object or area: its appearance/type and its position\nIN THE IMAGE (left, center, right, upper, lower, foreground, background),\nusually 5-12 words. Example style: \"a white car near the center of the image\";\n\"a crosswalk across the lower part of the image\".\nThese are format examples, not facts about the input image.\nPut the most important item first. At most 5 phrases, together within\n60 English words. Fewer is fine.\n\nDo NOT include buildings, walls, fences, billboards, advertisements, trees,\nvegetation, sky, parking lots, street lamps, or parts of the camera vehicle.\nDo not read or quote text written on signs. Do not describe motion or state\n(driving, walking, crossing, moving, stopped, parked, turning), future\nbehavior, intentions, or driving advice. Do not use ego-relative words such as\nahead, directly in front, or directly behind; use image positions in ALL cameras.\n\nReturn JSON only:\n{\"focus\": [{\"phrase\": \"...\", \"category\": \"...\"}], \"context\": \"...\"}\ncategory is one of: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, crosswalk, stop_line, lane_boundary.\ncontext: at most 8 words naming the visible road type, for example\n\"a signalized intersection\" or \"a straight multi-lane road\"; use \"\" if unclear.\nIf nothing relevant can be identified reliably, return {\"focus\": [], \"context\": \"\"}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.08.31.11.47.30_veh-40_01146_01347/CAM_R0/b654cd690f025bff.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "repairs": [],
+      "navigation_command": "GO STRAIGHT"
+    }
+  }
+}

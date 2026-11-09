@@ -1,0 +1,28 @@
+{
+  "scenes": 20,
+  "views": 80,
+  "resumed_scenes": 0,
+  "valid_grounding_views": 59,
+  "coverage_rejected_views": 8,
+  "label_schema": "stage2_focus_v1",
+  "selection": "nearest n projected GT boxes per supervised class mentioned n times",
+  "supervised_categories": [
+    "vehicle",
+    "pedestrian",
+    "bicycle",
+    "traffic_cone"
+  ],
+  "max_coverage": 0.4,
+  "near_plane_m": 0.1,
+  "radius_m": 50.0,
+  "camera_order": [
+    "cam_f0",
+    "cam_b0",
+    "cam_l0",
+    "cam_r0"
+  ],
+  "grid_mask": false,
+  "manifest_sha256": "757aabb4ce02e79cb85d8343c32c2ba24ddb22c4cc0244918a6440671c6d2fa6",
+  "gt_sha256": "0517226a67a33e45c9e200a4e5d53226144fc1477cfdf3720799da8f87da80af",
+  "caption_sha256": "b721c8db0841e5cec5ed1b10a5f34920306c114ba0087bbc818b0af8e6472228"
+}

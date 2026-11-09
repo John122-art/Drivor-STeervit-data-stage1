@@ -1,0 +1,252 @@
+{
+  "stage": 2,
+  "partition": "val",
+  "world_size": 8,
+  "prepared_scenes": 160,
+  "dataset_scenes": 160,
+  "empty_text_fallback_scenes": 21,
+  "empty_text_views": 105,
+  "empty_text_fallback_views": 21,
+  "all_texts_empty_scenes": 0,
+  "review_views": 123,
+  "text_policy": "stage2_focus_v1",
+  "scenes_without_grounding": 26,
+  "navigation_conditioned": true,
+  "settings": {
+    "world_size": 8,
+    "partition": "val",
+    "split": "navtrain",
+    "subset": "val",
+    "scenes": 20,
+    "seed": 3407,
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "prompt": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt",
+    "prompt_sha256": "643ae5c50546550d39120670b7bd62dbb8a7c3fc2b2cdf6c78796df441d1442d",
+    "deep_scenes": 20,
+    "stage1": false,
+    "navigation_conditioned": true,
+    "text_policy": "stage2_focus_v1",
+    "orchestration_hashes": {
+      "build_focus_grounding.py": "363606235b3d5df6fbeeb95fe2df14dc753f43951847762482f456e9641ef330",
+      "focus_policy.py": "095cba31b75f70c7ca4d43954ebe20d2546377b4605bdd9d8d135da5c515abc5",
+      "generate.py": "4fee5565d3b7b6806ebb447f2cd0d95c588d9333c970cb00d65073b8c70d0fe6",
+      "merge.py": "65baa721751e2c12f285dbab5997718eaef36c9d246737ab1958a2ce7c65ec75",
+      "test_focus_policy.py": "5825a697dbc8e05c7000c34d361f3dab2a9c81f7ffd67d10463c9daae60e5a4e",
+      "validate.py": "8713ac1a2203d9b8a20c4b1ba58c5907bf7f79202773fc0ba1e77dac2f23b423",
+      "worker.py": "a597be662a636aa095d6ce442df69c09c0e2c349e4a365e97ecd758f3d39282a"
+    }
+  },
+  "generation_contract_hash": "5709c1ba4794b8711f9bfade30c3e2b187d9c36c73972722d21bba466f76bb3d",
+  "rank_counts": [
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 75,
+        "empty_scene": 5
+      },
+      "removed_reasons": {
+        "unverified_motion": 1,
+        "duplicate": 1
+      },
+      "normalizations": {
+        "category_corrected": 1
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 14,
+      "phrase_repairs_accepted": 13,
+      "empty_text_views": 5,
+      "empty_text_fallback_views": 0,
+      "all_texts_empty_scenes": 0,
+      "review_views": 1,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 76,
+        "filtered_empty": 3,
+        "empty_scene": 1
+      },
+      "removed_reasons": {
+        "unknown_category": 4,
+        "unverified_motion": 15,
+        "excluded_content": 2,
+        "context_rejected": 2
+      },
+      "normalizations": {
+        "category_corrected": 1
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 53,
+      "phrase_repairs_accepted": 38,
+      "empty_text_views": 4,
+      "empty_text_fallback_views": 3,
+      "all_texts_empty_scenes": 0,
+      "review_views": 17,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 71,
+        "empty_scene": 9
+      },
+      "removed_reasons": {
+        "unverified_motion": 28,
+        "context_rejected": 24,
+        "excluded_content": 2,
+        "ambiguous_ego_relative_position": 1
+      },
+      "normalizations": {},
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 76,
+      "phrase_repairs_accepted": 47,
+      "empty_text_views": 9,
+      "empty_text_fallback_views": 0,
+      "all_texts_empty_scenes": 0,
+      "review_views": 21,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 76,
+        "filtered_empty": 2,
+        "empty_scene": 2
+      },
+      "removed_reasons": {
+        "unverified_motion": 19,
+        "context_rejected": 1,
+        "duplicate": 1
+      },
+      "normalizations": {
+        "category_corrected": 2
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 72,
+      "phrase_repairs_accepted": 53,
+      "empty_text_views": 4,
+      "empty_text_fallback_views": 2,
+      "all_texts_empty_scenes": 0,
+      "review_views": 16,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 43,
+        "empty_scene": 23,
+        "filtered_empty": 14
+      },
+      "removed_reasons": {
+        "unverified_motion": 14,
+        "excluded_content": 7,
+        "context_rejected": 4,
+        "unknown_category": 7
+      },
+      "normalizations": {
+        "category_corrected": 2
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 22,
+      "phrase_repairs_accepted": 8,
+      "empty_text_views": 37,
+      "empty_text_fallback_views": 14,
+      "all_texts_empty_scenes": 0,
+      "review_views": 28,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 56,
+        "empty_scene": 23,
+        "filtered_empty": 1
+      },
+      "removed_reasons": {
+        "excluded_content": 5,
+        "unverified_motion": 1,
+        "context_rejected": 2,
+        "unknown_category": 1
+      },
+      "normalizations": {
+        "category_corrected": 2
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 27,
+      "phrase_repairs_accepted": 26,
+      "empty_text_views": 24,
+      "empty_text_fallback_views": 1,
+      "all_texts_empty_scenes": 0,
+      "review_views": 7,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 71,
+        "filtered_empty": 1,
+        "empty_scene": 8
+      },
+      "removed_reasons": {
+        "unverified_motion": 16,
+        "unknown_category": 1,
+        "excluded_content": 3,
+        "duplicate": 2
+      },
+      "normalizations": {
+        "category_corrected": 1
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 44,
+      "phrase_repairs_accepted": 28,
+      "empty_text_views": 9,
+      "empty_text_fallback_views": 1,
+      "all_texts_empty_scenes": 0,
+      "review_views": 17,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 67,
+        "empty_scene": 13
+      },
+      "removed_reasons": {
+        "context_rejected": 5,
+        "excluded_content": 10,
+        "unverified_motion": 12
+      },
+      "normalizations": {
+        "category_corrected": 3,
+        "category_alias": 1
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 24,
+      "phrase_repairs_accepted": 12,
+      "empty_text_views": 13,
+      "empty_text_fallback_views": 0,
+      "all_texts_empty_scenes": 0,
+      "review_views": 16,
+      "text_policy": "stage2_focus_v1"
+    }
+  ],
+  "grounding_role": "auxiliary_supervision",
+  "status": "complete_with_review_items"
+}

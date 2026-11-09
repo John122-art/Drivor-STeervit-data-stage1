@@ -50,3 +50,7 @@ bash scripts/data_generation/run_stage1_data_8gpu_dlc.sh
 ## 空 GT 校验修复
 
 已修复空标注 JSON 丢失二维形状导致的校验失败，保留已有文本缓存续跑的方法见 [修复说明](docs/stage1_empty_gt_fix.md)。
+
+## 第二阶段 focus 试生成缓存
+
+新增 [stage2_focus_v1_8gpu_pilot160 数据目录](data_samples/stage2_focus_v1_8gpu_pilot160)；[快照说明与生成进度](data_samples/stage2_focus_v1_8gpu_pilot160_README.md)。此目录来自独立的第二阶段数据生成任务，完成状态以快照说明为准。

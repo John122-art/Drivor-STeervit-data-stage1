@@ -1,0 +1,54 @@
+[test rank 5] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0005/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtest --subset all --seed 3407 --rank 5 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: 70ee383e3b335c16 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 2/20: 6250b1bc5d735d1a (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 3/20: 625804443c0555ac (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 4/20: 26eeb11cbcd9593b (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 5/20: e6a94b91b19f5315 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 6/20: c6e19ffa3c34551c (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 7/20: 46b79218b0195050 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 8/20: e7a7c61c543e5b88 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 9/20: dd1ab5d48c6358ef (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 10/20: 7e2dc290d51f5137 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 11/20: 26c48df074d151c6 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 12/20: cd1234d5b4b2570d (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 13/20: 8b54e86cb8b05114 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 14/20: 626859d4351b5ffe (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 15/20: 9bd12765d98b514f (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 16/20: 75128a99a5765e31 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 17/20: a1e8639c17ac5089 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 18/20: 028d10ed5c105755 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 19/20: 7736a52445b1522d (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 20/20: 21b54e6d58985ae3 (2021.09.16.15.12.03_veh-42_01037_01434)
+[test rank 5] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0005/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0005/captions --scenes 0 --resume --device cuda:5 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt
+70ee383e3b335c16 cam_f0: ok, 10 tokens; the intersection and traffic lights on the left
+70ee383e3b335c16 cam_b0: ok, 45 tokens; a pedestrian standing in the crosswalk, a crosswalk spanning the intersection, a stop sign on the left corner, a silver car in the distance on the left side, double yellow lines marking the center of the road
+70ee383e3b335c16 cam_l0: empty_scene, 2 tokens; 
+70ee383e3b335c16 cam_r0: empty_scene, 2 tokens; 
+6250b1bc5d735d1a cam_f0: ok, 32 tokens; a motorcyclist in the left lane, a silver sedan in the center lane, yellow traffic lights at the intersection, double yellow lines dividing the lanes
+6250b1bc5d735d1a cam_b0: ok, 22 tokens; a crosswalk across the road, a dark vehicle on the left, double yellow lines in the center
+6250b1bc5d735d1a cam_l0: ok, 24 tokens; a silver car on the right side of the road, a dark sedan positioned on the left side of the road
+6250b1bc5d735d1a cam_r0: ok, 8 tokens; a traffic sign on a pole
+625804443c0555ac cam_f0: ok, 37 tokens; a motorcycle in the left lane, a silver sedan in the center lane, a red bus in the background, yellow traffic lights at the intersection, double yellow lines dividing the lanes
+625804443c0555ac cam_b0: ok, 22 tokens; a crosswalk across the road, a stop sign on the right, double yellow lines in the center
+625804443c0555ac cam_l0: ok, 24 tokens; a silver car on the right side of the road, a dark sedan positioned on the left side of the road
+625804443c0555ac cam_r0: ok, 8 tokens; a traffic sign on a pole
+26eeb11cbcd9593b cam_f0: ok, 37 tokens; a motorcycle in the left lane, a silver sedan in the center lane, a red bus in the background, yellow traffic lights at the intersection, double yellow lines dividing the lanes
+26eeb11cbcd9593b cam_b0: ok, 29 tokens; a crosswalk across the road, a black SUV on the left, a stop sign on the right, double yellow lines in the center
+26eeb11cbcd9593b cam_l0: ok, 9 tokens; a silver car on the right side
+26eeb11cbcd9593b cam_r0: ok, 8 tokens; a traffic sign on a pole
+e6a94b91b19f5315 cam_f0: ok, 37 tokens; a motorcycle in the left lane, a silver sedan in the center lane, a red bus in the background, yellow traffic lights at the intersection, double yellow lines dividing the lanes
+e6a94b91b19f5315 cam_b0: ok, 32 tokens; a black SUV near the center of the image, a crosswalk across the center of the image, double yellow lines in the lower right of the image
+e6a94b91b19f5315 cam_l0: ok, 19 tokens; a silver car on the right side, a pedestrian standing on the sidewalk to the right
+e6a94b91b19f5315 cam_r0: ok, 8 tokens; a traffic sign on a pole
+c6e19ffa3c34551c cam_f0: ok, 29 tokens; a motorcycle in the left lane, a silver sedan in the center lane, traffic lights at the intersection, double yellow lines dividing the lanes
+c6e19ffa3c34551c cam_b0: ok, 36 tokens; a black SUV near the center of the image, a crosswalk across the center of the image, double yellow lines dividing the road, a stop sign on the right side
+c6e19ffa3c34551c cam_l0: ok, 12 tokens; a silver car on the right side of the road
+c6e19ffa3c34551c cam_r0: ok, 8 tokens; a traffic sign on a pole
+46b79218b0195050 cam_f0: ok, 44 tokens; a motorcycle with a rider in the left lane, a silver sedan in the center lane, an orange bus in the background, yellow traffic lights suspended over the intersection, double yellow lines marking the center of the road
+46b79218b0195050 cam_b0: ok, 30 tokens; a black car in the left lane, a crosswalk at the intersection, a stop sign at the intersection, double yellow lines in the center
+46b79218b0195050 cam_l0: ok, 37 tokens; a silver car on the right side of the road, a pedestrian wearing a pink shirt on the sidewalk to the right, a dark sedan positioned on the left side of the road
+46b79218b0195050 cam_r0: ok, 8 tokens; a traffic sign on a pole
+e7a7c61c543e5b88 cam_f0: ok, 38 tokens; a silver sedan in the center lane, yellow traffic lights at the intersection, double yellow lines dividing the lanes, a white pickup truck on the left, a red bus in the background
+e7a7c61c543e5b88 cam_b0: ok, 23 tokens; a black car in the center lane, a crosswalk in the background, double yellow lines in the center
+e7a7c61c543e5b88 cam_l0: ok, 25 tokens; a motorcyclist on a black motorcycle, a pedestrian standing on the sidewalk, a silver SUV positioned on the right
+e7a7c61c543e5b88 cam_r0: empty_scene, 2 tokens; 

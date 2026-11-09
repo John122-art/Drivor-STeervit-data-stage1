@@ -1,0 +1,115 @@
+{
+  "tokens": [
+    "22a1afc8e3cb5da1",
+    "8b6593848b4b5eb3",
+    "ad1b8f7823135683",
+    "f8a8fb0636a65edf"
+  ],
+  "views": [
+    {
+      "token": "f8a8fb0636a65edf",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "a white SUV in the left lane",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "duplicate"
+        },
+        {
+          "index": 4,
+          "phrase": "pedestrians walking on the sidewalk to the right",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "f8a8fb0636a65edf",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "pedestrians walking on the sidewalk to the left",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "metal fence separating the road from the parking lot",
+          "category": "barrier",
+          "raw_category": "barrier",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "8b6593848b4b5eb3",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "a pedestrian walking on the left sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "22a1afc8e3cb5da1",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "a pedestrian walking on the left sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "ad1b8f7823135683",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a white car turning left across the path",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "ad1b8f7823135683",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "a pedestrian walking on the sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

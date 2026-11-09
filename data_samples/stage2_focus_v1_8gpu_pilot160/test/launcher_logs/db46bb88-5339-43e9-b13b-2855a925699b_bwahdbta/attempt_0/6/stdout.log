@@ -1,0 +1,78 @@
+[test rank 6] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtest --subset all --seed 3407 --rank 6 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: f424ee234e385b95 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 2/20: 56587c89d25856b7 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 3/20: 76cf7bb2e9625482 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 4/20: 29af925fc44b5380 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 5/20: efc87f8726645319 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 6/20: 2836705e16ba5691 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 7/20: 8fc0b7212263588f (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 8/20: 1a8da8e47d235dbe (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 9/20: 171e0bea742d52d0 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 10/20: ed2466a660ba5661 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 11/20: 10d9d6d0ad405b9d (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 12/20: d12fdbd7f3265051 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 13/20: a0eb6fa78dc2558f (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 14/20: 9f521d00c3ef55b7 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 15/20: 1fc3acd944ba540e (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 16/20: 52a4ade5aede53d9 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 17/20: e62e904da0695956 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 18/20: fbd06f49da055ea8 (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 19/20: 1b88b298d405518e (2021.09.16.13.53.10_veh-42_00077_00153)
+Prepared 20/20: 8f5b6181d28e5d4a (2021.09.16.13.53.10_veh-42_00077_00153)
+[test rank 6] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/captions --scenes 0 --resume --device cuda:6 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt
+f424ee234e385b95 cam_f0: ok, 24 tokens; a dark SUV in the left lane, a white car in the left lane, double yellow lines in the center
+f424ee234e385b95 cam_b0: ok, 30 tokens; a crosswalk in the foreground, a silver car in the lane, a speed limit sign on the left, double yellow lines in the center
+f424ee234e385b95 cam_l0: empty_scene, 2 tokens; 
+f424ee234e385b95 cam_r0: empty_scene, 2 tokens; 
+56587c89d25856b7 cam_f0: ok, 25 tokens; a dark SUV in the left lane, a white car in the background left lane, double yellow lines dividing the lanes
+56587c89d25856b7 cam_b0: ok, 22 tokens; a crosswalk in the foreground, a silver car on the left, a traffic sign on the left
+56587c89d25856b7 cam_l0: empty_scene, 2 tokens; 
+56587c89d25856b7 cam_r0: empty_scene, 2 tokens; 
+76cf7bb2e9625482 cam_f0: ok, 25 tokens; a dark SUV in the left lane, a white car in the left lane, a double yellow line dividing the lanes
+76cf7bb2e9625482 cam_b0: ok, 31 tokens; a pedestrian crossing sign on the right, a crosswalk in the foreground, a crosswalk in the middle distance, a silver car on the left
+76cf7bb2e9625482 cam_l0: ok, 12 tokens; a dark SUV on the right side of the road
+76cf7bb2e9625482 cam_r0: empty_scene, 2 tokens; 
+29af925fc44b5380 cam_f0: ok, 9 tokens; a white car in the left lane
+29af925fc44b5380 cam_b0: ok, 32 tokens; a yellow pedestrian crossing sign on the right, a crosswalk in the foreground, a white car in the left lane, double yellow lines in the center
+29af925fc44b5380 cam_l0: ok, 12 tokens; a dark SUV on the right side of the road
+29af925fc44b5380 cam_r0: empty_scene, 2 tokens; 
+efc87f8726645319 cam_f0: ok, 24 tokens; a dark SUV in the left lane, a white car in the left lane, double yellow lines in the center
+efc87f8726645319 cam_b0: ok, 32 tokens; a pedestrian crosswalk in the foreground, a yellow pedestrian crossing sign on the right, a white car in the distance, double yellow lines in the center
+efc87f8726645319 cam_l0: ok, 12 tokens; a dark SUV on the right side of the road
+efc87f8726645319 cam_r0: empty_scene, 2 tokens; 
+2836705e16ba5691 cam_f0: ok, 16 tokens; a white car in the left lane, double yellow lines in the center
+2836705e16ba5691 cam_b0: ok, 28 tokens; a crosswalk in the foreground, a yellow pedestrian crossing sign, a white car in the distance, double yellow lines in the center
+2836705e16ba5691 cam_l0: ok, 12 tokens; a dark SUV on the right side of the road
+2836705e16ba5691 cam_r0: empty_scene, 2 tokens; 
+8fc0b7212263588f cam_f0: ok, 24 tokens; a white car in the left lane, a dark car in the left lane, double yellow lines in the center
+8fc0b7212263588f cam_b0: ok, 35 tokens; a pedestrian crosswalk in the center of the image, a yellow pedestrian crossing sign on the right, a white car in the distance, double yellow lines in the foreground
+8fc0b7212263588f cam_l0: ok, 10 tokens; a dark SUV in the adjacent left lane
+8fc0b7212263588f cam_r0: empty_scene, 2 tokens; 
+1a8da8e47d235dbe cam_f0: ok, 24 tokens; a white car in the left lane, a dark car in the left lane, double yellow lines in the center
+1a8da8e47d235dbe cam_b0: ok, 34 tokens; a yellow pedestrian crossing sign on the right, a crosswalk with white stripes in the center, a white car in the distance, double yellow lines dividing the road
+1a8da8e47d235dbe cam_l0: ok, 9 tokens; a blue SUV in the left foreground
+1a8da8e47d235dbe cam_r0: empty_scene, 2 tokens; 
+171e0bea742d52d0 cam_f0: ok, 25 tokens; a white car in the left lane, a dark car in the left lane, a double yellow line dividing the lanes
+171e0bea742d52d0 cam_b0: ok, 37 tokens; a crosswalk in the center of the image, a yellow pedestrian crossing sign on the right, a white car in the distance, double yellow lines in the center of the road
+171e0bea742d52d0 cam_l0: empty_scene, 2 tokens; 
+171e0bea742d52d0 cam_r0: empty_scene, 2 tokens; 
+ed2466a660ba5661 cam_f0: ok, 34 tokens; a white SUV in the left lane, a dark SUV behind the white SUV, a white SUV further back in the left lane, double yellow lines separating the lanes
+ed2466a660ba5661 cam_b0: ok, 34 tokens; a crosswalk in the center of the image, a traffic sign on the right side, a vehicle on the right side, double yellow lines in the lower center
+ed2466a660ba5661 cam_l0: empty_scene, 2 tokens; 
+ed2466a660ba5661 cam_r0: empty_scene, 2 tokens; 
+10d9d6d0ad405b9d cam_f0: ok, 34 tokens; a white SUV on the left side of the road, double yellow lines marking the center of the road, a yellow warning sign on the right side of the road
+10d9d6d0ad405b9d cam_b0: ok, 28 tokens; a dark SUV on the right side, a white vehicle partially visible on the right, double yellow lines marking the center of the road
+10d9d6d0ad405b9d cam_l0: ok, 15 tokens; a grey SUV in the foreground, a white SUV on the right
+10d9d6d0ad405b9d cam_r0: empty_scene, 2 tokens; 
+d12fdbd7f3265051 cam_f0: ok, 31 tokens; a white SUV on the left side of the road, double yellow lines marking the center of the road, a yellow pedestrian crossing sign on the right
+d12fdbd7f3265051 cam_b0: ok, 30 tokens; a white SUV on the right side of the road, a dark SUV on the right side, double yellow lines marking the center of the road
+d12fdbd7f3265051 cam_l0: ok, 23 tokens; a white SUV on the right side of the road, a grey SUV on the left side of the road
+d12fdbd7f3265051 cam_r0: empty_scene, 2 tokens; 
+a0eb6fa78dc2558f cam_f0: ok, 13 tokens; a yellow and black chevron sign on the right
+a0eb6fa78dc2558f cam_b0: ok, 33 tokens; a white car on the right side of the road, a dark vehicle in the distance in the right lane, double yellow lines marking the center of the road
+a0eb6fa78dc2558f cam_l0: ok, 9 tokens; a white SUV in the adjacent lane
+a0eb6fa78dc2558f cam_r0: empty_scene, 2 tokens; 
+9f521d00c3ef55b7 cam_f0: ok, 26 tokens; a yellow and black striped sign on the right, a white crosswalk in the distance, double yellow lines in the center
+9f521d00c3ef55b7 cam_b0: ok, 33 tokens; a white car on the right side of the road, a dark car on the right side of the road, double yellow lines marking the center of the road
+9f521d00c3ef55b7 cam_l0: ok, 9 tokens; a white SUV on the left side
+9f521d00c3ef55b7 cam_r0: empty_scene, 2 tokens; 

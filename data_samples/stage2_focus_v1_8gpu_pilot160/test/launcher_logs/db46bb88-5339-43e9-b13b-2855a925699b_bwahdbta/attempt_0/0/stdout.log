@@ -1,0 +1,82 @@
+[test rank 0] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtest --subset all --seed 3407 --rank 0 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: ae5377e5ebf65f45 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 2/20: 7186e23637965344 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 3/20: 6d593ca981fd56b8 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 4/20: 0928c39f05db52c5 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 5/20: e5fb0daef05956f0 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 6/20: b1ce459acfb95179 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 7/20: 38736da1e9dc51c8 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 8/20: ddc904ff3be05595 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 9/20: 6740833c5f9d571a (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 10/20: d90d4f05ebde5bed (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 11/20: e3418fb50fa55320 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 12/20: ba82b67601605dd3 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 13/20: a197927702b850f4 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 14/20: 484b6d9a28f350bd (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 15/20: 7d923c664b7b5dae (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 16/20: 74831c9ae5a15f99 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 17/20: 059009aa4252526c (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 18/20: fc2a5f9f60965ab9 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 19/20: 169528411ca85ba4 (2021.06.03.12.02.06_veh-35_00233_00609)
+Prepared 20/20: 81997d01d8f65c19 (2021.06.03.12.02.06_veh-35_00233_00609)
+[test rank 0] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/captions --scenes 0 --resume --device cuda:0 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt
+ae5377e5ebf65f45 cam_f0: ok, 24 tokens; a dark sedan in the right lane, a dark sedan in the left lane, distant traffic lights at the intersection
+ae5377e5ebf65f45 cam_b0: empty_scene, 2 tokens; 
+ae5377e5ebf65f45 cam_l0: ok, 11 tokens; a pedestrian standing on the sidewalk to the left
+ae5377e5ebf65f45 cam_r0: empty_scene, 2 tokens; 
+7186e23637965344 cam_f0: ok, 24 tokens; a dark sedan in the right lane, a dark sedan in the left lane, distant traffic lights at the intersection
+7186e23637965344 cam_b0: empty_scene, 2 tokens; 
+7186e23637965344 cam_l0: empty_scene, 2 tokens; 
+7186e23637965344 cam_r0: empty_scene, 2 tokens; 
+6d593ca981fd56b8 cam_f0: ok, 24 tokens; a silver sedan in the right lane, a dark sedan in the left lane, distant traffic lights at the intersection
+6d593ca981fd56b8 cam_b0: empty_scene, 2 tokens; 
+6d593ca981fd56b8 cam_l0: empty_scene, 2 tokens; 
+6d593ca981fd56b8 cam_r0: ok, 10 tokens; pedestrians standing on the grass verge
+0928c39f05db52c5 cam_f0: ok, 32 tokens; a traffic light at the intersection, a black car in the left lane, a blue car in the right lane, a white car in the center lane
+0928c39f05db52c5 cam_b0: empty_scene, 2 tokens; 
+0928c39f05db52c5 cam_l0: ok, 11 tokens; a pedestrian standing on the sidewalk to the left
+0928c39f05db52c5 cam_r0: filtered_empty, 2 tokens; 
+e5fb0daef05956f0 cam_f0: ok, 40 tokens; a traffic light showing red at the intersection, a dark sedan in the left lane, a blue sedan in the right lane, a pedestrian wearing a blue shirt and orange cap on the right sidewalk
+e5fb0daef05956f0 cam_b0: empty_scene, 2 tokens; 
+e5fb0daef05956f0 cam_l0: ok, 10 tokens; an orange traffic cone on the left side
+e5fb0daef05956f0 cam_r0: filtered_empty, 2 tokens; 
+b1ce459acfb95179 cam_f0: ok, 21 tokens; traffic lights at the intersection, vehicles in the adjacent lanes, lane markings on the road surface
+b1ce459acfb95179 cam_b0: empty_scene, 2 tokens; 
+b1ce459acfb95179 cam_l0: ok, 12 tokens; a traffic cone on the right side of the road
+b1ce459acfb95179 cam_r0: ok, 11 tokens; a pedestrian wearing an orange cap and blue shirt
+38736da1e9dc51c8 cam_f0: ok, 21 tokens; traffic lights at the intersection, vehicles in the adjacent lanes, lane markings on the road surface
+38736da1e9dc51c8 cam_b0: empty_scene, 2 tokens; 
+38736da1e9dc51c8 cam_l0: ok, 12 tokens; a dark vehicle on the right side of the road
+38736da1e9dc51c8 cam_r0: ok, 14 tokens; a pedestrian wearing an orange cap and blue shirt on the right
+ddc904ff3be05595 cam_f0: ok, 43 tokens; a traffic light showing red at the intersection, a dark sedan in the left lane, a white SUV in the center lane, a blue sedan in the right lane, a flatbed truck in the center lane
+ddc904ff3be05595 cam_b0: empty_scene, 2 tokens; 
+ddc904ff3be05595 cam_l0: ok, 12 tokens; a dark sedan on the right side of the road
+ddc904ff3be05595 cam_r0: empty_scene, 2 tokens; 
+6740833c5f9d571a cam_f0: ok, 34 tokens; a traffic light showing red at the intersection, a white SUV in the center lane, a blue sedan in the right lane, a dark sedan in the left lane
+6740833c5f9d571a cam_b0: empty_scene, 2 tokens; 
+6740833c5f9d571a cam_l0: ok, 12 tokens; a black car on the right side of the road
+6740833c5f9d571a cam_r0: empty_scene, 2 tokens; 
+d90d4f05ebde5bed cam_f0: ok, 23 tokens; red traffic lights at the intersection, multiple vehicles in the adjacent lanes, white lane markings defining the driving path
+d90d4f05ebde5bed cam_b0: empty_scene, 2 tokens; 
+d90d4f05ebde5bed cam_l0: ok, 12 tokens; a black sedan on the right side of the road
+d90d4f05ebde5bed cam_r0: ok, 9 tokens; a blue car on the left side
+e3418fb50fa55320 cam_f0: ok, 29 tokens; red traffic lights at the intersection, white SUV in the center lane, black sedan in the left lane, blue sedan in the right lane
+e3418fb50fa55320 cam_b0: ok, 12 tokens; a white truck on the left side of the road
+e3418fb50fa55320 cam_l0: ok, 12 tokens; a black sedan on the right side of the road
+e3418fb50fa55320 cam_r0: ok, 9 tokens; a blue sedan in the lower left
+ba82b67601605dd3 cam_f0: ok, 37 tokens; red traffic lights at the intersection, white SUV in the center lane, black SUV in the right lane, white sedan in the right lane, flatbed truck in the left lane
+ba82b67601605dd3 cam_b0: ok, 12 tokens; a white truck on the left side of the road
+ba82b67601605dd3 cam_l0: ok, 9 tokens; a black sedan in the right lane
+ba82b67601605dd3 cam_r0: ok, 8 tokens; a blue sedan in the foreground
+a197927702b850f4 cam_f0: ok, 37 tokens; red traffic lights at the intersection, white SUV in the center lane, white sedan in the right lane, black SUV in the right lane, flatbed truck in the left lane
+a197927702b850f4 cam_b0: ok, 9 tokens; a white truck in the left lane
+a197927702b850f4 cam_l0: ok, 9 tokens; a black sedan in the right lane
+a197927702b850f4 cam_r0: ok, 9 tokens; a white car on the left side
+484b6d9a28f350bd cam_f0: ok, 37 tokens; red traffic lights at the intersection, white SUV in the center lane, black SUV in the right lane, white sedan in the right lane, flatbed truck in the left lane
+484b6d9a28f350bd cam_b0: ok, 9 tokens; a white truck in the left lane
+484b6d9a28f350bd cam_l0: ok, 22 tokens; a black sedan in the foreground, a white taxi on the right, a traffic light on the right
+484b6d9a28f350bd cam_r0: ok, 16 tokens; a white sedan in the left lane, a blue sedan in the foreground
+7d923c664b7b5dae cam_f0: ok, 42 tokens; a red traffic light at the intersection, a white SUV in the center lane, a black SUV in the right lane, a white sedan in the right foreground, a flatbed truck in the left lane
+7d923c664b7b5dae cam_b0: ok, 9 tokens; a white truck in the center lane
+7d923c664b7b5dae cam_l0: ok, 21 tokens; a dark sedan in the foreground, a white taxi on the right, traffic lights at the intersection
+7d923c664b7b5dae cam_r0: ok, 9 tokens; a white sedan in the left lane

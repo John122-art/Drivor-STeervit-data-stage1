@@ -1,0 +1,86 @@
+[test rank 7] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtest --subset all --seed 3407 --rank 7 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: a06715f1cb8358c0 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 2/20: 19cee80b71525f86 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 3/20: c07f609f83b85dd6 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 4/20: 4131dd1f0fd5571b (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 5/20: ce2de8af70e05a57 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 6/20: 3d2f4a8fb8b55572 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 7/20: 0c54c8dfbe56567f (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 8/20: b49e63992eee56b1 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 9/20: bed45577041051b8 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 10/20: 27209d511a785510 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 11/20: 62d339c4086d51ba (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 12/20: 26e6818bd14d52a5 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 13/20: 06bdef9a9bbc5aaf (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 14/20: 76dd2e9ad6f753b8 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 15/20: 50e871f60296566b (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 16/20: 2251b1d81d0051c1 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 17/20: b1e78f926612520e (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 18/20: 1db38f4b73ac5b62 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 19/20: 683e518fbfa650d5 (2021.06.28.15.02.02_veh-38_02398_02848)
+Prepared 20/20: 7fad5a0c8cdd5fc4 (2021.06.28.15.02.02_veh-38_02398_02848)
+[test rank 7] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/captions --scenes 0 --resume --device cuda:7 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt
+a06715f1cb8358c0 cam_f0: ok, 18 tokens; a white box truck in the center lane, a dark sedan in the right lane
+a06715f1cb8358c0 cam_b0: ok, 18 tokens; a white car in the center lane, a silver minivan in the right lane
+a06715f1cb8358c0 cam_l0: empty_scene, 2 tokens; 
+a06715f1cb8358c0 cam_r0: ok, 11 tokens; a pedestrian wearing a white shirt and dark vest
+19cee80b71525f86 cam_f0: ok, 18 tokens; a white box truck in the center lane, a dark sedan in the right lane
+19cee80b71525f86 cam_b0: ok, 18 tokens; a silver minivan in the right lane, a white car in the center lane
+19cee80b71525f86 cam_l0: empty_scene, 2 tokens; 
+19cee80b71525f86 cam_r0: filtered_empty, 2 tokens; 
+c07f609f83b85dd6 cam_f0: ok, 18 tokens; a white box truck in the center lane, a dark sedan in the right lane
+c07f609f83b85dd6 cam_b0: ok, 18 tokens; a silver minivan in the right lane, a white car in the center lane
+c07f609f83b85dd6 cam_l0: empty_scene, 2 tokens; 
+c07f609f83b85dd6 cam_r0: filtered_empty, 2 tokens; 
+4131dd1f0fd5571b cam_f0: ok, 26 tokens; a white box truck in the center lane, a dark sedan in the right lane, dashed white lane markings on the road
+4131dd1f0fd5571b cam_b0: ok, 18 tokens; a silver minivan in the right lane, a white car in the center lane
+4131dd1f0fd5571b cam_l0: empty_scene, 2 tokens; 
+4131dd1f0fd5571b cam_r0: ok, 11 tokens; a pedestrian standing on the sidewalk to the left
+ce2de8af70e05a57 cam_f0: ok, 10 tokens; a white box truck in the center lane
+ce2de8af70e05a57 cam_b0: ok, 18 tokens; a white car in the left lane, a silver minivan in the right lane
+ce2de8af70e05a57 cam_l0: empty_scene, 2 tokens; 
+ce2de8af70e05a57 cam_r0: empty_scene, 2 tokens; 
+3d2f4a8fb8b55572 cam_f0: ok, 10 tokens; a white box truck in the center lane
+3d2f4a8fb8b55572 cam_b0: ok, 24 tokens; a white car in the left lane, a silver minivan on the right, a dark SUV in the distance
+3d2f4a8fb8b55572 cam_l0: empty_scene, 2 tokens; 
+3d2f4a8fb8b55572 cam_r0: empty_scene, 2 tokens; 
+0c54c8dfbe56567f cam_f0: ok, 10 tokens; a white box truck in the center lane
+0c54c8dfbe56567f cam_b0: ok, 17 tokens; a white car in the left lane, a dark SUV in the right lane
+0c54c8dfbe56567f cam_l0: empty_scene, 2 tokens; 
+0c54c8dfbe56567f cam_r0: ok, 11 tokens; a pedestrian standing near the center of the image
+b49e63992eee56b1 cam_f0: ok, 10 tokens; a white box truck in the center lane
+b49e63992eee56b1 cam_b0: ok, 17 tokens; a white car in the left lane, a dark SUV in the right lane
+b49e63992eee56b1 cam_l0: ok, 10 tokens; a silver minivan in the right lane
+b49e63992eee56b1 cam_r0: ok, 20 tokens; a stop line painted on the road surface, metal barriers lining the right side of the road
+bed45577041051b8 cam_f0: ok, 19 tokens; a white box truck in the center lane, a silver minivan in the left lane
+bed45577041051b8 cam_b0: ok, 17 tokens; a white car in the left lane, a black SUV in the right lane
+bed45577041051b8 cam_l0: ok, 13 tokens; a silver minivan on the right side of the road
+bed45577041051b8 cam_r0: ok, 13 tokens; a stop sign on a pole, white painted road markings
+27209d511a785510 cam_f0: ok, 19 tokens; a white box truck in the center lane, a silver minivan in the left lane
+27209d511a785510 cam_b0: ok, 17 tokens; a white car in the left lane, a black SUV in the right lane
+27209d511a785510 cam_l0: ok, 13 tokens; a silver minivan on the right side of the road
+27209d511a785510 cam_r0: ok, 12 tokens; a stop sign on the right side of the road
+62d339c4086d51ba cam_f0: ok, 19 tokens; a white box truck in the center lane, a silver minivan in the left lane
+62d339c4086d51ba cam_b0: ok, 17 tokens; a black SUV in the right lane, a white taxi in the left lane
+62d339c4086d51ba cam_l0: ok, 12 tokens; a silver SUV on the right side of the road
+62d339c4086d51ba cam_r0: ok, 8 tokens; a stop sign on the right
+26e6818bd14d52a5 cam_f0: ok, 19 tokens; a white box truck in the center lane, a silver minivan in the left lane
+26e6818bd14d52a5 cam_b0: ok, 17 tokens; a black SUV in the right lane, a white taxi in the left lane
+26e6818bd14d52a5 cam_l0: ok, 9 tokens; a silver vehicle on the right side
+26e6818bd14d52a5 cam_r0: ok, 11 tokens; a pedestrian standing near the curb on the right
+06bdef9a9bbc5aaf cam_f0: ok, 19 tokens; a white box truck in the center lane, a silver minivan in the left lane
+06bdef9a9bbc5aaf cam_b0: ok, 19 tokens; a white car in the lower left foreground, a black SUV in the lower right foreground
+06bdef9a9bbc5aaf cam_l0: empty_scene, 2 tokens; 
+06bdef9a9bbc5aaf cam_r0: ok, 11 tokens; a pedestrian wearing dark clothing on the right side
+76dd2e9ad6f753b8 cam_f0: ok, 26 tokens; a white box truck in the center lane, a white taxi in the right lane, a black SUV in the left lane
+76dd2e9ad6f753b8 cam_b0: empty_scene, 2 tokens; 
+76dd2e9ad6f753b8 cam_l0: empty_scene, 2 tokens; 
+76dd2e9ad6f753b8 cam_r0: ok, 12 tokens; pedestrians standing near the center of the image
+50e871f60296566b cam_f0: ok, 26 tokens; a white box truck in the center lane, a white taxi in the right lane, a black SUV in the left lane
+50e871f60296566b cam_b0: empty_scene, 2 tokens; 
+50e871f60296566b cam_l0: empty_scene, 2 tokens; 
+50e871f60296566b cam_r0: ok, 13 tokens; a pedestrian wearing dark clothing standing near the center-left
+2251b1d81d0051c1 cam_f0: ok, 26 tokens; a white box truck in the center lane, a white taxi in the right lane, a black SUV in the left lane
+2251b1d81d0051c1 cam_b0: empty_scene, 2 tokens; 
+2251b1d81d0051c1 cam_l0: empty_scene, 2 tokens; 
+2251b1d81d0051c1 cam_r0: ok, 11 tokens; two pedestrians standing near the center of the image

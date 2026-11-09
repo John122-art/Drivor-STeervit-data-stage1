@@ -1,0 +1,71 @@
+{
+  "tokens": [
+    "19cee80b71525f86",
+    "62d339c4086d51ba",
+    "bed45577041051b8",
+    "c07f609f83b85dd6"
+  ],
+  "views": [
+    {
+      "token": "19cee80b71525f86",
+      "camera": "cam_r0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "two pedestrians walking on the sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "c07f609f83b85dd6",
+      "camera": "cam_r0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "pedestrians walking on the sidewalk to the right",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "bed45577041051b8",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a pedestrian walking on the sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "62d339c4086d51ba",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a pedestrian walking on the sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

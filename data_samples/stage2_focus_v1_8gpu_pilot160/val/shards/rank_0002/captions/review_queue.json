@@ -1,0 +1,458 @@
+{
+  "tokens": [
+    "00477d2aabc05e56",
+    "10ab0437e2335e5f",
+    "19b19b68cd08505b",
+    "2bf1e8cde60d5475",
+    "3abccc8dbdc258b2",
+    "410570c23d275131",
+    "48797cedb37d5552",
+    "5e6054a4e8495959",
+    "724971ad30905b97",
+    "794bf0c2b69c5481",
+    "7b054c9673a95ac3",
+    "91d80efcbe3151a1",
+    "93669bcabb5d5718",
+    "a6b12bd7134953c2",
+    "c846a2c6391851aa",
+    "c85c0e46ebaa5822",
+    "da439db909975bdc",
+    "f92029b715b15e2a"
+  ],
+  "views": [
+    {
+      "token": "00477d2aabc05e56",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a pedestrian walking near the construction zone",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "7b054c9673a95ac3",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "a silver sedan parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "410570c23d275131",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a white car parked on the right side",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a white truck parked on the left side",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "410570c23d275131",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a yellow SUV parked on the left side of the road",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a street with parked vehicles and a crosswalk",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "a6b12bd7134953c2",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a white car driving in the center of the image",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 1,
+          "phrase": "a line of parked cars along the right side",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "a6b12bd7134953c2",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a dark SUV parked on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a dark SUV parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "10ab0437e2335e5f",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a line of parked cars on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "10ab0437e2335e5f",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "parked vehicles on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "c85c0e46ebaa5822",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a white sedan driving in the center lane",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "f92029b715b15e2a",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a black car parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a silver SUV parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "93669bcabb5d5718",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "a dark sedan parked on the right side",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "5e6054a4e8495959",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a black sedan parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a silver SUV parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "19b19b68cd08505b",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a line of parked cars on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "da439db909975bdc",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a row of parked cars on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "c846a2c6391851aa",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a line of parked cars on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "2bf1e8cde60d5475",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a blue construction fence along the right side",
+          "category": "barrier",
+          "raw_category": "barrier",
+          "reason": "excluded_content"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "3abccc8dbdc258b2",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a black car parked on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 1,
+          "phrase": "a line of parked cars on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "48797cedb37d5552",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a black car parked on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a line of parked vehicles on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "91d80efcbe3151a1",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a line of parked cars on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a construction site behind a blue fence on the left",
+          "category": "barrier",
+          "raw_category": "barrier",
+          "reason": "excluded_content"
+        },
+        {
+          "index": 3,
+          "phrase": "a traffic light at the intersection ahead",
+          "category": "traffic_light",
+          "raw_category": "traffic_light",
+          "reason": "ambiguous_ego_relative_position"
+        }
+      ]
+    },
+    {
+      "token": "794bf0c2b69c5481",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a black SUV parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban road with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "724971ad30905b97",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a dark SUV parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a black SUV parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban road with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

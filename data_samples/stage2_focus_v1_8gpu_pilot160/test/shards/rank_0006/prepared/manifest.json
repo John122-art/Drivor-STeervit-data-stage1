@@ -1,0 +1,564 @@
+{
+  "schema_version": 3,
+  "camera_order": [
+    "cam_f0",
+    "cam_b0",
+    "cam_l0",
+    "cam_r0"
+  ],
+  "image_size": [
+    1148,
+    672
+  ],
+  "split": "navtest",
+  "data_split": "test",
+  "subset": "all",
+  "seed": 3407,
+  "rank": 6,
+  "world_size": 8,
+  "all_scenes_per_log": true,
+  "selected_log_count": 17,
+  "split_hashes": {
+    "navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml": "61284edf5003c0291f843ce9817c822ba306609a62d54544223adae3fc7fc9cd"
+  },
+  "grid_mask": false,
+  "vlm_input": "one current image; navigation only when explicitly enabled",
+  "navigation_one_hot_order": [
+    "turn left",
+    "go straight",
+    "turn right",
+    "unknown"
+  ],
+  "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+  "records": [
+    {
+      "token": "f424ee234e385b95",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800548899531,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/e95332f65c075220.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/f23cfa37990e580c.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/f016c879f00a576f.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/3baf0940be445916.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "de13291de7595fc5cba2845da9819ba1f7a1a3c5193b081ce666877b1b56e834",
+        "cam_b0": "92f538823ec2f7f4ed45e2d5c307bc584a08a492899ccf47112a9fba691542a0",
+        "cam_l0": "51915d80812a94d9efb47902ce1f3c5d2ccddb1b97cf08ae67ad0405ffe98f6d",
+        "cam_r0": "fd45af6644fc55a32131a5807023096d27d556adaf6c4d97b7b94ca0161fedd8"
+      }
+    },
+    {
+      "token": "56587c89d25856b7",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800549899656,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/fd2cabfe74285acd.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/55350dffd8ed572b.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/2259bb63b7065d5e.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/f61a58156cb6521f.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "c6d5d1dc6e865fc5891515c2e93ae540475cdaa40cf7ef2cf7e4ee740a59eccc",
+        "cam_b0": "4a0c82413fe4b6c4f7e1735b45010d2f1ae78a226f4c8c819d126553703a5095",
+        "cam_l0": "4c54844b1a652ee616a89d3d6aa5f7dcf9ed42011e4b9ebf83b03e081b110f53",
+        "cam_r0": "e21e66f2e89ef5730e51e2cb4e9e79f7ce1ef0e33fddfa94c5217615a4de4979"
+      }
+    },
+    {
+      "token": "76cf7bb2e9625482",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800550399982,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/9ccada028a9a56e8.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/60bf60ec27165205.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/939c28a36d8b57b2.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/e36c1ce63e8c52f9.jpg"
+      },
+      "driving_command": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "navigation_text": "turn left",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "d884e4d4851b5e5f01a0f28fc275a17c144fdcae924dbf1e5f98a3731030a976",
+        "cam_b0": "7514bec007eb9f7fc14daf73d2e0f42143e625a380fac4a2f7f9730a445e3e77",
+        "cam_l0": "7e3f4dd94acefbe126597b01ee575b7cba3315d17a74e9ed028f1c79e4b4f34c",
+        "cam_r0": "abe618d0322c21ef4a1d8d7e7322acdd2f8ca06823b213b8c2241fc797389f81"
+      }
+    },
+    {
+      "token": "29af925fc44b5380",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800550900302,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/07e22e8afc5c5583.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/e7132f22bdb55dea.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/0be96a1ddf5652fd.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/359793f935975784.jpg"
+      },
+      "driving_command": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "navigation_text": "turn left",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "0df37285a9649a06e0bc0983366430958bb8b6e3764b22bf61228910661baf10",
+        "cam_b0": "aa927cf1d9917b545441195804d97569eb97a08bb6cca268577d81168d34576a",
+        "cam_l0": "45c1499885757a486db4a5d3a8980e094f823fbf1ad6f5f62acef998066fd543",
+        "cam_r0": "229e1fda50fba009e0ca863ac1105b43b5b355e72f6981a14161d467fd695da0"
+      }
+    },
+    {
+      "token": "efc87f8726645319",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800551400616,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/bd758bf864a15abf.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/71353df41fdd5603.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/2ddd95970c7852be.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/74945088d140505f.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "2149f6c0cd6de524758bfb7454173a87cd062413304696be7b2f03a82206b849",
+        "cam_b0": "43a928f0b270df47e6fe8f1eb54b6040389069b31022122f68d26df75922f209",
+        "cam_l0": "79572d2530b6b08d05d6492ccb298ba7b9c483a488721db7bef8f4ebb25bceb3",
+        "cam_r0": "114ce64b5a26962b14f8d1240635d7f79a3991a29796329db3347ee9540e8b7e"
+      }
+    },
+    {
+      "token": "2836705e16ba5691",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800551900641,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/2e0600ce269f5874.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/b596ddd9cd405477.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/d14527e91328597d.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/7a6decaee57851ad.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "af8af195174c7849156a45e215bf7efdc60a7cb71b8d055bdfa4ac955dd2a8b5",
+        "cam_b0": "981b83f02b4f63768cb860064c25bef5d6375680a3675ff5093c2a819358058d",
+        "cam_l0": "286d3336d4be3a244c8696d3cb9318a186aa1e47652331e146f6f4bb4fae9783",
+        "cam_r0": "9a07502b52d6972dd16e02ea4453aa7c8b3850be7aa8f8e849cfff17da386446"
+      }
+    },
+    {
+      "token": "8fc0b7212263588f",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800552400626,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/a8a2e5390d2d57d7.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/a1af50336da15b98.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/31be9ea050f55f3c.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/6a68c218d8fb55e8.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "f0f6ba8202cd837ecd646f9685a12016f0ec8f2f0837e82fee345f051d8a2823",
+        "cam_b0": "a87befeee8a06e4dd7d928b9f09a53b1894745a17caad9d5ecb05436a2d058c1",
+        "cam_l0": "d893b843e7da7045a69e30a9595e05b7b22a414723f19b182866780f8feaa5c6",
+        "cam_r0": "098b0502621918a90322a294b06d2c6fd4cb312e1b7c792b4b22030d3161eb01"
+      }
+    },
+    {
+      "token": "1a8da8e47d235dbe",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800552900626,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/84efcacdd10d5f37.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/2ce759a81be45f90.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/99f76aae64e85ebb.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/08de4159f1a45bdb.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "7f76e1c204a03fd01f79c9a42484f7cdc425a26681ea2925f7bb172b9f5330de",
+        "cam_b0": "cc56ddb347eaa3becd5019e60f772c4ed9970157eb42d0435e234795b3c96da9",
+        "cam_l0": "2adebb9bf415d3389f5a24176881abb37c8a1d226d8aeb2ada6bbc9c1c69ca13",
+        "cam_r0": "50bc05c08a3e33bf8d0c0616bb4ea8238d248555880ccaad554ed559075f2728"
+      }
+    },
+    {
+      "token": "171e0bea742d52d0",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800553400643,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/9d8465ca97935f8e.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/d20fd70344ea58d5.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/797c1def52b65b35.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/4e76576e1beb5036.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "0cc5a5dfe095e5d35aa805c9313f42dcf5b7b30005fbbb4973a79edfc73f40d8",
+        "cam_b0": "9bde4626a49399d5cac6db362d40c4a8f605315ea3b36c15ab1804bce73eff5d",
+        "cam_l0": "5a0ff2a2a9b8d13dd1687f1c0dd9dd559aa1fa06d3827052097b3e187348f906",
+        "cam_r0": "b21160c309ac6b36e8ba59a57adc8802b3a690990a3a597e0ee82d63c54a2c1f"
+      }
+    },
+    {
+      "token": "ed2466a660ba5661",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800553900330,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/4c966b56620f5a7d.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/3bb4259bee645dab.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/ca77a6ebcccf5495.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/696549c2f31052ef.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "7301e3ccb866ad920b0be33bcb2cab9df363a5c76e7c17b87507b54921e40002",
+        "cam_b0": "e85ee6a2a26c284012ac366bd60e54c9d1ee0442a666dfe68650f54690e91475",
+        "cam_l0": "3d9d4eb1f011b383460093b3ef08f1a7aec899986ae44869063f258db6c82ae7",
+        "cam_r0": "e4caaa4026cc6c26c218ccb10c8c44a7490db66a21057739d6852b2bf5304916"
+      }
+    },
+    {
+      "token": "10d9d6d0ad405b9d",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800556899922,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/6235bc846f3d595c.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/b4129a03603c53d6.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/8b7c8fb9b2cf5af8.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/8161e6614271547e.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "dac716d3926cf7fb4d0ca7634d233a73d20d01d1cd5b59bd177a13174630af7a",
+        "cam_b0": "e2e1cbd291b645f72f35708e9ce25b898669ab2120932f7e3c71963097442000",
+        "cam_l0": "269d94d94b221ce5ea4f60f625104b7a9dd8e5e817922b69ee5fb4deefe72c64",
+        "cam_r0": "cf02a266738514e321a1f45939476eaac8a94801e43f9a9a1949e6a9d26b071c"
+      }
+    },
+    {
+      "token": "d12fdbd7f3265051",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800557400031,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/669b9c814e615b01.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/6fcf499efe0550db.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/2983af7c5ac853e0.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/265a73d70efa5f81.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "04b8992e7ff2c0c4b81fd8efa4d5ca04fd2eb2a91bb574d0517a17b6dd59c52d",
+        "cam_b0": "d1d1eb26e6bc6b4cb26a12b8fe6e9e210ae9f712f669649ed14f81e94845a304",
+        "cam_l0": "37b74854723097d1b0b9a84420758bc3314e8e7c8e12c6f55311bd02d9ca4342",
+        "cam_r0": "85de97ccb1d5c12c6a95628c412630e11c8c9ca6c2323794a0fff6e42a2b9ee9"
+      }
+    },
+    {
+      "token": "a0eb6fa78dc2558f",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800557899967,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/0e75ef4a1aff52d4.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/68f710d248715d64.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/58c2e110a0a454a1.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/da700cbf081b5328.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "bd17ab167709f6432a50491bd4a1de8ceb9889b4e44b8260d29a26895a52b0be",
+        "cam_b0": "0a3bed234a99dd359d15ca3eb7ca7d3d16caf63bf3d890f9c632042f42f6abf2",
+        "cam_l0": "ee76604d7f72a1fafb334f36948c8d3be61d80c50f693e7e89989507790e4e61",
+        "cam_r0": "6145fba64fbb5145f4721e53cc1e5cabcc889bac8087679665ff4813a7e116da"
+      }
+    },
+    {
+      "token": "9f521d00c3ef55b7",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800558399860,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/dd8b4791fc185375.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/b7d85b9d79375e94.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/955a10d7d4f159f8.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/a7de5b6a31c25113.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "9cbed49f46009bb51410c27d76111b3cefedb8b9439a2bff54d43b190b9fe7e1",
+        "cam_b0": "c98f69e6efece4e38f06a2f5a7e1e138e30ad88c999a02de2dd7325ad33655ba",
+        "cam_l0": "5019d8dc49fd287aa4d28886d9924bde9dcb605dadf20f732ac881c49748e9ba",
+        "cam_r0": "617b977cc169f0e9ec9c4c6d3055024060e811b68207d4dfd65f215347c9d7b5"
+      }
+    },
+    {
+      "token": "1fc3acd944ba540e",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800561899576,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/f44920b3f1b65604.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/2c387ead47095c28.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/b84d1931e01a5f0f.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/969578628e1f57a8.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "0638a3a4a98165c4584604c65932cf52b390ed2b63ebdb687ce87e7e246ce335",
+        "cam_b0": "a8ac3a513f1862cff5b7e4c3e4855177fc7e7ee2ebb7a609b8786e7720c3b7c5",
+        "cam_l0": "d858a1740b993185e1839e7d547ff6caf658f800ebfa8f399bf2981ea4f950c5",
+        "cam_r0": "2a54f437568dcfd0699e5814db24ada13aa7172ef407a608d9a052c405b1967c"
+      }
+    },
+    {
+      "token": "52a4ade5aede53d9",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800562399702,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/484a6a00534250ec.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/ca990833ef445358.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/ed51d36d866b5acf.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/2de0ac4ca581510d.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "c58c64852f7df52d8fd86014abfb3f7d7e73f1fa1670320f07fbaefa8fd367ba",
+        "cam_b0": "9214630b891bb25f320647d4ef6f779298bc328af286efe11583b7af3bb3e652",
+        "cam_l0": "4a44b48424e4e340fce7104db527fc87df788f180386230f49442cec3d9fa304",
+        "cam_r0": "dc2b2b0808dcc70a9e4da1a190fe7a999e51f9891afd283465d79019ef4900e8"
+      }
+    },
+    {
+      "token": "e62e904da0695956",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800562899820,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/aefc148cee1b5810.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/0695364f2ea95b15.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/a1765538a8fc5ea4.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/e2f1b5fa0ade5964.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "edd5c55e1629f06225e6711ba51d566984a3deb87572efa36c49c74397a3786a",
+        "cam_b0": "70cedcc2690fdca8f067939e656901270a2361c896ea2db8004aaa8dd4fd71c6",
+        "cam_l0": "f5c8806cfd88f13277bcf5322db0f8b52bb2f470c5c8817f18471d377c884040",
+        "cam_r0": "8c9762078267a6c538724a32a9539f8248e08c1184a1f693c8ab019a5c19b6c9"
+      }
+    },
+    {
+      "token": "fbd06f49da055ea8",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800563399910,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/d77c37061f96596a.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/bc2dc664232b5eb5.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/58bdf0aaf4b058cc.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/804a9227b2bb576e.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "638ea4e563071667d6563088eb0b8a0201cf7cc0afcc30da1f2cc17673f4df22",
+        "cam_b0": "a7c3274ca7e82d0bed3dbc3aee1a7411f4612c017920aae01169ac8f5ce36b0b",
+        "cam_l0": "9069694fe8cffd6971870d039fb52e16ea54b8502d3d3bda6fc5a1626d5b939c",
+        "cam_r0": "9148963ee1d980afb723f0bf101b901304bdb3251467b95bba6302229df73956"
+      }
+    },
+    {
+      "token": "1b88b298d405518e",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800572399891,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/a8b718ca891a5c24.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/eac4f4720ac05552.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/cdbe8247ace15cfc.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/03d196abc4dd565a.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "269563f51f5a3e25c9a7270203c1af9af51dc8068b957361cbba153a5af1c43d",
+        "cam_b0": "6160d99ff9606ebdc78b7f6b386477d7581cc90466cc0963240a63d1997f8b21",
+        "cam_l0": "67e7251de94c3a305a03473f7018891b45480c240af6cce0f7f2a45cdfcccd16",
+        "cam_r0": "b9497ab0989ee8a49e6b0642584821776ab6c382cec323d34b8eaf08a6e9b1f9"
+      }
+    },
+    {
+      "token": "8f5b6181d28e5d4a",
+      "log_name": "2021.09.16.13.53.10_veh-42_00077_00153",
+      "frame_index": 3,
+      "timestamp": 1631800572900062,
+      "images": {
+        "cam_f0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_F0/76bea1ee46075daf.jpg",
+        "cam_b0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_B0/a60bbf5e41b650ef.jpg",
+        "cam_l0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_L0/332ce720121d5881.jpg",
+        "cam_r0": "/mnt/data/navsim/test_sensor_blobs/test/2021.09.16.13.53.10_veh-42_00077_00153/CAM_R0/bf0faa4a200257c0.jpg"
+      },
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "navigation_text": "go straight",
+      "navigation_source": "AgentInput.ego_statuses[-1].driving_command",
+      "image_sha256": {
+        "cam_f0": "0ebbb92b6a54bef771e18b74c58343b8d9d4cf6c0347888c06d23112e65aa00a",
+        "cam_b0": "f7b005b09a8d43efc8dd11d8516feb8bad91cf50bb775a0ddafa7b30fb8b023e",
+        "cam_l0": "de6a8a083b964f1dc1889fd68ea0c6ea2dfcd9f974bfe97e41fdca1e05d83065",
+        "cam_r0": "1939d5bb574d8151833c7af4a15ceca5e15fb9c04f06af67c8c9787faef3362d"
+      }
+    }
+  ],
+  "skipped": [],
+  "missing_logs": [],
+  "source_hashes": {
+    "scripts/data_generation/prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "scripts/data_generation/selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "navsim/common/dataloader.py": "4bd8f475d0d931750e5d601c73da1dcf4c6b9539c74b3d9bc04de8e911891574",
+    "navsim/common/dataclasses.py": "8aa265c1d7f8934e1cb55bf4893817365819b3c20d86f07ab87358e7fc840503",
+    "navsim/agents/drivoR/drivor_features.py": "82137a3b59fcb6fd614bd9073d2a5b31ef8b97efde2b675ac5010aee331ced7a"
+  }
+}

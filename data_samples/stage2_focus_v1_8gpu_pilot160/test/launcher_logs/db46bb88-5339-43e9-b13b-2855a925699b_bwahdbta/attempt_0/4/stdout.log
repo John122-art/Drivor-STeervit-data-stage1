@@ -1,0 +1,66 @@
+[test rank 4] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0004/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtest --subset all --seed 3407 --rank 4 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: 7900996a42f35f67 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 2/20: 862ca192b71f5d93 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 3/20: d68c7a7e02265029 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 4/20: 5d7c7edca69d5e73 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 5/20: 1981a85eb4ba5001 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 6/20: 73939fc4dcdf57c4 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 7/20: 7084e524e59c50ab (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 8/20: b04bbf1d4ecf5f56 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 9/20: f3512ae175b45844 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 10/20: e5e00457df055e1a (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 11/20: 9644977ff3b15622 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 12/20: ab8d6b4c8b20564b (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 13/20: 157ad2289b20545e (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 14/20: a425dd8a1b5552db (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 15/20: 7db6a3bd77405292 (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 16/20: 108b8b1ea5fd57ff (2021.09.16.21.13.37_veh-42_00172_00347)
+Prepared 17/20: c2790319345a58cf (2021.09.29.19.02.14_veh-28_01717_01824)
+Prepared 18/20: b6e039ab90075f16 (2021.09.29.19.02.14_veh-28_01717_01824)
+Prepared 19/20: 4e496bfdb6b95697 (2021.09.29.19.02.14_veh-28_01717_01824)
+Prepared 20/20: 3b6865082c225fe8 (2021.09.29.19.02.14_veh-28_01717_01824)
+[test rank 4] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0004/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0004/captions --scenes 0 --resume --device cuda:4 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt
+7900996a42f35f67 cam_f0: ok, 9 tokens; traffic lights suspended above the road
+7900996a42f35f67 cam_b0: ok, 16 tokens; the road curving to the left, the vehicle in the adjacent lane
+7900996a42f35f67 cam_l0: ok, 27 tokens; a white SUV near the intersection, traffic lights at the intersection, a blue street sign at the intersection, the curved road junction
+7900996a42f35f67 cam_r0: ok, 37 tokens; a traffic light at the intersection, a stop sign on the right, a dark SUV on the cross street, a white car in the distance, a crosswalk in the foreground
+862ca192b71f5d93 cam_f0: ok, 8 tokens; traffic lights at the intersection
+862ca192b71f5d93 cam_b0: ok, 11 tokens; a grey sedan in the center of the image
+862ca192b71f5d93 cam_l0: ok, 42 tokens; a traffic light assembly at the intersection, a blue car near the intersection, a white SUV near the intersection, a street sign mounted on the traffic light pole, a curved lane boundary line on the road
+862ca192b71f5d93 cam_r0: ok, 49 tokens; a traffic light assembly over the intersection, a stop here on red sign on the right, a dark SUV on the road in the background, a white crosswalk marking in the foreground, a junction with a visible road branch to the left
+d68c7a7e02265029 cam_f0: ok, 8 tokens; traffic lights at the intersection
+d68c7a7e02265029 cam_b0: ok, 25 tokens; a grey sedan in the right lane, a white arrow indicating a left turn, a double yellow line separating opposing traffic
+d68c7a7e02265029 cam_l0: ok, 54 tokens; a blue car near the center of the image, a white SUV near the center of the image, a traffic light in the upper right of the image, a traffic light in the upper center of the image, a traffic light in the upper left of the image
+d68c7a7e02265029 cam_r0: ok, 49 tokens; a traffic light showing red in the upper right, a maroon SUV near the center of the image, a silver car in the background on the right, a yellow diamond warning sign on the right, white lane markings defining the road geometry
+5d7c7edca69d5e73 cam_f0: ok, 16 tokens; traffic lights at the upper left, traffic lights at the upper right
+5d7c7edca69d5e73 cam_b0: ok, 25 tokens; a dark sedan in the right lane, a white arrow painted on the road, a yellow hatched area on the right
+5d7c7edca69d5e73 cam_l0: ok, 55 tokens; a traffic light assembly on the overhead mast arm, a blue car in the adjacent lane to the right, a white SUV in the adjacent lane to the right, a lane boundary line separating the ego lane from the right lane, a traffic sign mounted on the mast arm
+5d7c7edca69d5e73 cam_r0: ok, 19 tokens; a dark SUV on the right side of the road, traffic lights suspended over the intersection
+1981a85eb4ba5001 cam_f0: ok, 9 tokens; traffic lights at the upper left
+1981a85eb4ba5001 cam_b0: ok, 32 tokens; a grey sedan in the right lane, a second vehicle behind the first, a white arrow marking on the road, a yellow hatched area on the right
+1981a85eb4ba5001 cam_l0: ok, 42 tokens; a traffic light on the left, a junction with a road branch to the left, a white car in the right lane, a blue car in the center lane, a white line marking the lane boundary
+1981a85eb4ba5001 cam_r0: ok, 26 tokens; a green traffic light in the upper left, a dark SUV on the right side, a street sign in the upper center
+73939fc4dcdf57c4 cam_f0: ok, 9 tokens; traffic lights suspended over the road
+73939fc4dcdf57c4 cam_b0: ok, 35 tokens; a grey sedan in the adjacent right lane, a dark sedan behind the grey sedan, a yellow hatched road marking on the right, a white stop line across the intersection
+73939fc4dcdf57c4 cam_l0: ok, 38 tokens; a traffic light at the intersection, a blue car in the adjacent lane, a white SUV in the adjacent lane, a crosswalk at the intersection, a street sign indicating Blair St
+73939fc4dcdf57c4 cam_r0: ok, 10 tokens; traffic lights mounted on the overhead pole
+7084e524e59c50ab cam_f0: ok, 25 tokens; a grey sedan in the left lane, a line of vehicles in the left lane, double yellow lines separating the lanes
+7084e524e59c50ab cam_b0: ok, 26 tokens; a red traffic light at the top right, a grey sedan in the left lane, a white SUV in the right lane
+7084e524e59c50ab cam_l0: ok, 18 tokens; a dark grey hatchback in the foreground, a grey sedan in the right lane
+7084e524e59c50ab cam_r0: empty_scene, 2 tokens; 
+b04bbf1d4ecf5f56 cam_f0: ok, 32 tokens; a black sedan in the left lane, a grey sedan in the left lane, a dark SUV in the left lane, double yellow lines separating the lanes
+b04bbf1d4ecf5f56 cam_b0: ok, 41 tokens; a red traffic light at the intersection, a grey sedan in the left lane, a silver hatchback in the right lane, a white SUV in the right lane, double yellow lines separating the lanes
+b04bbf1d4ecf5f56 cam_l0: ok, 16 tokens; a grey sedan in the adjacent lane, a black car on the right
+b04bbf1d4ecf5f56 cam_r0: empty_scene, 2 tokens; 
+f3512ae175b45844 cam_f0: ok, 25 tokens; green traffic lights on the bridge structure, distant vehicles traveling in the same direction, faint lane markings on the road surface
+f3512ae175b45844 cam_b0: ok, 42 tokens; a dark SUV in the left lane, a silver sedan behind the SUV, a yellow vehicle further back in the left lane, a dark sedan in the right lane, a solid white line separating the lanes
+f3512ae175b45844 cam_l0: ok, 11 tokens; a traffic cone near the center of the image
+f3512ae175b45844 cam_r0: ok, 10 tokens; a grey car in the lower right foreground
+e5e00457df055e1a cam_f0: ok, 25 tokens; green traffic lights on the bridge structure, distant vehicles traveling in the same direction, faint lane markings on the road surface
+e5e00457df055e1a cam_b0: ok, 33 tokens; a dark SUV in the left lane, a grey sedan in the left lane, a black car in the center lane, a solid white line separating the lanes
+e5e00457df055e1a cam_l0: ok, 21 tokens; a traffic cone near the center of the image, a barrier along the left side of the road
+e5e00457df055e1a cam_r0: ok, 8 tokens; a dark sedan in the foreground
+9644977ff3b15622 cam_f0: ok, 25 tokens; green traffic lights on the bridge structure, distant vehicles traveling in the same direction, faint lane markings on the road surface
+9644977ff3b15622 cam_b0: ok, 30 tokens; a dark sedan in the foreground, a brown SUV in the left lane, a solid white line separating lanes, a yield sign on the left
+9644977ff3b15622 cam_l0: ok, 11 tokens; a traffic cone near the center of the image
+9644977ff3b15622 cam_r0: ok, 8 tokens; a dark sedan in the foreground

@@ -1,0 +1,54 @@
+[test rank 2] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0002/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtest --subset all --seed 3407 --rank 2 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: 918d03455301591b (2021.09.29.18.19.40_veh-28_00331_00426)
+Prepared 2/20: eeae24d38eb15e0a (2021.09.29.18.19.40_veh-28_00331_00426)
+Prepared 3/20: 1f095494fe755244 (2021.09.29.18.19.40_veh-28_00331_00426)
+Prepared 4/20: 9320c42b53b052f0 (2021.09.29.18.19.40_veh-28_00331_00426)
+Prepared 5/20: ab8034dd8873524b (2021.09.29.18.19.40_veh-28_00331_00426)
+Prepared 6/20: 83b935eff1815935 (2021.09.29.18.19.40_veh-28_00331_00426)
+Prepared 7/20: 29770ed8cd49511e (2021.09.29.18.19.40_veh-28_00331_00426)
+Prepared 8/20: 6496c4adf0f65e78 (2021.09.29.18.19.40_veh-28_00331_00426)
+Prepared 9/20: 40d43586b1195366 (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 10/20: b46f5915049e52a5 (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 11/20: 6011fd3aa3a85fa1 (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 12/20: 913212df2a415e44 (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 13/20: fa16fc0f1e9851a3 (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 14/20: 2bf94996d2325e20 (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 15/20: 74f87045b75156f4 (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 16/20: df2ff4c2c9785df6 (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 17/20: ea93b5b81d425814 (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 18/20: c1b38e62a97d590d (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 19/20: 776069d80826529d (2021.05.25.16.37.23_veh-25_03311_03550)
+Prepared 20/20: 2fbf549d6aac59b9 (2021.05.25.16.37.23_veh-25_03311_03550)
+[test rank 2] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0002/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0002/captions --scenes 0 --resume --device cuda:2 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt
+918d03455301591b cam_f0: ok, 31 tokens; red traffic lights at the intersection, white lane markings defining the driving lane, crosswalk markings on the road surface, a dark SUV on the left
+918d03455301591b cam_b0: ok, 32 tokens; a large white truck in the center lane, a white bus on the right side, a white van on the left, double yellow lines separating opposing traffic
+918d03455301591b cam_l0: ok, 23 tokens; a silver van positioned on the right side of the road, double yellow lines marking the center of the road
+918d03455301591b cam_r0: ok, 8 tokens; a traffic sign on the left
+eeae24d38eb15e0a cam_f0: ok, 37 tokens; red traffic lights at the intersection, white stop line across the lane, white crosswalk markings on the road, double yellow lines on the left, a dark SUV on the left
+eeae24d38eb15e0a cam_b0: ok, 32 tokens; a white SUV in the left foreground, a white truck in the right lane, a white bus on the far right, double yellow lines separating opposing traffic
+eeae24d38eb15e0a cam_l0: ok, 23 tokens; a silver van positioned on the right side of the road, double yellow lines marking the center of the road
+eeae24d38eb15e0a cam_r0: ok, 11 tokens; a traffic sign on a pole in the foreground
+1f095494fe755244 cam_f0: ok, 22 tokens; a white car in the center lane, a grey SUV in the left lane, white dashed lane markings
+1f095494fe755244 cam_b0: ok, 41 tokens; a silver SUV in the center lane, a white box truck in the right lane, a traffic sign indicating the street name, white lane markings defining the driving path, traffic lights suspended over the intersection
+1f095494fe755244 cam_l0: ok, 23 tokens; a dark sedan on the left side of the road, a dark SUV on the right side of the road
+1f095494fe755244 cam_r0: empty_scene, 2 tokens; 
+9320c42b53b052f0 cam_f0: ok, 21 tokens; a silver SUV in the left lane, a white car in the distance, white dashed lane markings
+9320c42b53b052f0 cam_b0: ok, 40 tokens; a silver SUV in the center lane, a white truck in the right lane, a green street sign above the intersection, white lane markings on the road surface, a crosswalk at the intersection
+9320c42b53b052f0 cam_l0: ok, 12 tokens; a dark SUV on the right side of the road
+9320c42b53b052f0 cam_r0: empty_scene, 2 tokens; 
+ab8034dd8873524b cam_f0: ok, 25 tokens; a silver SUV in the left lane, a white car in the center lane, dashed white lines separating the travel lanes
+ab8034dd8873524b cam_b0: ok, 32 tokens; a silver SUV in the center lane, a white truck in the right lane, overhead traffic lights at the intersection, white lane markings defining the driving path
+ab8034dd8873524b cam_l0: ok, 9 tokens; a grey SUV in the left lane
+ab8034dd8873524b cam_r0: empty_scene, 2 tokens; 
+83b935eff1815935 cam_f0: ok, 17 tokens; a white car in the center lane, white dashed lane markings on the road
+83b935eff1815935 cam_b0: ok, 38 tokens; a silver SUV in the center lane, a white truck in the right lane, a traffic light at the intersection, a welcome sign on the right, white lane markings on the road
+83b935eff1815935 cam_l0: ok, 8 tokens; a silver SUV on the right
+83b935eff1815935 cam_r0: empty_scene, 2 tokens; 
+29770ed8cd49511e cam_f0: ok, 17 tokens; a white car in the center lane, white dashed lane markings on the road
+29770ed8cd49511e cam_b0: ok, 32 tokens; a silver SUV in the center lane, a white truck in the right lane, a traffic light in the upper center, white lane markings on the road
+29770ed8cd49511e cam_l0: ok, 8 tokens; a silver SUV on the road
+29770ed8cd49511e cam_r0: empty_scene, 2 tokens; 
+6496c4adf0f65e78 cam_f0: ok, 17 tokens; a silver car in the center lane, white dashed lane markings on the road
+6496c4adf0f65e78 cam_b0: ok, 31 tokens; a silver SUV in the center lane, a white truck in the right lane, a traffic light at the intersection, white lane markings on the road
+6496c4adf0f65e78 cam_l0: ok, 8 tokens; a silver SUV on the left
+6496c4adf0f65e78 cam_r0: filtered_empty, 2 tokens; 
