@@ -1,0 +1,65 @@
+# 第二阶段离线数据生成；单机8卡DLC，主进程执行一次。
+# 使用固定的scene_navigation_v2.txt和本地Qwen-Drive；每张当前图像配合当前导航。
+# 新版按相机独立清理，只调用模型一次，不再请求重新描述；其他相机文本始终保留。
+# train/val/test顺序处理，彼此独立目录；这不是模型训练指令。
+# 运行工程：/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main
+# 此工程没有独立dataset目录，现有启动脚本使用下列DATA_ROOT，沿用已验证的原始数据。
+# NAVSIM日志trainval：/mnt/data/navsim/trainval_navsim_logs/trainval
+# NAVSIM图像trainval：/mnt/data/navsim/trainval_sensor_blobs/trainval
+# NAVSIM日志test：/mnt/data/navsim/test_navsim_logs/test
+# NAVSIM图像test：/mnt/data/navsim/test_sensor_blobs/test
+# 地图：/mnt/data/navsim/maps
+# Qwen源码：/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src
+# Qwen权重：/mnt/zhaozc_workspace/project/LQH/Qwen-drive/checkpoint
+# 上述Qwen路径由stage2/generate.py的现有默认参数使用；无需额外安装或下载模型。
+# 复核：全量/小样本区块均通过bash语法和dry-run，8分片日志完整且不重叠。
+# 已修复阶段2校验器对空GT框JSON的形状误报；提示词和文本清理规则不变。
+# 2026-11-07修复改变了源码指纹；更早版本缓存需要新目录，勿覆盖或删除。
+# 2026-11-09核对：下面全量目录的8个分片与当前源码一致，保存的DEEP_SCENES均为150。
+# 该目录续跑使用150；改为600会触发配置不一致检查，无需因此更换目录或重新生成文本。
+# 本机只有1张可见设备，未进行8卡实跑；详细复核见docs/stage2_code_review_20261107.md。
+
+# 【全量/现有任务续跑】复制下面整个区块；保留已有逐场景缓存，继续未完成部分。
+bash -lc '
+set -euo pipefail
+cd /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main
+NPROC_PER_NODE=8 \
+SCENES_PER_RANK=0 \
+DEEP_SCENES=150 \
+DATA_SPLITS=train,val,test \
+DATA_ROOT=/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset \
+QWEN_ENV_ROOT=/mnt/zhaozc_workspace/envs/mot_vega \
+DRIVOR_ENV_ROOT=/mnt/zhaozc_workspace/envs/drivorpython \
+NUPLAN_MAPS_ROOT=/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset/maps \
+OUTPUT_DIR=/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full \
+bash scripts/data_generation/run_stage2_data_8gpu_dlc.sh
+'
+
+# 【小样本】每个划分、每卡1个场景，共最多24个场景；与全量使用不同目录。
+bash -lc '
+set -euo pipefail
+cd /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main
+NPROC_PER_NODE=8 \
+SCENES_PER_RANK=1 \
+DEEP_SCENES=20 \
+DATA_SPLITS=train,val,test \
+DATA_ROOT=/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset \
+QWEN_ENV_ROOT=/mnt/zhaozc_workspace/envs/mot_vega \
+DRIVOR_ENV_ROOT=/mnt/zhaozc_workspace/envs/drivorpython \
+NUPLAN_MAPS_ROOT=/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset/maps \
+OUTPUT_DIR=/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_pilot \
+bash scripts/data_generation/run_stage2_data_8gpu_dlc.sh
+'
+
+# SCENES_PER_RANK=0：每个分片的全部有效场景。
+# DEEP_SCENES：每卡额外抽查重算投影的场景数，不限制生成数量；0表示全部重做。
+# 当前全量目录已固定150；小样本新目录使用20。已有目录续跑必须与原值相同。
+# DATA_SPLITS=train/val/test也可单独指定；同一输出根目录要求其余设置相同。
+# train=navtrain+原生train日志，val=navtrain+原生val日志，test=navtest。
+# 不按接地框有效性删掉规划场景；保留各相机的可用短语，仅确实无可用内容的相机为空。
+# 记录逐相机问题和空文本统计；即使整个分片文本均为空也会完成数值标签导出。
+# 模型调用或输入检查报错会停止任务，不会把未处理场景标为完成。
+# test的GT投影仅用于离线审计，不作为推理输入或筛选测试样本的依据。
+# 输出：OUTPUT_DIR/{train,val,test}/scene_text.json、dataset_index.jsonl、summary.json、review_queue.json。
+# 2D框、patch标签与原始生成审计在各划分shards/rank_XXXX/下。
+# 续跑保持提示词、源码、卡数和场景上限一致；更换版本使用新目录。

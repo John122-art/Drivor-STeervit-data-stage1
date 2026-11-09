@@ -1,0 +1,47 @@
+You are looking at the {camera_name} camera image of a self-driving car.
+
+Describe visible details that matter for driving, using concise, factual English
+phrases. Keep the scene description focused on road users, the visible driving
+corridor, road markings, obstacles, traffic lights, and traffic signs.
+
+Prioritize these details when clearly visible:
+- Vehicles near visible lanes, lane boundaries, road edges, or intersections:
+  describe their color/type, position IN THE IMAGE, and visible road relationship.
+- Pedestrians and cyclists near the curb, road edge, crosswalk, or roadway:
+  describe their appearance and current position, even if motion is unknown.
+- Lane lines and boundaries, solid/dashed markings, lane arrows, crosswalks,
+  road curvature, intersections, narrowing, and physical lane obstructions.
+- Traffic lights with clearly visible state, relevant traffic signs, barriers,
+  cones, visible vehicle spacing, and road occupancy.
+
+Do not spend the description on background buildings, hotels, billboards,
+advertisements, trees, decorative structures, or restaurant seating. Mention a
+structure only if it visibly obstructs or defines the roadway. Mention street
+lighting only if relevant to visible road conditions.
+
+For each road user, describe appearance + image position + a visible road
+relationship where possible. Do not omit a nearby vehicle or pedestrian simply
+because you cannot determine its movement. Do not invent lane relationships.
+Use image-relative positions for ALL cameras, including the rear camera;
+do not use ego, our car, ahead, directly in front, or directly behind.
+Use left, center, right, upper, lower, or foreground OF THE IMAGE.
+
+Use current static descriptions, not inferred actions. If a draft contains
+driving, walking, crossing, moving, stopped, parked, ascending, or descending,
+rewrite it to describe the SAME object's visible appearance and current
+location. Preserve the object rather than omitting it. Do not predict future
+events, infer intentions, or give driving advice. Do not output bounding boxes
+or coordinates.
+
+There is no fixed number of items. Avoid repetition. For an information-rich
+image, aim for 60-80 English words across all phrases; use fewer words if sparse.
+Keep the combined phrases within 80 words, with important road users first.
+
+Return JSON only:
+{"objects": [{"phrase": "...", "category": "..."}]}
+
+The ONLY categories are: vehicle, pedestrian, bicycle, traffic_cone, barrier,
+traffic_light, traffic_sign, other. Use "other" for road layout, lane markings,
+crosswalks, and traffic conditions. Do not invent categories such as
+traffic_conditions, road_marking, or building.
+If nothing can be described reliably, return {"objects": []}.

@@ -1,0 +1,37 @@
+You are looking at the {camera_name} camera image of a self-driving car.
+Active navigation command: [{navigation_command}].
+
+Describe the CURRENT visible driving scene with informative English phrases.
+Do not merely list object names. EVERY phrase must describe appearance/type
+and position IN THE IMAGE. For road users, add their visible relationship to
+a lane, intersection, crosswalk, curb, or road edge when clearly visible.
+For example, "white van" is incomplete: describe where it is in this image
+and its visible road relationship. Do not invent objects or relationships.
+
+Use navigation intent to prioritize visible scene factors relevant to the route:
+- GO STRAIGHT: visible road continuation, lane boundaries, traffic controls,
+  crosswalks, and vehicles or pedestrians near that visible corridor.
+- TURN LEFT/RIGHT: visible junction/road branch, relevant boundaries, nearby
+  vehicles and pedestrians. A turn command does not prove a turn lane is visible.
+- UNKNOWN: describe the visible driving scene without assuming a route.
+Navigation is ego-relative; phrase locations are image-relative in ALL cameras.
+If this view does not show the intended route, describe its local visible
+road users and boundaries without inventing another camera's contents.
+
+Include salient vehicles, pedestrians, cyclists, traffic lights/signs, lane
+lines/arrows, crosswalks, barriers, and obstacles when visible. Prioritize nearby
+road users. Omit background buildings, trees, billboards, advertising, and decor.
+Use static appearance/location; preserve people and vehicles whose motion is
+unknown. Do not describe driving, walking, crossing, stopped, parked, ascending,
+descending, or other inferred actions. Do not predict future movement or give
+driving advice. Navigation is not evidence of signs, road geometry, or right of way.
+Do not use ahead, directly in front/behind, or ego-relative locations in output.
+
+Aim for 50-80 English words across descriptive phrases for an informative view,
+fewer for a sparse view; at most 80 words. No fixed number of items. No repetition.
+No bounding boxes or coordinates. Return JSON only:
+{"objects": [{"phrase": "appearance and image position with visible road relationship", "category": "vehicle"}]}
+This illustrates the format only; choose objects and categories from the image.
+The ONLY categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,
+traffic_light, traffic_sign, other. Use "other" for road layout/markings and
+traffic conditions. Do not invent categories. If nothing is reliable: {"objects": []}.

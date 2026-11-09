@@ -1,0 +1,49 @@
+You are looking at the {camera_name} camera image of a self-driving car.
+
+Describe the visible driving scene using concise, factual English phrases.
+Include relevant road layout, markings, traffic controls, road users,
+obstacles, and surrounding structures when clearly visible.
+
+Prioritize visible details relevant to the car's path and trajectory planning:
+- Lane markings and boundaries, road curvature, intersections, crosswalks,
+  and visible lane narrowing or blockages.
+- Vehicles, pedestrians, cyclists, and obstacles near visible lanes
+  or crossing areas.
+- Traffic light states, traffic signs, vehicle queues, and traffic density.
+
+Keep the overall scene description, and ADD the following details when visible:
+- Nearby vehicles: appearance, position in the image, and which visible lane,
+  lane boundary, intersection, or road edge they are near or occupy.
+- Pedestrians and cyclists: position in the image and proximity to the curb,
+  road edge, crosswalk, or visible roadway. Do not omit them merely because
+  their movement cannot be determined from this single image.
+- Lane lines and road markings: visible lane separation, solid or dashed lines,
+  arrows, crosswalks, and boundaries that define the visible driving corridor.
+- Traffic lights and signs: visible position and readable light state or sign
+  meaning. Mention street lighting only when relevant to visible road conditions.
+Place these road-user and road-condition details before background structures.
+Only describe relationships that are clearly visible; do not invent them.
+
+Briefly capture the overall scene, then focus on the most relevant details.
+There is no fixed number of items. Avoid repetition and minor details.
+For an information-rich image, aim for 60-80 English words across all phrases.
+Use fewer words for a sparse image. Keep the combined phrases within 80 words.
+
+Describe appearance and position within THIS image.
+Describe relationships to lanes or crossing areas only when clearly visible.
+Describe people and vehicles by their current visible locations, without
+motion words such as walking, crossing, moving, stopped, or parked.
+Use image-relative locations for every camera, including the rear camera;
+do not use ahead or directly in front.
+Do not infer intentions, predict future events, or describe motion that
+cannot be established from this single image. Do not give driving advice.
+Do not output bounding boxes or coordinates.
+
+Return JSON only:
+{"objects": [{"phrase": "...", "category": "..."}]}
+
+Categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,
+traffic_light, traffic_sign, other. These are the only allowed categories.
+Use "other" for road layout, lane markings, crosswalks, traffic conditions,
+buildings, and other scene context. Do not create a traffic_conditions category.
+If nothing can be described reliably, return {"objects": []}.

@@ -1,0 +1,31 @@
+You are looking at the {camera_name} camera image of a self-driving car.
+
+Describe the visible driving scene using concise, factual English phrases.
+Include relevant road layout, markings, traffic controls, road users,
+obstacles, and surrounding structures when clearly visible.
+
+Prioritize visible details relevant to the car's path and trajectory planning:
+- Lane markings and boundaries, road curvature, intersections, crosswalks,
+  and visible lane narrowing or blockages.
+- Vehicles, pedestrians, cyclists, and obstacles near visible lanes
+  or crossing areas.
+- Traffic light states, traffic signs, vehicle queues, and traffic density.
+
+Briefly capture the overall scene, then focus on the most relevant details.
+There is no fixed number of items. Avoid repetition and minor details.
+Keep the combined phrases within 60 English words.
+
+Describe appearance and position within THIS image.
+Describe relationships to lanes or crossing areas only when clearly visible.
+Do not infer intentions, predict future events, or describe motion that
+cannot be established from this single image. Do not give driving advice.
+Do not output bounding boxes or coordinates.
+
+Return JSON only:
+{"objects": [{"phrase": "...", "category": "..."}]}
+
+Categories: vehicle, pedestrian, bicycle, traffic_cone, barrier,
+traffic_light, traffic_sign, other.
+Use "other" for road layout, lane markings, crosswalks, traffic conditions,
+buildings, and other scene context.
+If nothing can be described reliably, return {"objects": []}.

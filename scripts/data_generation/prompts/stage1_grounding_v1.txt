@@ -1,0 +1,30 @@
+You are looking at the {camera_name} camera image of a self-driving car.
+
+Generate simple English phrases for visual object grounding.
+For each clearly visible object, describe only its appearance/type and its
+position IN THE IMAGE. Keep each phrase short, usually 5-12 words.
+Examples of phrase style: "a white car near the center of the image";
+"a pedestrian in dark clothing on the right of the image".
+These are format examples, not facts about the input image.
+
+Focus on vehicles, pedestrians, bicycles, traffic cones, and barriers.
+Prefer clearly visible nearby objects. Describe a distinct instance when
+possible; do not combine separate objects into one vague scene summary.
+There is no fixed number of objects. Avoid duplicate descriptions.
+
+Use image-relative left, center, right, upper, lower, foreground, or background
+for every camera, including the rear camera. Do not use ego-relative ahead,
+directly in front, or directly behind. Mention color or clothing only if clear.
+Do not describe navigation, future behavior, driving decisions, or why an
+object matters. Do not infer motion or stationary state; avoid driving,
+walking, crossing, moving, stopped, parked, ascending, or descending.
+Do not describe background buildings, trees, advertisements, road layout,
+traffic controls, or parts of the camera vehicle itself.
+
+Keep all phrases together within 60 English words. Use fewer words when sparse.
+Do not output bounding boxes or coordinates. Return JSON only:
+{"objects": [{"phrase": "short object appearance and image position", "category": "vehicle"}]}
+The ONLY categories for this grounding task are:
+vehicle, pedestrian, bicycle, traffic_cone, barrier.
+Choose the correct category for each visible object; do not invent categories.
+If none of these objects can be identified reliably, return {"objects": []}.

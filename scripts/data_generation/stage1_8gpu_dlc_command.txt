@@ -1,0 +1,48 @@
+# 第一阶段离线数据生成：单机8卡，在DLC主进程执行一次。
+# 输入：四路当前帧原图；简单物体定位提示词；不输入导航指令。
+# 输出：英文文本、GT 3D框投影得到的2D框、3936维patch soft mask。
+# 这份指令用于生成训练数据，尚未启动模型训练。
+# 已通过28项测试和真实2场景/8视图深度复核；8卡实跑须在DLC验证。
+
+# 【全量】复制下面整个 bash -lc 区块执行。
+# SCENES_PER_RANK=0：处理每个分片的全部有效场景，没有小样本数量上限。
+# SPLIT=navtrain SUBSET=train：仅训练划分，不混入验证集或测试集。
+# DEEP_SCENES=20：每卡抽20个场景重做几何计算，不限制生成数量；设0可逐场景重算。
+# 中断后执行完全相同的命令续跑。代码、提示词和分片设置保持一致。
+# 生成失败、规则不合格或没有有效接地目标的场景不进入最终训练索引。
+bash -lc '
+set -euo pipefail
+cd /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main
+NPROC_PER_NODE=8 \
+SCENES_PER_RANK=0 \
+DEEP_SCENES=20 \
+SPLIT=navtrain \
+SUBSET=train \
+DATA_ROOT=/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset \
+OUTPUT_DIR=/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full \
+bash scripts/data_generation/run_stage1_data_8gpu_dlc.sh
+'
+
+# 【可选小样本】每卡1个场景，用独立目录；不要同时执行上下两条命令。
+bash -lc '
+set -euo pipefail
+cd /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main
+NPROC_PER_NODE=8 \
+SCENES_PER_RANK=1 \
+DEEP_SCENES=20 \
+SPLIT=navtrain \
+SUBSET=train \
+DATA_ROOT=/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset \
+OUTPUT_DIR=/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_pilot \
+bash scripts/data_generation/run_stage1_data_8gpu_dlc.sh
+'
+
+# 全量输出目录：
+# /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full
+# scene_text.json：规则通过且有有效接地目标的场景文本。
+# training_index.jsonl：训练样本及对应2D框JSON、NPZ标签路径。
+# review_queue.json：被排除、需要检查的场景。
+# summary.json：生成及合并统计。
+# shards/rank_XXXX/grounding/：分片的2D框和patch标签。
+# launcher_logs/：各进程运行日志。
+# 原图继续从DATA_ROOT读取；画框图片用于检查，不作为模型图像输入。

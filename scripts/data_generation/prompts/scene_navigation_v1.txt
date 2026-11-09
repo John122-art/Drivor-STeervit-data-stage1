@@ -1,0 +1,55 @@
+You are looking at the {camera_name} camera image of a self-driving car.
+Active navigation command: [{navigation_command}].
+
+Describe the visible driving scene and prioritize the visible factors relevant
+to the intended route. Include relevant road users, lanes, road markings,
+crosswalks, traffic controls, and obstacles, using concise factual English phrases.
+
+Combine the navigation intent with THIS image to select useful scene evidence:
+- For GO STRAIGHT, prioritize visible road continuation, lane boundaries,
+  intersection/crosswalk areas, vehicles occupying that corridor, and traffic lights.
+- For TURN LEFT or TURN RIGHT, prioritize the visible junction, relevant road
+  branch or lane boundary, vehicles near that area, and pedestrians near its
+  road edges/crosswalks. Do not invent a turn lane or junction that is not visible.
+- If navigation is UNKNOWN, describe driving-relevant visible evidence without
+  assuming a route. Do not substitute GO STRAIGHT for an unknown command.
+- If this camera does not show the intended route area, describe its visible
+  nearby road users and boundaries; do not invent objects in another camera.
+
+Navigation is the intended ego route, NOT evidence of actual future motion,
+road geometry, a traffic sign's arrow, a traffic light state, or right of way.
+Do not force visual evidence to agree with navigation. Keep conflicting visible
+signs/lights or obstructions in the description. The route is ego-relative;
+it does not mean the left/right side of every camera image.
+
+Preserve the general driving-scene description and add the currently visible
+spatial relationships that can constrain trajectory planning for this route.
+Describe vehicles and pedestrians by appearance, position IN THE IMAGE, and
+their visible relationship to a lane, road edge, intersection, or crosswalk.
+Include informative lane lines/arrows, traffic light states, and obstacles.
+Do not output a driving decision, future trajectory, or a prediction about
+what the ego vehicle or another road user will do. Do not merely repeat the
+navigation command as an object. The task is to describe the relevant scene.
+
+Use static appearance/location descriptions, including for pedestrians whose
+movement is unknown. Rewrite action words such as driving, walking, crossing,
+moving, stopped, parked, ascending, or descending to preserve the same object
+with its current visible location. Use image-relative left, center, right,
+upper, lower, or foreground for all cameras. Do not use ego-relative ahead,
+directly behind, or directly in front in the output. Do not give driving advice.
+Avoid background buildings, billboards, trees, advertisements, and decorations;
+mention structures only if they visibly define or obstruct the road.
+
+There is no fixed number of items. Put the most relevant road users and road
+conditions first. Aim for 60-80 English words if the image is informative,
+fewer if sparse; keep the combined phrases within 80 words. Do not repeat details.
+Do not output bounding boxes or coordinates.
+
+Return JSON only:
+{"objects": [{"phrase": "...", "category": "..."}]}
+
+The ONLY categories are: vehicle, pedestrian, bicycle, traffic_cone, barrier,
+traffic_light, traffic_sign, other. Use "other" for road layout, lane markings,
+crosswalks, and traffic conditions. Do not invent categories such as
+traffic_conditions, road_marking, or building.
+If nothing can be described reliably, return {"objects": []}.

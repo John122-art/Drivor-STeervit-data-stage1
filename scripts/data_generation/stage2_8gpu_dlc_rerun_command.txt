@@ -1,0 +1,17 @@
+# 全量重新生成：使用新输出目录，保留原输出目录中的所有缓存。
+# 2026-11-09检查时，下列新目录不存在。首次执行重新生成；再次原样执行续跑这个新目录。
+# 每卡额外抽查600场景重算GT投影；SCENES_PER_RANK=0表示生成全部有效场景。
+bash -lc '
+set -euo pipefail
+cd /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main
+NPROC_PER_NODE=8 \
+SCENES_PER_RANK=0 \
+DEEP_SCENES=600 \
+DATA_SPLITS=train,val,test \
+DATA_ROOT=/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset \
+QWEN_ENV_ROOT=/mnt/zhaozc_workspace/envs/mot_vega \
+DRIVOR_ENV_ROOT=/mnt/zhaozc_workspace/envs/drivorpython \
+NUPLAN_MAPS_ROOT=/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset/maps \
+OUTPUT_DIR=/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_navigation_no_rewrite_v2_8gpu_full_rerun_20261109 \
+bash scripts/data_generation/run_stage2_data_8gpu_dlc.sh
+'
