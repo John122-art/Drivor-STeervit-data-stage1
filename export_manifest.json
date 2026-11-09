@@ -2,7 +2,7 @@
   "created_utc": "2026-11-09T09:06:22.526028+00:00",
   "original_project": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main",
   "export_project": "/mnt/zhaozc_workspace/project/LQH/Drivor-STeervit-data-stage1-upload",
-  "original_source_file_count": 1591,
+  "original_source_file_count": 1594,
   "original_source_inventory": [
     {
       "path": ".gitignore",
@@ -6941,13 +6941,13 @@
     },
     {
       "path": "scripts/data_generation/run_stage1_data_8gpu_dlc.sh",
-      "sha256": "0f4129716a5bb2dfc0abca694db4e504ec903f55f9e6ffb576f43d0dd0c94ed7",
-      "bytes": 2897
+      "sha256": "f61a4918bc1163829e0af557ad198e5d05702360907cdfb69a63029a2defaa39",
+      "bytes": 3006
     },
     {
       "path": "scripts/data_generation/run_stage2_data_8gpu_dlc.sh",
-      "sha256": "055ccb9e5bfd85ab9862cac4b00de2b7208f95b904c3f63d724bfe0b3b9da9ab",
-      "bytes": 3288
+      "sha256": "e0ff3d11aa3b8b11102d7e1cf9980b38b253a0412f3e13f9ea5ad6956ae5280b",
+      "bytes": 3416
     },
     {
       "path": "scripts/data_generation/selection.py",
@@ -6986,8 +6986,8 @@
     },
     {
       "path": "scripts/data_generation/validate_pilot.py",
-      "sha256": "ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c",
-      "bytes": 11464
+      "sha256": "306be4641e4c6fd38559a6765e8f79bb25d88614a8f9c7b5ede34bff34fe525e",
+      "bytes": 11809
     },
     {
       "path": "scripts/data_generation/stage2/check_feature_input.py",
@@ -7958,6 +7958,21 @@
       "path": "navsim/planning/training/callbacks/time_logging_callback.py",
       "sha256": "008c603684661a0e0ea10978a6c8c91208940882d4e6ba71dd8b5a752aff2078",
       "bytes": 1821
+    },
+    {
+      "path": "scripts/data_audit/migrate_validation_shape_cache.py",
+      "sha256": "f7802bef5c4e0f96db642816afbc699917c493ab8e7aed7fe91f501236156810",
+      "bytes": 7403
+    },
+    {
+      "path": "scripts/data_audit/test_empty_gt_validation.py",
+      "sha256": "c34319c58f0ee7a6f975badb0cbe657bedb26d58de34ac57ef529504264faff5",
+      "bytes": 3630
+    },
+    {
+      "path": "docs/stage1_empty_gt_fix.md",
+      "sha256": "12e14041a114af9c62f8b6fa3d9bd1f764b137f8932f8cd618e94a2ce3d12c35",
+      "bytes": 2616
     }
   ],
   "sample_scenes": 31,
@@ -8012,5 +8027,6 @@
     "weights"
   ],
   "note": "README renamed and gitignore extended in export only. Runtime generation code was not changed. External references are audit copies, not automatically substituted imports.",
-  "samples_updated_utc": "2026-11-09T09:18:20.862503+00:00"
+  "samples_updated_utc": "2026-11-09T09:18:20.862503+00:00",
+  "validation_fix": "Empty (0,7) GT JSON shape; exact validator-only cache migration. See docs/stage1_empty_gt_fix.md."
 }

@@ -15,6 +15,15 @@ from geometry import patch_distribution, project_box
 from build_grounding import load_projection
 
 
+def assert_annotation_boxes_match(raw_boxes, saved_boxes):
+    """JSON turns an empty (0, 7) array into []; restore only that lost shape."""
+    raw = np.asarray(raw_boxes)
+    saved = np.asarray(saved_boxes)
+    if saved.shape == (0,) and raw.shape == (0, 7):
+        saved = saved.reshape(0, 7)
+    np.testing.assert_array_equal(raw, saved)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--prepared", type=Path, required=True)
@@ -58,7 +67,7 @@ def main():
         if "driving_command" in record:
             np.testing.assert_array_equal(frame["driving_command"], record["driving_command"])
             assert navigation_text(record["driving_command"]) == record["navigation_text"]
-        np.testing.assert_array_equal(frame["anns"]["gt_boxes"], gt[token]["boxes"])
+        assert_annotation_boxes_match(frame["anns"]["gt_boxes"], gt[token]["boxes"])
         assert list(frame["anns"]["gt_names"]) == gt[token]["names"]
         np.testing.assert_allclose(frame["lidar2ego"], np.eye(4), atol=1e-8)
         if token in deep:

@@ -46,3 +46,7 @@ bash scripts/data_generation/run_stage1_data_8gpu_dlc.sh
 ## 外部源码依赖
 
 `external_references/qwen_drive/` 和 `external_references/qwen_text_backend/` 保存了原生成脚本使用的外部源码副本，便于审核。原脚本中的 import/绝对路径未改成这些副本，以保持运行版本一致；在新环境落地时需显式配置。
+
+## 空 GT 校验修复
+
+已修复空标注 JSON 丢失二维形状导致的校验失败，保留已有文本缓存续跑的方法见 [修复说明](docs/stage1_empty_gt_fix.md)。

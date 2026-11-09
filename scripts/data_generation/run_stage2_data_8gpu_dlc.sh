@@ -55,6 +55,7 @@ for partition in "${partitions[@]}"; do
         printf '%q ' "${command[@]}"; printf '\n'
         printf '%q ' "${merge[@]}"; printf '\n'
     else
+        "$DRIVOR_ENV_ROOT/bin/python" -B scripts/data_audit/migrate_validation_shape_cache.py --output "$OUTPUT_DIR/$partition"
         "${command[@]}"
         "${merge[@]}"
     fi
