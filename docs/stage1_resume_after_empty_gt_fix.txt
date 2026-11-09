@@ -1,0 +1,16 @@
+第一阶段数据生成续跑：已修复空 GT JSON 形状校验。
+保留原 OUTPUT_DIR，不删除文本缓存、GT、图片或 mask。
+已通过规则的文本缓存会复用；未生成及规则不合格的样本按原逻辑继续处理。
+
+bash -lc '
+set -euo pipefail
+cd /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main
+NPROC_PER_NODE=8 \
+SCENES_PER_RANK=0 \
+DEEP_SCENES=80 \
+SPLIT=navtrain \
+SUBSET=train \
+DATA_ROOT=/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset \
+OUTPUT_DIR=/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full \
+bash scripts/data_generation/run_stage1_data_8gpu_dlc.sh
+'
