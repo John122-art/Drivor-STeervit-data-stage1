@@ -13,6 +13,7 @@ import json
 import os
 from pathlib import Path
 import re
+import uuid
 
 ROOT = Path(__file__).resolve().parents[2]
 OLD_VALIDATOR = 'ab28afd545f739ea4c3ed76c457c38ac86f819c16bae4d7f386cc3c3a8306c3c'
@@ -25,7 +26,8 @@ def fingerprint(value):
 
 
 def atomic_bytes(path, data):
-    temporary = path.with_name(path.name + f'.shape_fix.{os.getpid()}.tmp')
+    # Different containers can all report PID 2 while sharing this filesystem.
+    temporary = path.with_name(path.name + f'.shape_fix.{uuid.uuid4().hex}.tmp')
     try:
         temporary.write_bytes(data)
         os.replace(temporary, path)
@@ -97,9 +99,12 @@ def rewrite_cache(path, old_version, new_version):
     return path.name, 'updated', hashlib.sha256(original).hexdigest(), hashlib.sha256(updated).hexdigest()
 
 
-def migrate(output, workers):
+def migrate(output, workers, ranks=None):
     paths = sorted(set(output.glob('shards/rank_*/captions/metadata.json')) |
                    set(output.glob('*/shards/rank_*/captions/metadata.json')))
+    if ranks is not None:
+        allowed = {f'rank_{rank:04d}' for rank in ranks}
+        paths = [path for path in paths if path.parent.parent.name in allowed]
     plans = []
     for path in paths:
         old = json.loads(path.read_bytes())
@@ -149,7 +154,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--workers', type=int, default=8)
+    parser.add_argument('--ranks', type=int, nargs='+', help='Optionally migrate only these independent rank directories')
     args = parser.parse_args()
     if not 1 <= args.workers <= 32:
         parser.error('workers must be between 1 and 32')
-    migrate(args.output.resolve(), args.workers)
+    migrate(args.output.resolve(), args.workers, args.ranks)

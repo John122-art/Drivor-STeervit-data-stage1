@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -72,6 +73,15 @@ class EmptyGTTests(unittest.TestCase):
             self.assertEqual(after, before.replace(old.encode(), new.encode(), 1))
             self.assertEqual(cache_fix.rewrite_cache(path, old, new)[1], 'already_updated')
             self.assertEqual(path.read_bytes(), after)
+
+    def test_atomic_temp_names_do_not_collide_for_concurrent_writers(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'shared.json'
+            payload = b'{"payload":"' + b'x'*65536 + b'"}'
+            with ThreadPoolExecutor(max_workers=8) as pool:
+                list(pool.map(lambda _: cache_fix.atomic_bytes(path, payload), range(32)))
+            self.assertEqual(path.read_bytes(), payload)
+            self.assertEqual(list(Path(directory).glob('*.tmp')), [])
 
 
 if __name__ == '__main__':

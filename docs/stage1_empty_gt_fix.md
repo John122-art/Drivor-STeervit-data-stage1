@@ -11,7 +11,7 @@ cd /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main
 PYTHONDONTWRITEBYTECODE=1 /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B scripts/data_audit/test_empty_gt_validation.py
 ```
 
-已通过 5 项检查，覆盖空数组 JSON 往返、真实非空数值差异、错误形状、缓存版本兼容约束、文本载荷不变及迁移重复执行。另核对了 rank6 的 3 个真实空 GT 场景；这不等于全量验证已完成。
+已通过 6 项检查，覆盖空数组 JSON 往返、真实非空数值差异、错误形状、缓存版本兼容约束、文本载荷不变及迁移重复执行、并发临时文件不重名。另核对了 rank6 的 3 个真实空 GT 场景；这不等于全量验证已完成。
 
 ## 保留已有数据续跑
 
@@ -29,3 +29,5 @@ python3 -B scripts/data_audit/migrate_validation_shape_cache.py \
 保持原 `OUTPUT_DIR`，重新执行原 8 卡指令即可。已通过规则的文本缓存按原逻辑复用；尚未生成或需要复核的文本按原策略处理。已有匹配的 NPZ 可以恢复使用。不要把 `DEEP_SCENES` 或其他运行参数随意改变，否则原有 `run_config` 检查仍会拒绝。
 
 本地修复不代表 DLC 任务已经重新启动。全量 `validation.json` 和 `COMPLETE.json` 应由续跑任务成功完成后生成。
+
+迁移临时文件使用 UUID，而非进程号：不同容器可能都报告 PID 2。可以用 `--ranks 4` 只恢复指定分片；使用同一目录时应避免重复启动迁移进程。
