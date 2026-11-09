@@ -1,0 +1,126 @@
+[train rank 2] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtrain --subset train --seed 3407 --rank 2 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: f1a05680e8195ff2 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 2/20: 4e945a60a3b0515a (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 3/20: 9fb0394587585208 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 4/20: 601d9a4a97825446 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 5/20: 61e5821669225c2a (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 6/20: dfb49d6d36945d1a (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 7/20: 61ddea626d435d47 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 8/20: e273ef7c748b583c (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 9/20: dc45eeda1fdc5377 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 10/20: a9e2965df0225291 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 11/20: ae8e628823a7577e (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 12/20: 67220d8142e85f00 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 13/20: f7223c1bdd20517b (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 14/20: c4f8184421b85f52 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 15/20: 23532b0a386a5e2c (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 16/20: 52065a6586a258a8 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 17/20: 4e5f3ca7c85d5419 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 18/20: 4d6b4796e13d50a5 (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 19/20: 8c3110529121534a (2021.06.23.21.56.29_veh-35_00947_01581)
+Prepared 20/20: d753427f16c25e40 (2021.06.23.21.56.29_veh-35_00947_01581)
+[train rank 2] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/captions --scenes 0 --resume --device cuda:2 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt
+f1a05680e8195ff2 cam_f0: ok, 33 tokens; a green traffic light on the right, a white car in the center lane, a white car on the left, pedestrians standing on the sidewalk to the right
+f1a05680e8195ff2 cam_b0: ok, 36 tokens; a black SUV in the center lane, a white taxi in the right lane, a black sports car in the right lane, group of pedestrians on the sidewalk to the left
+f1a05680e8195ff2 cam_l0: ok, 30 tokens; a traffic light in the upper right, a white car on the right, a crosswalk in the lower center, pedestrians standing on the median
+f1a05680e8195ff2 cam_r0: ok, 21 tokens; a yellow fire hydrant on the right, group of pedestrians standing on the sidewalk to the right
+4e945a60a3b0515a cam_f0: ok, 33 tokens; a green traffic light on the right, a white car in the center lane, a white car on the left, pedestrians standing on the sidewalk to the right
+4e945a60a3b0515a cam_b0: ok, 39 tokens; a black SUV in the center lane, a red and white taxi in the right lane, a black sports car in the right lane, group of pedestrians standing on the sidewalk to the left
+4e945a60a3b0515a cam_l0: ok, 28 tokens; a traffic light on the pole, a crosswalk in the foreground, a white car on the right, pedestrians standing on the sidewalk
+4e945a60a3b0515a cam_r0: ok, 10 tokens; a group of pedestrians standing on the sidewalk
+9fb0394587585208 cam_f0: ok, 32 tokens; a green traffic light on the right, a white car in the center lane, a white car in the left lane, a pedestrian standing on the sidewalk
+9fb0394587585208 cam_b0: ok, 36 tokens; a black SUV in the center lane, a red and white taxi in the right lane, a black sports car in the right foreground, a double yellow line separating opposing traffic
+9fb0394587585208 cam_l0: ok, 29 tokens; a traffic light on the left, a crosswalk in the lower left, a white car on the right, pedestrians standing near the curb
+9fb0394587585208 cam_r0: ok, 38 tokens; a pedestrian pushing a stroller in the foreground, a traffic light showing a green signal, a pedestrian standing on the left side, a pedestrian sitting on a planter in the background
+601d9a4a97825446 cam_f0: ok, 11 tokens; a group of pedestrians standing on the right sidewalk
+601d9a4a97825446 cam_b0: ok, 27 tokens; a black SUV in the center lane, a red and white taxi in the right lane, a traffic light in the upper right
+601d9a4a97825446 cam_l0: ok, 9 tokens; a white car on the right edge
+601d9a4a97825446 cam_r0: ok, 30 tokens; a pedestrian in a black shirt in the foreground, a traffic light showing a green signal, group of pedestrians standing on the sidewalk to the right
+61e5821669225c2a cam_f0: ok, 33 tokens; a white sedan in the center lane, a white SUV in the left lane, a yellow taxi in the left lane, a white taxi in the left foreground
+61e5821669225c2a cam_b0: ok, 40 tokens; a black SUV in the left lane, a grey SUV in the right lane, a black SUV in the center lane, red traffic lights at the intersection, pedestrians on the sidewalk to the left
+61e5821669225c2a cam_l0: ok, 9 tokens; a black car in the middle ground
+61e5821669225c2a cam_r0: empty_scene, 2 tokens; 
+dfb49d6d36945d1a cam_f0: ok, 25 tokens; a white sedan in the center lane, a white taxi in the left lane, a black SUV in the center lane
+dfb49d6d36945d1a cam_b0: ok, 41 tokens; a black SUV in the left lane, a dark SUV in the right lane, a black SUV in the center lane, red traffic lights at the intersection, pedestrians standing on the sidewalk to the left
+dfb49d6d36945d1a cam_l0: ok, 12 tokens; a white vehicle on the right side of the road
+dfb49d6d36945d1a cam_r0: empty_scene, 2 tokens; 
+61ddea626d435d47 cam_f0: ok, 26 tokens; a white car in the center lane, a white car in the left lane, a group of pedestrians on the right sidewalk
+61ddea626d435d47 cam_b0: ok, 24 tokens; a black SUV in the left lane, a black SUV in the right lane, red traffic lights at the intersection
+61ddea626d435d47 cam_l0: ok, 9 tokens; a white car on the right side
+61ddea626d435d47 cam_r0: empty_scene, 2 tokens; 
+e273ef7c748b583c cam_f0: ok, 17 tokens; a white car in the center lane, a white car in the left lane
+e273ef7c748b583c cam_b0: ok, 24 tokens; a black SUV in the left lane, a black SUV in the right lane, red traffic lights at the intersection
+e273ef7c748b583c cam_l0: empty_scene, 2 tokens; 
+e273ef7c748b583c cam_r0: empty_scene, 2 tokens; 
+dc45eeda1fdc5377 cam_f0: ok, 36 tokens; a white sedan in the center lane, a white taxi in the left lane, a white SUV in the center lane, group of pedestrians standing on the sidewalk to the right
+dc45eeda1fdc5377 cam_b0: ok, 24 tokens; a black SUV in the left lane, a black SUV in the right lane, red traffic lights at the intersection
+dc45eeda1fdc5377 cam_l0: ok, 8 tokens; a grey SUV in the foreground
+dc45eeda1fdc5377 cam_r0: empty_scene, 2 tokens; 
+a9e2965df0225291 cam_f0: ok, 25 tokens; a white sedan in the center lane, a white taxi in the left lane, a black SUV in the left foreground
+a9e2965df0225291 cam_b0: ok, 24 tokens; a black SUV in the left lane, a black SUV in the right lane, red traffic lights at the intersection
+a9e2965df0225291 cam_l0: ok, 8 tokens; a dark SUV in the foreground
+a9e2965df0225291 cam_r0: empty_scene, 2 tokens; 
+ae8e628823a7577e cam_f0: ok, 31 tokens; a silver SUV in the left lane, a white sedan in the center lane, a green traffic light, pedestrians standing on the sidewalk to the right
+ae8e628823a7577e cam_b0: ok, 17 tokens; a black SUV in the center foreground, a dark SUV in the right lane
+ae8e628823a7577e cam_l0: ok, 44 tokens; a group of pedestrians standing near the center, a traffic light on the left side, a silver sedan in the background on the right, a white SUV on the far right, a crosswalk marked with white lines
+ae8e628823a7577e cam_r0: filtered_empty, 2 tokens; 
+67220d8142e85f00 cam_f0: ok, 34 tokens; a silver SUV in the left lane, a white sedan in the center lane, a green traffic light on the right, a crowd of pedestrians on the right sidewalk
+67220d8142e85f00 cam_b0: ok, 27 tokens; a black SUV in the center foreground, a black SUV in the right lane, group of pedestrians on the sidewalk to the left
+67220d8142e85f00 cam_l0: ok, 36 tokens; a group of pedestrians standing near the center, a silver sedan on the right side, a traffic light on the left, black and white striped bollards lining the road
+67220d8142e85f00 cam_r0: filtered_empty, 2 tokens; 
+f7223c1bdd20517b cam_f0: ok, 35 tokens; a green traffic light in the upper right, a silver SUV in the left lane, a white sedan in the center lane, a group of pedestrians on the right sidewalk
+f7223c1bdd20517b cam_b0: ok, 17 tokens; a black SUV in the adjacent right lane, a black SUV in the foreground
+f7223c1bdd20517b cam_l0: ok, 41 tokens; a group of pedestrians standing near the center, a traffic light on the left side, a black car on the left side, a white SUV on the right side, a crosswalk in the foreground
+f7223c1bdd20517b cam_r0: ok, 10 tokens; a group of pedestrians standing on the sidewalk
+c4f8184421b85f52 cam_f0: ok, 35 tokens; a green traffic light in the upper right, a silver SUV in the center lane, a white sedan in the center lane, a group of pedestrians on the right sidewalk
+c4f8184421b85f52 cam_b0: ok, 30 tokens; a black SUV in the center of the image, a black SUV in the right foreground, a row of black bollards on the left
+c4f8184421b85f52 cam_l0: ok, 34 tokens; a group of pedestrians standing near the crosswalk, a traffic light on the left side, a white car on the right side, a crosswalk in the foreground
+c4f8184421b85f52 cam_r0: ok, 10 tokens; a group of pedestrians standing on the sidewalk
+23532b0a386a5e2c cam_f0: ok, 35 tokens; a green traffic light in the upper right, a silver SUV in the center lane, a white sedan in the center lane, pedestrians standing on the sidewalk to the right
+23532b0a386a5e2c cam_b0: ok, 22 tokens; a black SUV in the center of the image, a black SUV on the right side of the image
+23532b0a386a5e2c cam_l0: ok, 39 tokens; a group of pedestrians standing near the center, a white SUV on the left side, a traffic light on the left, a white sedan on the right, a crosswalk in the foreground
+23532b0a386a5e2c cam_r0: ok, 10 tokens; a group of pedestrians standing on the sidewalk
+52065a6586a258a8 cam_f0: ok, 25 tokens; a white minivan in the left lane, a white sedan in the center lane, a black SUV in the background
+52065a6586a258a8 cam_b0: ok, 33 tokens; a silver sedan in the right lane, a dark SUV in the center lane, a concrete barrier on the left, pedestrians standing behind the fence on the left
+52065a6586a258a8 cam_l0: ok, 17 tokens; a yellow taxi in the middle ground, a white pickup truck on the right
+52065a6586a258a8 cam_r0: filtered_empty, 2 tokens; 
+4e5f3ca7c85d5419 cam_f0: ok, 17 tokens; a white car in the center lane, a white car in the left lane
+4e5f3ca7c85d5419 cam_b0: ok, 24 tokens; a silver sedan in the right lane, a white SUV in the center lane, a concrete barrier on the left
+4e5f3ca7c85d5419 cam_l0: ok, 24 tokens; a silver pickup truck in the center, a yellow taxi on the left, a yellow sports car on the right
+4e5f3ca7c85d5419 cam_r0: filtered_empty, 2 tokens; 
+4d6b4796e13d50a5 cam_f0: ok, 24 tokens; a white sedan in the center lane, a white SUV in the left lane, a concrete barrier on the right
+4d6b4796e13d50a5 cam_b0: ok, 28 tokens; a silver sedan in the right lane, a white SUV in the center lane, group of pedestrians standing on the sidewalk to the left
+4d6b4796e13d50a5 cam_l0: ok, 24 tokens; a yellow sports car on the road, a silver pickup truck on the road, a black SUV on the road
+4d6b4796e13d50a5 cam_r0: filtered_empty, 2 tokens; 
+8c3110529121534a cam_f0: ok, 31 tokens; a white car in the center lane, a white van in the left lane, a concrete barrier on the right, pedestrians standing on the right sidewalk
+8c3110529121534a cam_b0: ok, 17 tokens; a white SUV in the center lane, a silver sedan in the right lane
+8c3110529121534a cam_l0: ok, 27 tokens; a yellow sports car in the middle lane, a black SUV in the right lane, a white SUV further back on the right
+8c3110529121534a cam_r0: filtered_empty, 2 tokens; 
+d753427f16c25e40 cam_f0: ok, 34 tokens; a white sedan in the center lane, a silver minivan in the left lane, a concrete barrier on the right, pedestrians standing on the sidewalk to the right
+d753427f16c25e40 cam_b0: ok, 11 tokens; a white SUV in the center of the image
+d753427f16c25e40 cam_l0: ok, 25 tokens; a yellow convertible car on the left, a black SUV on the right, a white SUV further back on the right
+d753427f16c25e40 cam_r0: ok, 12 tokens; group of pedestrians standing on the sidewalk behind the fence
+[train rank 2] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/grounding --resume
+Labelled f1a05680e8195ff2: valid=[True, True, True, True]
+Labelled 4e945a60a3b0515a: valid=[True, True, True, True]
+Labelled 9fb0394587585208: valid=[True, True, True, True]
+Labelled 601d9a4a97825446: valid=[True, True, False, True]
+Labelled 61e5821669225c2a: valid=[True, True, True, False]
+Labelled dfb49d6d36945d1a: valid=[True, True, True, False]
+Labelled 61ddea626d435d47: valid=[True, True, True, False]
+Labelled e273ef7c748b583c: valid=[True, True, False, False]
+Labelled dc45eeda1fdc5377: valid=[True, True, False, False]
+Labelled a9e2965df0225291: valid=[True, True, False, False]
+Labelled ae8e628823a7577e: valid=[True, True, True, False]
+Labelled 67220d8142e85f00: valid=[True, True, True, False]
+Labelled f7223c1bdd20517b: valid=[True, True, True, True]
+Labelled c4f8184421b85f52: valid=[True, True, True, True]
+Labelled 23532b0a386a5e2c: valid=[True, True, True, True]
+Labelled 52065a6586a258a8: valid=[True, True, True, False]
+Labelled 4e5f3ca7c85d5419: valid=[True, True, True, False]
+Labelled 4d6b4796e13d50a5: valid=[True, True, True, False]
+Labelled 8c3110529121534a: valid=[True, True, True, False]
+Labelled d753427f16c25e40: valid=[True, True, True, True]
+[train rank 2] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002/validation.json
+PASS: 20 scenes, 80 captions, 64 valid targets, 20 deep checks
+[train rank 2] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0002

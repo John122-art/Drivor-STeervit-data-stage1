@@ -1,0 +1,126 @@
+[train rank 1] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtrain --subset train --seed 3407 --rank 1 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: 076aafe7a1b65ccd (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 2/20: eb75349955a75637 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 3/20: a15cec04b29d5de1 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 4/20: cdcd457de2ae5e04 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 5/20: 2464a3fc61c253e5 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 6/20: 6116fe808b545bcf (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 7/20: d54c3a76931957a1 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 8/20: eab598e8f7b5574c (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 9/20: acec25e0540950ca (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 10/20: 4d9aacd8a2c650e6 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 11/20: 74786430598453e1 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 12/20: c6dff5e0f9515cd1 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 13/20: 5e4a3f60623b5619 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 14/20: 3c90e205bf465454 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 15/20: c0f16ab99d3658f9 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 16/20: 6af800d006005ad2 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 17/20: c7f3cb862a8557a4 (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 18/20: 978e272cef97586f (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 19/20: e1b0d47dd4c65bbd (2021.07.16.18.49.56_veh-26_00015_00235)
+Prepared 20/20: 7a71fa1b4b3357db (2021.07.16.18.49.56_veh-26_00015_00235)
+[train rank 1] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/captions --scenes 0 --resume --device cuda:1 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt
+076aafe7a1b65ccd cam_f0: ok, 10 tokens; pedestrians standing near the yellow railing
+076aafe7a1b65ccd cam_b0: ok, 28 tokens; a pedestrian wearing a white shirt and shorts on the right side of the road, a yellow diamond-shaped warning sign near the junction
+076aafe7a1b65ccd cam_l0: ok, 11 tokens; a white bus on the road in the background
+076aafe7a1b65ccd cam_r0: ok, 16 tokens; a stop sign on the right side, the junction on the right side
+eb75349955a75637 cam_f0: ok, 9 tokens; pedestrians sitting on the curb
+eb75349955a75637 cam_b0: ok, 11 tokens; a pedestrian wearing a white shirt and dark pants
+eb75349955a75637 cam_l0: ok, 19 tokens; a white bus on the left side of the road, a white car near the bus
+eb75349955a75637 cam_r0: empty_scene, 2 tokens; 
+a15cec04b29d5de1 cam_f0: ok, 9 tokens; pedestrians sitting on the curb
+a15cec04b29d5de1 cam_b0: ok, 11 tokens; a pedestrian wearing a white shirt and dark pants
+a15cec04b29d5de1 cam_l0: ok, 26 tokens; a white bus in the left lane, a white car in the left lane, a blue pickup truck on the far left
+a15cec04b29d5de1 cam_r0: empty_scene, 2 tokens; 
+cdcd457de2ae5e04 cam_f0: ok, 12 tokens; pedestrians standing on the sidewalk near the curb
+cdcd457de2ae5e04 cam_b0: ok, 12 tokens; the road junction on the right side of the image
+cdcd457de2ae5e04 cam_l0: ok, 33 tokens; a white bus in the center of the image, a white car near the center of the image, a blue pickup truck on the left side of the image
+cdcd457de2ae5e04 cam_r0: empty_scene, 2 tokens; 
+2464a3fc61c253e5 cam_f0: ok, 12 tokens; pedestrians standing on the sidewalk to the right
+2464a3fc61c253e5 cam_b0: filtered_empty, 2 tokens; 
+2464a3fc61c253e5 cam_l0: ok, 33 tokens; a white box truck in the center lane, a white SUV in the right lane, a blue pickup truck on the left, distant traffic lights at the intersection
+2464a3fc61c253e5 cam_r0: ok, 11 tokens; a pedestrian standing near the curb on the left
+6116fe808b545bcf cam_f0: ok, 8 tokens; a pedestrian sitting on the curb
+6116fe808b545bcf cam_b0: ok, 28 tokens; a yellow diamond traffic sign on the left, the junction and road branch on the left, vehicles in the parking lot on the left
+6116fe808b545bcf cam_l0: ok, 24 tokens; a white bus in the right lane, a white SUV on the right, a blue pickup truck on the left
+6116fe808b545bcf cam_r0: ok, 10 tokens; pedestrians standing near the building entrance
+d54c3a76931957a1 cam_f0: empty_scene, 2 tokens; 
+d54c3a76931957a1 cam_b0: ok, 17 tokens; a yellow diamond traffic sign on the left, the road junction on the left
+d54c3a76931957a1 cam_l0: ok, 18 tokens; a white van in the right lane, a blue pickup truck in the left lane
+d54c3a76931957a1 cam_r0: ok, 9 tokens; pedestrians standing near the curb
+eab598e8f7b5574c cam_f0: ok, 11 tokens; a white car in the background on the left
+eab598e8f7b5574c cam_b0: ok, 26 tokens; a yellow diamond traffic sign on the left, a white car in the distance on the left, the junction on the left
+eab598e8f7b5574c cam_l0: ok, 9 tokens; a white van in the right lane
+eab598e8f7b5574c cam_r0: ok, 11 tokens; a pedestrian standing on the sidewalk to the right
+acec25e0540950ca cam_f0: ok, 9 tokens; a white car in the left lane
+acec25e0540950ca cam_b0: ok, 10 tokens; a yellow diamond traffic sign on the right
+acec25e0540950ca cam_l0: ok, 10 tokens; white bus in the background on the right
+acec25e0540950ca cam_r0: empty_scene, 2 tokens; 
+4d9aacd8a2c650e6 cam_f0: ok, 17 tokens; a white car in the left lane, a white truck in the left lane
+4d9aacd8a2c650e6 cam_b0: ok, 24 tokens; a yellow diamond sign on the right corner, a junction on the right side, a white car in the distance
+4d9aacd8a2c650e6 cam_l0: filtered_empty, 2 tokens; 
+4d9aacd8a2c650e6 cam_r0: empty_scene, 2 tokens; 
+74786430598453e1 cam_f0: ok, 27 tokens; a white SUV in the center of the image, a white van in the left background, a yellow diamond sign on the right
+74786430598453e1 cam_b0: ok, 13 tokens; a yellow diamond sign on the right side of the road
+74786430598453e1 cam_l0: filtered_empty, 2 tokens; 
+74786430598453e1 cam_r0: empty_scene, 2 tokens; 
+c6dff5e0f9515cd1 cam_f0: ok, 25 tokens; a white car in the center lane, a white van in the left lane, a yellow diamond sign on the right
+c6dff5e0f9515cd1 cam_b0: ok, 17 tokens; a yellow diamond traffic sign on the right, a white car in the distance
+c6dff5e0f9515cd1 cam_l0: ok, 30 tokens; a blue pickup truck in the background, a black sedan in the foreground on the left, a yellow line marking the right edge of the lane
+c6dff5e0f9515cd1 cam_r0: empty_scene, 2 tokens; 
+5e4a3f60623b5619 cam_f0: ok, 29 tokens; a white SUV in the center lane, a yellow diamond sign on the right, a white bus on the left, yellow dashed lane markings
+5e4a3f60623b5619 cam_b0: ok, 17 tokens; a yellow diamond traffic sign on the right, a white car in the distance
+5e4a3f60623b5619 cam_l0: ok, 9 tokens; a blue pickup truck in the background
+5e4a3f60623b5619 cam_r0: empty_scene, 2 tokens; 
+3c90e205bf465454 cam_f0: ok, 34 tokens; a yellow bump warning sign on the right, a white bus in the left lane, a white van in the center lane, yellow dashed lane markings on the road
+3c90e205bf465454 cam_b0: ok, 8 tokens; a white car in the distance
+3c90e205bf465454 cam_l0: ok, 9 tokens; a blue pickup truck in the background
+3c90e205bf465454 cam_r0: empty_scene, 2 tokens; 
+c0f16ab99d3658f9 cam_f0: ok, 38 tokens; a white SUV in the center lane, a yellow bump sign on the right, a white bus on the left, a white truck in the distance, yellow lane markings on the road
+c0f16ab99d3658f9 cam_b0: filtered_empty, 2 tokens; 
+c0f16ab99d3658f9 cam_l0: ok, 28 tokens; a blue pickup truck in the background, a yellow painted road marking in the foreground, a white SUV in the background on the left
+c0f16ab99d3658f9 cam_r0: empty_scene, 2 tokens; 
+6af800d006005ad2 cam_f0: ok, 38 tokens; a yellow bump sign on the right, a white SUV in the center lane, a white bus on the left, a white truck in the distance, a pedestrian on the right sidewalk
+6af800d006005ad2 cam_b0: ok, 9 tokens; a pedestrian standing near the yellow railing
+6af800d006005ad2 cam_l0: filtered_empty, 2 tokens; 
+6af800d006005ad2 cam_r0: empty_scene, 2 tokens; 
+c7f3cb862a8557a4 cam_f0: ok, 32 tokens; a pedestrian crossing sign on a traffic island, a white bus on the left side of the road, a crosswalk marked with white stripes on the road
+c7f3cb862a8557a4 cam_b0: filtered_empty, 2 tokens; 
+c7f3cb862a8557a4 cam_l0: ok, 11 tokens; a bus on the right side of the road
+c7f3cb862a8557a4 cam_r0: filtered_empty, 2 tokens; 
+978e272cef97586f cam_f0: ok, 23 tokens; a pedestrian crossing sign on the left, a white bus on the left, a crosswalk in the foreground
+978e272cef97586f cam_b0: filtered_empty, 2 tokens; 
+978e272cef97586f cam_l0: ok, 13 tokens; a beige bus on the right side of the road
+978e272cef97586f cam_r0: ok, 13 tokens; a pedestrian wearing dark clothing in the background on the left
+e1b0d47dd4c65bbd cam_f0: ok, 28 tokens; a pedestrian crossing sign on a traffic island, a white bus on the left side of the road, a white van in the background
+e1b0d47dd4c65bbd cam_b0: filtered_empty, 2 tokens; 
+e1b0d47dd4c65bbd cam_l0: ok, 13 tokens; a beige bus on the right side of the road
+e1b0d47dd4c65bbd cam_r0: ok, 7 tokens; a pedestrian wearing dark clothing
+7a71fa1b4b3357db cam_f0: ok, 32 tokens; a yellow pedestrian crossing sign on the left, a crosswalk in the foreground, a white van in the background, a grey sedan in the left lane
+7a71fa1b4b3357db cam_b0: filtered_empty, 2 tokens; 
+7a71fa1b4b3357db cam_l0: ok, 12 tokens; a tan bus on the right side of the road
+7a71fa1b4b3357db cam_r0: ok, 12 tokens; a pedestrian standing on the left side of the road
+[train rank 1] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/grounding --resume
+Labelled 076aafe7a1b65ccd: valid=[True, True, True, False]
+Labelled eb75349955a75637: valid=[False, False, False, False]
+Labelled a15cec04b29d5de1: valid=[False, False, False, False]
+Labelled cdcd457de2ae5e04: valid=[False, False, True, False]
+Labelled 2464a3fc61c253e5: valid=[False, False, True, False]
+Labelled 6116fe808b545bcf: valid=[False, False, True, False]
+Labelled d54c3a76931957a1: valid=[False, False, True, False]
+Labelled eab598e8f7b5574c: valid=[False, False, True, True]
+Labelled acec25e0540950ca: valid=[True, False, True, False]
+Labelled 4d9aacd8a2c650e6: valid=[True, False, False, False]
+Labelled 74786430598453e1: valid=[True, False, False, False]
+Labelled c6dff5e0f9515cd1: valid=[True, False, True, False]
+Labelled 5e4a3f60623b5619: valid=[True, False, True, False]
+Labelled 3c90e205bf465454: valid=[True, False, True, False]
+Labelled c0f16ab99d3658f9: valid=[True, False, True, False]
+Labelled 6af800d006005ad2: valid=[True, True, False, False]
+Labelled c7f3cb862a8557a4: valid=[True, False, True, False]
+Labelled 978e272cef97586f: valid=[True, False, True, True]
+Labelled e1b0d47dd4c65bbd: valid=[True, False, True, True]
+Labelled 7a71fa1b4b3357db: valid=[True, False, True, True]
+[train rank 1] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001/validation.json
+PASS: 20 scenes, 80 captions, 34 valid targets, 20 deep checks
+[train rank 1] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/train/shards/rank_0001

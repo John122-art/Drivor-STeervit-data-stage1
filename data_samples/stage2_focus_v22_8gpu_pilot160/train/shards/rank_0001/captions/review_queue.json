@@ -1,0 +1,444 @@
+{
+  "tokens": [
+    "076aafe7a1b65ccd",
+    "2464a3fc61c253e5",
+    "3c90e205bf465454",
+    "4d9aacd8a2c650e6",
+    "5e4a3f60623b5619",
+    "6af800d006005ad2",
+    "74786430598453e1",
+    "7a71fa1b4b3357db",
+    "978e272cef97586f",
+    "acec25e0540950ca",
+    "c0f16ab99d3658f9",
+    "c7f3cb862a8557a4",
+    "cdcd457de2ae5e04",
+    "d54c3a76931957a1",
+    "e1b0d47dd4c65bbd",
+    "eab598e8f7b5574c"
+  ],
+  "views": [
+    {
+      "token": "076aafe7a1b65ccd",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a junction with a road branch curving to the left",
+          "category": null,
+          "raw_category": "road_boundary",
+          "reason": "unknown_category"
+        },
+        {
+          "context": "a paved road approaching a junction",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "076aafe7a1b65ccd",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a silver sedan driving on the road",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "cdcd457de2ae5e04",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a pedestrian walking on the right side of the road",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "2464a3fc61c253e5",
+      "camera": "cam_b0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a pedestrian walking on the right side of the road",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "d54c3a76931957a1",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "parked vehicles in the lot on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "eab598e8f7b5574c",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a white SUV driving in the right lane",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "acec25e0540950ca",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "the junction and road branch on the left",
+          "category": null,
+          "raw_category": "UNKNOWN",
+          "reason": "unknown_category"
+        },
+        {
+          "index": 2,
+          "phrase": "a white car driving in the distance on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "acec25e0540950ca",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "the junction on the left side of the road",
+          "category": null,
+          "raw_category": "TURN LEFT / TURN RIGHT",
+          "reason": "unknown_category"
+        }
+      ]
+    },
+    {
+      "token": "4d9aacd8a2c650e6",
+      "camera": "cam_l0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "the junction on the left side of the road",
+          "category": null,
+          "raw_category": "TURN LEFT / TURN RIGHT",
+          "reason": "unknown_category"
+        },
+        {
+          "index": 1,
+          "phrase": "the vehicles parked along the left curb",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "74786430598453e1",
+      "camera": "cam_l0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "the visible junction or road branch toward the left",
+          "category": null,
+          "raw_category": "TURN LEFT / TURN RIGHT",
+          "reason": "unknown_category"
+        }
+      ]
+    },
+    {
+      "token": "5e4a3f60623b5619",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a black sedan parked on the left",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a yellow painted area on the road surface",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "3c90e205bf465454",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a white SUV driving in the center lane",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "3c90e205bf465454",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a yellow painted area on the road surface",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "c0f16ab99d3658f9",
+      "camera": "cam_b0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a pedestrian walking on the sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "c0f16ab99d3658f9",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "a black sedan parked near the center",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 4,
+          "phrase": "a dark pickup truck parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "6af800d006005ad2",
+      "camera": "cam_l0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "yellow painted markings on the road surface",
+          "category": "crosswalk",
+          "raw_category": "crosswalk",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "c7f3cb862a8557a4",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "a white SUV parked on the right side",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 3,
+          "phrase": "a pedestrian walking on the sidewalk to the right",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "c7f3cb862a8557a4",
+      "camera": "cam_b0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a white car driving in the center lane",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "c7f3cb862a8557a4",
+      "camera": "cam_r0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a pedestrian walking on the road",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "978e272cef97586f",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a pedestrian walking on the right sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "978e272cef97586f",
+      "camera": "cam_b0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a silver car driving in the lane",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "e1b0d47dd4c65bbd",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "a white SUV parked on the right side",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 4,
+          "phrase": "a pedestrian walking on the sidewalk to the right",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "e1b0d47dd4c65bbd",
+      "camera": "cam_b0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a silver car driving in the lane",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "7a71fa1b4b3357db",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a white SUV parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "7a71fa1b4b3357db",
+      "camera": "cam_b0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a silver SUV driving in the lane",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

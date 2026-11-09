@@ -1,0 +1,25 @@
+{
+  "rank": 7,
+  "world_size": 8,
+  "partition": "train",
+  "split": "navtrain",
+  "subset": "train",
+  "scenes": 20,
+  "seed": 3407,
+  "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+  "prompt": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt",
+  "prompt_sha256": "643ae5c50546550d39120670b7bd62dbb8a7c3fc2b2cdf6c78796df441d1442d",
+  "deep_scenes": 20,
+  "stage1": false,
+  "navigation_conditioned": true,
+  "text_policy": "stage2_focus_v1",
+  "orchestration_hashes": {
+    "build_focus_grounding.py": "363606235b3d5df6fbeeb95fe2df14dc753f43951847762482f456e9641ef330",
+    "focus_policy.py": "095cba31b75f70c7ca4d43954ebe20d2546377b4605bdd9d8d135da5c515abc5",
+    "generate.py": "4fee5565d3b7b6806ebb447f2cd0d95c588d9333c970cb00d65073b8c70d0fe6",
+    "merge.py": "65baa721751e2c12f285dbab5997718eaef36c9d246737ab1958a2ce7c65ec75",
+    "test_focus_policy.py": "5825a697dbc8e05c7000c34d361f3dab2a9c81f7ffd67d10463c9daae60e5a4e",
+    "validate.py": "8713ac1a2203d9b8a20c4b1ba58c5907bf7f79202773fc0ba1e77dac2f23b423",
+    "worker.py": "a597be662a636aa095d6ce442df69c09c0e2c349e4a365e97ecd758f3d39282a"
+  }
+}

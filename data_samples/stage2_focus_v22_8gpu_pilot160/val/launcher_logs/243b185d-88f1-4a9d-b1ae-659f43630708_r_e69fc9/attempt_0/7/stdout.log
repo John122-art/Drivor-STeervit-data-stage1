@@ -1,0 +1,126 @@
+[val rank 7] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtrain --subset val --seed 3407 --rank 7 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: 82abb0794a955aff (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 2/20: db48530a58bd5c55 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 3/20: 5f1a538454d25cb3 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 4/20: 3ff2f36527135e31 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 5/20: 5854afa53417513b (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 6/20: acf2c8f5d4c356b2 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 7/20: dd7086f9f2b3558e (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 8/20: dc76a771066b5553 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 9/20: 8596a0410ea753cd (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 10/20: 80267fddbb745962 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 11/20: 029e703eb0375697 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 12/20: 2c30fd3639a654fa (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 13/20: 5be8699bce195c42 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 14/20: fdfa3214412e5639 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 15/20: 4c98b2a043075bf0 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 16/20: 4a0141799e0a5f8f (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 17/20: 6ac45911cac95644 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 18/20: 0c7f0549f66e58e7 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 19/20: 294af4ff67d75a22 (2021.10.05.08.11.15_veh-50_00163_00321)
+Prepared 20/20: 8981b08ec2cc59da (2021.10.05.08.11.15_veh-50_00163_00321)
+[val rank 7] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/captions --scenes 0 --resume --device cuda:7 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt
+82abb0794a955aff cam_f0: ok, 24 tokens; a speed limit sign on the right, a blue directional sign at the junction, the lane boundary separating the lanes
+82abb0794a955aff cam_b0: ok, 12 tokens; a traffic sign on the left side of the road
+82abb0794a955aff cam_l0: empty_scene, 2 tokens; 
+82abb0794a955aff cam_r0: ok, 9 tokens; a speed limit sign on the left
+db48530a58bd5c55 cam_f0: ok, 33 tokens; a speed limit sign on the right, a blue directional sign at the junction, a junction with a left turn lane, a lane boundary line on the road
+db48530a58bd5c55 cam_b0: ok, 27 tokens; a black vehicle in the distance, a speed limit and warning sign on the left, a solid white line marking the lane boundary
+db48530a58bd5c55 cam_l0: empty_scene, 2 tokens; 
+db48530a58bd5c55 cam_r0: ok, 9 tokens; a speed limit sign on the left
+5f1a538454d25cb3 cam_f0: ok, 28 tokens; a blue traffic sign on the median, a white lane boundary line on the right, a junction with a roundabout on the left
+5f1a538454d25cb3 cam_b0: ok, 25 tokens; a dark vehicle in the center lane, a speed limit sign on the left, a solid white line dividing the lanes
+5f1a538454d25cb3 cam_l0: ok, 9 tokens; a crosswalk in the middle ground
+5f1a538454d25cb3 cam_r0: ok, 8 tokens; a traffic sign on a pole
+3ff2f36527135e31 cam_f0: ok, 35 tokens; a blue circular traffic sign on the median, the road junction curving to the right, a white directional arrow painted on the road, orange construction barriers near the median
+3ff2f36527135e31 cam_b0: ok, 8 tokens; a black vehicle in the distance
+3ff2f36527135e31 cam_l0: ok, 9 tokens; the curved road section on the right
+3ff2f36527135e31 cam_r0: ok, 8 tokens; a traffic sign on a pole
+5854afa53417513b cam_f0: ok, 37 tokens; a blue circular traffic sign on the median, a white directional arrow painted on the road, a solid white line marking the right lane edge, orange construction barriers on the left side
+5854afa53417513b cam_b0: ok, 23 tokens; a dark vehicle in the distance, a traffic sign on the left, a dashed white line dividing the lanes
+5854afa53417513b cam_l0: ok, 9 tokens; a white car on the distant road
+5854afa53417513b cam_r0: empty_scene, 2 tokens; 
+acf2c8f5d4c356b2 cam_f0: ok, 36 tokens; a blue sign with a double arrow in the lower left, a solid white line marking the right edge of the lane, orange barriers and a blue tarp in the background
+acf2c8f5d4c356b2 cam_b0: ok, 23 tokens; a dark vehicle in the distance, a traffic sign on the left, a solid white line dividing the lanes
+acf2c8f5d4c356b2 cam_l0: ok, 55 tokens; a blue traffic sign with two arrows in the lower right, a white car on the road in the upper left, a white bus on the road in the upper left, a white crosswalk in the lower center, double yellow lines on the left side of the road
+acf2c8f5d4c356b2 cam_r0: empty_scene, 2 tokens; 
+dd7086f9f2b3558e cam_f0: ok, 33 tokens; a solid white line marking the right edge of the lane, a red and white traffic sign on the left, orange barriers on the left side of the road
+dd7086f9f2b3558e cam_b0: ok, 23 tokens; a black vehicle in the distance, a traffic sign on the left, a solid white line dividing the lanes
+dd7086f9f2b3558e cam_l0: ok, 12 tokens; a street sign on the right side of the road
+dd7086f9f2b3558e cam_r0: empty_scene, 2 tokens; 
+dc76a771066b5553 cam_f0: ok, 25 tokens; a no entry sign on the left, a lane boundary line on the right, a directional arrow painted on the road
+dc76a771066b5553 cam_b0: ok, 16 tokens; a dark vehicle in the background, a white lane marking dividing the road
+dc76a771066b5553 cam_l0: ok, 9 tokens; a no entry sign on the right
+dc76a771066b5553 cam_r0: empty_scene, 2 tokens; 
+8596a0410ea753cd cam_f0: ok, 12 tokens; a traffic sign on the left side of the road
+8596a0410ea753cd cam_b0: ok, 17 tokens; a black vehicle in the background, a white lane boundary line on the road
+8596a0410ea753cd cam_l0: ok, 9 tokens; a no entry sign on a pole
+8596a0410ea753cd cam_r0: empty_scene, 2 tokens; 
+80267fddbb745962 cam_f0: ok, 12 tokens; a traffic sign on the left side of the road
+80267fddbb745962 cam_b0: ok, 19 tokens; a black vehicle in the left lane, a solid white line marking the left lane boundary
+80267fddbb745962 cam_l0: ok, 11 tokens; orange barriers along the right side of the road
+80267fddbb745962 cam_r0: empty_scene, 2 tokens; 
+029e703eb0375697 cam_f0: ok, 34 tokens; a yellow box junction in the center of the road, a white directional arrow indicating straight or left turn, a solid white line on the right side of the lane
+029e703eb0375697 cam_b0: ok, 10 tokens; the junction and road branch to the right
+029e703eb0375697 cam_l0: ok, 9 tokens; an orange traffic cone on the pavement
+029e703eb0375697 cam_r0: empty_scene, 2 tokens; 
+2c30fd3639a654fa cam_f0: ok, 36 tokens; yellow crisscross road markings in the center, white directional arrow painted on the road, solid white line marking the right lane edge, dashed white line separating the left lane
+2c30fd3639a654fa cam_b0: ok, 11 tokens; a black car in the center of the image
+2c30fd3639a654fa cam_l0: ok, 17 tokens; an orange traffic cone on the left, a green trash bin on the right
+2c30fd3639a654fa cam_r0: empty_scene, 2 tokens; 
+5be8699bce195c42 cam_f0: ok, 23 tokens; dashed white lane boundary line, solid white line marking the right edge, red traffic lights in the distance
+5be8699bce195c42 cam_b0: ok, 11 tokens; a black SUV in the center of the road
+5be8699bce195c42 cam_l0: empty_scene, 2 tokens; 
+5be8699bce195c42 cam_r0: empty_scene, 2 tokens; 
+fdfa3214412e5639 cam_f0: ok, 28 tokens; yellow chevron markings in the center of the road, dashed white lines marking the lane boundaries, traffic lights visible in the distance
+fdfa3214412e5639 cam_b0: ok, 17 tokens; a green directional sign on the left, a solid white line marking the lane
+fdfa3214412e5639 cam_l0: ok, 12 tokens; yellow and black striped bollards along the curb
+fdfa3214412e5639 cam_r0: empty_scene, 2 tokens; 
+4c98b2a043075bf0 cam_f0: ok, 23 tokens; yellow chevron markings in the center of the road, red traffic lights at the intersection in the background
+4c98b2a043075bf0 cam_b0: ok, 28 tokens; a green directional sign on the left, a white directional arrow painted on the road, a solid white line marking the left lane edge
+4c98b2a043075bf0 cam_l0: ok, 10 tokens; a yellow and black striped bollard
+4c98b2a043075bf0 cam_r0: ok, 9 tokens; a white traffic sign on the left
+4a0141799e0a5f8f cam_f0: ok, 8 tokens; red traffic lights at the intersection
+4a0141799e0a5f8f cam_b0: ok, 10 tokens; a blue rectangular sign on the left side
+4a0141799e0a5f8f cam_l0: ok, 18 tokens; a pedestrian crossing sign on the right, a pedestrian on the sidewalk to the right
+4a0141799e0a5f8f cam_r0: ok, 9 tokens; a traffic light on the left side
+6ac45911cac95644 cam_f0: ok, 25 tokens; red traffic lights at the intersection, white directional arrows painted on the road, white lane boundary lines defining the driving path
+6ac45911cac95644 cam_b0: ok, 28 tokens; a blue directional sign on the left side, a no entry sign on the right side, solid white line marking the left lane boundary
+6ac45911cac95644 cam_l0: ok, 9 tokens; a pedestrian crossing sign on the left
+6ac45911cac95644 cam_r0: ok, 9 tokens; a traffic light on the left side
+0c7f0549f66e58e7 cam_f0: ok, 28 tokens; a red traffic light at the intersection, a blue sign with white arrows on the left, the junction and road branch to the right
+0c7f0549f66e58e7 cam_b0: ok, 27 tokens; a black SUV in the center lane, a street sign on the right side of the road, a junction visible in the background
+0c7f0549f66e58e7 cam_l0: ok, 33 tokens; a blue sign with a right arrow, a blue sign with a left arrow, a white crosswalk in the foreground, a curved road branching to the right
+0c7f0549f66e58e7 cam_r0: ok, 16 tokens; traffic lights at the intersection, the junction curving to the right
+294af4ff67d75a22 cam_f0: ok, 30 tokens; a red traffic light on the left, a red traffic light on the right, a dashed white lane boundary line, a blue directional traffic sign
+294af4ff67d75a22 cam_b0: ok, 34 tokens; a black SUV in the center lane, a green street sign on the right side, a white directional arrow painted on the road, a junction visible in the background
+294af4ff67d75a22 cam_l0: ok, 31 tokens; a blue traffic sign on the left, a blue traffic sign on the right, a crosswalk in the foreground, a curved road in the center
+294af4ff67d75a22 cam_r0: ok, 26 tokens; a traffic light showing red at the intersection, the junction and road branch to the right, a crosswalk at the intersection
+8981b08ec2cc59da cam_f0: ok, 26 tokens; a traffic light showing red in the foreground, a traffic light showing red on the right, a junction with dashed lane markings
+8981b08ec2cc59da cam_b0: ok, 33 tokens; a black SUV in the center of the road, a street sign on a pole to the right, a solid white line marking the left edge of the lane
+8981b08ec2cc59da cam_l0: ok, 23 tokens; a crosswalk in the foreground, a traffic sign on the left, the road curving to the right
+8981b08ec2cc59da cam_r0: ok, 21 tokens; a traffic light showing red at the intersection, the junction and road branch curving to the right
+[val rank 7] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/grounding --resume
+Labelled 82abb0794a955aff: valid=[False, False, False, False]
+Labelled db48530a58bd5c55: valid=[False, False, False, False]
+Labelled 5f1a538454d25cb3: valid=[False, False, False, False]
+Labelled 3ff2f36527135e31: valid=[False, False, False, False]
+Labelled 5854afa53417513b: valid=[False, False, False, False]
+Labelled acf2c8f5d4c356b2: valid=[False, False, False, False]
+Labelled dd7086f9f2b3558e: valid=[False, True, False, False]
+Labelled dc76a771066b5553: valid=[False, True, False, False]
+Labelled 8596a0410ea753cd: valid=[False, True, False, False]
+Labelled 80267fddbb745962: valid=[False, True, False, False]
+Labelled 029e703eb0375697: valid=[False, False, True, False]
+Labelled 2c30fd3639a654fa: valid=[False, True, True, False]
+Labelled 5be8699bce195c42: valid=[False, True, False, False]
+Labelled fdfa3214412e5639: valid=[False, False, False, False]
+Labelled 4c98b2a043075bf0: valid=[False, False, False, False]
+Labelled 4a0141799e0a5f8f: valid=[False, False, True, False]
+Labelled 6ac45911cac95644: valid=[False, False, False, False]
+Labelled 0c7f0549f66e58e7: valid=[False, True, False, False]
+Labelled 294af4ff67d75a22: valid=[False, True, False, False]
+Labelled 8981b08ec2cc59da: valid=[False, True, False, False]
+[val rank 7] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007/validation.json
+PASS: 20 scenes, 80 captions, 12 valid targets, 20 deep checks
+[val rank 7] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v22_8gpu_pilot160/val/shards/rank_0007
