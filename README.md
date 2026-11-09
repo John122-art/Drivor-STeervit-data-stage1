@@ -1,13 +1,13 @@
 # DrivoR + SteerViT：第一阶段数据生成工程
 
-本仓库是实际工程的独立源码快照，包含第一阶段 Qwen-Drive 四视图文本、NAVSIM GT 投影及接地 mask 生成代码，并附 3 个真实场景的小样本。
+本仓库是实际工程的独立源码快照，包含第一阶段 Qwen-Drive 四视图文本、NAVSIM GT 投影及接地 mask 生成代码，并附 31 个真实场景的小样本。
 
 ## 从哪里开始
 
 1. [第一阶段运行说明](docs/stage1_data_dlc.md)
 2. [第一阶段完整启动脚本](scripts/data_generation/run_stage1_data_8gpu_dlc.sh)
 3. [当前第一阶段 prompt](scripts/data_generation/prompts/stage1_grounding_v1.txt)
-4. [三个真实场景及读取示例](data_samples/stage1/README.md)
+4. [31 个真实场景及读取示例](data_samples/stage1/README.md)
 5. [原指导方案](docs/steer_drivor_qwen_gt_grounding_analysis.reference.md)
 6. [原工程 README](README_DRIVOR_ORIGINAL.md)
 7. [本机上传指令](docs/github_stage1_upload_command.txt)
@@ -41,7 +41,7 @@ bash scripts/data_generation/run_stage1_data_8gpu_dlc.sh
 
 本仓库包含数据生成代码；四相机文本 Dataset 接入和 SteerViT 两阶段训练尚未实现。不要把方案说明当作训练实现已经完成。
 
-`data_samples` 的原始缓存/图像/GT 是实际数据；其中 NPZ 与 2D 框图是导出时用原有投影代码新计算的 3 场景示例，不是全量任务已完成标签的证明。详情与来源哈希见 `export_manifest.json` 和样本索引。
+`data_samples` 的原始缓存/图像/GT 是实际数据；其中 NPZ 与 2D 框图是导出时用原有投影代码新计算的 31 场景示例，不是全量任务已完成标签的证明。详情与来源哈希见 `export_manifest.json` 和样本索引。
 
 ## 外部源码依赖
 

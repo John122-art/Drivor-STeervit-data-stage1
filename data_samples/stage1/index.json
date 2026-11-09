@@ -10,7 +10,7 @@
   "split": "navtrain",
   "subset": "train",
   "seed": 20261109,
-  "scene_count": 3,
+  "scene_count": 31,
   "samples": [
     {
       "scene_token": "650d3a692c415b69",
@@ -209,6 +209,1931 @@
       ],
       "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/4f877d58dc275bc3.json",
       "source_cache_sha256": "01ef0bec3b17e392edf65bce2089f4d80ffb80c5bc2b66effdcf8d70486a587c"
+    },
+    {
+      "scene_token": "a4f9ff6a1ef6559a",
+      "log_name": "2021.10.11.05.34.05_veh-50_02309_02677",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "",
+          "categories": []
+        },
+        "cam_b0": {
+          "text": "a white car in the left lane, a dark vehicle in the left lane, a bus in the center lane",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "",
+          "categories": []
+        },
+        "cam_r0": {
+          "text": "",
+          "categories": []
+        }
+      },
+      "images": {
+        "cam_f0": "samples/a4f9ff6a1ef6559a/images/cam_f0.jpg",
+        "cam_b0": "samples/a4f9ff6a1ef6559a/images/cam_b0.jpg",
+        "cam_l0": "samples/a4f9ff6a1ef6559a/images/cam_l0.jpg",
+        "cam_r0": "samples/a4f9ff6a1ef6559a/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "a7c27c1f3aa0c430c31d047dbc2da0cb3448403bfa3de0951521ce86992e5a14",
+        "cam_b0": "70403ede61d3b9e52a8e60d90216a0386c6862f9f8970e146fff832ed98bc72a",
+        "cam_l0": "bd5339d8bfd010a011883f8e7929b649d317a80e510c6d920f6125c3e122328e",
+        "cam_r0": "ce098a90783ace3f4cc42eab9cfa05ba69f49ac093f0287209bddec7da6b7d5a"
+      },
+      "caption_original": "samples/a4f9ff6a1ef6559a/caption.original.json",
+      "manifest_record_original": "samples/a4f9ff6a1ef6559a/manifest_record.original.json",
+      "ground_truth_original": "samples/a4f9ff6a1ef6559a/ground_truth.original.json",
+      "grounding_npz": "samples/a4f9ff6a1ef6559a/grounding.npz",
+      "boxes_json": "samples/a4f9ff6a1ef6559a/projection.json",
+      "grounding_valid": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/a4f9ff6a1ef6559a.json",
+      "source_cache_sha256": "e1086c54ad0296f2d6cb64b65cc0c093f6a3f273f45f2fc2c8022073f94eca50"
+    },
+    {
+      "scene_token": "cbb3a6068f815d07",
+      "log_name": "2021.07.09.17.06.37_veh-35_00928_02567",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a dark grey car in the lower left foreground, a silver sedan on the left side, a pedestrian in dark clothing on the right sidewalk, a pedestrian in light clothing on the right sidewalk",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "pedestrian",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "an orange car in the foreground, a tan SUV in the background, a dark green SUV on the right, a black car on the right, a dark car in the background, a yellow barrier on the left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "barrier"
+          ]
+        },
+        "cam_l0": {
+          "text": "a dark grey sedan in the foreground, a silver sedan on the right, a red car on the left, a black SUV behind the red car, a silver sedan behind the black SUV",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "",
+          "categories": []
+        }
+      },
+      "images": {
+        "cam_f0": "samples/cbb3a6068f815d07/images/cam_f0.jpg",
+        "cam_b0": "samples/cbb3a6068f815d07/images/cam_b0.jpg",
+        "cam_l0": "samples/cbb3a6068f815d07/images/cam_l0.jpg",
+        "cam_r0": "samples/cbb3a6068f815d07/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "0be32fd4da24e7c77441561f65902372eb527a0c075e7e25e6ae93a27624188d",
+        "cam_b0": "cfaadfa436b8e73a8c1df7ce6cf520ee12d2d14d958ed63ab23d0fe4233d97f8",
+        "cam_l0": "db7f2ee5f3c6fbc2ecb59c1ce9d347da24c4891caef109822b2af5364593cddc",
+        "cam_r0": "9a2cb39bb105d3b9f00f10e05bcd20c05613480ad779646e39cfe55c55ba1276"
+      },
+      "caption_original": "samples/cbb3a6068f815d07/caption.original.json",
+      "manifest_record_original": "samples/cbb3a6068f815d07/manifest_record.original.json",
+      "ground_truth_original": "samples/cbb3a6068f815d07/ground_truth.original.json",
+      "grounding_npz": "samples/cbb3a6068f815d07/grounding.npz",
+      "boxes_json": "samples/cbb3a6068f815d07/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/cbb3a6068f815d07.json",
+      "source_cache_sha256": "9e529adb97fe197222cf5acd10050acc9e6ab7cfe83febc4f2ec7270301a47f1"
+    },
+    {
+      "scene_token": "4e67a37979fb5609",
+      "log_name": "2021.07.16.16.01.30_veh-38_02497_03871",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a black SUV in the left lane, a silver SUV in the left lane, a white sedan in the center lane, a white pickup truck in the right lane, a large white box truck on the right, a black car on the far left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_b0": {
+          "text": "a silver SUV in the left foreground, a white van in the left lane, a white sedan in the center lane, a black pickup truck on the right, a grey sedan in the right lane, small group of pedestrians on the upper bridge",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_l0": {
+          "text": "a white minivan in the foreground on the left, a black SUV in the center of the image, a black hatchback on the right side of the image, a dark SUV on the far right edge, a white taxi behind the black SUV",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a blue car in the foreground on the right, a pedestrian in a white shirt on the right",
+          "categories": [
+            "vehicle",
+            "pedestrian"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/4e67a37979fb5609/images/cam_f0.jpg",
+        "cam_b0": "samples/4e67a37979fb5609/images/cam_b0.jpg",
+        "cam_l0": "samples/4e67a37979fb5609/images/cam_l0.jpg",
+        "cam_r0": "samples/4e67a37979fb5609/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "b7bb23eb0be860f29f1ff4da2dacf986669c8222a9c6e076a83a6889e2573828",
+        "cam_b0": "7fde5f70cf502c11d2449cc3c492813b00ec62e7e633edf70d53ea1eb3b3745c",
+        "cam_l0": "c9f0cc97fce4839083b7c7af77b5f2f58f53526e309e1c91350baa8f78763f87",
+        "cam_r0": "9592bcb0bf1e8629aa35a4dbd571537c6bceb9f0cdbb4d6d74438ed86ee585ae"
+      },
+      "caption_original": "samples/4e67a37979fb5609/caption.original.json",
+      "manifest_record_original": "samples/4e67a37979fb5609/manifest_record.original.json",
+      "ground_truth_original": "samples/4e67a37979fb5609/ground_truth.original.json",
+      "grounding_npz": "samples/4e67a37979fb5609/grounding.npz",
+      "boxes_json": "samples/4e67a37979fb5609/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/4e67a37979fb5609.json",
+      "source_cache_sha256": "873b80a224db8c7e9e5edb6c970a46a7b71e4c033eedee9aa638e96d5652c587"
+    },
+    {
+      "scene_token": "2846a50a15165aff",
+      "log_name": "2021.08.17.18.13.38_veh-45_00946_01854",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a silver station wagon in the center of the image, a dark SUV behind the silver car",
+          "categories": [
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_b0": {
+          "text": "a yellow school bus in the center of the image, a dark sedan in the right lane of the image, a silver car behind the sedan in the image, a dark car in the left lane of the image",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "",
+          "categories": []
+        },
+        "cam_r0": {
+          "text": "a dark grey SUV in the foreground",
+          "categories": [
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/2846a50a15165aff/images/cam_f0.jpg",
+        "cam_b0": "samples/2846a50a15165aff/images/cam_b0.jpg",
+        "cam_l0": "samples/2846a50a15165aff/images/cam_l0.jpg",
+        "cam_r0": "samples/2846a50a15165aff/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "cd2f322e6cedabfe611439073aff5702e5941ed92103d06f90d7a16911f83aa4",
+        "cam_b0": "f3b72f277e920983b89d32c5f62d51a2da10e7146279027ed7d6996c46e7c3a2",
+        "cam_l0": "dd687f826ba8cfd3324c020a05eb4ccb86574cffbfd749416360d0f8ba5f7125",
+        "cam_r0": "b5f77388875adca6dbac223b2400430ae175e5934acb3f0a13b6ecfceb2a998b"
+      },
+      "caption_original": "samples/2846a50a15165aff/caption.original.json",
+      "manifest_record_original": "samples/2846a50a15165aff/manifest_record.original.json",
+      "ground_truth_original": "samples/2846a50a15165aff/ground_truth.original.json",
+      "grounding_npz": "samples/2846a50a15165aff/grounding.npz",
+      "boxes_json": "samples/2846a50a15165aff/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/2846a50a15165aff.json",
+      "source_cache_sha256": "bf2bc06fa9110a3f63d123b728944a78f039b122d31e49f9dd2ac0257acff3cb"
+    },
+    {
+      "scene_token": "f9076daa3e075289",
+      "log_name": "2021.06.09.14.50.36_veh-26_02495_02669",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white bus in the center of the image, an orange truck on the left of the image",
+          "categories": [
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_b0": {
+          "text": "an orange car in the center of the image, a dark vehicle behind the orange car, a white car in the background, a pedestrian in dark clothing on the left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_l0": {
+          "text": "a black SUV in the foreground on the left",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a white sedan in the background, a white pickup truck in the background, a dark SUV in the background",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/f9076daa3e075289/images/cam_f0.jpg",
+        "cam_b0": "samples/f9076daa3e075289/images/cam_b0.jpg",
+        "cam_l0": "samples/f9076daa3e075289/images/cam_l0.jpg",
+        "cam_r0": "samples/f9076daa3e075289/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "5da34b37eda84bf373a19967d40c0a6a7c7c4f48e8771968f1fcb26865c56811",
+        "cam_b0": "2f81974648eb78d4a59ecdb760b7e0fcef92e925c0352f2e4a043b166fe93942",
+        "cam_l0": "2adb019e1a2a8f58d0611d0f2176e5209f5ea8604026265291c972d65353fb5f",
+        "cam_r0": "c0fe7fe3f2b332cb1b60fe9037c98f7317d91c3702585b8a7c59d6225b8b57c7"
+      },
+      "caption_original": "samples/f9076daa3e075289/caption.original.json",
+      "manifest_record_original": "samples/f9076daa3e075289/manifest_record.original.json",
+      "ground_truth_original": "samples/f9076daa3e075289/ground_truth.original.json",
+      "grounding_npz": "samples/f9076daa3e075289/grounding.npz",
+      "boxes_json": "samples/f9076daa3e075289/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/f9076daa3e075289.json",
+      "source_cache_sha256": "70c91bc207750414d8bcac59047757d94bacf5d57e1d57229c944122d4c6b02e"
+    },
+    {
+      "scene_token": "3376726825fd5907",
+      "log_name": "2021.07.09.17.06.37_veh-35_00928_02567",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white SUV in the foreground, a white car to the left of the SUV, a white sedan in the center lane, a black minivan to the right of the sedan",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_b0": {
+          "text": "a silver sedan in the center of the image, a white car on the right side of the image, a white truck in the left background, a black car in the left background, a white car in the left background",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a dark vehicle on the left side of the image",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a black pickup truck in the middle of the image, a pedestrian in light clothing on the far right",
+          "categories": [
+            "vehicle",
+            "pedestrian"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/3376726825fd5907/images/cam_f0.jpg",
+        "cam_b0": "samples/3376726825fd5907/images/cam_b0.jpg",
+        "cam_l0": "samples/3376726825fd5907/images/cam_l0.jpg",
+        "cam_r0": "samples/3376726825fd5907/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "bba4c48e5d8bca2c3818e4bd52f5b3f656991cefc24edc121e5fb5651f409188",
+        "cam_b0": "b4a004dc0a44ed2e9af4b25323a2a72e19d3f66cae335cf15b19ab45dd586e8f",
+        "cam_l0": "869bfc46f8601350ce3b9f183ed667766778bca50fb2916b29ff128a54b13aa8",
+        "cam_r0": "a94c58b799b2c4378c81a4dda295054f167360be37f4e0639cd7580668555268"
+      },
+      "caption_original": "samples/3376726825fd5907/caption.original.json",
+      "manifest_record_original": "samples/3376726825fd5907/manifest_record.original.json",
+      "ground_truth_original": "samples/3376726825fd5907/ground_truth.original.json",
+      "grounding_npz": "samples/3376726825fd5907/grounding.npz",
+      "boxes_json": "samples/3376726825fd5907/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/3376726825fd5907.json",
+      "source_cache_sha256": "3f42a67079b7303307a1d112c5b42fb9e0381cd59985f8bf25340d69460ea073"
+    },
+    {
+      "scene_token": "f71bdb440b395a81",
+      "log_name": "2021.07.16.16.08.35_veh-35_04744_06051",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white van on the right side of the image, a white car near the right edge of the image, a white bus in the background center of the image",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white car in the distant background",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a black SUV on the left side of the image, a white sedan behind the black SUV, a line of cars in the background, a pedestrian standing near the right side of the image",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_r0": {
+          "text": "a white van on the far left, a white SUV in the background on the left",
+          "categories": [
+            "vehicle",
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/f71bdb440b395a81/images/cam_f0.jpg",
+        "cam_b0": "samples/f71bdb440b395a81/images/cam_b0.jpg",
+        "cam_l0": "samples/f71bdb440b395a81/images/cam_l0.jpg",
+        "cam_r0": "samples/f71bdb440b395a81/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "2d664af526528b59c2206c87d3674f4e393bafb14887aa2e675ae63975a18442",
+        "cam_b0": "3e77ab18ccb0d2f5e1448f998020d38bb0adf4533a352ffc2bbb348ec5d9d2cb",
+        "cam_l0": "a999d5348696bb951c4af0e16d444d07b371818b53cb03332f605c3d06679efa",
+        "cam_r0": "e1df592f2f50c06ddc9757fc83820d34e0400a11bdf853efb90a7613652b5379"
+      },
+      "caption_original": "samples/f71bdb440b395a81/caption.original.json",
+      "manifest_record_original": "samples/f71bdb440b395a81/manifest_record.original.json",
+      "ground_truth_original": "samples/f71bdb440b395a81/ground_truth.original.json",
+      "grounding_npz": "samples/f71bdb440b395a81/grounding.npz",
+      "boxes_json": "samples/f71bdb440b395a81/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/f71bdb440b395a81.json",
+      "source_cache_sha256": "1fd97def39cb567a5dfd005f11e65a1019153813b522b7bdb0c863ed97b4f7e2"
+    },
+    {
+      "scene_token": "d9012251253f54fd",
+      "log_name": "2021.07.09.17.06.37_veh-35_00928_02567",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "an orange SUV in the foreground, a pedestrian in dark clothing to the left, a black car on the right, a silver car on the far left, vertical bollards lining the left side",
+          "categories": [
+            "vehicle",
+            "pedestrian",
+            "vehicle",
+            "vehicle",
+            "barrier"
+          ]
+        },
+        "cam_b0": {
+          "text": "a silver car on the left in the foreground, a black car on the right in the background",
+          "categories": [
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a black sedan on the left in the foreground, a dark SUV in the center-left foreground, a white SUV in the center foreground, a dark sedan on the right in the foreground, a dark SUV behind the sedan on the right",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a silver SUV with an open trunk in the foreground, a pedestrian in a dark blue shirt on the right, a pedestrian sitting near the vehicle trunk, pedestrians standing in the background on the left",
+          "categories": [
+            "vehicle",
+            "pedestrian",
+            "pedestrian",
+            "pedestrian"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/d9012251253f54fd/images/cam_f0.jpg",
+        "cam_b0": "samples/d9012251253f54fd/images/cam_b0.jpg",
+        "cam_l0": "samples/d9012251253f54fd/images/cam_l0.jpg",
+        "cam_r0": "samples/d9012251253f54fd/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "761fb66ea7db9a65cc55a4389b3bca7df518686f688aa80d45f749fda619ef1a",
+        "cam_b0": "52275dcf71001806a0c7e3855226ffe09de9a71b2e0456dea0ea468826f63e24",
+        "cam_l0": "1337675b1dfa00c13de3fbf231b08dabe8b25c1fbf92149ce0a4b12879e96475",
+        "cam_r0": "5512bf36badac768f93b7ea186ce986ca02be5349f3eb1961f706227f543dad0"
+      },
+      "caption_original": "samples/d9012251253f54fd/caption.original.json",
+      "manifest_record_original": "samples/d9012251253f54fd/manifest_record.original.json",
+      "ground_truth_original": "samples/d9012251253f54fd/ground_truth.original.json",
+      "grounding_npz": "samples/d9012251253f54fd/grounding.npz",
+      "boxes_json": "samples/d9012251253f54fd/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/d9012251253f54fd.json",
+      "source_cache_sha256": "5080127d53e8de58ef364b55e4c4916523bd1d2b080cf964cc31fce9b4201189"
+    },
+    {
+      "scene_token": "66cc9e372f505d70",
+      "log_name": "2021.07.16.16.01.30_veh-38_02497_03871",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white minivan in the foreground on the left, a black SUV in the left lane, a white sedan in the center lane",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_b0": {
+          "text": "a silver sedan on the left side of the image, a white van in the right lane, a black pickup truck on the right, a white car in the center lane, a pedestrian in dark clothing on the left, a pedestrian in light clothing on the left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian",
+            "pedestrian"
+          ]
+        },
+        "cam_l0": {
+          "text": "a white minivan in the foreground on the right, an orange and white traffic cone near the center",
+          "categories": [
+            "vehicle",
+            "traffic_cone"
+          ]
+        },
+        "cam_r0": {
+          "text": "a white pickup truck in the background, a silver SUV behind the fence, a white SUV near the center, a silver sedan on the far right",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/66cc9e372f505d70/images/cam_f0.jpg",
+        "cam_b0": "samples/66cc9e372f505d70/images/cam_b0.jpg",
+        "cam_l0": "samples/66cc9e372f505d70/images/cam_l0.jpg",
+        "cam_r0": "samples/66cc9e372f505d70/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "1689f663386836dfa38df8628a9bea09bb1a86dead100443c583ad9eda6a38de",
+        "cam_b0": "fa4d27cf62cb62418dc6fb02efd5bc4afaae7b732db53b6f1d8fad94e2f54ffe",
+        "cam_l0": "b4be68d7838a029f94f124dca01c510357f4f3a45be24476e4074dde94f9bff7",
+        "cam_r0": "1588432d41393abeb4888b1d3b1769b9433b9fad06e2e0c979dd8f4cc4746741"
+      },
+      "caption_original": "samples/66cc9e372f505d70/caption.original.json",
+      "manifest_record_original": "samples/66cc9e372f505d70/manifest_record.original.json",
+      "ground_truth_original": "samples/66cc9e372f505d70/ground_truth.original.json",
+      "grounding_npz": "samples/66cc9e372f505d70/grounding.npz",
+      "boxes_json": "samples/66cc9e372f505d70/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/66cc9e372f505d70.json",
+      "source_cache_sha256": "f6babc8611d4f6a6aabd3d2af88bfe366e274832e3a464fa7a248c8dd2444c72"
+    },
+    {
+      "scene_token": "d25247fb77a958b7",
+      "log_name": "2021.10.11.07.12.18_veh-50_00541_00832",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white and purple double-decker bus on the left, a white van on the right side of the road, a white truck behind the van on the right, a pedestrian in white clothing near the bus stop",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "orange and white barriers lining the right side, white car on the left side",
+          "categories": [
+            "barrier",
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a green construction barrier in the foreground, a white and purple double-decker bus on the right",
+          "categories": [
+            "barrier",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a white truck in the center of the image, a cyclist on the right side of the image, an orange taxi on the right side of the image, a purple bus on the far right of the image, a dark truck in the background on the left",
+          "categories": [
+            "vehicle",
+            "bicycle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/d25247fb77a958b7/images/cam_f0.jpg",
+        "cam_b0": "samples/d25247fb77a958b7/images/cam_b0.jpg",
+        "cam_l0": "samples/d25247fb77a958b7/images/cam_l0.jpg",
+        "cam_r0": "samples/d25247fb77a958b7/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "c86d9e9cf5f86dbc6597226b50189fc4e186785f2c988b08e2333f868a946928",
+        "cam_b0": "8a9d54adb73a96faeb4a2c71058fd2187f140f0a6b3889ec58631380075d7e6e",
+        "cam_l0": "7ef08678b8a3f3f597cd170553b2b7f3fc8f2704d67cd270791baa593a4e6762",
+        "cam_r0": "920d899af781c313295074205b1df11b4726c6317dbdfdf2575a4c0ba63593de"
+      },
+      "caption_original": "samples/d25247fb77a958b7/caption.original.json",
+      "manifest_record_original": "samples/d25247fb77a958b7/manifest_record.original.json",
+      "ground_truth_original": "samples/d25247fb77a958b7/ground_truth.original.json",
+      "grounding_npz": "samples/d25247fb77a958b7/grounding.npz",
+      "boxes_json": "samples/d25247fb77a958b7/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/d25247fb77a958b7.json",
+      "source_cache_sha256": "c2d0312bccb51e0f5a499d4b39fd5640bda2f4c297ed8ba5d8ef7c3795a25bf6"
+    },
+    {
+      "scene_token": "bc624c01bbb75b7c",
+      "log_name": "2021.07.16.16.01.30_veh-38_02497_03871",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a dark SUV in the left lane, a white sedan in the center lane, a dark minivan on the far left, a concrete barrier along the right side",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "barrier"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white truck in the center of the image",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a red car in the foreground on the left, a black SUV in the right background",
+          "categories": [
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a white car in the background on the left",
+          "categories": [
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/bc624c01bbb75b7c/images/cam_f0.jpg",
+        "cam_b0": "samples/bc624c01bbb75b7c/images/cam_b0.jpg",
+        "cam_l0": "samples/bc624c01bbb75b7c/images/cam_l0.jpg",
+        "cam_r0": "samples/bc624c01bbb75b7c/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "63ef8c5adac2712d768b95d01dcad6c5aa20344294a5d697246f1fbec1abf29e",
+        "cam_b0": "ab75293d3846d0669e0f5aee0ff2d9c262553fd6b89561a6be573479472fbb07",
+        "cam_l0": "96fc70bff5c4088f46d7d5bbc3b0e5483c8e3426b20cdebc48261028ff6b8090",
+        "cam_r0": "2d51bcf20b48b0c10dd09138681a4c8213e4f095dc8cac28ba71362084cff5be"
+      },
+      "caption_original": "samples/bc624c01bbb75b7c/caption.original.json",
+      "manifest_record_original": "samples/bc624c01bbb75b7c/manifest_record.original.json",
+      "ground_truth_original": "samples/bc624c01bbb75b7c/ground_truth.original.json",
+      "grounding_npz": "samples/bc624c01bbb75b7c/grounding.npz",
+      "boxes_json": "samples/bc624c01bbb75b7c/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/bc624c01bbb75b7c.json",
+      "source_cache_sha256": "4426d8b318d7bd4be793d24cc367e5b44eca683c76353c961bec2eaaf17e785b"
+    },
+    {
+      "scene_token": "25095144b96e5804",
+      "log_name": "2021.06.14.16.48.02_veh-12_04057_04438",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a dark van behind the bushes on the right",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_b0": {
+          "text": "a silver SUV in the center of the image, a white van on the right side of the image, a dark sedan on the right side of the image, a group of pedestrians near the center of the image, a pedestrian on the left side of the image, a low concrete wall on the right side of the image",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian",
+            "pedestrian",
+            "barrier"
+          ]
+        },
+        "cam_l0": {
+          "text": "a blue vehicle behind the railing on the left",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a blue SUV positioned on the right side of the image, a pedestrian in dark clothing standing on the sidewalk to the right, a black car in the distance on the left",
+          "categories": [
+            "vehicle",
+            "pedestrian",
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/25095144b96e5804/images/cam_f0.jpg",
+        "cam_b0": "samples/25095144b96e5804/images/cam_b0.jpg",
+        "cam_l0": "samples/25095144b96e5804/images/cam_l0.jpg",
+        "cam_r0": "samples/25095144b96e5804/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "8e563f95cae7a3f375f4f90c8054d6765ca2f1560e8ae8013dcb21c606d483d5",
+        "cam_b0": "220d9afc5a6924e00f572f69663360fd07fdba9e9d7f172879cff262cc3e26d7",
+        "cam_l0": "fbd9c0dba72f1379dd7c8debab74931f1b61ff7f5245207d11c4a9b16773e3dc",
+        "cam_r0": "c49fcbcc943acd4a393407e50fa8ba88a25a2b4483f789898e7fb400350248be"
+      },
+      "caption_original": "samples/25095144b96e5804/caption.original.json",
+      "manifest_record_original": "samples/25095144b96e5804/manifest_record.original.json",
+      "ground_truth_original": "samples/25095144b96e5804/ground_truth.original.json",
+      "grounding_npz": "samples/25095144b96e5804/grounding.npz",
+      "boxes_json": "samples/25095144b96e5804/projection.json",
+      "grounding_valid": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/25095144b96e5804.json",
+      "source_cache_sha256": "82c6299aae3c5ccb7c4ff201f474c4063b60db02c3adcd49b4894b17f248b38a"
+    },
+    {
+      "scene_token": "87a0835f49bf5945",
+      "log_name": "2021.06.14.14.25.15_veh-26_02932_03190",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a black SUV in the left lane, a white minivan in the center lane, a black sedan in the right lane, a white sedan on the far right, a white van in the left lane, small group of pedestrians standing on the upper bridge",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "a silver SUV in the center of the image, a grey pickup truck on the left of the image, a dark sedan on the far left of the image, a grey SUV behind the pickup truck on the left, a white car behind the grey SUV on the left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a black car in the foreground on the left, a silver minivan in the background on the right, a black SUV in the background on the right, a white van in the background on the right",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a grey SUV in the foreground on the right, a white car in the background on the left, a pedestrian in a yellow shirt on the sidewalk, a pedestrian in light clothing on the sidewalk, a concrete barrier running horizontally across the middle of the image",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "pedestrian",
+            "pedestrian",
+            "barrier"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/87a0835f49bf5945/images/cam_f0.jpg",
+        "cam_b0": "samples/87a0835f49bf5945/images/cam_b0.jpg",
+        "cam_l0": "samples/87a0835f49bf5945/images/cam_l0.jpg",
+        "cam_r0": "samples/87a0835f49bf5945/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "e33bf613ec4c11015a8c17e75a30e97e950e80b2e17ad6cdf0339b81fe4f1ac3",
+        "cam_b0": "f4ddd3bf3516d89881e1ab987f9014b58518e3243f990467901680618c309671",
+        "cam_l0": "23160ae6b9aa8e36323b1d228660c5610bffad10041d3a41625eea4b38c1ea2f",
+        "cam_r0": "57e0035be1daf97fb5b460082cc572e1b9c8aee1f5638a72b51b11fb82f06db7"
+      },
+      "caption_original": "samples/87a0835f49bf5945/caption.original.json",
+      "manifest_record_original": "samples/87a0835f49bf5945/manifest_record.original.json",
+      "ground_truth_original": "samples/87a0835f49bf5945/ground_truth.original.json",
+      "grounding_npz": "samples/87a0835f49bf5945/grounding.npz",
+      "boxes_json": "samples/87a0835f49bf5945/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/87a0835f49bf5945.json",
+      "source_cache_sha256": "117b381432e740efe7cf0e4f7b2772b6ca250a3dd4c9df5f156c32db4d6d7da4"
+    },
+    {
+      "scene_token": "f3288ba5cac454ad",
+      "log_name": "2021.07.16.16.08.35_veh-35_04744_06051",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a red SUV in the foreground, a black sedan to the left, a white van in the background, a dark car in the background, a row of black bollards on the right, orange traffic cones near the bollards",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "barrier",
+            "traffic_cone"
+          ]
+        },
+        "cam_b0": {
+          "text": "a grey minivan in the foreground, a silver sedan behind the minivan, an orange construction trailer on the left, an orange traffic cone near the trailer, a pedestrian in dark clothing on the left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "traffic_cone",
+            "pedestrian"
+          ]
+        },
+        "cam_l0": {
+          "text": "an orange SUV on the left side of the image, a white sedan in the center of the image, a dark SUV behind the white sedan, an orange car to the right of the white sedan, a black car on the far right side of the image",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a white metal fence in the foreground",
+          "categories": [
+            "barrier"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/f3288ba5cac454ad/images/cam_f0.jpg",
+        "cam_b0": "samples/f3288ba5cac454ad/images/cam_b0.jpg",
+        "cam_l0": "samples/f3288ba5cac454ad/images/cam_l0.jpg",
+        "cam_r0": "samples/f3288ba5cac454ad/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "6b09a2e920896d641942f62106adf31cded4a58e5ea74d39880b2899406302fa",
+        "cam_b0": "cb3d4f77b3c3d9d812d2e1d32bfdd4c16a6755d311955e8b01259d72ac490f37",
+        "cam_l0": "cac330967581436a03a488f1cb5bee994df7686037f3732bcf4f5bab8ab80f7c",
+        "cam_r0": "7bb615ede8b69fe08070c4f54e307f20b0cb134c41dd6ecbd2feb2f807ed1afa"
+      },
+      "caption_original": "samples/f3288ba5cac454ad/caption.original.json",
+      "manifest_record_original": "samples/f3288ba5cac454ad/manifest_record.original.json",
+      "ground_truth_original": "samples/f3288ba5cac454ad/ground_truth.original.json",
+      "grounding_npz": "samples/f3288ba5cac454ad/grounding.npz",
+      "boxes_json": "samples/f3288ba5cac454ad/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/f3288ba5cac454ad.json",
+      "source_cache_sha256": "343a68ed84f67ccfa2d2a871988b46d5c3a14724f8dd4b3fa7351293f98fb23e"
+    },
+    {
+      "scene_token": "4072e7e67650530c",
+      "log_name": "2021.07.09.20.26.06_veh-35_03898_05974",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a black sedan in the foreground, a grey pickup truck in the left lane, a white minivan on the right, a white SUV on the far left, a pedestrian in a patterned shirt on the right",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white sedan in the foreground, a white SUV in the background, a white sedan behind the foreground vehicle, black metal barriers on the left, group of pedestrians on the left sidewalk",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "barrier",
+            "pedestrian"
+          ]
+        },
+        "cam_l0": {
+          "text": "a white pickup truck on the right",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a pedestrian in a pink shirt in the foreground, a pedestrian in a white shirt on the right, a pedestrian in a blue shirt in the center, a pedestrian in a patterned shirt on the left, black bollards lining the left side of the image",
+          "categories": [
+            "pedestrian",
+            "pedestrian",
+            "pedestrian",
+            "pedestrian",
+            "barrier"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/4072e7e67650530c/images/cam_f0.jpg",
+        "cam_b0": "samples/4072e7e67650530c/images/cam_b0.jpg",
+        "cam_l0": "samples/4072e7e67650530c/images/cam_l0.jpg",
+        "cam_r0": "samples/4072e7e67650530c/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "535b25a22482de852e7b8d71b5a5da79aee7d1211a0481c01a845fac2f569677",
+        "cam_b0": "738f1636d2853c0a0d3352353b01e4a87b2a0cfa502f10afc63d7a822e9463eb",
+        "cam_l0": "21c679f313e12e4a20ad3419c65445a45cbed9ec7783a1405d26151acdc1df25",
+        "cam_r0": "b3176ba83b2456113103aceddb731dcab02c8a5ac256a7237c9c4f6ab83b6d47"
+      },
+      "caption_original": "samples/4072e7e67650530c/caption.original.json",
+      "manifest_record_original": "samples/4072e7e67650530c/manifest_record.original.json",
+      "ground_truth_original": "samples/4072e7e67650530c/ground_truth.original.json",
+      "grounding_npz": "samples/4072e7e67650530c/grounding.npz",
+      "boxes_json": "samples/4072e7e67650530c/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/4072e7e67650530c.json",
+      "source_cache_sha256": "003d55d459380d85b6e0146b6b91707165a8517b095c137331e6d192593377af"
+    },
+    {
+      "scene_token": "86fa5c1e10d3528b",
+      "log_name": "2021.06.09.18.23.43_veh-35_02086_02333",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a black SUV in the left lane, a white car positioned on the right side of the road, a dark pickup truck in the left lane, a white car in the far left lane, a pedestrian standing on the sidewalk near the crosswalk",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "a red car in the foreground, a silver minivan on the right, a pedestrian in a grey shirt on the left, a pedestrian in a purple dress on the left, an orange traffic cone on the left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "pedestrian",
+            "pedestrian",
+            "traffic_cone"
+          ]
+        },
+        "cam_l0": {
+          "text": "a dark grey car in the immediate foreground, a white minivan in the center of the image, a white convertible car on the right, a dark pickup truck on the far right, orange barriers near the center of the image",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "barrier"
+          ]
+        },
+        "cam_r0": {
+          "text": "a man in a grey shirt and cap in the lower center, a person in a striped shirt on the right edge",
+          "categories": [
+            "pedestrian",
+            "pedestrian"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/86fa5c1e10d3528b/images/cam_f0.jpg",
+        "cam_b0": "samples/86fa5c1e10d3528b/images/cam_b0.jpg",
+        "cam_l0": "samples/86fa5c1e10d3528b/images/cam_l0.jpg",
+        "cam_r0": "samples/86fa5c1e10d3528b/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "23c37c7a098064cc1a7866a9111c0593e7fe7879b5ad8816c6f7a6f56870ae30",
+        "cam_b0": "88ea6ee8228e2d800771b54b0c9bf72272eafa94bbd2e8e7274ff033f692ccf8",
+        "cam_l0": "21e54efd5dae8683b9ecbde6d149484a8e41c768bae6eb5b2ac752f144cf4378",
+        "cam_r0": "ddc4499fb14f5c76d778557bb2f3e90a76fd684568ff0925f7edcc9d5a05fb00"
+      },
+      "caption_original": "samples/86fa5c1e10d3528b/caption.original.json",
+      "manifest_record_original": "samples/86fa5c1e10d3528b/manifest_record.original.json",
+      "ground_truth_original": "samples/86fa5c1e10d3528b/ground_truth.original.json",
+      "grounding_npz": "samples/86fa5c1e10d3528b/grounding.npz",
+      "boxes_json": "samples/86fa5c1e10d3528b/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/86fa5c1e10d3528b.json",
+      "source_cache_sha256": "fd4353bf12c3f063edd650ae648b022d07dfccd133ddce23586e9b50f7c3de5f"
+    },
+    {
+      "scene_token": "7315f372ec435aab",
+      "log_name": "2021.07.09.20.26.06_veh-35_03898_05974",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a silver sedan in the foreground, an orange pickup truck in the center, a white minivan behind the silver sedan, a blue and white taxi on the left, a group of pedestrians on the right sidewalk",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white taxi van in the center foreground, a white SUV on the right side, a group of pedestrians on the left sidewalk",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_l0": {
+          "text": "a white and blue taxi on the right",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a pedestrian in a pink shirt on the left, a pedestrian in a white shirt and blue shorts, a pedestrian in a white shirt and black pants",
+          "categories": [
+            "pedestrian",
+            "pedestrian",
+            "pedestrian"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/7315f372ec435aab/images/cam_f0.jpg",
+        "cam_b0": "samples/7315f372ec435aab/images/cam_b0.jpg",
+        "cam_l0": "samples/7315f372ec435aab/images/cam_l0.jpg",
+        "cam_r0": "samples/7315f372ec435aab/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "b4ed96f00d9cef2e65dc8a1487752a71ac0f51b1ba7039452ccf9de7d3a0d370",
+        "cam_b0": "a5143e3bb52b73324242d54733db791f9fc617d77075d19db36b5a77c001192d",
+        "cam_l0": "3cfe67c59b53f31ca8626a2e4a68f249722dc3111e431fbf26588e9d56f7f4e5",
+        "cam_r0": "7347ca661c02f717786428d532beb6849c39bc0683c2974e283b20bc8a8bf35a"
+      },
+      "caption_original": "samples/7315f372ec435aab/caption.original.json",
+      "manifest_record_original": "samples/7315f372ec435aab/manifest_record.original.json",
+      "ground_truth_original": "samples/7315f372ec435aab/ground_truth.original.json",
+      "grounding_npz": "samples/7315f372ec435aab/grounding.npz",
+      "boxes_json": "samples/7315f372ec435aab/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/7315f372ec435aab.json",
+      "source_cache_sha256": "acb55d22074578d816a24d99ec268cbce5e86bd65bb76b329c2640a0d7f11003"
+    },
+    {
+      "scene_token": "5982e20acc595c34",
+      "log_name": "2021.06.14.16.48.02_veh-12_04057_04438",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white sedan in the left lane, a white SUV in the center lane, a black bus in the right lane, a silver sedan in the left background, a pedestrian in a blue shirt on the right, a pedestrian in a grey shirt on the right",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white taxi van in the center lane, a white van in the adjacent right lane, a white sedan on the far right, a group of pedestrians on the left sidewalk",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_l0": {
+          "text": "a white SUV in the foreground on the right, a silver sedan to the right of the white SUV, a double-decker bus on the far left, a black limousine in the background near the center, a group of pedestrians on the left side",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_r0": {
+          "text": "a pedestrian in an orange shirt on the left, a pedestrian in a blue shirt on the left, a pedestrian in a white shirt and red shorts, a pedestrian in a white top and red shorts in the center foreground, black bollards lining the left side of the road",
+          "categories": [
+            "pedestrian",
+            "pedestrian",
+            "pedestrian",
+            "pedestrian",
+            "barrier"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/5982e20acc595c34/images/cam_f0.jpg",
+        "cam_b0": "samples/5982e20acc595c34/images/cam_b0.jpg",
+        "cam_l0": "samples/5982e20acc595c34/images/cam_l0.jpg",
+        "cam_r0": "samples/5982e20acc595c34/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "2629c17537c7b71a04ca3d4c7ff39bcacfe738643031204b136ff3c6ea6bb1e1",
+        "cam_b0": "573fe265afcf87fb8aa05fa3c4fd18350477111f48e54dfcbca64f2540906943",
+        "cam_l0": "0bc902f0930706ed883950b1474b53833f1d60b90131c8db74526cb3a82b1817",
+        "cam_r0": "c529a2abb3a104318067386c4db3102124bf948fc4e03a9d4e7e8122259191a7"
+      },
+      "caption_original": "samples/5982e20acc595c34/caption.original.json",
+      "manifest_record_original": "samples/5982e20acc595c34/manifest_record.original.json",
+      "ground_truth_original": "samples/5982e20acc595c34/ground_truth.original.json",
+      "grounding_npz": "samples/5982e20acc595c34/grounding.npz",
+      "boxes_json": "samples/5982e20acc595c34/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/5982e20acc595c34.json",
+      "source_cache_sha256": "2c56d4d5b9d45076f0458c332d8ed781ff944d459c5a3d736ab2078a7f9b119d"
+    },
+    {
+      "scene_token": "7ada7bc257015b13",
+      "log_name": "2021.06.14.18.33.41_veh-35_04905_05090",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white car in the center of the image, a dark SUV on the right of the image",
+          "categories": [
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white SUV in the center of the image",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a red car on the right side of the image, a white pickup truck in the background on the right, a white SUV in the background on the left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a silver minivan in the parking lot, a silver minivan in the parking lot on the right, a black SUV on the left, a black SUV in the background",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/7ada7bc257015b13/images/cam_f0.jpg",
+        "cam_b0": "samples/7ada7bc257015b13/images/cam_b0.jpg",
+        "cam_l0": "samples/7ada7bc257015b13/images/cam_l0.jpg",
+        "cam_r0": "samples/7ada7bc257015b13/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "5c0139bf1ffb373ca494662eb3b5aa27d38843cc988b7b0e065c009d6c225806",
+        "cam_b0": "39f32831037574aa816af5133657d93e671b9c6d2dcd500a49f2fb2044557529",
+        "cam_l0": "2d485e3ba09faca01bba703b66b30b689560f77f8a5fb4f770b24faf4dc0ee62",
+        "cam_r0": "d2a3db4402715293de43f470348e5ddea5b5fcb97c55c050e1f9e100d6ae8528"
+      },
+      "caption_original": "samples/7ada7bc257015b13/caption.original.json",
+      "manifest_record_original": "samples/7ada7bc257015b13/manifest_record.original.json",
+      "ground_truth_original": "samples/7ada7bc257015b13/ground_truth.original.json",
+      "grounding_npz": "samples/7ada7bc257015b13/grounding.npz",
+      "boxes_json": "samples/7ada7bc257015b13/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/7ada7bc257015b13.json",
+      "source_cache_sha256": "0cbfdc83260bb0ff913bb47cbb5140aca3ccfbf023dae0c3d08d1ea527e73cfc"
+    },
+    {
+      "scene_token": "3d74ed9771cc5db6",
+      "log_name": "2021.10.11.07.47.13_veh-50_00736_00843",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "orange and white barrier in the lower right foreground, orange traffic cone in the lower right foreground, yellow dump truck in the center background, yellow truck in the center background, orange traffic cone in the middle right, orange traffic cone in the middle, orange traffic cone in the middle left",
+          "categories": [
+            "barrier",
+            "traffic_cone",
+            "vehicle",
+            "vehicle",
+            "traffic_cone",
+            "traffic_cone",
+            "traffic_cone"
+          ]
+        },
+        "cam_b0": {
+          "text": "orange and white barriers lining the left side, yellow traffic cone near the barriers",
+          "categories": [
+            "barrier",
+            "traffic_cone"
+          ]
+        },
+        "cam_l0": {
+          "text": "",
+          "categories": []
+        },
+        "cam_r0": {
+          "text": "a blue and yellow excavator on the right, a construction worker in a yellow shirt and hard hat, orange and white barriers in the foreground, a black SUV in the background",
+          "categories": [
+            "vehicle",
+            "pedestrian",
+            "barrier",
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/3d74ed9771cc5db6/images/cam_f0.jpg",
+        "cam_b0": "samples/3d74ed9771cc5db6/images/cam_b0.jpg",
+        "cam_l0": "samples/3d74ed9771cc5db6/images/cam_l0.jpg",
+        "cam_r0": "samples/3d74ed9771cc5db6/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "0967714e461044b24f689c488fe95f838bf395342c24adc2726701b45f9e7edc",
+        "cam_b0": "19d7150641c81ecc436f38e86ff50c7ac20c43be6766d485efd44b291551b788",
+        "cam_l0": "1940a3d4b11d9f351f400fffb564af7c4399d680e61a8f553504299cbe11b80b",
+        "cam_r0": "fee66bf2c1203cde1a70c14e665411f4af9a74055e4334cc0b4552f560dbb095"
+      },
+      "caption_original": "samples/3d74ed9771cc5db6/caption.original.json",
+      "manifest_record_original": "samples/3d74ed9771cc5db6/manifest_record.original.json",
+      "ground_truth_original": "samples/3d74ed9771cc5db6/ground_truth.original.json",
+      "grounding_npz": "samples/3d74ed9771cc5db6/grounding.npz",
+      "boxes_json": "samples/3d74ed9771cc5db6/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/3d74ed9771cc5db6.json",
+      "source_cache_sha256": "e1974174d7e4ad504fb170d83c7182f00011668215aecf07e070cf6bcffda6ad"
+    },
+    {
+      "scene_token": "96dcb491b44452d8",
+      "log_name": "2021.10.11.07.12.18_veh-50_00541_00832",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "",
+          "categories": []
+        },
+        "cam_b0": {
+          "text": "a white van on the left side of the image",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "",
+          "categories": []
+        },
+        "cam_r0": {
+          "text": "a white van on the right side of the image, orange traffic cones near the center of the image",
+          "categories": [
+            "vehicle",
+            "traffic_cone"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/96dcb491b44452d8/images/cam_f0.jpg",
+        "cam_b0": "samples/96dcb491b44452d8/images/cam_b0.jpg",
+        "cam_l0": "samples/96dcb491b44452d8/images/cam_l0.jpg",
+        "cam_r0": "samples/96dcb491b44452d8/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "e3059d12b1085732463b99ea476903895b521a0da3a367cf97aab58ef8970bd7",
+        "cam_b0": "2b468bb790ae26f029d638daf9dcb5ebe3ed29a0af83169b0d19fbf3808e5c1a",
+        "cam_l0": "7fc0a3f05c01062bcfc2a21bbbe2b4f02ea30aee8556681d1b8fe3c1c1695f82",
+        "cam_r0": "f2f8d4c3c4794592a6636a33f58560262588bbcac29dc06504272e90add6805b"
+      },
+      "caption_original": "samples/96dcb491b44452d8/caption.original.json",
+      "manifest_record_original": "samples/96dcb491b44452d8/manifest_record.original.json",
+      "ground_truth_original": "samples/96dcb491b44452d8/ground_truth.original.json",
+      "grounding_npz": "samples/96dcb491b44452d8/grounding.npz",
+      "boxes_json": "samples/96dcb491b44452d8/projection.json",
+      "grounding_valid": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/96dcb491b44452d8.json",
+      "source_cache_sha256": "acc92c38e844cac75c692cfb76af149777b2c0e9f45ca3879153ef9a55e07dd4"
+    },
+    {
+      "scene_token": "a327f9abda055d72",
+      "log_name": "2021.08.17.18.54.02_veh-45_02105_02189",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "",
+          "categories": []
+        },
+        "cam_b0": {
+          "text": "a white car on the right side of the image, a black dump truck in the background",
+          "categories": [
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "",
+          "categories": []
+        },
+        "cam_r0": {
+          "text": "",
+          "categories": []
+        }
+      },
+      "images": {
+        "cam_f0": "samples/a327f9abda055d72/images/cam_f0.jpg",
+        "cam_b0": "samples/a327f9abda055d72/images/cam_b0.jpg",
+        "cam_l0": "samples/a327f9abda055d72/images/cam_l0.jpg",
+        "cam_r0": "samples/a327f9abda055d72/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "4275618c1aa4f4010fa6839fe29e363a28ba55e6ad212c03b6075200e2737da2",
+        "cam_b0": "5f4dd45b5a654012a20baabf9c3c6c919b632eae7d251e911c4aad3fc2f0c4ce",
+        "cam_l0": "99267afaed54ee4b58dc25ef20e31a4be2e24fd4f424741900ceffe3f77c3f88",
+        "cam_r0": "7d19c8fd47d6df2ad4a7fbf16d3d85b3260cb7e4684550888d643ce96d55fac5"
+      },
+      "caption_original": "samples/a327f9abda055d72/caption.original.json",
+      "manifest_record_original": "samples/a327f9abda055d72/manifest_record.original.json",
+      "ground_truth_original": "samples/a327f9abda055d72/ground_truth.original.json",
+      "grounding_npz": "samples/a327f9abda055d72/grounding.npz",
+      "boxes_json": "samples/a327f9abda055d72/projection.json",
+      "grounding_valid": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/a327f9abda055d72.json",
+      "source_cache_sha256": "17b014127effc507c3d0c039338a4f5930d393e2b4ac0fd47d43399d853e9521"
+    },
+    {
+      "scene_token": "e359f23c0429503b",
+      "log_name": "2021.06.09.17.23.18_veh-38_02526_03027",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a group of pedestrians sitting on a bench in the center background, a person standing on the far left side of the image, a person standing near the large planter on the right",
+          "categories": [
+            "pedestrian",
+            "pedestrian",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white car in the background on the right",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a red car on the left side of the image, a pedestrian in light clothing on the left side of the image, a dark vehicle in the background near the center, a dark vehicle on the right side of the image, a pedestrian in dark clothing on the right side of the image",
+          "categories": [
+            "vehicle",
+            "pedestrian",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_r0": {
+          "text": "",
+          "categories": []
+        }
+      },
+      "images": {
+        "cam_f0": "samples/e359f23c0429503b/images/cam_f0.jpg",
+        "cam_b0": "samples/e359f23c0429503b/images/cam_b0.jpg",
+        "cam_l0": "samples/e359f23c0429503b/images/cam_l0.jpg",
+        "cam_r0": "samples/e359f23c0429503b/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "89f86c7cbb74b82c69cd41f2c2cbe7e7c8190b88e072ae0ea101970e56646182",
+        "cam_b0": "173dae64728bf3ff7cd8633561d6e2acf1beec480adf43d2493ea1f678bbb8df",
+        "cam_l0": "2c9a672d8c02db27c79af4d8b4384aeb125b7b25f0e8c22b583f1ec1f1ccbdb2",
+        "cam_r0": "0374ec6a302ea1c3a89016a8f9b6e924b3de2cbc5d3d6836aa6454360c14e888"
+      },
+      "caption_original": "samples/e359f23c0429503b/caption.original.json",
+      "manifest_record_original": "samples/e359f23c0429503b/manifest_record.original.json",
+      "ground_truth_original": "samples/e359f23c0429503b/ground_truth.original.json",
+      "grounding_npz": "samples/e359f23c0429503b/grounding.npz",
+      "boxes_json": "samples/e359f23c0429503b/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/e359f23c0429503b.json",
+      "source_cache_sha256": "6f31a9a78752b01c6f445a6e8f91240a742f4f714a36da55661df6e755326e73"
+    },
+    {
+      "scene_token": "3623f8728153513d",
+      "log_name": "2021.10.11.08.31.07_veh-50_01365_01539",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white truck in the background on the right, a person in blue clothing on the left",
+          "categories": [
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white bus in the background on the right",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a pedestrian in blue clothing on the right",
+          "categories": [
+            "pedestrian"
+          ]
+        },
+        "cam_r0": {
+          "text": "a pedestrian in dark clothing on the right of the image",
+          "categories": [
+            "pedestrian"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/3623f8728153513d/images/cam_f0.jpg",
+        "cam_b0": "samples/3623f8728153513d/images/cam_b0.jpg",
+        "cam_l0": "samples/3623f8728153513d/images/cam_l0.jpg",
+        "cam_r0": "samples/3623f8728153513d/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "39c1a520bc2d39b7c4a515750054273d5ac34c85bb16d916fcc6db1b94362d07",
+        "cam_b0": "c9f1b78355c4a5e642ea2cbb3d7c77062fa8a3c19b0a907034926a21b9f8b0c4",
+        "cam_l0": "20f2f3715f0c046f95df0fc15712c8d924bb2944b4a19978a05867506a71339d",
+        "cam_r0": "8c8df01d84dfc78ce57791040493d3333e4d8de74620b364884c1e2770420780"
+      },
+      "caption_original": "samples/3623f8728153513d/caption.original.json",
+      "manifest_record_original": "samples/3623f8728153513d/manifest_record.original.json",
+      "ground_truth_original": "samples/3623f8728153513d/ground_truth.original.json",
+      "grounding_npz": "samples/3623f8728153513d/grounding.npz",
+      "boxes_json": "samples/3623f8728153513d/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/3623f8728153513d.json",
+      "source_cache_sha256": "e1738e90299d86d0f0cefb6c0b1b26037a2bf5fabb92a06b9b3886909d539791"
+    },
+    {
+      "scene_token": "a7ea4d5ce19f51e1",
+      "log_name": "2021.07.09.17.06.37_veh-35_00928_02567",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white minivan on the left side of the image, a pedestrian in a white tank top in the foreground, a pedestrian in dark clothing on the right of the image",
+          "categories": [
+            "vehicle",
+            "pedestrian",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "a silver SUV on the right side of the image, a dark sedan in the distance near the center, a dark SUV in the right lane, a red car in the right lane, a silver car in the right lane, a dark car in the right lane",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a white minivan on the right side of the image",
+          "categories": [
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a white SUV in the background on the left",
+          "categories": [
+            "vehicle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/a7ea4d5ce19f51e1/images/cam_f0.jpg",
+        "cam_b0": "samples/a7ea4d5ce19f51e1/images/cam_b0.jpg",
+        "cam_l0": "samples/a7ea4d5ce19f51e1/images/cam_l0.jpg",
+        "cam_r0": "samples/a7ea4d5ce19f51e1/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "a2a4ec69878582c978685117d50ee57b0b35811d1470b1177cab0884ba44b688",
+        "cam_b0": "a01f4f4ff4b4197794d61fc77a2e3f67f489fb1b56df92c7b97835423c38cd58",
+        "cam_l0": "8e21e165c7f63c81b618eb3d06fd50c8450efa94cb65adeb2345a4a52249e2b5",
+        "cam_r0": "9ee7a19b953ffa354d2ccdfddd1c92199abdc45e85709f83df842f36372624d4"
+      },
+      "caption_original": "samples/a7ea4d5ce19f51e1/caption.original.json",
+      "manifest_record_original": "samples/a7ea4d5ce19f51e1/manifest_record.original.json",
+      "ground_truth_original": "samples/a7ea4d5ce19f51e1/ground_truth.original.json",
+      "grounding_npz": "samples/a7ea4d5ce19f51e1/grounding.npz",
+      "boxes_json": "samples/a7ea4d5ce19f51e1/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/a7ea4d5ce19f51e1.json",
+      "source_cache_sha256": "5e29910500c1e216326506dbeb247d410918cac8409ab67c0d5763f3782753ed"
+    },
+    {
+      "scene_token": "dbfcda26a8fc55aa",
+      "log_name": "2021.07.09.20.26.06_veh-35_03898_05974",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a red car in the center of the image, a silver SUV on the right of the image, a black SUV on the left of the image, a group of pedestrians in the background",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white car in the center foreground, a white car in the left middle ground, a black SUV in the left middle ground, a white car in the left background, a dark vehicle in the left background",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_l0": {
+          "text": "a pedestrian in a pink shirt in the foreground, a pedestrian in a white dress to the left, a pedestrian in a white shirt in the center, a pedestrian in a dark shirt in the foreground, a red SUV in the background",
+          "categories": [
+            "pedestrian",
+            "pedestrian",
+            "pedestrian",
+            "pedestrian",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a blue car in the foreground, a silver SUV on the left, a white SUV behind the blue car, a black car in the center, a pedestrian in a white shirt on the right, a pedestrian in dark clothing on the right",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian",
+            "pedestrian"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/dbfcda26a8fc55aa/images/cam_f0.jpg",
+        "cam_b0": "samples/dbfcda26a8fc55aa/images/cam_b0.jpg",
+        "cam_l0": "samples/dbfcda26a8fc55aa/images/cam_l0.jpg",
+        "cam_r0": "samples/dbfcda26a8fc55aa/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "7fa42622501fc7dee964253a9b364d8694e7c58c687c620e92b8faffdb36e0f4",
+        "cam_b0": "783bcd2a85aac6d043459313c20e14ade9e3a56f308cfc4d6868d788f760bcd8",
+        "cam_l0": "3dafbe15db5d2c15a07e10c803f5eda5cd66c4322bb5394be8912056634a602f",
+        "cam_r0": "f97957a7d42f248aca5d100f67c1cb538bfe311cef815a5b7da7d7b7b91d3272"
+      },
+      "caption_original": "samples/dbfcda26a8fc55aa/caption.original.json",
+      "manifest_record_original": "samples/dbfcda26a8fc55aa/manifest_record.original.json",
+      "ground_truth_original": "samples/dbfcda26a8fc55aa/ground_truth.original.json",
+      "grounding_npz": "samples/dbfcda26a8fc55aa/grounding.npz",
+      "boxes_json": "samples/dbfcda26a8fc55aa/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/dbfcda26a8fc55aa.json",
+      "source_cache_sha256": "2f4b33645895a044d9ecffd81fb5e28846f00ec3ab0bf340853e9b4082f378c3"
+    },
+    {
+      "scene_token": "5432831db6535814",
+      "log_name": "2021.07.09.20.26.06_veh-35_03898_05974",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white SUV in the left foreground, a black sedan in the center lane, a dark sedan on the right sidewalk, a group of pedestrians on the right sidewalk, a bicycle on the far right",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian",
+            "bicycle"
+          ]
+        },
+        "cam_b0": {
+          "text": "a white SUV in the center of the image, a red car behind the white SUV, a white SUV in the right lane, a black SUV on the far right, a pedestrian in an orange shirt on the left, a pedestrian in a blue shirt on the left, a pedestrian in dark clothing on the left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian",
+            "pedestrian",
+            "pedestrian"
+          ]
+        },
+        "cam_l0": {
+          "text": "a white car in the immediate foreground, a dark blue SUV to the left, a white van in the background left of the image, a dark sedan on the right, a pedestrian standing near the center",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_r0": {
+          "text": "a pedestrian in dark clothing on the left, a pedestrian carrying a bag on the left, a bicycle near the fence on the left",
+          "categories": [
+            "pedestrian",
+            "pedestrian",
+            "bicycle"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/5432831db6535814/images/cam_f0.jpg",
+        "cam_b0": "samples/5432831db6535814/images/cam_b0.jpg",
+        "cam_l0": "samples/5432831db6535814/images/cam_l0.jpg",
+        "cam_r0": "samples/5432831db6535814/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "d45de2e7319647d16d0d49e67ceaea6de784fae84ad8c4ba6edad20f8c324abb",
+        "cam_b0": "41b90ba002728c71d772a591fb8b36a013c1d6ab24124d480e1b7e9b7c76adfe",
+        "cam_l0": "f2c890ad768cccc2464fdb7dccc7c6d86362cea33146532f67e8ba4abff6805d",
+        "cam_r0": "b994b4ce3dbfe6e7d060b4dcbed96fc599459123ee0082cb23e5c2183372f356"
+      },
+      "caption_original": "samples/5432831db6535814/caption.original.json",
+      "manifest_record_original": "samples/5432831db6535814/manifest_record.original.json",
+      "ground_truth_original": "samples/5432831db6535814/ground_truth.original.json",
+      "grounding_npz": "samples/5432831db6535814/grounding.npz",
+      "boxes_json": "samples/5432831db6535814/projection.json",
+      "grounding_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/5432831db6535814.json",
+      "source_cache_sha256": "5c2e6ad30c4d319b057f6aae139afa94bea1bd4c6dfc16f890a30d1db97a60d9"
+    },
+    {
+      "scene_token": "fc957367b579500c",
+      "log_name": "2021.10.11.07.47.13_veh-50_00326_00708",
+      "camera_order": [
+        "cam_f0",
+        "cam_b0",
+        "cam_l0",
+        "cam_r0"
+      ],
+      "scene_text": {
+        "cam_f0": {
+          "text": "a white SUV on the right side of the image, a pedestrian in dark clothing on the left side of the image",
+          "categories": [
+            "vehicle",
+            "pedestrian"
+          ]
+        },
+        "cam_b0": {
+          "text": "",
+          "categories": []
+        },
+        "cam_l0": {
+          "text": "a blue van on the left side of the image, a blue SUV on the right side of the image, a white vehicle in the background on the left",
+          "categories": [
+            "vehicle",
+            "vehicle",
+            "vehicle"
+          ]
+        },
+        "cam_r0": {
+          "text": "a white SUV on the left side of the image, a pedestrian in dark clothing on the right side of the image, orange construction barriers along the right side of the image",
+          "categories": [
+            "vehicle",
+            "pedestrian",
+            "barrier"
+          ]
+        }
+      },
+      "images": {
+        "cam_f0": "samples/fc957367b579500c/images/cam_f0.jpg",
+        "cam_b0": "samples/fc957367b579500c/images/cam_b0.jpg",
+        "cam_l0": "samples/fc957367b579500c/images/cam_l0.jpg",
+        "cam_r0": "samples/fc957367b579500c/images/cam_r0.jpg"
+      },
+      "image_sha256": {
+        "cam_f0": "12d66cd93079ac9b85baf05cbf593d97b6637ef8318e048f3c5f36452c6e1be8",
+        "cam_b0": "4ffe8a20d39045965e233cc813cc6e84e869f7bb45c9e561e2021f63115cc325",
+        "cam_l0": "d632f139fe97ac473dfe26c37d5c5168ac12669037f8694d2183b271a9261ed9",
+        "cam_r0": "afe3c311991b89875251c464f6b8267035cf9dd481c1179713c6678931840d0d"
+      },
+      "caption_original": "samples/fc957367b579500c/caption.original.json",
+      "manifest_record_original": "samples/fc957367b579500c/manifest_record.original.json",
+      "ground_truth_original": "samples/fc957367b579500c/ground_truth.original.json",
+      "grounding_npz": "samples/fc957367b579500c/grounding.npz",
+      "boxes_json": "samples/fc957367b579500c/projection.json",
+      "grounding_valid": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "source_cache": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage1_navtrain_8gpu_full/shards/rank_0000/captions/scenes/fc957367b579500c.json",
+      "source_cache_sha256": "2672f45e291ec84de1b3f61da00af21cd69eb5080a586d1ebd014534fb874cf6"
     }
   ],
   "provenance": "Original captions/GT/images copied; grounding is newly derived for this small export using unchanged native geometry. Not a finished full-run cache or a resume directory."

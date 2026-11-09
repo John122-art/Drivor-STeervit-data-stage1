@@ -1,0 +1,389 @@
+{
+  "token": "f3288ba5cac454ad",
+  "cache_version": "7c02f47e11ec4cee639d12c64155994d69d97fcdadbbc2ec45330c8981f428d9",
+  "input_hash": "0156a06701d3c607233f3a24ce7e144174702bff27806a766caf3e7b33d07daa",
+  "rule_status": "passed",
+  "scene_text": {
+    "cam_f0": {
+      "text": "a red SUV in the foreground, a black sedan to the left, a white van in the background, a dark car in the background, a row of black bollards on the right, orange traffic cones near the bollards",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "barrier",
+        "traffic_cone"
+      ]
+    },
+    "cam_b0": {
+      "text": "a grey minivan in the foreground, a silver sedan behind the minivan, an orange construction trailer on the left, an orange traffic cone near the trailer, a pedestrian in dark clothing on the left",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "traffic_cone",
+        "pedestrian"
+      ]
+    },
+    "cam_l0": {
+      "text": "an orange SUV on the left side of the image, a white sedan in the center of the image, a dark SUV behind the white sedan, an orange car to the right of the white sedan, a black car on the far right side of the image",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle"
+      ]
+    },
+    "cam_r0": {
+      "text": "a white metal fence in the foreground",
+      "categories": [
+        "barrier"
+      ]
+    }
+  },
+  "audit": {
+    "cam_f0": {
+      "text": "a red SUV in the foreground, a black sedan to the left, a white van in the background, a dark car in the background, a row of black bollards on the right, orange traffic cones near the bollards",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "barrier",
+        "traffic_cone"
+      ],
+      "objects": [
+        {
+          "phrase": "a red SUV in the foreground",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a black sedan to the left",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a white van in the background",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a dark car in the background",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a row of black bollards on the right",
+          "category": "barrier"
+        },
+        {
+          "phrase": "orange traffic cones near the bollards",
+          "category": "traffic_cone"
+        }
+      ],
+      "token_count": 49,
+      "removed": [],
+      "format_normalization": "none",
+      "status": "ok",
+      "attempts": [
+        {
+          "raw_text": "\n\n</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a red SUV in the foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a black sedan to the left\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a white van in the background\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a dark car in the background\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a row of black bollards on the right\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"orange traffic cones near the bollards\",\n      \"category\": \"traffic_cone\"\n    }\n  ]\n}\n```",
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a red SUV in the foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a black sedan to the left\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a white van in the background\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a dark car in the background\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a row of black bollards on the right\",\n      \"category\": \"barrier\"\n    },\n    {\n      \"phrase\": \"orange traffic cones near the bollards\",\n      \"category\": \"traffic_cone\"\n    }\n  ]\n}\n```",
+          "generated_tokens": 191,
+          "seconds": 6.309746629005531,
+          "finish_reason": "eos",
+          "question": "You are looking at the front camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.08.35_veh-35_04744_06051/CAM_F0/61079af48074580d.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "initial_cleaning": {
+        "text": "a red SUV in the foreground, a black sedan to the left, a white van in the background, a dark car in the background, a row of black bollards on the right, orange traffic cones near the bollards",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "barrier",
+          "traffic_cone"
+        ],
+        "objects": [
+          {
+            "phrase": "a red SUV in the foreground",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "a black sedan to the left",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "a white van in the background",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "a dark car in the background",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "a row of black bollards on the right",
+            "category": "barrier"
+          },
+          {
+            "phrase": "orange traffic cones near the bollards",
+            "category": "traffic_cone"
+          }
+        ],
+        "token_count": 49,
+        "removed": [],
+        "format_normalization": "json_fence_removed",
+        "status": "ok"
+      },
+      "repairs": [],
+      "navigation_command": null
+    },
+    "cam_b0": {
+      "text": "a grey minivan in the foreground, a silver sedan behind the minivan, an orange construction trailer on the left, an orange traffic cone near the trailer, a pedestrian in dark clothing on the left",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "traffic_cone",
+        "pedestrian"
+      ],
+      "objects": [
+        {
+          "phrase": "a grey minivan in the foreground",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a silver sedan behind the minivan",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "an orange construction trailer on the left",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "an orange traffic cone near the trailer",
+          "category": "traffic_cone"
+        },
+        {
+          "phrase": "a pedestrian in dark clothing on the left",
+          "category": "pedestrian"
+        }
+      ],
+      "token_count": 42,
+      "removed": [],
+      "format_normalization": "none",
+      "status": "ok",
+      "attempts": [
+        {
+          "raw_text": "\n\n</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a grey minivan in the foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a silver sedan behind the minivan\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"an orange construction trailer on the left\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"an orange traffic cone near the trailer\",\n      \"category\": \"traffic_cone\"\n    },\n    {\n      \"phrase\": \"a pedestrian in dark clothing on the left\",\n      \"category\": \"pedestrian\"\n    }\n  ]\n}\n```",
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"a grey minivan in the foreground\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a silver sedan behind the minivan\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"an orange construction trailer on the left\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"an orange traffic cone near the trailer\",\n      \"category\": \"traffic_cone\"\n    },\n    {\n      \"phrase\": \"a pedestrian in dark clothing on the left\",\n      \"category\": \"pedestrian\"\n    }\n  ]\n}\n```",
+          "generated_tokens": 167,
+          "seconds": 5.519807365999441,
+          "finish_reason": "eos",
+          "question": "You are looking at the rear camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.08.35_veh-35_04744_06051/CAM_B0/129f6a57fa325dba.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "initial_cleaning": {
+        "text": "a grey minivan in the foreground, a silver sedan behind the minivan, an orange construction trailer on the left, an orange traffic cone near the trailer, a pedestrian in dark clothing on the left",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "traffic_cone",
+          "pedestrian"
+        ],
+        "objects": [
+          {
+            "phrase": "a grey minivan in the foreground",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "a silver sedan behind the minivan",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "an orange construction trailer on the left",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "an orange traffic cone near the trailer",
+            "category": "traffic_cone"
+          },
+          {
+            "phrase": "a pedestrian in dark clothing on the left",
+            "category": "pedestrian"
+          }
+        ],
+        "token_count": 42,
+        "removed": [],
+        "format_normalization": "json_fence_removed",
+        "status": "ok"
+      },
+      "repairs": [],
+      "navigation_command": null
+    },
+    "cam_l0": {
+      "text": "an orange SUV on the left side of the image, a white sedan in the center of the image, a dark SUV behind the white sedan, an orange car to the right of the white sedan, a black car on the far right side of the image",
+      "categories": [
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle",
+        "vehicle"
+      ],
+      "objects": [
+        {
+          "phrase": "an orange SUV on the left side of the image",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a white sedan in the center of the image",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a dark SUV behind the white sedan",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "an orange car to the right of the white sedan",
+          "category": "vehicle"
+        },
+        {
+          "phrase": "a black car on the far right side of the image",
+          "category": "vehicle"
+        }
+      ],
+      "token_count": 53,
+      "removed": [],
+      "format_normalization": "none",
+      "status": "ok",
+      "attempts": [
+        {
+          "raw_text": "\n\n</think>\n\n```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"an orange SUV on the left side of the image\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a white sedan in the center of the image\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a dark SUV behind the white sedan\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"an orange car to the right of the white sedan\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a black car on the far right side of the image\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+          "answer": "```json\n{\n  \"objects\": [\n    {\n      \"phrase\": \"an orange SUV on the left side of the image\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a white sedan in the center of the image\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a dark SUV behind the white sedan\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"an orange car to the right of the white sedan\",\n      \"category\": \"vehicle\"\n    },\n    {\n      \"phrase\": \"a black car on the far right side of the image\",\n      \"category\": \"vehicle\"\n    }\n  ]\n}\n```",
+          "generated_tokens": 174,
+          "seconds": 5.709809439998935,
+          "finish_reason": "eos",
+          "question": "You are looking at the front-left camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.08.35_veh-35_04744_06051/CAM_L0/34888fd972025dd7.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "initial_cleaning": {
+        "text": "an orange SUV on the left side of the image, a white sedan in the center of the image, a dark SUV behind the white sedan, an orange car to the right of the white sedan, a black car on the far right side of the image",
+        "categories": [
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle",
+          "vehicle"
+        ],
+        "objects": [
+          {
+            "phrase": "an orange SUV on the left side of the image",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "a white sedan in the center of the image",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "a dark SUV behind the white sedan",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "an orange car to the right of the white sedan",
+            "category": "vehicle"
+          },
+          {
+            "phrase": "a black car on the far right side of the image",
+            "category": "vehicle"
+          }
+        ],
+        "token_count": 53,
+        "removed": [],
+        "format_normalization": "json_fence_removed",
+        "status": "ok"
+      },
+      "repairs": [],
+      "navigation_command": null
+    },
+    "cam_r0": {
+      "text": "a white metal fence in the foreground",
+      "categories": [
+        "barrier"
+      ],
+      "objects": [
+        {
+          "phrase": "a white metal fence in the foreground",
+          "category": "barrier"
+        }
+      ],
+      "token_count": 9,
+      "removed": [],
+      "format_normalization": "none",
+      "status": "ok",
+      "attempts": [
+        {
+          "raw_text": "\n\n</think>\n\n```json\n{\"objects\": [{\"phrase\": \"a white metal fence in the foreground\", \"category\": \"barrier\"}]}\n```",
+          "answer": "```json\n{\"objects\": [{\"phrase\": \"a white metal fence in the foreground\", \"category\": \"barrier\"}]}\n```",
+          "generated_tokens": 33,
+          "seconds": 1.3872047720069531,
+          "finish_reason": "eos",
+          "question": "You are looking at the front-right camera image of a self-driving car.\n\nGenerate simple English phrases for visual object grounding.\nFor each clearly visible object, describe only its appearance/type and its\nposition IN THE IMAGE. Keep each phrase short, usually 5-12 words.\nExamples of phrase style: \"a white car near the center of the image\";\n\"a pedestrian in dark clothing on the right of the image\".\nThese are format examples, not facts about the input image.\n\nFocus on vehicles, pedestrians, bicycles, traffic cones, and barriers.\nPrefer clearly visible nearby objects. Describe a distinct instance when\npossible; do not combine separate objects into one vague scene summary.\nThere is no fixed number of objects. Avoid duplicate descriptions.\n\nUse image-relative left, center, right, upper, lower, foreground, or background\nfor every camera, including the rear camera. Do not use ego-relative ahead,\ndirectly in front, or directly behind. Mention color or clothing only if clear.\nDo not describe navigation, future behavior, driving decisions, or why an\nobject matters. Do not infer motion or stationary state; avoid driving,\nwalking, crossing, moving, stopped, parked, ascending, or descending.\nDo not describe background buildings, trees, advertisements, road layout,\ntraffic controls, or parts of the camera vehicle itself.\n\nKeep all phrases together within 60 English words. Use fewer words when sparse.\nDo not output bounding boxes or coordinates. Return JSON only:\n{\"objects\": [{\"phrase\": \"short object appearance and image position\", \"category\": \"vehicle\"}]}\nThe ONLY categories for this grounding task are:\nvehicle, pedestrian, bicycle, traffic_cone, barrier.\nChoose the correct category for each visible object; do not invent categories.\nIf none of these objects can be identified reliably, return {\"objects\": []}.",
+          "image": "/mnt/data/navsim/trainval_all/trainval_sensor_blobs/trainval/2021.07.16.16.08.35_veh-35_04744_06051/CAM_R0/5914eefef50150cf.jpg",
+          "image_grid_thw": [
+            [
+              1,
+              44,
+              80
+            ]
+          ],
+          "error": null
+        }
+      ],
+      "initial_cleaning": {
+        "text": "a white metal fence in the foreground",
+        "categories": [
+          "barrier"
+        ],
+        "objects": [
+          {
+            "phrase": "a white metal fence in the foreground",
+            "category": "barrier"
+          }
+        ],
+        "token_count": 9,
+        "removed": [],
+        "format_normalization": "json_fence_removed",
+        "status": "ok"
+      },
+      "repairs": [],
+      "navigation_command": null
+    }
+  }
+}

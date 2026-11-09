@@ -65,7 +65,7 @@ def copy_source(target):
     return inventory
 
 
-def export_samples(target, count, seed):
+def export_samples(target, count, seed, min_bytes=0, extend=False):
     sys.path.insert(0,str(ROOT/'scripts/data_generation'))
     from common import fingerprint
     from geometry import project_box, patch_distribution
@@ -77,9 +77,16 @@ def export_samples(target, count, seed):
     gt=json.loads((shard/'prepared/ground_truth.json').read_text())
     candidates=sorted((shard/'captions/scenes').glob('*.json'))
     random.Random(seed).shuffle(candidates)
-    chosen=[]
     root=target/'data_samples/stage1'
+    existing_index=root/'index.json'
+    chosen=json.loads(existing_index.read_text())['samples'] if extend and existing_index.is_file() else []
+    existing_tokens={v['scene_token'] for v in chosen}
+    exported_bytes=sum(f.stat().st_size for f in root.rglob('*') if f.is_file()) if root.exists() else 0
     for path in candidates:
+        if len(chosen)>=count and exported_bytes>=min_bytes:
+            break
+        if path.stem in existing_tokens:
+            continue
         raw_bytes=path.read_bytes()
         caption=json.loads(raw_bytes)
         if caption['rule_status'] != 'passed':
@@ -155,10 +162,10 @@ def export_samples(target, count, seed):
             'boxes_json':str((folder/'projection.json').relative_to(root)),'grounding_valid':list(map(bool,flags)),
             'source_cache':str(path),'source_cache_sha256':hashlib.sha256(raw_bytes).hexdigest()})
         print('Exported sample',token,flags,flush=True)
-        if len(chosen)==count:
-            break
-    if len(chosen)!=count:
-        raise RuntimeError(f'Only {len(chosen)} samples selected')
+        exported_bytes+=sum(f.stat().st_size for f in folder.rglob('*') if f.is_file())
+    if len(chosen)<count or exported_bytes<min_bytes:
+        raise RuntimeError(f'Only {len(chosen)} samples / {exported_bytes} bytes selected')
+    count=len(chosen)
     dump(root/'index.json',{'schema_version':1,'camera_order':CAMERAS,'path_base':'directory containing this index.json',
         'split':'navtrain','subset':'train','seed':seed,'scene_count':count,'samples':chosen,
         'provenance':'Original captions/GT/images copied; grounding is newly derived for this small export using unchanged native geometry. Not a finished full-run cache or a resume directory.'})
@@ -166,7 +173,7 @@ def export_samples(target, count, seed):
     shutil.copyfile(shard/'captions/metadata.json',root/'generation_metadata.original.json')
     (root/'README.md').write_text('''# 第一阶段小样本
 
-这里仅附三个实际 navtrain/train 场景，用于读代码、核对数据格式和检查投影。不是全量训练集，也不是可续跑的 rank 缓存。
+这里附有限数量的实际 navtrain/train 场景，用于读代码、核对数据格式和检查投影。实际场景数见 index.json 的 scene_count。不是全量训练集，也不是可续跑的 rank 缓存。
 
 - `index.json`：统一索引；其中相对路径均相对于本目录。
 - `scene_text.json`：token → 四相机 text/categories；与真实缓存一致。
@@ -201,19 +208,49 @@ def main():
     parser.add_argument('--target',type=Path,required=True)
     parser.add_argument('--scenes',type=int,default=3)
     parser.add_argument('--seed',type=int,default=20261109)
+    parser.add_argument('--extend-samples',action='store_true',help='Append to an existing export without replacing its source or Git settings')
+    parser.add_argument('--sample-min-mib',type=float,default=0,help='Continue appending scenes until the sample dataset reaches this size')
     a=parser.parse_args()
     target=a.target.resolve()
     if target==ROOT or ROOT in target.parents:
         parser.error('Destination must be outside the running source project')
     if a.scenes<1:
         parser.error('scenes must be positive')
+    if a.sample_min_mib<0:
+        parser.error('sample-min-mib must be nonnegative')
+    if a.extend_samples:
+        manifest_path=target/'export_manifest.json'
+        manifest=json.loads(manifest_path.read_text())
+        samples=export_samples(target,a.scenes,a.seed,int(a.sample_min_mib*1024**2),extend=True)
+        manifest['sample_scenes']=len(samples)
+        manifest['sample_tokens']=[s['scene_token'] for s in samples]
+        manifest['samples_updated_utc']=datetime.now(timezone.utc).isoformat()
+        source_copy=target/Path(__file__).relative_to(ROOT)
+        shutil.copy2(Path(__file__),source_copy)
+        for entry in manifest['original_source_inventory']:
+            if entry['path']==str(Path(__file__).relative_to(ROOT)):
+                entry['sha256']=digest(source_copy)
+                entry['bytes']=source_copy.stat().st_size
+        dump(manifest_path,manifest)
+        for relative in ['README.md','docs/github_stage1_upload_command.txt']:
+            p=target/relative
+            if p.is_file():
+                text=p.read_text()
+                for old in ['3 个真实场景','3 个真实第一阶段场景','三个真实场景']:
+                    text=text.replace(old,f'{len(samples)} 个真实场景')
+                text=text.replace('3 场景示例',f'{len(samples)} 场景示例')
+                p.write_text(text)
+        sample_root=target/'data_samples/stage1'
+        dataset_bytes=sum(p.stat().st_size for p in sample_root.rglob('*') if p.is_file())
+        print(json.dumps({'target':str(target),'sample_scenes':len(samples),'dataset_bytes':dataset_bytes,'dataset_mib':dataset_bytes/1024**2},ensure_ascii=False),flush=True)
+        return
     target.mkdir(parents=True,exist_ok=False)
     inventory=copy_source(target)
     originals=target/'README_DRIVOR_ORIGINAL.md'
     (target/'README.md').rename(originals)
     gi=target/'.gitignore'
     gi.write_text(gi.read_text()+'\n# Export: never commit full runtime data or credentials\n/outputs/\n/reports/\n/.cache/\n/datasets/\n/checkpoints/\n*.ckpt\n*.safetensors\n*.pth\n*.pt\n*.bundle\n.env\n*.pem\n')
-    samples=export_samples(target,a.scenes,a.seed)
+    samples=export_samples(target,a.scenes,a.seed,int(a.sample_min_mib*1024**2))
     # Preserve the external source dependencies used by the existing generators.
     external=target/'external_references'
     qwen=Path('/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive')

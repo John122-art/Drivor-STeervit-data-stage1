@@ -1,6 +1,6 @@
 # 第一阶段小样本
 
-这里仅附三个实际 navtrain/train 场景，用于读代码、核对数据格式和检查投影。不是全量训练集，也不是可续跑的 rank 缓存。
+这里附有限数量的实际 navtrain/train 场景，用于读代码、核对数据格式和检查投影。当前共 31 个场景、124 张原图，样本文件约 50.5 MiB；具体场景数见 index.json 的 scene_count。不是全量训练集，也不是可续跑的 rank 缓存。
 
 - `index.json`：统一索引；其中相对路径均相对于本目录。
 - `scene_text.json`：token → 四相机 text/categories；与真实缓存一致。
