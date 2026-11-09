@@ -80,3 +80,47 @@ a197927702b850f4 cam_r0: ok, 9 tokens; a white car on the left side
 7d923c664b7b5dae cam_b0: ok, 9 tokens; a white truck in the center lane
 7d923c664b7b5dae cam_l0: ok, 21 tokens; a dark sedan in the foreground, a white taxi on the right, traffic lights at the intersection
 7d923c664b7b5dae cam_r0: ok, 9 tokens; a white sedan in the left lane
+74831c9ae5a15f99 cam_f0: ok, 37 tokens; red traffic lights at the intersection, white SUV in the center lane, black SUV in the right lane, flatbed truck in the left lane, white sedan in the right lane
+74831c9ae5a15f99 cam_b0: ok, 9 tokens; a white truck in the center lane
+74831c9ae5a15f99 cam_l0: ok, 26 tokens; a white taxi on the right side of the road, a dark sedan in the foreground, a traffic light at the intersection
+74831c9ae5a15f99 cam_r0: ok, 9 tokens; a white sedan in the left foreground
+059009aa4252526c cam_f0: ok, 31 tokens; red traffic lights at the intersection, white SUV in the center lane, black minivan in the right lane, flatbed truck in the left lane
+059009aa4252526c cam_b0: ok, 9 tokens; a white truck in the center lane
+059009aa4252526c cam_l0: ok, 30 tokens; a white taxi on the right side of the road, a dark sedan in the foreground on the left, a traffic light suspended over the intersection
+059009aa4252526c cam_r0: ok, 8 tokens; a white sedan in the foreground
+fc2a5f9f60965ab9 cam_f0: ok, 42 tokens; a white SUV in the center lane, a black minivan in the right lane, a white taxi in the left lane, a flatbed truck in the left lane, green traffic lights at the intersection
+fc2a5f9f60965ab9 cam_b0: ok, 35 tokens; a white truck in the center of the image, a pink and yellow car to the left, a blue car to the lower left, a white car to the right
+fc2a5f9f60965ab9 cam_l0: ok, 36 tokens; a white taxi on the right side of the road, a dark sedan in the foreground on the left, a traffic light at the intersection, a street sign indicating Las Vegas
+fc2a5f9f60965ab9 cam_r0: ok, 8 tokens; a white sedan in the foreground
+169528411ca85ba4 cam_f0: ok, 33 tokens; a silver minivan in the left lane, distant traffic lights at the intersection, orange traffic cones on the left side, white dashed lane markings on the road
+169528411ca85ba4 cam_b0: ok, 41 tokens; a blue sedan in the left foreground, a dark sedan in the right lane, a white truck in the center lane, a white sedan in the left lane, two pedestrians standing on the left sidewalk
+169528411ca85ba4 cam_l0: ok, 18 tokens; a silver minivan in the right foreground, a red van on the left side
+169528411ca85ba4 cam_r0: empty_scene, 2 tokens; 
+81997d01d8f65c19 cam_f0: ok, 43 tokens; a silver minivan in the left lane, a black truck in the center lane, a traffic light showing red in the distance, orange traffic cones on the left side, a concrete barrier on the right side
+81997d01d8f65c19 cam_b0: ok, 30 tokens; a silver sedan in the left lane, a dark sedan in the right lane, a white truck in the center lane, dashed white lane markings
+81997d01d8f65c19 cam_l0: ok, 27 tokens; a silver minivan on the right side, an orange and white striped traffic barrel, a blue and white vehicle behind the fence
+81997d01d8f65c19 cam_r0: empty_scene, 2 tokens; 
+[test rank 0] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/grounding --resume
+Labelled ae5377e5ebf65f45: valid=[True, False, True, False]
+Labelled 7186e23637965344: valid=[True, False, False, False]
+Labelled 6d593ca981fd56b8: valid=[True, False, False, False]
+Labelled 0928c39f05db52c5: valid=[True, False, True, False]
+Labelled e5fb0daef05956f0: valid=[True, False, True, False]
+Labelled b1ce459acfb95179: valid=[True, False, True, True]
+Labelled 38736da1e9dc51c8: valid=[True, False, True, True]
+Labelled ddc904ff3be05595: valid=[True, False, True, False]
+Labelled 6740833c5f9d571a: valid=[True, False, True, False]
+Labelled d90d4f05ebde5bed: valid=[True, False, True, True]
+Labelled e3418fb50fa55320: valid=[True, False, True, True]
+Labelled ba82b67601605dd3: valid=[True, False, True, True]
+Labelled a197927702b850f4: valid=[True, False, True, True]
+Labelled 484b6d9a28f350bd: valid=[True, False, True, False]
+Labelled 7d923c664b7b5dae: valid=[True, False, True, True]
+Labelled 74831c9ae5a15f99: valid=[True, False, True, True]
+Labelled 059009aa4252526c: valid=[True, True, True, True]
+Labelled fc2a5f9f60965ab9: valid=[True, False, True, True]
+Labelled 169528411ca85ba4: valid=[True, True, True, False]
+Labelled 81997d01d8f65c19: valid=[True, True, True, False]
+[test rank 0] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000/validation.json
+PASS: 20 scenes, 80 captions, 51 valid targets, 20 deep checks
+[test rank 0] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0000

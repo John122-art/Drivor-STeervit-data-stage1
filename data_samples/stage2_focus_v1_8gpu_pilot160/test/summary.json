@@ -1,0 +1,231 @@
+{
+  "stage": 2,
+  "partition": "test",
+  "world_size": 8,
+  "prepared_scenes": 160,
+  "dataset_scenes": 160,
+  "empty_text_fallback_scenes": 17,
+  "empty_text_views": 122,
+  "empty_text_fallback_views": 18,
+  "all_texts_empty_scenes": 0,
+  "review_views": 70,
+  "text_policy": "stage2_focus_v1",
+  "scenes_without_grounding": 9,
+  "navigation_conditioned": true,
+  "settings": {
+    "world_size": 8,
+    "partition": "test",
+    "split": "navtest",
+    "subset": "all",
+    "scenes": 20,
+    "seed": 3407,
+    "data_root": "/mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset",
+    "prompt": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v1.txt",
+    "prompt_sha256": "643ae5c50546550d39120670b7bd62dbb8a7c3fc2b2cdf6c78796df441d1442d",
+    "deep_scenes": 20,
+    "stage1": false,
+    "navigation_conditioned": true,
+    "text_policy": "stage2_focus_v1",
+    "orchestration_hashes": {
+      "build_focus_grounding.py": "363606235b3d5df6fbeeb95fe2df14dc753f43951847762482f456e9641ef330",
+      "focus_policy.py": "095cba31b75f70c7ca4d43954ebe20d2546377b4605bdd9d8d135da5c515abc5",
+      "generate.py": "4fee5565d3b7b6806ebb447f2cd0d95c588d9333c970cb00d65073b8c70d0fe6",
+      "merge.py": "65baa721751e2c12f285dbab5997718eaef36c9d246737ab1958a2ce7c65ec75",
+      "test_focus_policy.py": "5825a697dbc8e05c7000c34d361f3dab2a9c81f7ffd67d10463c9daae60e5a4e",
+      "validate.py": "8713ac1a2203d9b8a20c4b1ba58c5907bf7f79202773fc0ba1e77dac2f23b423",
+      "worker.py": "a597be662a636aa095d6ce442df69c09c0e2c349e4a365e97ecd758f3d39282a"
+    }
+  },
+  "generation_contract_hash": "5709c1ba4794b8711f9bfade30c3e2b187d9c36c73972722d21bba466f76bb3d",
+  "rank_counts": [
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 60,
+        "empty_scene": 18,
+        "filtered_empty": 2
+      },
+      "removed_reasons": {
+        "unverified_motion": 4,
+        "excluded_content": 1
+      },
+      "normalizations": {},
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 10,
+      "phrase_repairs_accepted": 6,
+      "empty_text_views": 20,
+      "empty_text_fallback_views": 2,
+      "all_texts_empty_scenes": 0,
+      "review_views": 4,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 79,
+        "filtered_empty": 1
+      },
+      "removed_reasons": {
+        "unverified_motion": 16,
+        "unknown_category": 3,
+        "context_rejected": 5
+      },
+      "normalizations": {
+        "category_from_phrase": 1,
+        "category_corrected": 2
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 51,
+      "phrase_repairs_accepted": 35,
+      "empty_text_views": 1,
+      "empty_text_fallback_views": 1,
+      "all_texts_empty_scenes": 0,
+      "review_views": 18,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 62,
+        "empty_scene": 16,
+        "filtered_empty": 2
+      },
+      "removed_reasons": {
+        "unverified_motion": 12,
+        "context_rejected": 2
+      },
+      "normalizations": {},
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 20,
+      "phrase_repairs_accepted": 8,
+      "empty_text_views": 18,
+      "empty_text_fallback_views": 2,
+      "all_texts_empty_scenes": 0,
+      "review_views": 11,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "filtered_empty": 10,
+        "ok": 51,
+        "empty_scene": 19
+      },
+      "removed_reasons": {
+        "unknown_category": 8,
+        "unverified_motion": 4,
+        "context_rejected": 1
+      },
+      "normalizations": {},
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 13,
+      "phrase_repairs_accepted": 9,
+      "empty_text_views": 29,
+      "empty_text_fallback_views": 10,
+      "all_texts_empty_scenes": 0,
+      "review_views": 12,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 76,
+        "empty_scene": 3,
+        "filtered_empty": 1
+      },
+      "removed_reasons": {
+        "excluded_content": 2,
+        "unverified_motion": 10,
+        "context_rejected": 4
+      },
+      "normalizations": {},
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 20,
+      "phrase_repairs_accepted": 10,
+      "empty_text_views": 4,
+      "empty_text_fallback_views": 1,
+      "all_texts_empty_scenes": 0,
+      "review_views": 9,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 74,
+        "empty_scene": 6
+      },
+      "removed_reasons": {
+        "unverified_motion": 13,
+        "context_rejected": 10
+      },
+      "normalizations": {
+        "category_corrected": 8
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 50,
+      "phrase_repairs_accepted": 37,
+      "empty_text_views": 6,
+      "empty_text_fallback_views": 0,
+      "all_texts_empty_scenes": 0,
+      "review_views": 12,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 58,
+        "empty_scene": 22
+      },
+      "removed_reasons": {},
+      "normalizations": {
+        "category_corrected": 2
+      },
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 8,
+      "phrase_repairs_accepted": 8,
+      "empty_text_views": 22,
+      "empty_text_fallback_views": 0,
+      "all_texts_empty_scenes": 0,
+      "review_views": 0,
+      "text_policy": "stage2_focus_v1"
+    },
+    {
+      "scenes": 20,
+      "views": 80,
+      "statuses": {
+        "ok": 58,
+        "empty_scene": 20,
+        "filtered_empty": 2
+      },
+      "removed_reasons": {
+        "unverified_motion": 4
+      },
+      "normalizations": {},
+      "resumed_scenes": 0,
+      "written_scenes": 20,
+      "phrase_repairs_attempted": 8,
+      "phrase_repairs_accepted": 4,
+      "empty_text_views": 22,
+      "empty_text_fallback_views": 2,
+      "all_texts_empty_scenes": 0,
+      "review_views": 4,
+      "text_policy": "stage2_focus_v1"
+    }
+  ],
+  "grounding_role": "audit_only",
+  "status": "complete_with_review_items"
+}

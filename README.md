@@ -53,4 +53,6 @@ bash scripts/data_generation/run_stage1_data_8gpu_dlc.sh
 
 ## 第二阶段 focus 试生成缓存
 
-新增 [stage2_focus_v1_8gpu_pilot160 数据目录](data_samples/stage2_focus_v1_8gpu_pilot160)；[快照说明与生成进度](data_samples/stage2_focus_v1_8gpu_pilot160_README.md)。此目录来自独立的第二阶段数据生成任务，完成状态以快照说明为准。
+[Stage 2 数据与原图](data_samples/stage2_focus_v1_8gpu_pilot160/)：train、val、test 各 160 个场景，共 480 个场景，包含对应的 1,920 张四相机原图、文本、类别、导航指令和 GT 接地缓存。下载后通过目录内 `portable_scene_index.jsonl` 使用相对路径读取。
+
+[数据说明](data_samples/stage2_focus_v1_8gpu_pilot160_README.md) · [源文件校验清单](data_samples/stage2_focus_v1_8gpu_pilot160_snapshot.json)

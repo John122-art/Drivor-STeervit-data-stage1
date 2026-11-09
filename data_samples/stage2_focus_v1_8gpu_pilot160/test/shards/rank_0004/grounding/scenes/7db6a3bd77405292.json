@@ -1,0 +1,111 @@
+{
+  "token": "7db6a3bd77405292",
+  "input_hash": "79c0d1472aca165185d58f403595e7efa42265a6bc2116a8175ce69aa220af7a",
+  "image_size": [
+    1148,
+    672
+  ],
+  "coordinate_format": "xyxy",
+  "label_schema": "stage2_focus_v1",
+  "cameras": {
+    "cam_f0": {
+      "objects": [
+        {
+          "bbox": [
+            260.66665739380045,
+            321.44467293851505,
+            335.1887543168778,
+            365.02526314898296
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 18
+        }
+      ],
+      "selected_gt_indices": [
+        18
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_b0": {
+      "objects": [
+        {
+          "bbox": [
+            464.38311008959795,
+            303.8842181823537,
+            615.5717446104123,
+            361.9119904172482
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 1
+        },
+        {
+          "bbox": [
+            600.8814817058949,
+            354.0232995308595,
+            799.6400921576087,
+            474.75116538253667
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 2
+        },
+        {
+          "bbox": [
+            913.2885010962656,
+            322.40661201797445,
+            1082.359939923355,
+            381.107664249861
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 4
+        },
+        {
+          "bbox": [
+            800.6467372234903,
+            317.8218749065789,
+            994.0595256109447,
+            386.1924450222366
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 5
+        }
+      ],
+      "selected_gt_indices": [
+        2,
+        5,
+        1
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_l0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    },
+    "cam_r0": {
+      "objects": [
+        {
+          "bbox": [
+            425.1037940283331,
+            506.4000418312781,
+            560.4838060387422,
+            672.0
+          ],
+          "near_clipped": false,
+          "category": "traffic_cone",
+          "gt_index": 20
+        }
+      ],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    }
+  }
+}

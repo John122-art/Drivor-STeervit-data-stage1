@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "prepared_scenes": 20,
+  "caption_views": 80,
+  "valid_grounding_views": 51,
+  "deep_reprojected_scenes": 20,
+  "max_roberta_tokens": 55,
+  "camera_order": [
+    "cam_f0",
+    "cam_b0",
+    "cam_l0",
+    "cam_r0"
+  ],
+  "text_policy": "stage2_focus_v1",
+  "label_schema": "stage2_focus_v1",
+  "checks": [
+    "raw frame/images/GT and current command",
+    "native intrinsics/inverse extrinsics",
+    "focus cleaning replay with accepted same-image repairs",
+    "nearest-n + coverage selection replay",
+    "mask shapes/normalization",
+    "sampled or full GT reprojection and mask reconstruction"
+  ],
+  "visual_review": "numeric checks do not establish visual caption factuality"
+}

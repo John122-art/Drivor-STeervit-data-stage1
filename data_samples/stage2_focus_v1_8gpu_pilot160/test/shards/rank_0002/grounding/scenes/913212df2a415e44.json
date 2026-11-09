@@ -1,0 +1,99 @@
+{
+  "token": "913212df2a415e44",
+  "input_hash": "542c0ba4b9c5153035e8a596458b366eaa5e121e3dcbbcb306eb6b5adfd0ae92",
+  "image_size": [
+    1148,
+    672
+  ],
+  "coordinate_format": "xyxy",
+  "label_schema": "stage2_focus_v1",
+  "cameras": {
+    "cam_f0": {
+      "objects": [
+        {
+          "bbox": [
+            636.1102086157563,
+            335.34215740919177,
+            699.8308222421135,
+            381.95589254765423
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 0
+        },
+        {
+          "bbox": [
+            145.55365047671336,
+            315.05419446718884,
+            294.115653706783,
+            393.5844342911057
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 16
+        },
+        {
+          "bbox": [
+            539.5873957857289,
+            286.51720078526785,
+            618.5097780154885,
+            379.5242056127155
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 69
+        }
+      ],
+      "selected_gt_indices": [
+        16,
+        0,
+        69
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_b0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    },
+    "cam_l0": {
+      "objects": [
+        {
+          "bbox": [
+            1121.0938870753657,
+            342.25582595449475,
+            1148.0,
+            432.0300557407018
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 16
+        },
+        {
+          "bbox": [
+            741.1993341963625,
+            361.01485446959754,
+            845.3639782158361,
+            404.8121630652993
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 83
+        }
+      ],
+      "selected_gt_indices": [
+        16
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_r0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    }
+  }
+}

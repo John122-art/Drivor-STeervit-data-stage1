@@ -1,0 +1,177 @@
+{
+  "tokens": [
+    "108b8b1ea5fd57ff",
+    "157ad2289b20545e",
+    "3b6865082c225fe8",
+    "4e496bfdb6b95697",
+    "7084e524e59c50ab",
+    "c2790319345a58cf"
+  ],
+  "views": [
+    {
+      "token": "7084e524e59c50ab",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "a concrete retaining wall on the left",
+          "category": "barrier",
+          "raw_category": "barrier",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "157ad2289b20545e",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "the vehicles driving in the right lanes",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "108b8b1ea5fd57ff",
+      "camera": "cam_l0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a white arrow marking on the road surface",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "c2790319345a58cf",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a pedestrian walking on the left side of the road",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "4e496bfdb6b95697",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a pedestrian walking on the right side of the road",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a white sedan parked on the right side",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "4e496bfdb6b95697",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a pedestrian walking on the sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "3b6865082c225fe8",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a white van parked on the right",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 2,
+          "phrase": "a pedestrian walking on the right sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "3b6865082c225fe8",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a black sedan parked on the right side of the road",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a straight urban street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    },
+    {
+      "token": "3b6865082c225fe8",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a silver sedan parked in the lane",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 1,
+          "phrase": "a pedestrian walking on the left",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        },
+        {
+          "context": "a street with parked vehicles",
+          "reason": "context_rejected"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

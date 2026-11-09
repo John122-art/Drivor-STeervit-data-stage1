@@ -2,12 +2,12 @@
   "source_directory": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160",
   "repository_directory": "data_samples/stage2_focus_v1_8gpu_pilot160",
   "snapshot_started_utc": "2026-11-09T12:36:34.698652+00:00",
-  "snapshot_finished_utc": "2026-11-09T12:41:58.909941+00:00",
-  "snapshot_semantics": "Both train and val completed. Final filename inventory refreshed; unchanged files retain previously verified bytes, new/changed files copied and verified. No source data modified.",
-  "files": 1452,
-  "bytes": 26578180,
-  "json_validated": 1042,
-  "npz_crc_validated": 360,
+  "snapshot_finished_utc": "2026-11-09T12:49:24.088022+00:00",
+  "snapshot_semantics": "All train, val and test partitions completed and validated. Original source outputs preserved; separately added original camera images and portable relative index.",
+  "files": 1792,
+  "bytes": 29525561,
+  "json_validated": 1264,
+  "npz_crc_validated": 480,
   "partitions": {
     "train": {
       "prepared_scenes": 160,
@@ -44,6 +44,24 @@
         "rank_0006",
         "rank_0007"
       ]
+    },
+    "test": {
+      "prepared_scenes": 160,
+      "caption_cached_scenes": 160,
+      "grounding_npz_scenes": 160,
+      "merged_scene_text_scenes": 160,
+      "merged_index_scenes": 160,
+      "complete_marker_exists": true,
+      "complete_ranks": [
+        "rank_0000",
+        "rank_0001",
+        "rank_0002",
+        "rank_0003",
+        "rank_0004",
+        "rank_0005",
+        "rank_0006",
+        "rank_0007"
+      ]
     }
   },
   "files_changed_while_reading": [],
@@ -53,109 +71,133 @@
       "path": "generation_contract.json",
       "bytes": 7843,
       "sha256": "f132b8b3eceb89774a555818573546bac4255fb3747044013290535936efc5ca",
-      "source_mtime_ns": 1794227841645535486
+      "source_mtime_ns": 1794228376311028481
+    },
+    {
+      "path": "test/COMPLETE.json",
+      "bytes": 114,
+      "sha256": "4c5cf9996484df18d33dad4e887130613c72a807dfa4bf6a0a1c25c28cc30d86",
+      "source_mtime_ns": 1794228376421828427
+    },
+    {
+      "path": "test/dataset_index.jsonl",
+      "bytes": 370684,
+      "sha256": "58c6e44ac1fba72049bfe19b060c9852351f022969a1cd2794578c6e1f1a64ad",
+      "source_mtime_ns": 1794228376252028207
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/0/stderr.log",
-      "bytes": 1526,
-      "sha256": "175f931e680728b66188d8c0118a866985e9f45a2a859ff3bf1ba274b52c2475",
-      "source_mtime_ns": 1794227925249680777
+      "bytes": 1945,
+      "sha256": "55899d4a4cd83ce198e4f87c464e577abc9ac05e0ffb04bea80d440849505e08",
+      "source_mtime_ns": 1794228156144633747
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/0/stdout.log",
-      "bytes": 8398,
-      "sha256": "87b44f9404a60c4cb158d757d22cc1bc645c2503e062fa2fa793f26f6a4fc003",
-      "source_mtime_ns": 1794228068609552120
+      "bytes": 14036,
+      "sha256": "9a34d01a31379bb2e1d6fbaaba88817e87e660b28b4453a908d7bea9ab28b045",
+      "source_mtime_ns": 1794228159494288591
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/1/stderr.log",
-      "bytes": 1454,
-      "sha256": "54e4a2eac5e71c8897ddf5419f3198d527536f9605b390784711ff551c411533",
-      "source_mtime_ns": 1794227925249543614
+      "bytes": 1873,
+      "sha256": "471fca58aa59ab9820613042f776cfa5b5e426c53528184537524421d1f7a061",
+      "source_mtime_ns": 1794228369226018300
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/1/stdout.log",
-      "bytes": 6979,
-      "sha256": "9362583cabe66f9be6b6d43c26730ec6eec8119673bac47299d5e1cb4a56fc03",
-      "source_mtime_ns": 1794228048129670605
+      "bytes": 19654,
+      "sha256": "5ae25672feec7e2845cd44986a62eb555f2da1611d9a40fe6f76c439cf54c54e",
+      "source_mtime_ns": 1794228373291613537
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/2/stderr.log",
-      "bytes": 1587,
-      "sha256": "40273452ff9843cd476f735b60e30c16864be3a071ad0882634817c4a39c80c7",
-      "source_mtime_ns": 1794227925249906812
+      "bytes": 2006,
+      "sha256": "bb8817d81b99fb3e80c588abd47ab685c211f9df4193af55eb80a84c5314d6d1",
+      "source_mtime_ns": 1794228162230247371
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/2/stdout.log",
-      "bytes": 6502,
-      "sha256": "7b27943ab104d82942beb42185ad4a6354bc528bc47308c18ddb788a29238a4d",
-      "source_mtime_ns": 1794228043009859376
+      "bytes": 14058,
+      "sha256": "03770097854323912a06cc023dbd94c6a802d156efd9b30a42f4a9abdb6ed7c6",
+      "source_mtime_ns": 1794228164280196862
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/3/stderr.log",
-      "bytes": 1368,
-      "sha256": "886bd2b71a4dbd997a614eb14dd75e43c6024f9700c7a95903d714b6a8e99f4f",
-      "source_mtime_ns": 1794227925249405736
+      "bytes": 1787,
+      "sha256": "d4cf23f2273389cf8a1d3971ccf108540daddbab8556fa4867efd506f8a6e740",
+      "source_mtime_ns": 1794228081452731463
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/3/stdout.log",
-      "bytes": 11140,
-      "sha256": "4030b6e5b00d7fa63b1c47b3bcd87612dd79b174cba5c68d7166b39f81adcf70",
-      "source_mtime_ns": 1794228070623462067
+      "bytes": 11350,
+      "sha256": "ddd73496258b2fdc01a92e3f631aaec9fd4db17433ac48911b2b3e2bba63886c",
+      "source_mtime_ns": 1794228082599617575
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/4/stderr.log",
-      "bytes": 1436,
-      "sha256": "fef91f31e71c52b011f93fc5f58392747eb65f950a96885459e465a13725f9c5",
-      "source_mtime_ns": 1794227925249351987
+      "bytes": 1855,
+      "sha256": "4d53e37533dc89a784ab98e10bf05e36e27743459c384698ca71cc4253c8b8db",
+      "source_mtime_ns": 1794228256591562803
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/4/stdout.log",
-      "bytes": 8997,
-      "sha256": "88fb87e2c953f0891b4f57015d502e8c86a8ddd50bd7c50c815700be550cf5af",
-      "source_mtime_ns": 1794228063488814370
+      "bytes": 17138,
+      "sha256": "f4555cd77296597bc0d155ad4ef2b15fe3b7e6de6b99da9332a50ef4d9110cbc",
+      "source_mtime_ns": 1794228259759043876
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/5/stderr.log",
-      "bytes": 1452,
-      "sha256": "32d7bc7cc664374ba0d4c59690ca9d2498871d7896665aa528f3213f301996a6",
-      "source_mtime_ns": 1794227925248781411
+      "bytes": 1871,
+      "sha256": "0d3582eaf01650aff201c5579563c804be3e1a28c848e9d2a2a31a1437e8d049",
+      "source_mtime_ns": 1794228258655866969
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/5/stdout.log",
-      "bytes": 6938,
-      "sha256": "4dea57915f2b2cb1606584525799a9c502337579c11af06988f796e645f5a32b",
-      "source_mtime_ns": 1794228063489401712
+      "bytes": 16235,
+      "sha256": "b4ebf61cb66ed6afaae994daeb8695af46860f4c690d17fde6d0ad41ed1aa02e",
+      "source_mtime_ns": 1794228261229971762
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/6/stderr.log",
-      "bytes": 1454,
-      "sha256": "be3742eddf35e3772d0334f24f04e7286d95f55ba63f81a61759a8aaff695d7a",
-      "source_mtime_ns": 1794227925249908433
+      "bytes": 1873,
+      "sha256": "fa89bce91e1cc3a464f035ff3d14eaa308e82eadaea013ae2812c0188aa3d3e3",
+      "source_mtime_ns": 1794228112671213768
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/6/stdout.log",
-      "bytes": 8701,
-      "sha256": "9b00f21e87be48a857bcb5026190d2458b4fe5f5fe45a3d737790b2c0cb12705",
-      "source_mtime_ns": 1794228048128806984
+      "bytes": 13862,
+      "sha256": "695867437d4913fae88f29c19c0327324607705118ae7091c07cb5c42f6059bb",
+      "source_mtime_ns": 1794228114179397896
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/7/stderr.log",
-      "bytes": 1459,
-      "sha256": "19a2d759db57c80aed7738f72b86230b336a39450aa0566fed1e97f9f4f0120c",
-      "source_mtime_ns": 1794227925249568667
+      "bytes": 1878,
+      "sha256": "aeb6c1b6ebaf99668ced6e20919946d97984293f798102d44e39012abdaec670",
+      "source_mtime_ns": 1794228092947236362
     },
     {
       "path": "test/launcher_logs/db46bb88-5339-43e9-b13b-2855a925699b_bwahdbta/attempt_0/7/stdout.log",
-      "bytes": 8119,
-      "sha256": "a7b54be7c5e876ba74b874811b37cd1e0f633fa106e99b703486d7e2beb2ed41",
-      "source_mtime_ns": 1794228053249257377
+      "bytes": 12277,
+      "sha256": "c39fbb60f6b320329ca961aa7421a94edfbaaa7f225d17317675dbc206abdf25",
+      "source_mtime_ns": 1794228095654160631
     },
     {
-      "path": "test/shards/rank_0000/run_config.json",
-      "bytes": 1197,
-      "sha256": "24ad5c83d0f32f9af7681966a3c80956976b49553e768ce011417e21bdd03db3",
-      "source_mtime_ns": 1794227847422562554
+      "path": "test/review_queue.json",
+      "bytes": 25339,
+      "sha256": "ca2fdcb504e33a2c91c9827181c7a587132aeb14112b5fdf940f75674b46e885",
+      "source_mtime_ns": 1794228376363028723
+    },
+    {
+      "path": "test/scene_text.json",
+      "bytes": 124888,
+      "sha256": "c084a7f43fa31055d8b1e2f7f472c715bbd42e8016c1b44e008fe75b49bb5115",
+      "source_mtime_ns": 1794228376346028644
+    },
+    {
+      "path": "test/shards/rank_0000/COMPLETE.json",
+      "bytes": 153,
+      "sha256": "bcc49745313bc36d5418842e730edc6a8bcac0f60ca7b866dc487dc3c8afcf01",
+      "source_mtime_ns": 1794228159456021095
     },
     {
       "path": "test/shards/rank_0000/captions/metadata.json",
@@ -164,10 +206,40 @@
       "source_mtime_ns": 1794227896107790666
     },
     {
+      "path": "test/shards/rank_0000/captions/review_queue.json",
+      "bytes": 1929,
+      "sha256": "7c680834b72ac04b0329a3019a2bf07dd7de014de3dbc781bd59326d37643564",
+      "source_mtime_ns": 1794228141126935949
+    },
+    {
+      "path": "test/shards/rank_0000/captions/scene_context.json",
+      "bytes": 4243,
+      "sha256": "39d1787afc1038d0b7eaf581667d7c13a9ffbfbfbf3ab2ce859b20eaac2856c0",
+      "source_mtime_ns": 1794228141041935554
+    },
+    {
+      "path": "test/shards/rank_0000/captions/scene_text.json",
+      "bytes": 14296,
+      "sha256": "3c0d1d91d6197207faeed4f3a7d6b2671d8b94012cf987b734052d999e11ac2e",
+      "source_mtime_ns": 1794228141034729562
+    },
+    {
+      "path": "test/shards/rank_0000/captions/scenes/059009aa4252526c.json",
+      "bytes": 17869,
+      "sha256": "1bfa56ef1ed04d5b9d2685c326cc03401396918790be44220fa7c94e4d7e4b84",
+      "source_mtime_ns": 1794228087691688216
+    },
+    {
       "path": "test/shards/rank_0000/captions/scenes/0928c39f05db52c5.json",
       "bytes": 26432,
       "sha256": "4455f3c6ab74c4ab5c4390e46137d301dfcbf69f1b89c20ed782ea76e0b3561b",
       "source_mtime_ns": 1794227938988991586
+    },
+    {
+      "path": "test/shards/rank_0000/captions/scenes/169528411ca85ba4.json",
+      "bytes": 29560,
+      "sha256": "7dcda9cc63a0f9fb25c616eb0b391ed99d0bbf49f85e351125ed97fa974d485a",
+      "source_mtime_ns": 1794228126461867830
     },
     {
       "path": "test/shards/rank_0000/captions/scenes/38736da1e9dc51c8.json",
@@ -210,6 +282,12 @@
       "bytes": 18089,
       "sha256": "ec304ec97d61b2300001bb0244d9084ced1d6271fa873b2120aec772ce3e8bfb",
       "source_mtime_ns": 1794228063244573781
+    },
+    {
+      "path": "test/shards/rank_0000/captions/scenes/81997d01d8f65c19.json",
+      "bytes": 19182,
+      "sha256": "446bac396dd48728ab3cf2bc91fe0a08ac7c796d1bfc82e03a6f38ae3fcb446f",
+      "source_mtime_ns": 1794228141016935438
     },
     {
       "path": "test/shards/rank_0000/captions/scenes/a197927702b850f4.json",
@@ -260,6 +338,270 @@
       "source_mtime_ns": 1794227957571051571
     },
     {
+      "path": "test/shards/rank_0000/captions/scenes/fc2a5f9f60965ab9.json",
+      "bytes": 20144,
+      "sha256": "fa2fe8fffc5fb860d796e93b9722c50f7bd5296e285a7c91d89d3d6c25a22785",
+      "source_mtime_ns": 1794228105036768593
+    },
+    {
+      "path": "test/shards/rank_0000/captions/summary.json",
+      "bytes": 483,
+      "sha256": "98f7d70ee18da940cf50228240e49e71963fbf9363cee8a160a5733a1aebb5a6",
+      "source_mtime_ns": 1794228141145936038
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/index.json",
+      "bytes": 2303,
+      "sha256": "88574f47a22c3d9434cfbfe99b92e7be208b012f4df0f9b111a0f369a874bd87",
+      "source_mtime_ns": 1794228149921223420
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/059009aa4252526c.npz",
+      "bytes": 3206,
+      "sha256": "c9af98c98a54e40c579435b3d5ec327aa5760935bf62ecd3a9a20df684361d17",
+      "source_mtime_ns": 1794228148890972016
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/0928c39f05db52c5.npz",
+      "bytes": 2991,
+      "sha256": "a4d911784ca70677e118334997d9c6def308c82d84a41dc5b7cc52f2790410d6",
+      "source_mtime_ns": 1794228146426369253
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/169528411ca85ba4.npz",
+      "bytes": 3350,
+      "sha256": "c1fbb695ab3a5cd87825faf742334d08c78f4f9530b9cdbbce09ad4aaddd9f0a",
+      "source_mtime_ns": 1794228149678975676
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/38736da1e9dc51c8.npz",
+      "bytes": 2944,
+      "sha256": "dbe794a709c1844a252525f74a39c07443b3ed9670c87b3de74f473d794cfb50",
+      "source_mtime_ns": 1794228146710961889
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/484b6d9a28f350bd.npz",
+      "bytes": 3152,
+      "sha256": "0f81b4232ae8ccafac76bcf954d2973f1f00ce02b425a2df037fe2406bc8f38c",
+      "source_mtime_ns": 1794228148086968281
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/6740833c5f9d571a.npz",
+      "bytes": 2992,
+      "sha256": "9904accb3e86bbd3fdafa70472d506e64726281ee28f8154585d0ee4f096169f",
+      "source_mtime_ns": 1794228146914962837
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/6d593ca981fd56b8.npz",
+      "bytes": 2815,
+      "sha256": "057ccdc5aa7ac6ecfe640a9043d7d48349d5bcb59a3f9a5eb910265303328ee1",
+      "source_mtime_ns": 1794228146363960277
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/7186e23637965344.npz",
+      "bytes": 2817,
+      "sha256": "68f9b0c9fff95c8d2a8fcf388ed58541f8e5e1bb8c311572c61e318bd9892a46",
+      "source_mtime_ns": 1794228146305960008
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/74831c9ae5a15f99.npz",
+      "bytes": 3183,
+      "sha256": "74c4cf102e19b06cae6f1e7f305d0393afd083e970b41b2febccdf0043246c46",
+      "source_mtime_ns": 1794228148594945297
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/7d923c664b7b5dae.npz",
+      "bytes": 3220,
+      "sha256": "25aff0cce90cb92b3435a758e61b004759db4c317c2180c4dbdd493212cd8f19",
+      "source_mtime_ns": 1794228148367969586
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/81997d01d8f65c19.npz",
+      "bytes": 3249,
+      "sha256": "3b306a3df7a549bf7a769d27749cc1e791c3bb131fdab483bf1d46e9a9fef8e2",
+      "source_mtime_ns": 1794228149874976587
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/a197927702b850f4.npz",
+      "bytes": 3158,
+      "sha256": "b8fa3e611da9c6bd4d4cafcb9e6d1e2817aea4b036c3233075f924181b21c748",
+      "source_mtime_ns": 1794228147843967152
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/ae5377e5ebf65f45.npz",
+      "bytes": 2922,
+      "sha256": "a478362b4ec01abd5c726dad3f871955d9a0a5dddb777c36b8f95fe444c46732",
+      "source_mtime_ns": 1794228146251959757
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/b1ce459acfb95179.npz",
+      "bytes": 2970,
+      "sha256": "dd2320cf5523a9141d93d4aa5aae8584bd4b86331da2513a1400528a2a1a3d4c",
+      "source_mtime_ns": 1794228146647789564
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/ba82b67601605dd3.npz",
+      "bytes": 3158,
+      "sha256": "04040040bbbbe7b25216fa55c95942e0ed4f976026fb944c1569f41a344169d5",
+      "source_mtime_ns": 1794228147571965889
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/d90d4f05ebde5bed.npz",
+      "bytes": 2962,
+      "sha256": "49a34a7590a4b0233e6bd7d6c6fb2a40ebb6b957ea20d8720e47d425cabf7ce2",
+      "source_mtime_ns": 1794228147145671276
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/ddc904ff3be05595.npz",
+      "bytes": 3038,
+      "sha256": "fd928a36e57181ec8278ee3605d8095505faee2123b327b5888e0b92f9c2dae6",
+      "source_mtime_ns": 1794228146781967280
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/e3418fb50fa55320.npz",
+      "bytes": 3045,
+      "sha256": "ecc1975644f6884cbad966ad1eabb550ed75ba4512e61c415edbdf211bfdf9ce",
+      "source_mtime_ns": 1794228147296964611
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/e5fb0daef05956f0.npz",
+      "bytes": 3018,
+      "sha256": "b9f8c349b650c4628bbf8d3f4aae5d4cf2349170c3db4ce600892da97c520fd7",
+      "source_mtime_ns": 1794228146505960937
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/masks/fc2a5f9f60965ab9.npz",
+      "bytes": 3201,
+      "sha256": "4fe2a9ef8ca094de988456a0b3d178d5d6c7fac341ee6bf9e07ff1de6a55a599",
+      "source_mtime_ns": 1794228149321974018
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/059009aa4252526c.json",
+      "bytes": 11251,
+      "sha256": "5af6bfbeb38b8b7a01666d6dbbbbcae9879c261c96d5484291780bc03bfe78dc",
+      "source_mtime_ns": 1794228148935972225
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/0928c39f05db52c5.json",
+      "bytes": 6212,
+      "sha256": "349af8aa7ecf8440083e4dfb0f44dafe55a03753b1b86fd78dca7e40b9ec23bf",
+      "source_mtime_ns": 1794228146433960602
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/169528411ca85ba4.json",
+      "bytes": 10766,
+      "sha256": "92371030a3d313a0bcf2b0748e80cb961e9e1e182b256cb47265938dec22e11a",
+      "source_mtime_ns": 1794228149691975737
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/38736da1e9dc51c8.json",
+      "bytes": 6199,
+      "sha256": "c979a823885667f27265627cd0a70533c677cac836819cdcc8804470ad1f755d",
+      "source_mtime_ns": 1794228146723699863
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/484b6d9a28f350bd.json",
+      "bytes": 8527,
+      "sha256": "bbba6aab30c43ae74831d183b48e012ac0c455c6b8a982c2989f194fce72f3f3",
+      "source_mtime_ns": 1794228148123968453
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/6740833c5f9d571a.json",
+      "bytes": 6200,
+      "sha256": "a9427b54f5c97ddc9a2473a84bdcd52baa4dfd11a944a3360b712a08b340a91e",
+      "source_mtime_ns": 1794228147060963515
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/6d593ca981fd56b8.json",
+      "bytes": 5937,
+      "sha256": "7754e463732ee10e235078319136635ee1fd29a6068cf82c6c0132efe6b3bc53",
+      "source_mtime_ns": 1794228146376960337
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/7186e23637965344.json",
+      "bytes": 4557,
+      "sha256": "1f27c27d20788e67654737befe1693affbed5975fe68f424bec15a426d01012e",
+      "source_mtime_ns": 1794228146321960082
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/74831c9ae5a15f99.json",
+      "bytes": 9673,
+      "sha256": "badec63c351d5cfe2ffa0f30fcdc5fa2e11283de115db31612c8d645a0773557",
+      "source_mtime_ns": 1794228148602970678
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/7d923c664b7b5dae.json",
+      "bytes": 8896,
+      "sha256": "6faa7d4c81b0b1e39a10b93d7f70e09e4cdd13d57431c130bc11237a6947b4f5",
+      "source_mtime_ns": 1794228148380709858
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/81997d01d8f65c19.json",
+      "bytes": 11881,
+      "sha256": "4ea29d764419e8b058c1df122b8834f892e4e04b6e759e5bd1ed4e76c27417bb",
+      "source_mtime_ns": 1794228149895976684
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/a197927702b850f4.json",
+      "bytes": 6972,
+      "sha256": "e1704055095d640ffb512d7d4f8638ab311b3d2ab63c0dfd53288c2f20af5493",
+      "source_mtime_ns": 1794228147854967203
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/ae5377e5ebf65f45.json",
+      "bytes": 5642,
+      "sha256": "7041435f68fe308dbb212dcfaabb914c1a78b1e4afcf72c462cec9a73b71a916",
+      "source_mtime_ns": 1794228146270247836
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/b1ce459acfb95179.json",
+      "bytes": 5960,
+      "sha256": "0f6df29e5df85551e48ac6b502a91ffbd2e30e8212bc50e93022cc7f26042b8d",
+      "source_mtime_ns": 1794228146655961633
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/ba82b67601605dd3.json",
+      "bytes": 6460,
+      "sha256": "5fac87b6a7acfe0579c7f733cbbe58772634193e786e9de28f0dca5bcca783e6",
+      "source_mtime_ns": 1794228147626966144
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/d90d4f05ebde5bed.json",
+      "bytes": 6431,
+      "sha256": "dfb6fac75bfb967d9c7cc099da2639b9e0c0127bd7a62ceaefc9a2445c5abf53",
+      "source_mtime_ns": 1794228147151963938
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/ddc904ff3be05595.json",
+      "bytes": 7018,
+      "sha256": "72782667e981e9cb074eb8ff394725c2830217cdbb7339f5ad695502b5b1c836",
+      "source_mtime_ns": 1794228146788962251
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/e3418fb50fa55320.json",
+      "bytes": 6956,
+      "sha256": "8214cd17975d0fc310e070fdfbfe8b99f97c7bab7ec28e90fa7b3c6cb014a21e",
+      "source_mtime_ns": 1794228147339809356
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/e5fb0daef05956f0.json",
+      "bytes": 6226,
+      "sha256": "eb092e487a7a6e075df851afa7f031a54e583759a6495550e903dcbb3c1aad74",
+      "source_mtime_ns": 1794228146532961062
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/scenes/fc2a5f9f60965ab9.json",
+      "bytes": 10026,
+      "sha256": "d9ec53b08777ffc633c0a5c111ed6b24475c9392067f34d39d1fb9b326b2c576",
+      "source_mtime_ns": 1794228149364974218
+    },
+    {
+      "path": "test/shards/rank_0000/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "c1001272de62cbfd08d9aaf3f76731b71ee3e03b339d621a6804a6416001a5b5",
+      "source_mtime_ns": 1794228149928976838
+    },
+    {
       "path": "test/shards/rank_0000/prepared/ground_truth.json",
       "bytes": 597777,
       "sha256": "014b4c06cb46ed4a465de3e8d748128d37f0645e6b84bbcac7e9f5d71bf9ab0d",
@@ -272,16 +614,58 @@
       "source_mtime_ns": 1794227864253641416
     },
     {
-      "path": "test/shards/rank_0001/run_config.json",
+      "path": "test/shards/rank_0000/run_config.json",
       "bytes": 1197,
-      "sha256": "6d76c76114709944fa1fe69dc8cb220dce3b14d452980913ff705f2925f5fedc",
+      "sha256": "24ad5c83d0f32f9af7681966a3c80956976b49553e768ce011417e21bdd03db3",
       "source_mtime_ns": 1794227847422562554
+    },
+    {
+      "path": "test/shards/rank_0000/validation.json",
+      "bytes": 710,
+      "sha256": "b2dd270bf3cb54c5e6e2e14320485c7bdd1bf7d982557829f93f61e8553d71c5",
+      "source_mtime_ns": 1794228159163019733
+    },
+    {
+      "path": "test/shards/rank_0001/COMPLETE.json",
+      "bytes": 153,
+      "sha256": "0019bd41719355431b5b896af7d480487d35e9ac3362e1060ae9dbf855678126",
+      "source_mtime_ns": 1794228373273014369
     },
     {
       "path": "test/shards/rank_0001/captions/metadata.json",
       "bytes": 13004,
       "sha256": "e7b3a9d2457792e8ec3a964f59655463ad3a192feaf37507ece2f136b965d584",
       "source_mtime_ns": 1794227896105790656
+    },
+    {
+      "path": "test/shards/rank_0001/captions/review_queue.json",
+      "bytes": 7689,
+      "sha256": "77ab168357b5f6bcd08fcfa4585b97bf34d8a452a078284e1b618515fe3a1acd",
+      "source_mtime_ns": 1794228353226206734
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scene_context.json",
+      "bytes": 4413,
+      "sha256": "8c700b174c1bc1a8172e1fadf1727665fcfc7e3cae075cf089b0081c52607efb",
+      "source_mtime_ns": 1794228353186921061
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scene_text.json",
+      "bytes": 23530,
+      "sha256": "9e95cbb4bbed0a1ed9f776543776577fdbd0d872e50ff6814171d0b83a27e83b",
+      "source_mtime_ns": 1794228353180500225
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/03986e48fa5e5f90.json",
+      "bytes": 35802,
+      "sha256": "5f3c31319429a0ec7778d883c3edf7f7d5c9a7f0c1dc619e13583a70a69cfb76",
+      "source_mtime_ns": 1794228353171526866
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/087e15b24dd55c90.json",
+      "bytes": 22146,
+      "sha256": "dd4149f51c4ca04875e263737be1bdea6a23f569cddf1c7055c750c2096b92bf",
+      "source_mtime_ns": 1794228180521957322
     },
     {
       "path": "test/shards/rank_0001/captions/scenes/249478c83c155093.json",
@@ -296,10 +680,40 @@
       "source_mtime_ns": 1794228065695585265
     },
     {
+      "path": "test/shards/rank_0001/captions/scenes/2c1f43c6b93c5952.json",
+      "bytes": 22035,
+      "sha256": "0260b85cf8bb4b5f3adcf2df2ceaafa43c140e93cf6fc48022c71dbc333b1cb1",
+      "source_mtime_ns": 1794228164135042831
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/2e54d786ec095896.json",
+      "bytes": 26503,
+      "sha256": "947e93570ebee5b9022e3cf83fda4b1d4a29c64d2215428b1752b2c747a06000",
+      "source_mtime_ns": 1794228219550300260
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/2ea6bdf1e8905fd8.json",
+      "bytes": 43783,
+      "sha256": "61084c5faa67c578c60cb6d9af474787141eb1f4df59eeae48279a40a295e2fa",
+      "source_mtime_ns": 1794228326094795208
+    },
+    {
       "path": "test/shards/rank_0001/captions/scenes/3b56d2b022d25026.json",
       "bytes": 34218,
       "sha256": "16001cf208b6f9de6293c4c05533f050f1b1769b842782508ab04fac0e2c75ca",
       "source_mtime_ns": 1794227948162034566
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/4024c1a4953e57a7.json",
+      "bytes": 32108,
+      "sha256": "bb7511c98331bb6559c73a0819c228c67f31d232a3354d91d5c4abcfd8fa0cbb",
+      "source_mtime_ns": 1794228245586800713
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/4c3547b853675e66.json",
+      "bytes": 24233,
+      "sha256": "736a4ef76d3a060a9c9228ef19f159e6a606b06e1f3b17cd803c5c4c5c9de964",
+      "source_mtime_ns": 1794228131126889495
     },
     {
       "path": "test/shards/rank_0001/captions/scenes/7ef36a2139b45d9a.json",
@@ -308,10 +722,28 @@
       "source_mtime_ns": 1794227921741910776
     },
     {
+      "path": "test/shards/rank_0001/captions/scenes/8f41958d23a65c48.json",
+      "bytes": 24777,
+      "sha256": "8aaacaecb3ad581c2544735829e7a415739719ccb5a8fb359caf9c5eff539616",
+      "source_mtime_ns": 1794228148191968769
+    },
+    {
       "path": "test/shards/rank_0001/captions/scenes/95effa16c4bb5c12.json",
       "bytes": 31878,
       "sha256": "e605c429bc6ae857c28d9b94fa42890238111295adb5059d17d8d41e614cf383",
       "source_mtime_ns": 1794228014328344587
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/98b3a0bf3cce5649.json",
+      "bytes": 35098,
+      "sha256": "9c3a1975fb63b69e0904349154751220dceaa1048c323f2fc4aadecd82f4c954",
+      "source_mtime_ns": 1794228114291811524
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/ceccd4369b5f552d.json",
+      "bytes": 25538,
+      "sha256": "7bf1a9b24fb1e5b0fbfd2f9c674d6423c9b52721d4bb44836ab78ab7f8045f50",
+      "source_mtime_ns": 1794228086101680834
     },
     {
       "path": "test/shards/rank_0001/captions/scenes/d26786f5e54e53f3.json",
@@ -326,6 +758,282 @@
       "source_mtime_ns": 1794227989363431082
     },
     {
+      "path": "test/shards/rank_0001/captions/scenes/debd166df3a85845.json",
+      "bytes": 30039,
+      "sha256": "5337c11f51a575ae0eb04e54af850eb5721d8b2ace62e9ff2f4b06619aec3219",
+      "source_mtime_ns": 1794228294216647119
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/e028780a88805f58.json",
+      "bytes": 22340,
+      "sha256": "e52875450be8f462b5696fe6af29aed29b5661f943709d3b82cbed173aa72803",
+      "source_mtime_ns": 1794228198166200922
+    },
+    {
+      "path": "test/shards/rank_0001/captions/scenes/fdd599e861875d9f.json",
+      "bytes": 29272,
+      "sha256": "ee1bc63aaa19490cf82326dfa565bce4d9d38c065efd22e56ce0765917048805",
+      "source_mtime_ns": 1794228269678533129
+    },
+    {
+      "path": "test/shards/rank_0001/captions/summary.json",
+      "bytes": 551,
+      "sha256": "90d284712c0ec2d0e9e21fc1a00d20b16d7c17b0bbbca4fa55c2acd32933654a",
+      "source_mtime_ns": 1794228353236093390
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/index.json",
+      "bytes": 2303,
+      "sha256": "6a807d98ef75d40d82a8c4a436742f31d5543b67c5c07c4a77a0604ccddd32a3",
+      "source_mtime_ns": 1794228362416043477
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/03986e48fa5e5f90.npz",
+      "bytes": 3302,
+      "sha256": "9c5c411d55441f378c49c9a66998c4d30afae502edef4e5be342bb1913cd50ca",
+      "source_mtime_ns": 1794228362387963803
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/087e15b24dd55c90.npz",
+      "bytes": 3092,
+      "sha256": "e14f05d058b80db6d9cdf6e6522cac56bf32dc417e22bd87c1c3d129b6fd5446",
+      "source_mtime_ns": 1794228360791291151
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/249478c83c155093.npz",
+      "bytes": 3134,
+      "sha256": "9dfcb1172a061e6b6692ba1d257e7c7354b2e46e60684687d984d140a0ed203d",
+      "source_mtime_ns": 1794228359345949672
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/276396e455bb57b5.npz",
+      "bytes": 2936,
+      "sha256": "03dac2b153273430c38624c8053f2f0211a174603d75a28ce484084e8d5c20d3",
+      "source_mtime_ns": 1794228359519262260
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/2c1f43c6b93c5952.npz",
+      "bytes": 3078,
+      "sha256": "c9772ce3d79e025b31bf56219597ea8964caa9c691114a20a2b3d1703982a063",
+      "source_mtime_ns": 1794228360537955209
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/2e54d786ec095896.npz",
+      "bytes": 3093,
+      "sha256": "f3c1d699b8341e9b6508c75734ae59f4c95e7376deef1b39a19cf0db5d2bf8f2",
+      "source_mtime_ns": 1794228361274958633
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/2ea6bdf1e8905fd8.npz",
+      "bytes": 3390,
+      "sha256": "18e865fd7373931576b21be5d62f4b994207f5ebf45720ea1abc02b96e3adfd6",
+      "source_mtime_ns": 1794228362155962726
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/3b56d2b022d25026.npz",
+      "bytes": 3361,
+      "sha256": "add6d3ccb0fc82ed9bebeab66d11bac81c995ae3eb768ef49998c7c055f0b6a7",
+      "source_mtime_ns": 1794228358818947224
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/4024c1a4953e57a7.npz",
+      "bytes": 3178,
+      "sha256": "63fa98534623c1d23803c1879316a900c036b37762d7c60c13e3420834a504aa",
+      "source_mtime_ns": 1794228361518959767
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/4c3547b853675e66.npz",
+      "bytes": 3269,
+      "sha256": "9e1af37546369cbf08d4a22ff1f2021e8362fa0f66eadf03eff0db3268906b20",
+      "source_mtime_ns": 1794228359984952641
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/7ef36a2139b45d9a.npz",
+      "bytes": 3099,
+      "sha256": "a276494b1efd9bb288acbb244af7af89e5561704469b2ed833ed0a4d42b076da",
+      "source_mtime_ns": 1794228358614946276
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/8f41958d23a65c48.npz",
+      "bytes": 3096,
+      "sha256": "22064506970cf775bb2eba0ccdb91b4a9434c2f91e9123a7bced632853688bd0",
+      "source_mtime_ns": 1794228360228953774
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/95effa16c4bb5c12.npz",
+      "bytes": 3250,
+      "sha256": "b6f08624d645af31b7708a87fabdc944336093bcefd375129ea434b4d0b09cfb",
+      "source_mtime_ns": 1794228359215949068
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/98b3a0bf3cce5649.npz",
+      "bytes": 3120,
+      "sha256": "c5a9be1563c68c8ccbb858af96223217a2426e0de55781c5bb6808e2cdd91089",
+      "source_mtime_ns": 1794228359739951502
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/ceccd4369b5f552d.npz",
+      "bytes": 3008,
+      "sha256": "d3a69470e0aa6386097a4f12860d193d018d462117907b54c7427ffa90bd443e",
+      "source_mtime_ns": 1794228359602950866
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/d26786f5e54e53f3.npz",
+      "bytes": 3220,
+      "sha256": "c3a0870ec90175556b24e9a2b70b0d1da5e37d88f5abc4bcbab669dd0f4f41ca",
+      "source_mtime_ns": 1794228359001948074
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/d91edafc567a5fcc.npz",
+      "bytes": 3038,
+      "sha256": "fffc11578e485e25a5199292fd1148ea0b8e1735b1c8da1cb50b8ff5a984a7b3",
+      "source_mtime_ns": 1794228359114192617
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/debd166df3a85845.npz",
+      "bytes": 3393,
+      "sha256": "56bd64f11a59eafcb32210610b93516b648863e195fd130b1ef47f7406c1a256",
+      "source_mtime_ns": 1794228361974961885
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/e028780a88805f58.npz",
+      "bytes": 3010,
+      "sha256": "bc80b34a5bdbf650f7bc9fdcbb8e4906d77a1353a0565f617604035b69e195a0",
+      "source_mtime_ns": 1794228360980957268
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/masks/fdd599e861875d9f.npz",
+      "bytes": 3218,
+      "sha256": "6aee6133c194269526076e9056fb231402eac400cfb58614710851aa5995f4dd",
+      "source_mtime_ns": 1794228361773960951
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/03986e48fa5e5f90.json",
+      "bytes": 6424,
+      "sha256": "6baf86ce4cc8ad35af895941ae79cda40d518050e57428d0fbbae7863fdec263",
+      "source_mtime_ns": 1794228362401963869
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/087e15b24dd55c90.json",
+      "bytes": 14502,
+      "sha256": "f51d472504b15f52c4c1d06ceb904ab8ab85a5acef79855bda9c82aabe7ce62b",
+      "source_mtime_ns": 1794228360798884725
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/249478c83c155093.json",
+      "bytes": 15783,
+      "sha256": "5debeb5efbb0273ba0dab520e326a4fb6d5379a88d3b5760d6968c801d935628",
+      "source_mtime_ns": 1794228359448950151
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/276396e455bb57b5.json",
+      "bytes": 14895,
+      "sha256": "31c6cd6ae4d808d9ceb4ee60b322a83def0768fa2cb377807b169223bd36679b",
+      "source_mtime_ns": 1794228359524950504
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/2c1f43c6b93c5952.json",
+      "bytes": 13114,
+      "sha256": "2e6e1f96804045f495fd24643d3f87b80258e29c1b5270bf4c7afd85ad35a2d7",
+      "source_mtime_ns": 1794228360575871843
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/2e54d786ec095896.json",
+      "bytes": 9554,
+      "sha256": "d89d2685969d9fd00309077cb3d05049a266ecd0d4b5a47a5ab40108e34cd943",
+      "source_mtime_ns": 1794228361290343101
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/2ea6bdf1e8905fd8.json",
+      "bytes": 6698,
+      "sha256": "b7d2dbe6d35e43bd8ef061992e81bcd9c0cb7febc9121c0059db8f475b4a7a50",
+      "source_mtime_ns": 1794228362218108042
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/3b56d2b022d25026.json",
+      "bytes": 18186,
+      "sha256": "d8ebd062e4a637e6927b8294bfdb2d2934f5f928fe7e9df6023f5aaee57ff0b6",
+      "source_mtime_ns": 1794228358845581728
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/4024c1a4953e57a7.json",
+      "bytes": 9800,
+      "sha256": "d4a06a874fd467077c42a4211b141f2ec084ef6012e21ea430e2d0b0d145f327",
+      "source_mtime_ns": 1794228361530959822
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/4c3547b853675e66.json",
+      "bytes": 11140,
+      "sha256": "ff64dc84ea3b9392b7a6741cada8247bc23ee42df0a6618c3393d3d0fc16935a",
+      "source_mtime_ns": 1794228360104953198
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/7ef36a2139b45d9a.json",
+      "bytes": 15560,
+      "sha256": "ec7e6bb4a5fb1e37b04ab968c51cef194014cb16396863668874a723af9a2ba6",
+      "source_mtime_ns": 1794228358636946378
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/8f41958d23a65c48.json",
+      "bytes": 12450,
+      "sha256": "e5a4ad3ed07b13acbcf21dafa3ef096f3580b3ae9a3f726664b6659c77ee0cfc",
+      "source_mtime_ns": 1794228360242953839
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/95effa16c4bb5c12.json",
+      "bytes": 17097,
+      "sha256": "ed37228d078d9fefc6abe39e18fe89982641ffb55c3a86032471f11e7ef04b07",
+      "source_mtime_ns": 1794228359272612316
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/98b3a0bf3cce5649.json",
+      "bytes": 14445,
+      "sha256": "27b614f33369e0425d742ecf12ddec2fe42ffb6aa2ba00bd508bfaa811140250",
+      "source_mtime_ns": 1794228359828270283
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/ceccd4369b5f552d.json",
+      "bytes": 13574,
+      "sha256": "4014954d3527c1ceaf6f9ba5bc276a69d8fc5255488152d864da01ee00dc076d",
+      "source_mtime_ns": 1794228359663951150
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/d26786f5e54e53f3.json",
+      "bytes": 18952,
+      "sha256": "741dc8adafbdb1a2b768ff7fb816b5db71e32480c8a232bae6aff91812510038",
+      "source_mtime_ns": 1794228359013948130
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/d91edafc567a5fcc.json",
+      "bytes": 17076,
+      "sha256": "d394af73356ad9403bfc4500d8849da92efa0d3d52dad084d77e0f4a4ac685ec",
+      "source_mtime_ns": 1794228359120948627
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/debd166df3a85845.json",
+      "bytes": 8405,
+      "sha256": "e9be895be66e820994b8f8b9391066ab3fa242499119ca942721601bea73c24d",
+      "source_mtime_ns": 1794228361986961941
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/e028780a88805f58.json",
+      "bytes": 14962,
+      "sha256": "7be35a38ff95ad6b84d501d836efa88ea37d0d9b3e5c809f84b5d119c8095ec5",
+      "source_mtime_ns": 1794228361043957560
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/scenes/fdd599e861875d9f.json",
+      "bytes": 9298,
+      "sha256": "de384953c1abb53777d61ae43cda7d897079c066b2366058c9e4992f51c22ccd",
+      "source_mtime_ns": 1794228361785961007
+    },
+    {
+      "path": "test/shards/rank_0001/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "13048372212fb495e3dccf99373440398ca8dcb91fbc850dfe9715fcb1f11fa3",
+      "source_mtime_ns": 1794228362423963971
+    },
+    {
       "path": "test/shards/rank_0001/prepared/ground_truth.json",
       "bytes": 398528,
       "sha256": "3e00d80dadfe65004fffdc9ee71a14f19fa0be10307865e699a1bfcb8cc978d5",
@@ -338,16 +1046,46 @@
       "source_mtime_ns": 1794227864145640910
     },
     {
-      "path": "test/shards/rank_0002/run_config.json",
+      "path": "test/shards/rank_0001/run_config.json",
       "bytes": 1197,
-      "sha256": "50dbecbac0c4ff9f33e461acde5e5e409f553c4cea5a658be1739b3177b6f20c",
+      "sha256": "6d76c76114709944fa1fe69dc8cb220dce3b14d452980913ff705f2925f5fedc",
       "source_mtime_ns": 1794227847422562554
+    },
+    {
+      "path": "test/shards/rank_0001/validation.json",
+      "bytes": 710,
+      "sha256": "5fb0c45453dd0f3c7dfcfc68e46cfee94628b05ec6c7f3cbd571ead79b3cff05",
+      "source_mtime_ns": 1794228373007149614
+    },
+    {
+      "path": "test/shards/rank_0002/COMPLETE.json",
+      "bytes": 153,
+      "sha256": "c8a0ebde7210570391fc27fc32f016148656dfcec1aaa7cc3907fcad50ac0f30",
+      "source_mtime_ns": 1794228164260043412
     },
     {
       "path": "test/shards/rank_0002/captions/metadata.json",
       "bytes": 13020,
       "sha256": "e2cbaed9dd32073ffd97b8f03595e9672733c22172f498a2bbf7f2a8ecf99b81",
       "source_mtime_ns": 1794227896054177879
+    },
+    {
+      "path": "test/shards/rank_0002/captions/review_queue.json",
+      "bytes": 4863,
+      "sha256": "29544cb8b96a566271e749f8bbfed714e29b3fd8cc053477caf206b1c68b2fed",
+      "source_mtime_ns": 1794228151956986259
+    },
+    {
+      "path": "test/shards/rank_0002/captions/scene_context.json",
+      "bytes": 3989,
+      "sha256": "2428104538436ef0b7931387e33883de7972bbaa882d85c3ad39efb35478427d",
+      "source_mtime_ns": 1794228151863985827
+    },
+    {
+      "path": "test/shards/rank_0002/captions/scene_text.json",
+      "bytes": 14453,
+      "sha256": "1cda4071f47182fafadf20b732cecfd2d90e72264eac3ce4094a010c0736f194",
+      "source_mtime_ns": 1794228151851985771
     },
     {
       "path": "test/shards/rank_0002/captions/scenes/1f095494fe755244.json",
@@ -360,6 +1098,18 @@
       "bytes": 24609,
       "sha256": "d76714346a5570df2b45a6cc8b17d71fc85e13a327bbaae9566284f972e3c99f",
       "source_mtime_ns": 1794228023037385393
+    },
+    {
+      "path": "test/shards/rank_0002/captions/scenes/2bf94996d2325e20.json",
+      "bytes": 17190,
+      "sha256": "ac5da3bbf0f517b1eee3696cece2adcd244af54e5f1d334bc0967f275f91e1e8",
+      "source_mtime_ns": 1794228100834168649
+    },
+    {
+      "path": "test/shards/rank_0002/captions/scenes/2fbf549d6aac59b9.json",
+      "bytes": 15964,
+      "sha256": "597aea5058a8aac239d243df148f6c47717d3a03eab137f66472f27e9fa68dc8",
+      "source_mtime_ns": 1794228151837985706
     },
     {
       "path": "test/shards/rank_0002/captions/scenes/40d43586b1195366.json",
@@ -378,6 +1128,18 @@
       "bytes": 32935,
       "sha256": "b1b24472f0c4a74809ae5c946e205c784954ae1792a04cabe72e3a17d24be2a7",
       "source_mtime_ns": 1794228042923478568
+    },
+    {
+      "path": "test/shards/rank_0002/captions/scenes/74f87045b75156f4.json",
+      "bytes": 16462,
+      "sha256": "10fc32474c76b3381c6416856774d58cc2adc2f97d1743c05063e62f3cf243ca",
+      "source_mtime_ns": 1794228109973174904
+    },
+    {
+      "path": "test/shards/rank_0002/captions/scenes/776069d80826529d.json",
+      "bytes": 16111,
+      "sha256": "ca109b67f0c7a2f33aad57b24322223cd702e1b0b5c6720749b99ea0989935ca",
+      "source_mtime_ns": 1794228144121949862
     },
     {
       "path": "test/shards/rank_0002/captions/scenes/83b935eff1815935.json",
@@ -416,10 +1178,292 @@
       "source_mtime_ns": 1794228062676571119
     },
     {
+      "path": "test/shards/rank_0002/captions/scenes/c1b38e62a97d590d.json",
+      "bytes": 15871,
+      "sha256": "c0e4922bf3cbdeaaaf9d4ca5a406f00c50abb5868928f18fa26591a8c0040521",
+      "source_mtime_ns": 1794228135848911431
+    },
+    {
+      "path": "test/shards/rank_0002/captions/scenes/df2ff4c2c9785df6.json",
+      "bytes": 16467,
+      "sha256": "df0565f6fb9767ef0ba931ea478c02a588c0444c97d5f4c261b4b569684b3cf4",
+      "source_mtime_ns": 1794228119030833343
+    },
+    {
+      "path": "test/shards/rank_0002/captions/scenes/ea93b5b81d425814.json",
+      "bytes": 16885,
+      "sha256": "7fa1eef3bf4d96118d040d3881b81ab8dd39ef8edd7667c955aeecf579d7f1de",
+      "source_mtime_ns": 1794228128719878314
+    },
+    {
       "path": "test/shards/rank_0002/captions/scenes/eeae24d38eb15e0a.json",
       "bytes": 35029,
       "sha256": "81c89d8098004013807e2a38bae4a7d0698f1a214f048e2df04de6961958ca78",
       "source_mtime_ns": 1794227946165561791
+    },
+    {
+      "path": "test/shards/rank_0002/captions/scenes/fa16fc0f1e9851a3.json",
+      "bytes": 16406,
+      "sha256": "aa3c6deca9c71f08c364a597154b8e44614ce1d6aff3a29044fb5a63dc077006",
+      "source_mtime_ns": 1794228091194850176
+    },
+    {
+      "path": "test/shards/rank_0002/captions/summary.json",
+      "bytes": 485,
+      "sha256": "87635bfb07f99f4db6ed03270dc6f4a5d3ecd07fc6f8e4eb7134b62477aef9a9",
+      "source_mtime_ns": 1794228151974986342
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/index.json",
+      "bytes": 2303,
+      "sha256": "0a18ed63661e54522c48e57916ff028a5a706fdec97779d39fcbf5ca8326d23c",
+      "source_mtime_ns": 1794228158163015088
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/1f095494fe755244.npz",
+      "bytes": 3178,
+      "sha256": "8f55e5f18ea265993c3f2e2da8dc1d342e7aed38dbd3fdccba609f5de3f0c8a7",
+      "source_mtime_ns": 1794228156488007307
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/29770ed8cd49511e.npz",
+      "bytes": 2972,
+      "sha256": "ccbaa950f27acef968b9be4bc8ec2a966839f09f53b1672bef036518c0fe7cfb",
+      "source_mtime_ns": 1794228157092010113
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/2bf94996d2325e20.npz",
+      "bytes": 3058,
+      "sha256": "f6bbcc73d31c555d461a0d1e91b4faec259aee973ba448fbdfc4eee5871203a0",
+      "source_mtime_ns": 1794228157632259914
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/2fbf549d6aac59b9.npz",
+      "bytes": 2912,
+      "sha256": "c843431c42fadd5f73c25e85dee317caea17fb47658e5f902e9e1bcfba5445ec",
+      "source_mtime_ns": 1794228158143014995
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/40d43586b1195366.npz",
+      "bytes": 2822,
+      "sha256": "60291a9612a0f71d9a7137d5e7dfd5f65e4f85e93b2d25f6b7b24b8dbcab9612",
+      "source_mtime_ns": 1794228157266010921
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/6011fd3aa3a85fa1.npz",
+      "bytes": 2903,
+      "sha256": "0648118d52819a66326efbd5cf1b31a2fb8ea1f4589306cfe7383a549890adfb",
+      "source_mtime_ns": 1794228157377011437
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/6496c4adf0f65e78.npz",
+      "bytes": 3020,
+      "sha256": "b218088eacb62ae9ee441b18e525f43af305f74bedb32796b9433c5c69ff3ef8",
+      "source_mtime_ns": 1794228157225229404
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/74f87045b75156f4.npz",
+      "bytes": 2979,
+      "sha256": "7ad84d0c7a1bdfd17b10124db0fa5e4519d5e640908684568c64b8fae3e090da",
+      "source_mtime_ns": 1794228157707843178
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/776069d80826529d.npz",
+      "bytes": 2908,
+      "sha256": "dab2fab088f7e78daa6b1e605cd9cb754db1e1745545c279414a0da0b07fadae",
+      "source_mtime_ns": 1794228158037014503
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/83b935eff1815935.npz",
+      "bytes": 3044,
+      "sha256": "b2a7d117af03e6b14f0687451c9d24ae0fa17e8ab8c9fc0965490a7faf23368a",
+      "source_mtime_ns": 1794228156956009481
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/913212df2a415e44.npz",
+      "bytes": 2974,
+      "sha256": "5f925e9aa567ef907ea7d5997fdd91f0306dea86a9d12a57247193f1dba6bc07",
+      "source_mtime_ns": 1794228157443011743
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/918d03455301591b.npz",
+      "bytes": 3102,
+      "sha256": "184de3779f3d633f396886df68d604638393ed5203ab56788a4624f86fbb209d",
+      "source_mtime_ns": 1794228156175144910
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/9320c42b53b052f0.npz",
+      "bytes": 3045,
+      "sha256": "033cac0c505a082ce065b2e1f5dc56a929c13c9ef456f4626b6d4caf8bb9bf7f",
+      "source_mtime_ns": 1794228156732008441
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/ab8034dd8873524b.npz",
+      "bytes": 3046,
+      "sha256": "4cb8c75c55871a819724159843a235bd1de0c8059f7a9e0e2b4a7c9a9a1beaa0",
+      "source_mtime_ns": 1794228156861349187
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/b46f5915049e52a5.npz",
+      "bytes": 2901,
+      "sha256": "f4237d28688675ab88b53a07c4ccfe4a101b58b33d720d56451c7bc70c2f31d1",
+      "source_mtime_ns": 1794228157325011195
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/c1b38e62a97d590d.npz",
+      "bytes": 2929,
+      "sha256": "79880032bf75167fe015187d316ef69a3d878d88670074b35fed181bc6cc7429",
+      "source_mtime_ns": 1794228157914013931
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/df2ff4c2c9785df6.npz",
+      "bytes": 2921,
+      "sha256": "4f65ab787a5c7f22030e6e1e57579ecd3d97ebcbce52cc39e0878484afeafd12",
+      "source_mtime_ns": 1794228157771013267
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/ea93b5b81d425814.npz",
+      "bytes": 3035,
+      "sha256": "a24d424d251532bbe2c885408c48faded0d9e8ddec4883485499b080b446057b",
+      "source_mtime_ns": 1794228157840013587
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/eeae24d38eb15e0a.npz",
+      "bytes": 3068,
+      "sha256": "4d7bc4662f8f230d60edbf6349d6732ae488db4e37182404253837ae5d63ab5c",
+      "source_mtime_ns": 1794228156321006531
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/masks/fa16fc0f1e9851a3.npz",
+      "bytes": 2986,
+      "sha256": "228a4a4e4723d7eaa0a626421ed419cdae8f994c997673825c0dae87d7ceaaa9",
+      "source_mtime_ns": 1794228157534012166
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/1f095494fe755244.json",
+      "bytes": 7570,
+      "sha256": "f4422739062fd1d7b47f351581af2e10b55ad4da1002f56e9481a150e1e59c8a",
+      "source_mtime_ns": 1794228156499007358
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/29770ed8cd49511e.json",
+      "bytes": 7563,
+      "sha256": "bff320751b0bf2454fc46166e94a7e1f6a090b29a43dd9854c297f6f87ab5dbd",
+      "source_mtime_ns": 1794228157106010178
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/2bf94996d2325e20.json",
+      "bytes": 2150,
+      "sha256": "851252e398ad5171a19d64bf56a818ff114ae3f9e4eb04bc7c649a2edb8c7121",
+      "source_mtime_ns": 1794228157638012649
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/2fbf549d6aac59b9.json",
+      "bytes": 2916,
+      "sha256": "d7ed239adc12d61aba6d787010710b4f5c91307d57ae6e0b19d9ae8d76447a40",
+      "source_mtime_ns": 1794228158157525933
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/40d43586b1195366.json",
+      "bytes": 1850,
+      "sha256": "362e1ee40d34300a24cc429b19354b1ffd6c82906e326c1c58e4057db58ba9a7",
+      "source_mtime_ns": 1794228157289011028
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/6011fd3aa3a85fa1.json",
+      "bytes": 1852,
+      "sha256": "43f5033508bd6613639a1bcccbfb0253b28914d5d0890eeaf7d48b181c858ac8",
+      "source_mtime_ns": 1794228157390011497
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/6496c4adf0f65e78.json",
+      "bytes": 8105,
+      "sha256": "c04f578b40462ed13e2f32c89a7cccb65eb4ddd5013d9edbd1a322bde080adb2",
+      "source_mtime_ns": 1794228157233010768
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/74f87045b75156f4.json",
+      "bytes": 2674,
+      "sha256": "48ecc7b6dff5601e6396d3bde8ddf16e1d052ff3627b0342b9c7b6ca071da7fd",
+      "source_mtime_ns": 1794228157715013007
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/776069d80826529d.json",
+      "bytes": 2919,
+      "sha256": "e89a413522f4224d0afb08dacbf9638dcde61401b47536e22e78f23a7ef4ccb3",
+      "source_mtime_ns": 1794228158074014675
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/83b935eff1815935.json",
+      "bytes": 7811,
+      "sha256": "53269c96292f8f252390daa0364e513a96e3c8c3d04baa085467d0ce896a6e4a",
+      "source_mtime_ns": 1794228156970009546
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/913212df2a415e44.json",
+      "bytes": 2138,
+      "sha256": "3b543a813c88025a7094c0dd6e0dcf655412ef71ba9c70fb610334188fb9a562",
+      "source_mtime_ns": 1794228157493011976
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/918d03455301591b.json",
+      "bytes": 6127,
+      "sha256": "8c4987252f238d16023a9806db1908111811586813b06ad478da88f9ca4d7164",
+      "source_mtime_ns": 1794228156186033525
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/9320c42b53b052f0.json",
+      "bytes": 7557,
+      "sha256": "0bbbe44d9a5a7b240b7eab634702eea5a74e587ea7c0380f941d1279e6c8faaa",
+      "source_mtime_ns": 1794228156761709015
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/ab8034dd8873524b.json",
+      "bytes": 7019,
+      "sha256": "2163b3ea4ed13b6bb46cc165ee2ebfb21e2d27f36ee082a61ccff7fca46f6362",
+      "source_mtime_ns": 1794228156867009068
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/b46f5915049e52a5.json",
+      "bytes": 1586,
+      "sha256": "d55ff2adab0f194c9f7042e06d34bd203c7e55cf7e8e7ba018c75a578c61dcfc",
+      "source_mtime_ns": 1794228157348905386
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/c1b38e62a97d590d.json",
+      "bytes": 2936,
+      "sha256": "ee35eb5b201f2f23dd84ec8a1291ee54f826d0e299a6a2594c6f8ee38ec39d54",
+      "source_mtime_ns": 1794228157925013982
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/df2ff4c2c9785df6.json",
+      "bytes": 2388,
+      "sha256": "c96c5b32d893c96abe610b0d64aeb34a0c4e3b4797875fd19f21c0dce0570ab3",
+      "source_mtime_ns": 1794228157784013327
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/ea93b5b81d425814.json",
+      "bytes": 2412,
+      "sha256": "4b7c6d59e4c727ec41622a641b74e16930753dce5e134b81d3f8d1cba0f92f30",
+      "source_mtime_ns": 1794228157855013657
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/eeae24d38eb15e0a.json",
+      "bytes": 4805,
+      "sha256": "07e06e2cda8716373667a71a0695ba0f0dae4602430f29abf81c4367e5700255",
+      "source_mtime_ns": 1794228156333226525
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/scenes/fa16fc0f1e9851a3.json",
+      "bytes": 2138,
+      "sha256": "359c80b7df5b064e1bab6a51649f04103a4313214983b780832e3fe71019840a",
+      "source_mtime_ns": 1794228157550012240
+    },
+    {
+      "path": "test/shards/rank_0002/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "740c6c37ad0ebd750756b01f8bd011eadaedfeeb41d58c957ffe66146568e2eb",
+      "source_mtime_ns": 1794228158185015190
     },
     {
       "path": "test/shards/rank_0002/prepared/ground_truth.json",
@@ -434,22 +1478,22 @@
       "source_mtime_ns": 1794227864175641050
     },
     {
+      "path": "test/shards/rank_0002/run_config.json",
+      "bytes": 1197,
+      "sha256": "50dbecbac0c4ff9f33e461acde5e5e409f553c4cea5a658be1739b3177b6f20c",
+      "source_mtime_ns": 1794227847422562554
+    },
+    {
+      "path": "test/shards/rank_0002/validation.json",
+      "bytes": 710,
+      "sha256": "b32cf6ef83628fd05e7f3ff6d60382d5209733c53c5743ef2f7e670af67688e7",
+      "source_mtime_ns": 1794228163944041944
+    },
+    {
       "path": "test/shards/rank_0003/COMPLETE.json",
       "bytes": 153,
       "sha256": "98b46df752b8e4d8e480574fbfc68b80062b79846f199a84e09b9cdb257c6c3b",
       "source_mtime_ns": 1794228082588521837
-    },
-    {
-      "path": "test/shards/rank_0003/run_config.json",
-      "bytes": 1197,
-      "sha256": "21e2e69ee3f3a1c1617ea443d7c2070bb46cc3e85210138197943e317967605b",
-      "source_mtime_ns": 1794227847447562671
-    },
-    {
-      "path": "test/shards/rank_0003/validation.json",
-      "bytes": 710,
-      "sha256": "7133390b0e21aae6b390f01de90969283a4531e8152ecec6d59eb322365fc524",
-      "source_mtime_ns": 1794228082278917422
     },
     {
       "path": "test/shards/rank_0003/captions/metadata.json",
@@ -474,12 +1518,6 @@
       "bytes": 9831,
       "sha256": "66aa8a8823ca0a2f2f1f8dac9e3de26d601de7758d60ca48b4b93b148bec9425",
       "source_mtime_ns": 1794228061701566551
-    },
-    {
-      "path": "test/shards/rank_0003/captions/summary.json",
-      "bytes": 513,
-      "sha256": "413afe27d6f935e6ccb205d5f3b037ef20afef51079f24279beff6d70b607d1a",
-      "source_mtime_ns": 1794228061746566762
     },
     {
       "path": "test/shards/rank_0003/captions/scenes/0ebdf3a905ba522f.json",
@@ -602,16 +1640,16 @@
       "source_mtime_ns": 1794227957111078402
     },
     {
+      "path": "test/shards/rank_0003/captions/summary.json",
+      "bytes": 513,
+      "sha256": "413afe27d6f935e6ccb205d5f3b037ef20afef51079f24279beff6d70b607d1a",
+      "source_mtime_ns": 1794228061746566762
+    },
+    {
       "path": "test/shards/rank_0003/grounding/index.json",
       "bytes": 2303,
       "sha256": "100c27552a167353f58034256a5414eb39dbaef3e5bafb588076ddd388bb29f8",
       "source_mtime_ns": 1794228070438607488
-    },
-    {
-      "path": "test/shards/rank_0003/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "4889c32e5a357a9e99030d6aa810d6df9d44667115fd7b4c9a2360c2e29ba7f6",
-      "source_mtime_ns": 1794228070453607558
     },
     {
       "path": "test/shards/rank_0003/grounding/masks/0ebdf3a905ba522f.npz",
@@ -854,6 +1892,12 @@
       "source_mtime_ns": 1794228069680606044
     },
     {
+      "path": "test/shards/rank_0003/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "4889c32e5a357a9e99030d6aa810d6df9d44667115fd7b4c9a2360c2e29ba7f6",
+      "source_mtime_ns": 1794228070453607558
+    },
+    {
       "path": "test/shards/rank_0003/prepared/ground_truth.json",
       "bytes": 131328,
       "sha256": "1663e6e3e4f52fef65bd9455164e3bc26d9786a5e3a394b32b1011f6dcd7d879",
@@ -866,16 +1910,52 @@
       "source_mtime_ns": 1794227864247574072
     },
     {
-      "path": "test/shards/rank_0004/run_config.json",
+      "path": "test/shards/rank_0003/run_config.json",
       "bytes": 1197,
-      "sha256": "ecc550ca9e55bcf82ef515758be145f2230b5e85b6abe9b6f7b7edf2ee4a1537",
-      "source_mtime_ns": 1794227847432562601
+      "sha256": "21e2e69ee3f3a1c1617ea443d7c2070bb46cc3e85210138197943e317967605b",
+      "source_mtime_ns": 1794227847447562671
+    },
+    {
+      "path": "test/shards/rank_0003/validation.json",
+      "bytes": 710,
+      "sha256": "7133390b0e21aae6b390f01de90969283a4531e8152ecec6d59eb322365fc524",
+      "source_mtime_ns": 1794228082278917422
+    },
+    {
+      "path": "test/shards/rank_0004/COMPLETE.json",
+      "bytes": 153,
+      "sha256": "523fd9471d5a4c6b33507536c9ec39a41d5d7b2f6473af14196c49d00ef44d02",
+      "source_mtime_ns": 1794228259735486939
     },
     {
       "path": "test/shards/rank_0004/captions/metadata.json",
       "bytes": 13006,
       "sha256": "f74830eb2d00ff42764d65a6d0f2f5c3dcb445571cfdab62f5b6fa8f86f2501e",
       "source_mtime_ns": 1794227896075956972
+    },
+    {
+      "path": "test/shards/rank_0004/captions/review_queue.json",
+      "bytes": 4458,
+      "sha256": "98e548b53e7e030b5a97e39fae0e01d4be3a39dbf030023e63e9bc3c7ab34235",
+      "source_mtime_ns": 1794228242223405587
+    },
+    {
+      "path": "test/shards/rank_0004/captions/scene_context.json",
+      "bytes": 4200,
+      "sha256": "cb900cb00ffb68c73e421823cadc446591fbb44d9cb732275ff93873dd8a3563",
+      "source_mtime_ns": 1794228242206405508
+    },
+    {
+      "path": "test/shards/rank_0004/captions/scene_text.json",
+      "bytes": 19535,
+      "sha256": "1ce6cb1f817f2ea69701e59c97d5f5ad9c2dbabc8be7816efd19920245a7a73b",
+      "source_mtime_ns": 1794228242151405252
+    },
+    {
+      "path": "test/shards/rank_0004/captions/scenes/108b8b1ea5fd57ff.json",
+      "bytes": 22912,
+      "sha256": "b891db877311750ed6155d28be83c0102d264cc3f92d748f96b383c0d5091f77",
+      "source_mtime_ns": 1794228127300871722
     },
     {
       "path": "test/shards/rank_0004/captions/scenes/157ad2289b20545e.json",
@@ -888,6 +1968,18 @@
       "bytes": 19618,
       "sha256": "b0ba2e7116d57607bcf400c6270d72d5c694336f8de6fb26c4fd6e08e1988fec",
       "source_mtime_ns": 1794227976658168084
+    },
+    {
+      "path": "test/shards/rank_0004/captions/scenes/3b6865082c225fe8.json",
+      "bytes": 48057,
+      "sha256": "5eb411b7582a6c6eaf61be7003ffdd8e558577ef32e01b97fe534ee3a288f0d8",
+      "source_mtime_ns": 1794228242138771601
+    },
+    {
+      "path": "test/shards/rank_0004/captions/scenes/4e496bfdb6b95697.json",
+      "bytes": 44130,
+      "sha256": "5e28bd0a76bcfd62766421454e05c2cdd929d06397b5b190bfcb1548a40e6be4",
+      "source_mtime_ns": 1794228208419248552
     },
     {
       "path": "test/shards/rank_0004/captions/scenes/5d7c7edca69d5e73.json",
@@ -914,6 +2006,12 @@
       "source_mtime_ns": 1794227914698877776
     },
     {
+      "path": "test/shards/rank_0004/captions/scenes/7db6a3bd77405292.json",
+      "bytes": 17986,
+      "sha256": "5efdae6dccf287e0df476e63bb3db384569d57490b12228212a88ab341290219",
+      "source_mtime_ns": 1794228112154801512
+    },
+    {
       "path": "test/shards/rank_0004/captions/scenes/862ca192b71f5d93.json",
       "bytes": 19666,
       "sha256": "41ba8c5cc3411962ab6087e2585aefd60b3512e248b217a07589e10162db783e",
@@ -926,6 +2024,12 @@
       "source_mtime_ns": 1794228056346541460
     },
     {
+      "path": "test/shards/rank_0004/captions/scenes/a425dd8a1b5552db.json",
+      "bytes": 20274,
+      "sha256": "0d09cb47a107d6f77e5674ef89680ece72529f9b41ed9aec923cf2d36b64dce8",
+      "source_mtime_ns": 1794228099955745204
+    },
+    {
       "path": "test/shards/rank_0004/captions/scenes/ab8d6b4c8b20564b.json",
       "bytes": 18378,
       "sha256": "4f5164e775c1f3b2951c81c7bf0b6e709373dfcb617dd4909fa0244b33ad0a7c",
@@ -936,6 +2040,18 @@
       "bytes": 18693,
       "sha256": "43e7c50229f4227f44c69d6dcaaf74042c1d4352c14032f88a4378e8b7e3be2b",
       "source_mtime_ns": 1794228018034361951
+    },
+    {
+      "path": "test/shards/rank_0004/captions/scenes/b6e039ab90075f16.json",
+      "bytes": 26423,
+      "sha256": "bbf5b7fb8ca980003223aefd84f48d58463331ce4af973f99bd5e7e65c7b05c2",
+      "source_mtime_ns": 1794228175854097272
+    },
+    {
+      "path": "test/shards/rank_0004/captions/scenes/c2790319345a58cf.json",
+      "bytes": 33514,
+      "sha256": "5a92a9c30eac82e1f286eb592e9cb61590c5dc229dfac188d26310b7ba613dfd",
+      "source_mtime_ns": 1794228153521993529
     },
     {
       "path": "test/shards/rank_0004/captions/scenes/d68c7a7e02265029.json",
@@ -956,6 +2072,264 @@
       "source_mtime_ns": 1794228031216423715
     },
     {
+      "path": "test/shards/rank_0004/captions/summary.json",
+      "bytes": 510,
+      "sha256": "0a912b01250d21c965c46e4121a406529cb1302d16f1ff5d02926bff26cba828",
+      "source_mtime_ns": 1794228242236059335
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/index.json",
+      "bytes": 2303,
+      "sha256": "523edd34b406d1bb6b656f86de43b06ad4fc23d70dfccd19eb958df2ce6d249d",
+      "source_mtime_ns": 1794228250509444079
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/108b8b1ea5fd57ff.npz",
+      "bytes": 2988,
+      "sha256": "fa69321c08428192bb1caaac20f8cb699a1c92be4698e805a065ac967ca4f589",
+      "source_mtime_ns": 1794228249359438737
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/157ad2289b20545e.npz",
+      "bytes": 2930,
+      "sha256": "fbb4da405f34533a12edced93caeb8bc605cf303aac5b9ed9a7d8f0dcfc4e3c8",
+      "source_mtime_ns": 1794228249131880444
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/1981a85eb4ba5001.npz",
+      "bytes": 3056,
+      "sha256": "b412174c67cc0979363286ab25eeebd392127ab0f77f582f49b3d88b0eccf1f8",
+      "source_mtime_ns": 1794228247711633061
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/3b6865082c225fe8.npz",
+      "bytes": 3240,
+      "sha256": "6c34d7856aa10dcda3f42a336ac6999537108be9ddab41eab2848519f9774df0",
+      "source_mtime_ns": 1794228250441443763
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/4e496bfdb6b95697.npz",
+      "bytes": 3233,
+      "sha256": "2e283dd1d4c1fe216471fed501dcc4247d13e607ea551bff46e139ef8e784220",
+      "source_mtime_ns": 1794228250243442843
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/5d7c7edca69d5e73.npz",
+      "bytes": 3010,
+      "sha256": "61ef88d33fa2fdc18a7d849b6b9fb5e183d8b0e374bdda3bc51c66c043be996b",
+      "source_mtime_ns": 1794228247645430775
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/7084e524e59c50ab.npz",
+      "bytes": 2967,
+      "sha256": "a35800e0bc8aa0fe7de9440c2268d1039c8d6da2e62510adf9d6c59382127013",
+      "source_mtime_ns": 1794228247971432289
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/73939fc4dcdf57c4.npz",
+      "bytes": 2968,
+      "sha256": "c8d025ccd894e15646683823c4dec3b12bb929786189fa4146d75106a5027acf",
+      "source_mtime_ns": 1794228247771254180
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/7900996a42f35f67.npz",
+      "bytes": 2928,
+      "sha256": "04496c11e122fb0d251139cbcae4a2ac56caa38fa1dd5d718fd703b039de1019",
+      "source_mtime_ns": 1794228247257428972
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/7db6a3bd77405292.npz",
+      "bytes": 3012,
+      "sha256": "4e1f234abe3979e302f3ef5c72c4b4c89cd26acde1412b41dbadc832d0a132f1",
+      "source_mtime_ns": 1794228249301112826
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/862ca192b71f5d93.npz",
+      "bytes": 2986,
+      "sha256": "50e41b228637571ffba7a77d46a8f1701c6b15399087b107aad27e3d56d34945",
+      "source_mtime_ns": 1794228247417429715
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/9644977ff3b15622.npz",
+      "bytes": 2958,
+      "sha256": "333bcd95276926b1b23a1721f9be42ea1d387428548dee965a2d411b653c19c9",
+      "source_mtime_ns": 1794228248755435931
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/a425dd8a1b5552db.npz",
+      "bytes": 2981,
+      "sha256": "7061598e320b5aa4c46bce58fb6d95144d83bf03669aa9d98a2f5a3d44bd8ab6",
+      "source_mtime_ns": 1794228249190437952
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/ab8d6b4c8b20564b.npz",
+      "bytes": 3116,
+      "sha256": "080fd3dc8b859d43bce0c37592bcd4967ca416e0e3d0d998c37516f6afb68933",
+      "source_mtime_ns": 1794228249070437394
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/b04bbf1d4ecf5f56.npz",
+      "bytes": 3016,
+      "sha256": "612cf38168eaed799fbb724899f8e7c81eb184e32773c6e96eafead6971e3707",
+      "source_mtime_ns": 1794228248200433353
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/b6e039ab90075f16.npz",
+      "bytes": 3114,
+      "sha256": "70375b21fc54b927ae56a0ecd87bba3dd773a6ef6fb6b980fbf60a6c58bd53cd",
+      "source_mtime_ns": 1794228249942259560
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/c2790319345a58cf.npz",
+      "bytes": 3066,
+      "sha256": "67e2bddeca30b1ed757228c2a964617caad41e1f7784fdaca62be6ecbcbf7028",
+      "source_mtime_ns": 1794228249698434309
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/d68c7a7e02265029.npz",
+      "bytes": 3004,
+      "sha256": "32b306e4d18a83540ed97f6ea80185a6f6dfbfcbb2e99ab66715421e67863269",
+      "source_mtime_ns": 1794228247471429966
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/e5e00457df055e1a.npz",
+      "bytes": 3052,
+      "sha256": "dc4bb9dc13e4a06d8b1e19735a043eb83eb6ed6014d2601f283c8aa6b2f64124",
+      "source_mtime_ns": 1794228248588127067
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/masks/f3512ae175b45844.npz",
+      "bytes": 2833,
+      "sha256": "a5144b55ba25afe26e707a64e63916fbe933f1cbf0cd54c2cbf2335ce8ba2028",
+      "source_mtime_ns": 1794228248398434273
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/108b8b1ea5fd57ff.json",
+      "bytes": 2143,
+      "sha256": "b8bf85c2a5afd811daa3a5ebf1565524b8d963f077d7dc1eb13fb19996991fa2",
+      "source_mtime_ns": 1794228249440375037
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/157ad2289b20545e.json",
+      "bytes": 3455,
+      "sha256": "401f9c37ed3c435298b6e37d3c0a634f45ed69650754b72e35a79baac35f9ee0",
+      "source_mtime_ns": 1794228249140437719
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/1981a85eb4ba5001.json",
+      "bytes": 3768,
+      "sha256": "54711fe9f80bae0c166f81d78844071d9fc1ee227accb0898d0d50705ae877e7",
+      "source_mtime_ns": 1794228247717431109
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/3b6865082c225fe8.json",
+      "bytes": 10696,
+      "sha256": "afa76bc0661d5607fc320da8eb4bad2feeb8ae3f71c6d65d8a9ffaaf91d9d2cb",
+      "source_mtime_ns": 1794228250466443879
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/4e496bfdb6b95697.json",
+      "bytes": 13276,
+      "sha256": "35e72412b0322cf03d01f2918639a51e8f05a1768ac1fde043d6ea634c34e9a3",
+      "source_mtime_ns": 1794228250276912395
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/5d7c7edca69d5e73.json",
+      "bytes": 3220,
+      "sha256": "6571054380828fa3fdb43a9cbf450a97f3a9a48107748415091de6c570fc6f0c",
+      "source_mtime_ns": 1794228247658430835
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/7084e524e59c50ab.json",
+      "bytes": 5066,
+      "sha256": "73a98d7a9a523a54b3dd8db6747df05cab6c4e4e18a21ca9bb8c437829bf2762",
+      "source_mtime_ns": 1794228247993432391
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/73939fc4dcdf57c4.json",
+      "bytes": 3488,
+      "sha256": "95839393eff213c27205ac577209b488bb106b2bc3ab9be433005f2f00404c12",
+      "source_mtime_ns": 1794228247779431397
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/7900996a42f35f67.json",
+      "bytes": 2129,
+      "sha256": "d795acff4837345729bbd38b9e194ff88a8bb4a2673e974eac6dec1e96d55c09",
+      "source_mtime_ns": 1794228247275429056
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/7db6a3bd77405292.json",
+      "bytes": 2409,
+      "sha256": "7fa31fedaed1468299089e34d62183c47ece703cdb4ae8c90b25f580ebc178cb",
+      "source_mtime_ns": 1794228249307438495
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/862ca192b71f5d93.json",
+      "bytes": 2407,
+      "sha256": "8c00f78c4485bba380aa7cfd51af0c7aebda637c97032dd2066cc292082a3210",
+      "source_mtime_ns": 1794228247430398270
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/9644977ff3b15622.json",
+      "bytes": 3827,
+      "sha256": "1d6bcc4e14c92ba6fc25db793a8115221ec189e9141f005bbf4e95861d12da6f",
+      "source_mtime_ns": 1794228248826436261
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/a425dd8a1b5552db.json",
+      "bytes": 2122,
+      "sha256": "33b60f57ea2eb32580f8c9eb0a1fd23de81f86ab7689abc52a34b2acc3bba744",
+      "source_mtime_ns": 1794228249254680136
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/ab8d6b4c8b20564b.json",
+      "bytes": 2913,
+      "sha256": "8343c4ff1a5fbc70028cb0640f03ae6355293905883e8e7c530d2ba903f5ebca",
+      "source_mtime_ns": 1794228249083437455
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/b04bbf1d4ecf5f56.json",
+      "bytes": 5415,
+      "sha256": "883bfc985c68fc51b5519e057f092d71758a8d4a835842681d7b1756826aea83",
+      "source_mtime_ns": 1794228248214433418
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/b6e039ab90075f16.json",
+      "bytes": 8173,
+      "sha256": "efdeb495baceef59bcbda4ccdd21a075260ca73df59650664c0d558b2959d2fe",
+      "source_mtime_ns": 1794228249948441473
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/c2790319345a58cf.json",
+      "bytes": 8144,
+      "sha256": "aa929393cd6ea8058163dd3cacd7a9f77eca82b0d6c2f047218bcab7395c4be8",
+      "source_mtime_ns": 1794228249704440340
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/d68c7a7e02265029.json",
+      "bytes": 2955,
+      "sha256": "b5009725d5051a2ac436eb54d754d901409a7c6cee1c790386e402bf2247cb13",
+      "source_mtime_ns": 1794228247583430486
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/e5e00457df055e1a.json",
+      "bytes": 3834,
+      "sha256": "d900561683a42f3ae5a3f5a30fa4f4a644bcb05cb892c1ded32f7a1c4009ca94",
+      "source_mtime_ns": 1794228248595435188
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/scenes/f3512ae175b45844.json",
+      "bytes": 3964,
+      "sha256": "8dc6ff6214a5109d725e87e70bdba10a05241f6e0874daffd1446fa95e78730d",
+      "source_mtime_ns": 1794228248419382487
+    },
+    {
+      "path": "test/shards/rank_0004/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "0c3d7a0cfd661094c04a6ae0cdaf3b50d4735521a342deab8a784a16bc918a57",
+      "source_mtime_ns": 1794228250542444232
+    },
+    {
       "path": "test/shards/rank_0004/prepared/ground_truth.json",
       "bytes": 161924,
       "sha256": "083f5a9c664fd55adc599e4a810ea6a9a649bb862a1c51c50ed558b4bbebf8df",
@@ -968,16 +2342,64 @@
       "source_mtime_ns": 1794227863915639832
     },
     {
-      "path": "test/shards/rank_0005/run_config.json",
+      "path": "test/shards/rank_0004/run_config.json",
       "bytes": 1197,
-      "sha256": "6490039cafbd6034189eff2f62468b238cb5153681764cf26f0ce9e6df17d201",
-      "source_mtime_ns": 1794227847437739624
+      "sha256": "ecc550ca9e55bcf82ef515758be145f2230b5e85b6abe9b6f7b7edf2ee4a1537",
+      "source_mtime_ns": 1794227847432562601
+    },
+    {
+      "path": "test/shards/rank_0004/validation.json",
+      "bytes": 710,
+      "sha256": "2c1acce1121fdbf886b66c6102d4709cf6e5aa0131022ba427ee6bf58ab3e001",
+      "source_mtime_ns": 1794228259442135221
+    },
+    {
+      "path": "test/shards/rank_0005/COMPLETE.json",
+      "bytes": 153,
+      "sha256": "b018fa6205b243e71742ab6f8220c02472d538c0355008955dd481975e803497",
+      "source_mtime_ns": 1794228261194493717
     },
     {
       "path": "test/shards/rank_0005/captions/metadata.json",
       "bytes": 13018,
       "sha256": "f90ef8f3d0e63032595b244c007cd4c123a919ad585c7ec9f98a7ed05553942b",
       "source_mtime_ns": 1794227896072790502
+    },
+    {
+      "path": "test/shards/rank_0005/captions/review_queue.json",
+      "bytes": 5346,
+      "sha256": "4c81fb6b243caecae58f6759f544887f70083a8acb1e5e8100f58d9589faef91",
+      "source_mtime_ns": 1794228247862431783
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scene_context.json",
+      "bytes": 3874,
+      "sha256": "d0410fe88c29a6ed5c548b93d32bd264f2d1a887cea00e5ddcd6eaf25e6c8f71",
+      "source_mtime_ns": 1794228247848431717
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scene_text.json",
+      "bytes": 17895,
+      "sha256": "b325e41e607711a3118665ec85b4b4479eab73385cb54c2e9cd8825717fb917b",
+      "source_mtime_ns": 1794228247741431220
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scenes/028d10ed5c105755.json",
+      "bytes": 28481,
+      "sha256": "d2cb479347eb7b24e25c71a88564b92a7fc7715f39e7bad5329b517d4e018e8f",
+      "source_mtime_ns": 1794228213942274209
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scenes/21b54e6d58985ae3.json",
+      "bytes": 24774,
+      "sha256": "6dd628ceff2b080352bb12362327d8c607612927e54289cbe6ceb5ca1bf3b18e",
+      "source_mtime_ns": 1794228247734648227
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scenes/26c48df074d151c6.json",
+      "bytes": 25840,
+      "sha256": "369e6bfd8db91ff614a3f9aa72edbc393b621cf4583f6c3cb17bbf170f37153b",
+      "source_mtime_ns": 1794228097906735616
     },
     {
       "path": "test/shards/rank_0005/captions/scenes/26eeb11cbcd9593b.json",
@@ -1004,10 +2426,28 @@
       "source_mtime_ns": 1794227954251169233
     },
     {
+      "path": "test/shards/rank_0005/captions/scenes/626859d4351b5ffe.json",
+      "bytes": 25675,
+      "sha256": "9fca73cecaadbbd62c01acf1b08e9a83fda3c33d83ff235046b1346af7b3be55",
+      "source_mtime_ns": 1794228147122144448
+    },
+    {
       "path": "test/shards/rank_0005/captions/scenes/70ee383e3b335c16.json",
       "bytes": 23754,
       "sha256": "8c250e6bea671ababb335a2717fe20cce67cb09e387dffd6616c25b1ee9fb1f1",
       "source_mtime_ns": 1794227912436606832
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scenes/75128a99a5765e31.json",
+      "bytes": 27557,
+      "sha256": "da6617a72593390a28e6b61e470a7e3656a2d95df028f481e0808948ca7dc06b",
+      "source_mtime_ns": 1794228180540880131
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scenes/7736a52445b1522d.json",
+      "bytes": 24139,
+      "sha256": "fd4dd30bf6c04676ae658b64ae4e8551e33af060ee9a14ba88a974a5be7bfb58",
+      "source_mtime_ns": 1794228230376350552
     },
     {
       "path": "test/shards/rank_0005/captions/scenes/7e2dc290d51f5137.json",
@@ -1016,10 +2456,34 @@
       "source_mtime_ns": 1794228080932656634
     },
     {
+      "path": "test/shards/rank_0005/captions/scenes/8b54e86cb8b05114.json",
+      "bytes": 26499,
+      "sha256": "ffca59472b42070ba9d0fe88ac412591ae8d3fac2cbe47907f65cbe42b5bffb0",
+      "source_mtime_ns": 1794228131698475314
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scenes/9bd12765d98b514f.json",
+      "bytes": 27959,
+      "sha256": "d2459b78c147528885127c46891d5ec48635966fc9409a9434bd015b23d708a4",
+      "source_mtime_ns": 1794228164282043514
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scenes/a1e8639c17ac5089.json",
+      "bytes": 24693,
+      "sha256": "b336ec6da18816fa472de54fa7e6d2b889cbe621f3c6c7fc36a30fc4c8f6a2b3",
+      "source_mtime_ns": 1794228195248187366
+    },
+    {
       "path": "test/shards/rank_0005/captions/scenes/c6e19ffa3c34551c.json",
       "bytes": 29405,
       "sha256": "e601c890cc8bc22cd1ff470764c35f7d198a7f6a30bb2914c8812804366d799c",
       "source_mtime_ns": 1794228007603553650
+    },
+    {
+      "path": "test/shards/rank_0005/captions/scenes/cd1234d5b4b2570d.json",
+      "bytes": 28322,
+      "sha256": "914ca08602f0dc82301a77681f95ab1c4277c42ec4fbac754d26117679517c61",
+      "source_mtime_ns": 1794228115578817554
     },
     {
       "path": "test/shards/rank_0005/captions/scenes/dd1ab5d48c6358ef.json",
@@ -1040,6 +2504,264 @@
       "source_mtime_ns": 1794228048260503575
     },
     {
+      "path": "test/shards/rank_0005/captions/summary.json",
+      "bytes": 491,
+      "sha256": "8b73770a805ff483c1786ec6b849e03c9834edd5aad133f6c5372b5183291d59",
+      "source_mtime_ns": 1794228247881431871
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/index.json",
+      "bytes": 2303,
+      "sha256": "3b1ed4f686d6d12d05f15f12ef5730141ad34f6304d4739a16dee6715d7c74ad",
+      "source_mtime_ns": 1794228254614463149
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/028d10ed5c105755.npz",
+      "bytes": 2862,
+      "sha256": "bd2c4cc92e0fe3fac511c978b347fbbacf58e613074b90aed07a75680589ec80",
+      "source_mtime_ns": 1794228254229461360
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/21b54e6d58985ae3.npz",
+      "bytes": 3209,
+      "sha256": "aa5ac6b32d161f31403acc8574c6214a60666576d530771796b940598c6283b4",
+      "source_mtime_ns": 1794228254581462996
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/26c48df074d151c6.npz",
+      "bytes": 3003,
+      "sha256": "87486936f944a47ba6c62690a89b75e90486a712a9978b9023f2105a61280b1d",
+      "source_mtime_ns": 1794228253134456273
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/26eeb11cbcd9593b.npz",
+      "bytes": 3036,
+      "sha256": "48fca4996a57eb31561f028f6998e1fe8d24a293280b2b646b1a88f0d8ebb14f",
+      "source_mtime_ns": 1794228252198640051
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/46b79218b0195050.npz",
+      "bytes": 3175,
+      "sha256": "4e17cc581def531538687adab550a55faca498b978d2ae8b078562a0f52be7b2",
+      "source_mtime_ns": 1794228252449453091
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/6250b1bc5d735d1a.npz",
+      "bytes": 3068,
+      "sha256": "4ef0f807573aa57a04d770d9e659ec69138d140b5c1cc5bc0513e26758bd44d4",
+      "source_mtime_ns": 1794228252024451117
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/625804443c0555ac.npz",
+      "bytes": 3029,
+      "sha256": "7b727c6c83fd2e56e2f1368b4e5f59183620e5e3a562901ccbfb119598ee911e",
+      "source_mtime_ns": 1794228252095451447
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/626859d4351b5ffe.npz",
+      "bytes": 2963,
+      "sha256": "5e92747d8f587132e88938887051399c31bed30d21d47948c1a61edbbb19d3c9",
+      "source_mtime_ns": 1794228253627129868
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/70ee383e3b335c16.npz",
+      "bytes": 2761,
+      "sha256": "9d7ef1015f271db2155d29c538dc4895a7fe655d51dd6cbc29100e9e7d46d1b2",
+      "source_mtime_ns": 1794228251946450755
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/75128a99a5765e31.npz",
+      "bytes": 2848,
+      "sha256": "255b6a965ced2bed24b1c2755f6878a3a68954f5a13b7996cdcaf6ce24a2190c",
+      "source_mtime_ns": 1794228253945460041
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/7736a52445b1522d.npz",
+      "bytes": 3134,
+      "sha256": "317ed1f38e67723e7ce8f73ffd7ebfc6b481b4b9e60afc2e502c5ecc973b4eb3",
+      "source_mtime_ns": 1794228254369462011
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/7e2dc290d51f5137.npz",
+      "bytes": 3236,
+      "sha256": "fd3a9982d979db92ee117efd6a666b97a38fb0554231c84819ec027e521068dd",
+      "source_mtime_ns": 1794228252958455456
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/8b54e86cb8b05114.npz",
+      "bytes": 3015,
+      "sha256": "9360cbd853089478c8dd3ec954943ecb2d89710914d6149e63c9e3f376986509",
+      "source_mtime_ns": 1794228253452457751
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/9bd12765d98b514f.npz",
+      "bytes": 2928,
+      "sha256": "aff65372b8c68ed57cc780c34a64e8de5036639f047f2651edfe0881b957a090",
+      "source_mtime_ns": 1794228253801459372
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/a1e8639c17ac5089.npz",
+      "bytes": 2970,
+      "sha256": "2e1d9cefbbdc5e5c8d7be93115237cd2594d664cb9cb534e5fb1575ac52bfb89",
+      "source_mtime_ns": 1794228254069713117
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/c6e19ffa3c34551c.npz",
+      "bytes": 2990,
+      "sha256": "cfccd6eb6ae8443c273f9583c11abf46490541d42a6715f70657671c9fce69c9",
+      "source_mtime_ns": 1794228252374537053
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/cd1234d5b4b2570d.npz",
+      "bytes": 3156,
+      "sha256": "92e98da3b05c9cdf59ee592de22f631e121ae4522117b9939e573f178ef679ea",
+      "source_mtime_ns": 1794228253277956106
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/dd1ab5d48c6358ef.npz",
+      "bytes": 3174,
+      "sha256": "8a2b792c80f6b997bfeb701c9df91a3b7578672a90dd23dabe35234a704ba99f",
+      "source_mtime_ns": 1794228252773454596
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/e6a94b91b19f5315.npz",
+      "bytes": 3132,
+      "sha256": "92d29222187cc94875d63c898f4e6d7bea53c061dcf317a639d0a7f9fcf3464e",
+      "source_mtime_ns": 1794228252260452213
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/masks/e7a7c61c543e5b88.npz",
+      "bytes": 3211,
+      "sha256": "b85837e11d32bd2cd00955b7b5ed097cad6e70c2bbd5ec698243e69344c03d82",
+      "source_mtime_ns": 1794228252587453732
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/028d10ed5c105755.json",
+      "bytes": 4674,
+      "sha256": "268698fdccd92b35e59eb206b124c3b5f80147b7eed87232f50c9fa353ff197f",
+      "source_mtime_ns": 1794228254246461439
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/21b54e6d58985ae3.json",
+      "bytes": 3733,
+      "sha256": "c8b286c52a6fc417eeb04c87173dde29e3d73e50c30f3210f40aed496b0ef283",
+      "source_mtime_ns": 1794228254603463098
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/26c48df074d151c6.json",
+      "bytes": 3855,
+      "sha256": "c05391dca6857b0b0c40af823d8368ecb58bae233fa53eff452c870716000fd6",
+      "source_mtime_ns": 1794228253151456352
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/26eeb11cbcd9593b.json",
+      "bytes": 3765,
+      "sha256": "60e03551eb8ec4e166a2aa0f9f40ead633cf4ed14372380e4afcdcaeb1231c60",
+      "source_mtime_ns": 1794228252205718580
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/46b79218b0195050.json",
+      "bytes": 3780,
+      "sha256": "1124a3269b9a9cd5d8fb6bba65141159714f02b20ecab1c7d75f5b297eb3b622",
+      "source_mtime_ns": 1794228252509517134
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/6250b1bc5d735d1a.json",
+      "bytes": 3476,
+      "sha256": "3a2c7a2067d442aa76881401963667f2f3789c5cebd834cc66adfd583ddf2640",
+      "source_mtime_ns": 1794228252041600793
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/625804443c0555ac.json",
+      "bytes": 3484,
+      "sha256": "61e35c4bc6de42bcd3b96a59890ebda9a4f873ff399ea0ca4d9decf45f8ce7c8",
+      "source_mtime_ns": 1794228252130451609
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/626859d4351b5ffe.json",
+      "bytes": 4672,
+      "sha256": "7c6c4311219bbb4668c5cefc31d7406ff4f17db45cf51da7238d2127ce894892",
+      "source_mtime_ns": 1794228253633990418
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/70ee383e3b335c16.json",
+      "bytes": 1574,
+      "sha256": "55967a5988f0d5182e1decef59352ba22575ead0cddce7e5ef349cbdd260d957",
+      "source_mtime_ns": 1794228251960450820
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/75128a99a5765e31.json",
+      "bytes": 4925,
+      "sha256": "78ee62e2506eb9ee43319da43d67e8438d79a7541c773cd1a8a15b75679b8f6a",
+      "source_mtime_ns": 1794228253969460152
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/7736a52445b1522d.json",
+      "bytes": 4000,
+      "sha256": "add17b383141592f6168bb541badf9aa567d7c6ac5ccece50c202a5028ead62f",
+      "source_mtime_ns": 1794228254382259189
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/7e2dc290d51f5137.json",
+      "bytes": 4034,
+      "sha256": "f7791f5b5a204504e317a2c45a865c819c3e5a696ed4970bf193f2f5e2a1b821",
+      "source_mtime_ns": 1794228253003455665
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/8b54e86cb8b05114.json",
+      "bytes": 4145,
+      "sha256": "22a05b21c880bc25494a1c60079c315f1057c03e6c1ce9921f4691f73e751c24",
+      "source_mtime_ns": 1794228253488457918
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/9bd12765d98b514f.json",
+      "bytes": 5172,
+      "sha256": "e84bdedb35dc25499511e5180a58b352b105f76d96770b090ee59ab2f7e7ef34",
+      "source_mtime_ns": 1794228253813459428
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/a1e8639c17ac5089.json",
+      "bytes": 4569,
+      "sha256": "8b267d8b9a1ac6cd0500895f7aa6ecde480ea0c3fcc6802aac0111219f929729",
+      "source_mtime_ns": 1794228254075460645
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/c6e19ffa3c34551c.json",
+      "bytes": 3748,
+      "sha256": "b71903652250f4335241c75525427f536eac14871546cc97e63df41c9a9f2967",
+      "source_mtime_ns": 1794228252381452775
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/cd1234d5b4b2570d.json",
+      "bytes": 3743,
+      "sha256": "3c6e7ea0f8ad595c30b5627b5c7d09522a76afcbfad3b31fff324dfc16447b71",
+      "source_mtime_ns": 1794228253284456970
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/dd1ab5d48c6358ef.json",
+      "bytes": 4013,
+      "sha256": "88b180b02f001d7ca1c6ee8d29c32ab482cd7d55f6c9385a99adb0cc82468971",
+      "source_mtime_ns": 1794228252810454768
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/e6a94b91b19f5315.json",
+      "bytes": 3774,
+      "sha256": "6524144f18453a50c361fb23d997170a7be5c1dae62c67c192bd77ec023aa010",
+      "source_mtime_ns": 1794228252316452473
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/scenes/e7a7c61c543e5b88.json",
+      "bytes": 4551,
+      "sha256": "eaca57a9ba9541c01b26bf18b836ca231ed73ebd5191ec13193f23f5c29dd641",
+      "source_mtime_ns": 1794228252631453937
+    },
+    {
+      "path": "test/shards/rank_0005/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "1738460b8c1e317769d9896713c9183ccdb5519a42cdfd736ab80bb7aec77b6c",
+      "source_mtime_ns": 1794228254627463209
+    },
+    {
       "path": "test/shards/rank_0005/prepared/ground_truth.json",
       "bytes": 155352,
       "sha256": "4f2522bbfc8faaadb3980589ebd7ad4f90d34e2f3acd7022ce086c1e7479b0eb",
@@ -1052,16 +2774,46 @@
       "source_mtime_ns": 1794227864456625131
     },
     {
-      "path": "test/shards/rank_0006/run_config.json",
+      "path": "test/shards/rank_0005/run_config.json",
       "bytes": 1197,
-      "sha256": "ad5ceeab56350623cd85f1beeddb987bd82ee394441c0f8787b200fd01dffe3b",
-      "source_mtime_ns": 1794227847435463234
+      "sha256": "6490039cafbd6034189eff2f62468b238cb5153681764cf26f0ce9e6df17d201",
+      "source_mtime_ns": 1794227847437739624
+    },
+    {
+      "path": "test/shards/rank_0005/validation.json",
+      "bytes": 710,
+      "sha256": "fb48d60900a8ac985e5f7753d5781ba5de2020e22df302c8352fc5ab3b88e37f",
+      "source_mtime_ns": 1794228260862492175
+    },
+    {
+      "path": "test/shards/rank_0006/COMPLETE.json",
+      "bytes": 153,
+      "sha256": "00d38e40b7041438af3c26518b332ff18f034838a04e4c9a89b2d30332a9636c",
+      "source_mtime_ns": 1794228114164419647
     },
     {
       "path": "test/shards/rank_0006/captions/metadata.json",
       "bytes": 13016,
       "sha256": "af12c40e5a7b4caa953510028ddec9553e461a56ad3a856740b0c30b33fb73fa",
       "source_mtime_ns": 1794227896102897159
+    },
+    {
+      "path": "test/shards/rank_0006/captions/review_queue.json",
+      "bytes": 98,
+      "sha256": "662ccd3b42c5ddd80913db9220f572487e10c3a1670a10763a62ae60c7db450a",
+      "source_mtime_ns": 1794228102790758390
+    },
+    {
+      "path": "test/shards/rank_0006/captions/scene_context.json",
+      "bytes": 3753,
+      "sha256": "19678c00f44274e4e19d8b2a1b1dd52d74f710267c14cff11d85374a1cf45c96",
+      "source_mtime_ns": 1794228102785599888
+    },
+    {
+      "path": "test/shards/rank_0006/captions/scene_text.json",
+      "bytes": 14008,
+      "sha256": "d4a127e366efe30d0b5fa67a283890b3c8aa845c15ccdcbc16297ff51e6c7291",
+      "source_mtime_ns": 1794228102776317700
     },
     {
       "path": "test/shards/rank_0006/captions/scenes/10d9d6d0ad405b9d.json",
@@ -1080,6 +2832,12 @@
       "bytes": 17308,
       "sha256": "76b5d4ef409c40f937804220fdf58ef450f1f9566e7982f9763dd298f61c46a3",
       "source_mtime_ns": 1794227981563191067
+    },
+    {
+      "path": "test/shards/rank_0006/captions/scenes/1b88b298d405518e.json",
+      "bytes": 14389,
+      "sha256": "631f6f76272154467a5caa454eb3aae7d2e9c805dd6dded4d07a18ca36fd79fb",
+      "source_mtime_ns": 1794228098066970241
     },
     {
       "path": "test/shards/rank_0006/captions/scenes/1fc3acd944ba540e.json",
@@ -1116,6 +2874,12 @@
       "bytes": 17178,
       "sha256": "4bb22f624b80580b10fb0134ce643dae044cde5af2221fd38d721e06e0814125",
       "source_mtime_ns": 1794227930187950349
+    },
+    {
+      "path": "test/shards/rank_0006/captions/scenes/8f5b6181d28e5d4a.json",
+      "bytes": 14389,
+      "sha256": "a6c84ed871edd12d8b755adeeca2fd60249caf6ec529ceee6ee1aaea4c4e67d1",
+      "source_mtime_ns": 1794228102758758244
     },
     {
       "path": "test/shards/rank_0006/captions/scenes/8fc0b7212263588f.json",
@@ -1166,6 +2930,270 @@
       "source_mtime_ns": 1794227909423853058
     },
     {
+      "path": "test/shards/rank_0006/captions/scenes/fbd06f49da055ea8.json",
+      "bytes": 17504,
+      "sha256": "f9a6b86874548e91334c72f3e6bdc096c4a5e1a2cff759abe48d6a6d93e6f3f0",
+      "source_mtime_ns": 1794228093326714491
+    },
+    {
+      "path": "test/shards/rank_0006/captions/summary.json",
+      "bytes": 431,
+      "sha256": "cdc1971cea8da3fa5ed8a9bf61aa9517298c7a6bbd28453d42ca3822880b4426",
+      "source_mtime_ns": 1794228102826758554
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/index.json",
+      "bytes": 2303,
+      "sha256": "16cb3a33b0fab0bcd92f1405f8617487615072e51eb8f2809ae3cd7fa18ff4b5",
+      "source_mtime_ns": 1794228108637785458
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/10d9d6d0ad405b9d.npz",
+      "bytes": 3072,
+      "sha256": "25dd4a10a663dc6938272a8905983dfeb6dfcd1829412113d1a9ca91c8251299",
+      "source_mtime_ns": 1794228107897781991
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/171e0bea742d52d0.npz",
+      "bytes": 2815,
+      "sha256": "d8e1afabedba9ee3dac7da69aa487f254d95fe51e5fdcbcc3dd72ec246bbf255",
+      "source_mtime_ns": 1794228107722000830
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/1a8da8e47d235dbe.npz",
+      "bytes": 2989,
+      "sha256": "74d8073ba29790f9821f2087f9e6209500c994f241e9e23d89284452d2f55f5d",
+      "source_mtime_ns": 1794228107597780585
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/1b88b298d405518e.npz",
+      "bytes": 2622,
+      "sha256": "b0b1b203a9377121aeaff7b24f48dd48442ea5e6f1f5e8104c485ff77a1e923d",
+      "source_mtime_ns": 1794228108517784896
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/1fc3acd944ba540e.npz",
+      "bytes": 2798,
+      "sha256": "1ef36128240c7b3e480fa35e56fd23c60589cafd363b578b1127d7119a25af87",
+      "source_mtime_ns": 1794228108367784193
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/2836705e16ba5691.npz",
+      "bytes": 2969,
+      "sha256": "75d8ed28f55e7de45612d78dbad18fa2c974697e6ced4762f19fa0be7384386a",
+      "source_mtime_ns": 1794228107391690724
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/29af925fc44b5380.npz",
+      "bytes": 2937,
+      "sha256": "2b8cca09e53fe462e4744448bca203fa2a4e0c36db46cb248827ffd49778e4dc",
+      "source_mtime_ns": 1794228107162807831
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/52a4ade5aede53d9.npz",
+      "bytes": 2742,
+      "sha256": "f0940df9558b58f0afe790a5160e0b962ff9adfcc4d00eb6f443f19a146ba6e0",
+      "source_mtime_ns": 1794228108405162871
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/56587c89d25856b7.npz",
+      "bytes": 2836,
+      "sha256": "e9ad56e818b05914aab6f9474e186f75eb1d0fc70fb218d47e8aaf0b409c39c0",
+      "source_mtime_ns": 1794228106971777652
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/76cf7bb2e9625482.npz",
+      "bytes": 3005,
+      "sha256": "19519468ee365790c4b55702eae780c36cff0d4b54ad5e91c85acdfc31d277ef",
+      "source_mtime_ns": 1794228107077318079
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/8f5b6181d28e5d4a.npz",
+      "bytes": 2625,
+      "sha256": "18fdb8643f903cd9c4d98f7d996cb1786a46cb59c7efd42d04a7a7a05c35cc17",
+      "source_mtime_ns": 1794228108546256982
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/8fc0b7212263588f.npz",
+      "bytes": 2968,
+      "sha256": "8bc60d486ad856a61ed1075a9ae0005449154dc1b8af5218afb1dfdf87a6cb7d",
+      "source_mtime_ns": 1794228107487780070
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/9f521d00c3ef55b7.npz",
+      "bytes": 2940,
+      "sha256": "a709c5f728bb6314c6182cbee10fd76455dfd2bcc0ce0947caf1fd64569d8f85",
+      "source_mtime_ns": 1794228108307991155
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/a0eb6fa78dc2558f.npz",
+      "bytes": 2942,
+      "sha256": "a301ec33e949aa8d779461b6c21c490b13d129b381319f377a2a340ac2bb0a3e",
+      "source_mtime_ns": 1794228108212783467
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/d12fdbd7f3265051.npz",
+      "bytes": 3065,
+      "sha256": "c8a65a782aacf5ad256b98f78a9e80f549b62a93b5380862e14911473e3741e0",
+      "source_mtime_ns": 1794228108116377903
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/e62e904da0695956.npz",
+      "bytes": 2748,
+      "sha256": "baa90bb85b42d7b633cd6d9d7506146e05f264e03bdfb2d47f59a74d3274301d",
+      "source_mtime_ns": 1794228108438784525
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/ed2466a660ba5661.npz",
+      "bytes": 2970,
+      "sha256": "c7b9847b53b23138844ff8f7f06ebdf65a4becdd303905b62abf59ea9c454659",
+      "source_mtime_ns": 1794228107767781381
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/efc87f8726645319.npz",
+      "bytes": 3008,
+      "sha256": "928181c1411482236f6f308a23399c9f1966456e7aa97919c286f28dce2ca7d4",
+      "source_mtime_ns": 1794228107246778940
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/f424ee234e385b95.npz",
+      "bytes": 2830,
+      "sha256": "039be143d2b39c959dfa86e852b0d8e776dda8ce50754cc99afa7723cb9b5d19",
+      "source_mtime_ns": 1794228106922777422
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/masks/fbd06f49da055ea8.npz",
+      "bytes": 2746,
+      "sha256": "bc2c78b49f69dcd48058d44050dadfce3966d75b34a695119818dc20f23db857",
+      "source_mtime_ns": 1794228108473784689
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/10d9d6d0ad405b9d.json",
+      "bytes": 2114,
+      "sha256": "9053d372fc9e816025510c187e156584c95f31b92067579c73e9e7c7411ce80f",
+      "source_mtime_ns": 1794228107912274017
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/171e0bea742d52d0.json",
+      "bytes": 1572,
+      "sha256": "1b6adbc2cb58609ebef41f3e5291d70a459fd43abccb0d272e0d771e60948e3f",
+      "source_mtime_ns": 1794228107729611511
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/1a8da8e47d235dbe.json",
+      "bytes": 1844,
+      "sha256": "4f8588eaa01067bcb13911d7c2a726221ef88ec663d6effa0eb97a4e6fa9c4f9",
+      "source_mtime_ns": 1794228107683780988
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/1b88b298d405518e.json",
+      "bytes": 734,
+      "sha256": "2339fef2892b8a5cd98717eaee6caed0746ab0927df312f27ce46fb588aabf01",
+      "source_mtime_ns": 1794228108529784952
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/1fc3acd944ba540e.json",
+      "bytes": 1302,
+      "sha256": "c59f2e2673686e492129026de702e939bbdd03dd976387251355200501ae8885",
+      "source_mtime_ns": 1794228108381784258
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/2836705e16ba5691.json",
+      "bytes": 2120,
+      "sha256": "853aab99ac2e438cda3dfc8b847252302ab20a2b852afbe46d1487b8f496a5b3",
+      "source_mtime_ns": 1794228107398779652
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/29af925fc44b5380.json",
+      "bytes": 2381,
+      "sha256": "3d39432bda324a04afa0d7d701b9ed6e6ba25dc855b24862de991de942a7d5af",
+      "source_mtime_ns": 1794228107168778575
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/52a4ade5aede53d9.json",
+      "bytes": 1291,
+      "sha256": "600d900e4a0eaaebdb249c907b1777e333db66e88ac487b70adf6e50828821e2",
+      "source_mtime_ns": 1794228108410784394
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/56587c89d25856b7.json",
+      "bytes": 1584,
+      "sha256": "fcb575ca5ae723213eeb080da101bd8ced841665d5f5519f4d73833737ba4008",
+      "source_mtime_ns": 1794228107013081843
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/76cf7bb2e9625482.json",
+      "bytes": 2416,
+      "sha256": "417020e3e6ed2824041653f9b30bbb411d228ddd4b0deac1b3dc7d4fe5da085c",
+      "source_mtime_ns": 1794228107085778186
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/8f5b6181d28e5d4a.json",
+      "bytes": 734,
+      "sha256": "757b241d2f09318230fc6ff71ea9613ef97a3599f699008e5c142894759b9bf4",
+      "source_mtime_ns": 1794228108551785055
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/8fc0b7212263588f.json",
+      "bytes": 1860,
+      "sha256": "d8183107fde3832650c3d7da6d8491ffe92721114d6195dbeb94564b4be97a98",
+      "source_mtime_ns": 1794228107511780182
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/9f521d00c3ef55b7.json",
+      "bytes": 1814,
+      "sha256": "e2e7239c83869d5d6ecc92605377df3bd05e4c9dd5124c09fee2f482bea5bdca",
+      "source_mtime_ns": 1794228108313783940
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/a0eb6fa78dc2558f.json",
+      "bytes": 1581,
+      "sha256": "50632493127ec93cdb9718f0b5dc76a6ede3aa8fd6e365edd130665dc351504a",
+      "source_mtime_ns": 1794228108230783551
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/d12fdbd7f3265051.json",
+      "bytes": 2100,
+      "sha256": "6a98c679b6098e22954ef3b7b2b9f316c59a49e67f71f57e2b51b34e43f66f02",
+      "source_mtime_ns": 1794228108132783092
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/e62e904da0695956.json",
+      "bytes": 1293,
+      "sha256": "ea868ec3ec0ec8cd9593a05e70535e7c5227d1ae7a1496ab8b4ee283f391cd58",
+      "source_mtime_ns": 1794228108449784577
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/ed2466a660ba5661.json",
+      "bytes": 1853,
+      "sha256": "41192d8e537ea399029c3cb5abc7ab2fbad10df78ba92437e1bd0bab738fd4d5",
+      "source_mtime_ns": 1794228107780781442
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/efc87f8726645319.json",
+      "bytes": 2130,
+      "sha256": "645f86f6b397e363b81b6fea800b4159268db4a754d5e8472b542a789672de8b",
+      "source_mtime_ns": 1794228107311779245
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/f424ee234e385b95.json",
+      "bytes": 1851,
+      "sha256": "ea46f1c99cf889449bea62b4470650c808c3e982091e4e32ce51ca6b7bca5d80",
+      "source_mtime_ns": 1794228106940777507
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/scenes/fbd06f49da055ea8.json",
+      "bytes": 1021,
+      "sha256": "4e496e1bdfbd86829fcfb12f0d1a1e540ee7c3e4cf0ca64f5c76b2d7b07b622f",
+      "source_mtime_ns": 1794228108502784825
+    },
+    {
+      "path": "test/shards/rank_0006/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "f67c208977509b9481959fdd5593d08f2769e0bb2e00d2a68f151d219e6e8258",
+      "source_mtime_ns": 1794228108650785519
+    },
+    {
       "path": "test/shards/rank_0006/prepared/ground_truth.json",
       "bytes": 97299,
       "sha256": "00de168e627fb3df9b72fda80c7e0210d177467602400b31569053e1f4002847",
@@ -1178,10 +3206,22 @@
       "source_mtime_ns": 1794227863897639748
     },
     {
-      "path": "test/shards/rank_0007/run_config.json",
+      "path": "test/shards/rank_0006/run_config.json",
       "bytes": 1197,
-      "sha256": "ad2702fbf64ca854ba2d18128e8d0ae35a3634f9ee252419549e2be23ad5f12e",
-      "source_mtime_ns": 1794227847446187365
+      "sha256": "ad5ceeab56350623cd85f1beeddb987bd82ee394441c0f8787b200fd01dffe3b",
+      "source_mtime_ns": 1794227847435463234
+    },
+    {
+      "path": "test/shards/rank_0006/validation.json",
+      "bytes": 710,
+      "sha256": "5d2ddff64137c0fc2568ddc16f020c38c4f4457f808d63481e7c758c5da6571f",
+      "source_mtime_ns": 1794228113833005818
+    },
+    {
+      "path": "test/shards/rank_0007/COMPLETE.json",
+      "bytes": 153,
+      "sha256": "97f9c43353c67534848fa1e30bbb780187eb1d8d29afba9f060fb7b0988293c5",
+      "source_mtime_ns": 1794228095642838384
     },
     {
       "path": "test/shards/rank_0007/captions/metadata.json",
@@ -1206,12 +3246,6 @@
       "bytes": 11361,
       "sha256": "daae5128f211d01417aedc1c7ca6f91aff15ef42392d41c3260de709561f8f58",
       "source_mtime_ns": 1794228081945661372
-    },
-    {
-      "path": "test/shards/rank_0007/captions/summary.json",
-      "bytes": 455,
-      "sha256": "818631bfbcdd1b7946456f52c5dee6bbf291b84ab372657a6c461d953bdaba5e",
-      "source_mtime_ns": 1794228082020661723
     },
     {
       "path": "test/shards/rank_0007/captions/scenes/06bdef9a9bbc5aaf.json",
@@ -1334,16 +3368,16 @@
       "source_mtime_ns": 1794227948924038137
     },
     {
+      "path": "test/shards/rank_0007/captions/summary.json",
+      "bytes": 455,
+      "sha256": "818631bfbcdd1b7946456f52c5dee6bbf291b84ab372657a6c461d953bdaba5e",
+      "source_mtime_ns": 1794228082020661723
+    },
+    {
       "path": "test/shards/rank_0007/grounding/index.json",
       "bytes": 2303,
       "sha256": "318f649fa4563407153f520c9fd68ba868ed773029b59e0c566921257aa4b517",
       "source_mtime_ns": 1794228088814693430
-    },
-    {
-      "path": "test/shards/rank_0007/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "2fb88db7cd8725ff554da1bcc82dd4107a0af9e2289c38ecc6cf786009f6d6af",
-      "source_mtime_ns": 1794228088831465263
     },
     {
       "path": "test/shards/rank_0007/grounding/masks/06bdef9a9bbc5aaf.npz",
@@ -1586,6 +3620,12 @@
       "source_mtime_ns": 1794228086549682914
     },
     {
+      "path": "test/shards/rank_0007/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "2fb88db7cd8725ff554da1bcc82dd4107a0af9e2289c38ecc6cf786009f6d6af",
+      "source_mtime_ns": 1794228088831465263
+    },
+    {
       "path": "test/shards/rank_0007/prepared/ground_truth.json",
       "bytes": 520119,
       "sha256": "47e6cff9dc153ffe0d4fb205b17d5e82595d9f3a0cf157a2725bedfc4d2c22bb",
@@ -1598,6 +3638,24 @@
       "source_mtime_ns": 1794227864138640877
     },
     {
+      "path": "test/shards/rank_0007/run_config.json",
+      "bytes": 1197,
+      "sha256": "ad2702fbf64ca854ba2d18128e8d0ae35a3634f9ee252419549e2be23ad5f12e",
+      "source_mtime_ns": 1794227847446187365
+    },
+    {
+      "path": "test/shards/rank_0007/validation.json",
+      "bytes": 710,
+      "sha256": "420e3d2e0a57ce441bbb3c95daa66431d05c347ac26857af2078ce31e5a90230",
+      "source_mtime_ns": 1794228095330723772
+    },
+    {
+      "path": "test/summary.json",
+      "bytes": 6481,
+      "sha256": "110f90dbdb0e4698cffa002c3ce161397444b4d7547d761c456f009d472c1052",
+      "source_mtime_ns": 1794228376411289744
+    },
+    {
       "path": "train/COMPLETE.json",
       "bytes": 114,
       "sha256": "474e925efad371ae875940db51c7fb011d6a21ce2ddc2dbd303d647af5fc4339",
@@ -1608,24 +3666,6 @@
       "bytes": 400721,
       "sha256": "1f6592e8475b0d1e230285ffffd93bf8aa22668a41fc343294817d9bd73b7716",
       "source_mtime_ns": 1794227313688061758
-    },
-    {
-      "path": "train/review_queue.json",
-      "bytes": 47379,
-      "sha256": "91efdb2a77a6de429aea70b7dd40ce0ff06e8cfd7a08c815d48b138ce3ff624b",
-      "source_mtime_ns": 1794227313805022083
-    },
-    {
-      "path": "train/scene_text.json",
-      "bytes": 142676,
-      "sha256": "30d3895c2e27e9be2dde0235b107b38678c03f4b216d0bf89b09fe84b093d081",
-      "source_mtime_ns": 1794227313744062020
-    },
-    {
-      "path": "train/summary.json",
-      "bytes": 6546,
-      "sha256": "151ef0e8204885388ff105bdf10519b230023f496080c1672d1f9a10196ffeaf",
-      "source_mtime_ns": 1794227313814419151
     },
     {
       "path": "train/launcher_logs/c9ffd52a-bcef-404a-acf3-a532fd4ae7b0_xble31jt/attempt_0/0/stderr.log",
@@ -1724,22 +3764,22 @@
       "source_mtime_ns": 1794227118776137511
     },
     {
+      "path": "train/review_queue.json",
+      "bytes": 47379,
+      "sha256": "91efdb2a77a6de429aea70b7dd40ce0ff06e8cfd7a08c815d48b138ce3ff624b",
+      "source_mtime_ns": 1794227313805022083
+    },
+    {
+      "path": "train/scene_text.json",
+      "bytes": 142676,
+      "sha256": "30d3895c2e27e9be2dde0235b107b38678c03f4b216d0bf89b09fe84b093d081",
+      "source_mtime_ns": 1794227313744062020
+    },
+    {
       "path": "train/shards/rank_0000/COMPLETE.json",
       "bytes": 153,
       "sha256": "db1babfa363df6974f8749f4aeb6fa7cca13d8cd4aac6e6c7945d3be4d520e0e",
       "source_mtime_ns": 1794227189346061677
-    },
-    {
-      "path": "train/shards/rank_0000/run_config.json",
-      "bytes": 1201,
-      "sha256": "9d75fd0f508ac0f5936dceb304b7eedae7383cb46665e2cd143a0c1ec3b0a875",
-      "source_mtime_ns": 1794226709632221801
-    },
-    {
-      "path": "train/shards/rank_0000/validation.json",
-      "bytes": 710,
-      "sha256": "b5afcaa33a95195e30a88dc3e237c0d384c91d76b5fc2b859a7a3078e475a27e",
-      "source_mtime_ns": 1794227189042671487
     },
     {
       "path": "train/shards/rank_0000/captions/metadata.json",
@@ -1764,12 +3804,6 @@
       "bytes": 23249,
       "sha256": "cfb75b3bc68e963c8d2ca3bde3a57fa5dff01d42b553c1c876c4d4aab04d0b62",
       "source_mtime_ns": 1794227163156356444
-    },
-    {
-      "path": "train/shards/rank_0000/captions/summary.json",
-      "bytes": 458,
-      "sha256": "5d7aea045257f51cac80fe5da831c700d579bf8b97aca763a73de946af50b281",
-      "source_mtime_ns": 1794227163196356632
     },
     {
       "path": "train/shards/rank_0000/captions/scenes/08290f1b641c5b00.json",
@@ -1892,16 +3926,16 @@
       "source_mtime_ns": 1794226825329767314
     },
     {
+      "path": "train/shards/rank_0000/captions/summary.json",
+      "bytes": 458,
+      "sha256": "5d7aea045257f51cac80fe5da831c700d579bf8b97aca763a73de946af50b281",
+      "source_mtime_ns": 1794227163196356632
+    },
+    {
       "path": "train/shards/rank_0000/grounding/index.json",
       "bytes": 2303,
       "sha256": "145943813fd58a9d44bc92ff5e2d1c325641d84b3aefd98c6730c4f81d174e21",
       "source_mtime_ns": 1794227177290422669
-    },
-    {
-      "path": "train/shards/rank_0000/grounding/summary.json",
-      "bytes": 773,
-      "sha256": "e827a4122cd2bd9ad82a9baf6aa81e60d68db171b3e1e030b2af22fc2d5a0f09",
-      "source_mtime_ns": 1794227177304422735
     },
     {
       "path": "train/shards/rank_0000/grounding/masks/08290f1b641c5b00.npz",
@@ -2144,6 +4178,12 @@
       "source_mtime_ns": 1794227167670377595
     },
     {
+      "path": "train/shards/rank_0000/grounding/summary.json",
+      "bytes": 773,
+      "sha256": "e827a4122cd2bd9ad82a9baf6aa81e60d68db171b3e1e030b2af22fc2d5a0f09",
+      "source_mtime_ns": 1794227177304422735
+    },
+    {
       "path": "train/shards/rank_0000/prepared/ground_truth.json",
       "bytes": 332016,
       "sha256": "0d53a6c007ed50314c33e7f52b1623688aeeae1a965e9bfecbc57a3fbc8ea3e1",
@@ -2156,22 +4196,22 @@
       "source_mtime_ns": 1794226736836350070
     },
     {
+      "path": "train/shards/rank_0000/run_config.json",
+      "bytes": 1201,
+      "sha256": "9d75fd0f508ac0f5936dceb304b7eedae7383cb46665e2cd143a0c1ec3b0a875",
+      "source_mtime_ns": 1794226709632221801
+    },
+    {
+      "path": "train/shards/rank_0000/validation.json",
+      "bytes": 710,
+      "sha256": "b5afcaa33a95195e30a88dc3e237c0d384c91d76b5fc2b859a7a3078e475a27e",
+      "source_mtime_ns": 1794227189042671487
+    },
+    {
       "path": "train/shards/rank_0001/COMPLETE.json",
       "bytes": 153,
       "sha256": "de7a8dbac67ec9664b45bf58901b4d473023b92cc80b4604c9e7b9f9be76aaec",
       "source_mtime_ns": 1794227118612147734
-    },
-    {
-      "path": "train/shards/rank_0001/run_config.json",
-      "bytes": 1201,
-      "sha256": "44d7fb9f1804fc99f4009d7da56c58f22b52db40370e00725a20d88750887f0e",
-      "source_mtime_ns": 1794226709631808376
-    },
-    {
-      "path": "train/shards/rank_0001/validation.json",
-      "bytes": 710,
-      "sha256": "5da9cc7516dc1ebdcadef0cc3f16318c4747eee197f59a8a765cf8146fae5c82",
-      "source_mtime_ns": 1794227118265168243
     },
     {
       "path": "train/shards/rank_0001/captions/metadata.json",
@@ -2196,12 +4236,6 @@
       "bytes": 12590,
       "sha256": "3dc43a4dbf10b2956aa3cf623943a986dd2b0c64df043f84fa627ce476c6f8b5",
       "source_mtime_ns": 1794227107514095734
-    },
-    {
-      "path": "train/shards/rank_0001/captions/summary.json",
-      "bytes": 542,
-      "sha256": "80030eb93e9c62793a46098bd02371766988ebd1d4fc9e4ecb0d712d2e612396",
-      "source_mtime_ns": 1794227107555862005
     },
     {
       "path": "train/shards/rank_0001/captions/scenes/076aafe7a1b65ccd.json",
@@ -2324,16 +4358,16 @@
       "source_mtime_ns": 1794226819901741722
     },
     {
+      "path": "train/shards/rank_0001/captions/summary.json",
+      "bytes": 542,
+      "sha256": "80030eb93e9c62793a46098bd02371766988ebd1d4fc9e4ecb0d712d2e612396",
+      "source_mtime_ns": 1794227107555862005
+    },
+    {
       "path": "train/shards/rank_0001/grounding/index.json",
       "bytes": 2303,
       "sha256": "84bd70a8ea2a5d4580ad20db3f1409b54673383f7948851ec0e854e19110fcd3",
       "source_mtime_ns": 1794227113155122165
-    },
-    {
-      "path": "train/shards/rank_0001/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "fb2af7df523f709818e0da237957ce7d35eef33033e34f0efc881b4b39e566ab",
-      "source_mtime_ns": 1794227113167122221
     },
     {
       "path": "train/shards/rank_0001/grounding/masks/076aafe7a1b65ccd.npz",
@@ -2576,6 +4610,12 @@
       "source_mtime_ns": 1794227111865116121
     },
     {
+      "path": "train/shards/rank_0001/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "fb2af7df523f709818e0da237957ce7d35eef33033e34f0efc881b4b39e566ab",
+      "source_mtime_ns": 1794227113167122221
+    },
+    {
       "path": "train/shards/rank_0001/prepared/ground_truth.json",
       "bytes": 249139,
       "sha256": "632ebdb1f5280b499129dce95279ae711b84694e037a8f93d2e19c07c1c0f37e",
@@ -2588,22 +4628,22 @@
       "source_mtime_ns": 1794226736733349584
     },
     {
+      "path": "train/shards/rank_0001/run_config.json",
+      "bytes": 1201,
+      "sha256": "44d7fb9f1804fc99f4009d7da56c58f22b52db40370e00725a20d88750887f0e",
+      "source_mtime_ns": 1794226709631808376
+    },
+    {
+      "path": "train/shards/rank_0001/validation.json",
+      "bytes": 710,
+      "sha256": "5da9cc7516dc1ebdcadef0cc3f16318c4747eee197f59a8a765cf8146fae5c82",
+      "source_mtime_ns": 1794227118265168243
+    },
+    {
       "path": "train/shards/rank_0002/COMPLETE.json",
       "bytes": 153,
       "sha256": "06e286624480ff3cf9f0229f1827c26e27e4d232322a7c0f5de4696794d02de2",
       "source_mtime_ns": 1794227175585141881
-    },
-    {
-      "path": "train/shards/rank_0002/run_config.json",
-      "bytes": 1201,
-      "sha256": "480fc88e9e7eb0bd8517e31e706025d4cdb1fb59eba32506a35c9c691f32c7de",
-      "source_mtime_ns": 1794226709623221758
-    },
-    {
-      "path": "train/shards/rank_0002/validation.json",
-      "bytes": 710,
-      "sha256": "68a46d69c7fc24f0945ae94ba98a20ede5c13c9038e340a9737365844b455561",
-      "source_mtime_ns": 1794227175286075880
     },
     {
       "path": "train/shards/rank_0002/captions/metadata.json",
@@ -2628,12 +4668,6 @@
       "bytes": 17341,
       "sha256": "06224b25d1f6942a3c05e9d6820a69fe351db9bc8be81d1283956c313fbe77b6",
       "source_mtime_ns": 1794227156128323515
-    },
-    {
-      "path": "train/shards/rank_0002/captions/summary.json",
-      "bytes": 485,
-      "sha256": "8a05e34dc3286ed7e804c9788ea4d2d751dafa86dcc88b744ecb5630979e0c94",
-      "source_mtime_ns": 1794227156216323927
     },
     {
       "path": "train/shards/rank_0002/captions/scenes/23532b0a386a5e2c.json",
@@ -2756,16 +4790,16 @@
       "source_mtime_ns": 1794227035040101045
     },
     {
+      "path": "train/shards/rank_0002/captions/summary.json",
+      "bytes": 485,
+      "sha256": "8a05e34dc3286ed7e804c9788ea4d2d751dafa86dcc88b744ecb5630979e0c94",
+      "source_mtime_ns": 1794227156216323927
+    },
+    {
       "path": "train/shards/rank_0002/grounding/index.json",
       "bytes": 2303,
       "sha256": "b0850a8a2a31701aac8640ef564d6abf1c34acf8ded772ea159850c18e92fd6e",
       "source_mtime_ns": 1794227166005369793
-    },
-    {
-      "path": "train/shards/rank_0002/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "9b6fbb7cd0dfe887136e86f4ba3194390101b7d2627c28ef96cbbe09d29b1eaf",
-      "source_mtime_ns": 1794227166024369882
     },
     {
       "path": "train/shards/rank_0002/grounding/masks/23532b0a386a5e2c.npz",
@@ -3008,6 +5042,12 @@
       "source_mtime_ns": 1794227164277694819
     },
     {
+      "path": "train/shards/rank_0002/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "9b6fbb7cd0dfe887136e86f4ba3194390101b7d2627c28ef96cbbe09d29b1eaf",
+      "source_mtime_ns": 1794227166024369882
+    },
+    {
       "path": "train/shards/rank_0002/prepared/ground_truth.json",
       "bytes": 1038784,
       "sha256": "bd9c21ed8b22e1291aa418fa274b63b773e707885db7658e76f2e767f308eeb2",
@@ -3020,22 +5060,22 @@
       "source_mtime_ns": 1794226736690349381
     },
     {
+      "path": "train/shards/rank_0002/run_config.json",
+      "bytes": 1201,
+      "sha256": "480fc88e9e7eb0bd8517e31e706025d4cdb1fb59eba32506a35c9c691f32c7de",
+      "source_mtime_ns": 1794226709623221758
+    },
+    {
+      "path": "train/shards/rank_0002/validation.json",
+      "bytes": 710,
+      "sha256": "68a46d69c7fc24f0945ae94ba98a20ede5c13c9038e340a9737365844b455561",
+      "source_mtime_ns": 1794227175286075880
+    },
+    {
       "path": "train/shards/rank_0003/COMPLETE.json",
       "bytes": 153,
       "sha256": "62a90124dd222a0ccaaf3ed866d6731de62756c20d458c6015bd82aaf2af0c57",
       "source_mtime_ns": 1794227117720143554
-    },
-    {
-      "path": "train/shards/rank_0003/run_config.json",
-      "bytes": 1201,
-      "sha256": "9c26320d7ae34634f95835ac10e1af0401cd643d15baf3557d92bd21f0c50e0d",
-      "source_mtime_ns": 1794226709624017522
-    },
-    {
-      "path": "train/shards/rank_0003/validation.json",
-      "bytes": 710,
-      "sha256": "de7b8063b3a2e781308f5605000287fe4bd397b5fb3159f3cd836d133e5798a5",
-      "source_mtime_ns": 1794227117383141975
     },
     {
       "path": "train/shards/rank_0003/captions/metadata.json",
@@ -3060,12 +5100,6 @@
       "bytes": 18086,
       "sha256": "782e484bf55ae1edcc24d8680aabaa5a521a7cc83ebb293df30bbe7b80d8acb8",
       "source_mtime_ns": 1794227091648311691
-    },
-    {
-      "path": "train/shards/rank_0003/captions/summary.json",
-      "bytes": 477,
-      "sha256": "83db26bc8c6eec6d5bfbf16b7bcd32c6bf937fb4ebe6bb6731fac447901f8eb5",
-      "source_mtime_ns": 1794227091806022135
     },
     {
       "path": "train/shards/rank_0003/captions/scenes/0d39ed75799a50a2.json",
@@ -3188,16 +5222,16 @@
       "source_mtime_ns": 1794226821026610047
     },
     {
+      "path": "train/shards/rank_0003/captions/summary.json",
+      "bytes": 477,
+      "sha256": "83db26bc8c6eec6d5bfbf16b7bcd32c6bf937fb4ebe6bb6731fac447901f8eb5",
+      "source_mtime_ns": 1794227091806022135
+    },
+    {
       "path": "train/shards/rank_0003/grounding/index.json",
       "bytes": 2303,
       "sha256": "2733cb6d32ef3d55171b543f5f37e25b24182380732ee5fb0a7e8d71fb1e416a",
       "source_mtime_ns": 1794227102791548592
-    },
-    {
-      "path": "train/shards/rank_0003/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "77a70e5ad4ffe56dfaf72568054bbfce390e8e2d4621215f11fb59cdbad1c43a",
-      "source_mtime_ns": 1794227102799073642
     },
     {
       "path": "train/shards/rank_0003/grounding/masks/0d39ed75799a50a2.npz",
@@ -3440,6 +5474,12 @@
       "source_mtime_ns": 1794227099496058166
     },
     {
+      "path": "train/shards/rank_0003/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "77a70e5ad4ffe56dfaf72568054bbfce390e8e2d4621215f11fb59cdbad1c43a",
+      "source_mtime_ns": 1794227102799073642
+    },
+    {
       "path": "train/shards/rank_0003/prepared/ground_truth.json",
       "bytes": 945585,
       "sha256": "c160f591a2957f0baf3ea33c64f53e14e0b6e8f4eec2f395f04788470a3cd7bf",
@@ -3452,22 +5492,22 @@
       "source_mtime_ns": 1794226736769349754
     },
     {
+      "path": "train/shards/rank_0003/run_config.json",
+      "bytes": 1201,
+      "sha256": "9c26320d7ae34634f95835ac10e1af0401cd643d15baf3557d92bd21f0c50e0d",
+      "source_mtime_ns": 1794226709624017522
+    },
+    {
+      "path": "train/shards/rank_0003/validation.json",
+      "bytes": 710,
+      "sha256": "de7b8063b3a2e781308f5605000287fe4bd397b5fb3159f3cd836d133e5798a5",
+      "source_mtime_ns": 1794227117383141975
+    },
+    {
       "path": "train/shards/rank_0004/COMPLETE.json",
       "bytes": 153,
       "sha256": "2a3c8d7add4d774d782de8dd2422e67016bf4b02e728d31bbd90674121e78d0b",
       "source_mtime_ns": 1794227194966505490
-    },
-    {
-      "path": "train/shards/rank_0004/run_config.json",
-      "bytes": 1201,
-      "sha256": "d86a4434ab6bda79a37756a6968ac79172da2c05ad87a46c9947231ee958c475",
-      "source_mtime_ns": 1794226709623221758
-    },
-    {
-      "path": "train/shards/rank_0004/validation.json",
-      "bytes": 710,
-      "sha256": "55fcc300c41fc082b8e2fa32b0e0e2fdf2c06a5afd7d5a9ff8c56434f862998f",
-      "source_mtime_ns": 1794227194692504206
     },
     {
       "path": "train/shards/rank_0004/captions/metadata.json",
@@ -3492,12 +5532,6 @@
       "bytes": 14270,
       "sha256": "dfeeae0b1d8ef9c961b9fad18ef63c9993301821c23f922bebf09931ea793bec",
       "source_mtime_ns": 1794227183235450524
-    },
-    {
-      "path": "train/shards/rank_0004/captions/summary.json",
-      "bytes": 516,
-      "sha256": "a805e7e0970b89c68490a868c40420fcd965d17625c54183cdc0adad63f484a5",
-      "source_mtime_ns": 1794227183276450717
     },
     {
       "path": "train/shards/rank_0004/captions/scenes/07d33db0639a541d.json",
@@ -3620,16 +5654,16 @@
       "source_mtime_ns": 1794227149563736250
     },
     {
+      "path": "train/shards/rank_0004/captions/summary.json",
+      "bytes": 516,
+      "sha256": "a805e7e0970b89c68490a868c40420fcd965d17625c54183cdc0adad63f484a5",
+      "source_mtime_ns": 1794227183276450717
+    },
+    {
       "path": "train/shards/rank_0004/grounding/index.json",
       "bytes": 2303,
       "sha256": "749699a56bcdc204da156e9d1099cf5793b385be025ffdf92978b5d572424cbe",
       "source_mtime_ns": 1794227189243478675
-    },
-    {
-      "path": "train/shards/rank_0004/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "b1e1bf347ab1429f564b594bae30240b61afee4fb57d81379f985d3d9df2084c",
-      "source_mtime_ns": 1794227189254478726
     },
     {
       "path": "train/shards/rank_0004/grounding/masks/07d33db0639a541d.npz",
@@ -3872,6 +5906,12 @@
       "source_mtime_ns": 1794227188985477466
     },
     {
+      "path": "train/shards/rank_0004/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "b1e1bf347ab1429f564b594bae30240b61afee4fb57d81379f985d3d9df2084c",
+      "source_mtime_ns": 1794227189254478726
+    },
+    {
       "path": "train/shards/rank_0004/prepared/ground_truth.json",
       "bytes": 251370,
       "sha256": "4947600419a44d49b47fa5d1af941e098a6484942b6548f5b893cb3452624aa0",
@@ -3884,22 +5924,22 @@
       "source_mtime_ns": 1794226736891873444
     },
     {
+      "path": "train/shards/rank_0004/run_config.json",
+      "bytes": 1201,
+      "sha256": "d86a4434ab6bda79a37756a6968ac79172da2c05ad87a46c9947231ee958c475",
+      "source_mtime_ns": 1794226709623221758
+    },
+    {
+      "path": "train/shards/rank_0004/validation.json",
+      "bytes": 710,
+      "sha256": "55fcc300c41fc082b8e2fa32b0e0e2fdf2c06a5afd7d5a9ff8c56434f862998f",
+      "source_mtime_ns": 1794227194692504206
+    },
+    {
       "path": "train/shards/rank_0005/COMPLETE.json",
       "bytes": 153,
       "sha256": "04be1db24d50f9834a35f56ce4f1478d3afbf561aaf8b6a19391ff64137e0e23",
       "source_mtime_ns": 1794227312112332692
-    },
-    {
-      "path": "train/shards/rank_0005/run_config.json",
-      "bytes": 1201,
-      "sha256": "bec2ff23cc65949f2f7d2c0e09f03a3546c3886d7369e7f3280c4ea6bd1309ef",
-      "source_mtime_ns": 1794226709623482026
-    },
-    {
-      "path": "train/shards/rank_0005/validation.json",
-      "bytes": 710,
-      "sha256": "c14273d38bdbc39d4a1a33a3034ebf580b08bb711e59d63346cde07d144919d8",
-      "source_mtime_ns": 1794227311810052958
     },
     {
       "path": "train/shards/rank_0005/captions/metadata.json",
@@ -3924,12 +5964,6 @@
       "bytes": 18356,
       "sha256": "14834921564031eb20234a0c88d4dae09c8138e4eab593cfc95182deac0b103e",
       "source_mtime_ns": 1794227297430985585
-    },
-    {
-      "path": "train/shards/rank_0005/captions/summary.json",
-      "bytes": 514,
-      "sha256": "0d11d1e23d3886aa03e87eda9f9f6580c258356444d92a8c4a51ca1ee4014f67",
-      "source_mtime_ns": 1794227297534943683
     },
     {
       "path": "train/shards/rank_0005/captions/scenes/11968974161f5c02.json",
@@ -4052,16 +6086,16 @@
       "source_mtime_ns": 1794227203863547177
     },
     {
+      "path": "train/shards/rank_0005/captions/summary.json",
+      "bytes": 514,
+      "sha256": "0d11d1e23d3886aa03e87eda9f9f6580c258356444d92a8c4a51ca1ee4014f67",
+      "source_mtime_ns": 1794227297534943683
+    },
+    {
       "path": "train/shards/rank_0005/grounding/index.json",
       "bytes": 2303,
       "sha256": "e3cab2464d42aa851c232b28fd11b95add6474b9d5ede832c6c1ade78c7fd34c",
       "source_mtime_ns": 1794227305072339649
-    },
-    {
-      "path": "train/shards/rank_0005/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "58eaa13e2717647d8799750dc13004a2b968bc81a8578fd8ba40b5cde348d781",
-      "source_mtime_ns": 1794227305081687513
     },
     {
       "path": "train/shards/rank_0005/grounding/masks/11968974161f5c02.npz",
@@ -4304,6 +6338,12 @@
       "source_mtime_ns": 1794227304656019438
     },
     {
+      "path": "train/shards/rank_0005/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "58eaa13e2717647d8799750dc13004a2b968bc81a8578fd8ba40b5cde348d781",
+      "source_mtime_ns": 1794227305081687513
+    },
+    {
       "path": "train/shards/rank_0005/prepared/ground_truth.json",
       "bytes": 207334,
       "sha256": "c4e9ab1e49cf1bc88b369d740da00d39cc83c4bc43e925234be28f0e09619133",
@@ -4316,22 +6356,22 @@
       "source_mtime_ns": 1794226736864350202
     },
     {
+      "path": "train/shards/rank_0005/run_config.json",
+      "bytes": 1201,
+      "sha256": "bec2ff23cc65949f2f7d2c0e09f03a3546c3886d7369e7f3280c4ea6bd1309ef",
+      "source_mtime_ns": 1794226709623482026
+    },
+    {
+      "path": "train/shards/rank_0005/validation.json",
+      "bytes": 710,
+      "sha256": "c14273d38bdbc39d4a1a33a3034ebf580b08bb711e59d63346cde07d144919d8",
+      "source_mtime_ns": 1794227311810052958
+    },
+    {
       "path": "train/shards/rank_0006/COMPLETE.json",
       "bytes": 153,
       "sha256": "bff3796034adc9a33b7f7efdf944bdc4f3001997c710c25efc215c512ffe0cd8",
       "source_mtime_ns": 1794227283356068569
-    },
-    {
-      "path": "train/shards/rank_0006/run_config.json",
-      "bytes": 1201,
-      "sha256": "e8e977f6d678005d3613b6df9aec399c321d82d903ac1419b36be0127751b64c",
-      "source_mtime_ns": 1794226709622221753
-    },
-    {
-      "path": "train/shards/rank_0006/validation.json",
-      "bytes": 710,
-      "sha256": "786000cc5b298fcee0403c0914a81d13f01814d460ea990e41c774fadb4c1710",
-      "source_mtime_ns": 1794227283054919662
     },
     {
       "path": "train/shards/rank_0006/captions/metadata.json",
@@ -4356,12 +6396,6 @@
       "bytes": 20721,
       "sha256": "3b632b6e72a883af7df7a664cf5665223f22fb2c1073e29c8d84fc48097572b4",
       "source_mtime_ns": 1794227258683804035
-    },
-    {
-      "path": "train/shards/rank_0006/captions/summary.json",
-      "bytes": 504,
-      "sha256": "466288c0a2221ab02252c60259124756a0fb8f4f8c3971213cb17121f2b13c80",
-      "source_mtime_ns": 1794227258740867507
     },
     {
       "path": "train/shards/rank_0006/captions/scenes/084f8c2769f05ee9.json",
@@ -4484,16 +6518,16 @@
       "source_mtime_ns": 1794227258671941235
     },
     {
+      "path": "train/shards/rank_0006/captions/summary.json",
+      "bytes": 504,
+      "sha256": "466288c0a2221ab02252c60259124756a0fb8f4f8c3971213cb17121f2b13c80",
+      "source_mtime_ns": 1794227258740867507
+    },
+    {
       "path": "train/shards/rank_0006/grounding/index.json",
       "bytes": 2303,
       "sha256": "1e74ac80d5e825e4e2a7659416ab49c09514fea28cea90efb63f2a0cff50358e",
       "source_mtime_ns": 1794227270252858242
-    },
-    {
-      "path": "train/shards/rank_0006/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "6834528f06aedc1e7daefe674120ba2e7fe2005543c68d335d5d6e25b651ce16",
-      "source_mtime_ns": 1794227270276858355
     },
     {
       "path": "train/shards/rank_0006/grounding/masks/084f8c2769f05ee9.npz",
@@ -4736,6 +6770,12 @@
       "source_mtime_ns": 1794227270225858116
     },
     {
+      "path": "train/shards/rank_0006/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "6834528f06aedc1e7daefe674120ba2e7fe2005543c68d335d5d6e25b651ce16",
+      "source_mtime_ns": 1794227270276858355
+    },
+    {
       "path": "train/shards/rank_0006/prepared/ground_truth.json",
       "bytes": 1249562,
       "sha256": "47d523753412a12c5c80375f3d27a7d0e6f76bac6f06cb1742bb68ea994566ef",
@@ -4748,22 +6788,22 @@
       "source_mtime_ns": 1794226737220351880
     },
     {
+      "path": "train/shards/rank_0006/run_config.json",
+      "bytes": 1201,
+      "sha256": "e8e977f6d678005d3613b6df9aec399c321d82d903ac1419b36be0127751b64c",
+      "source_mtime_ns": 1794226709622221753
+    },
+    {
+      "path": "train/shards/rank_0006/validation.json",
+      "bytes": 710,
+      "sha256": "786000cc5b298fcee0403c0914a81d13f01814d460ea990e41c774fadb4c1710",
+      "source_mtime_ns": 1794227283054919662
+    },
+    {
       "path": "train/shards/rank_0007/COMPLETE.json",
       "bytes": 153,
       "sha256": "5ebd7908d8912cb1a3c6b312b84a45213ed9636affb817288c9ca51b83e86342",
       "source_mtime_ns": 1794227118759148423
-    },
-    {
-      "path": "train/shards/rank_0007/run_config.json",
-      "bytes": 1201,
-      "sha256": "d5b593c836b61e777922548408b61363296402437be70292165be772b5d3c82e",
-      "source_mtime_ns": 1794226709625221767
-    },
-    {
-      "path": "train/shards/rank_0007/validation.json",
-      "bytes": 710,
-      "sha256": "7f7aad710e415f36fa460a5d7a36df7756f1b57000fd2bdb6925f7b6638c1f3e",
-      "source_mtime_ns": 1794227118425146858
     },
     {
       "path": "train/shards/rank_0007/captions/metadata.json",
@@ -4788,12 +6828,6 @@
       "bytes": 18084,
       "sha256": "6d6fe6296dcd5961ba0fe534a6aa82bd1a929ea0a8f83f4b916b0647bc096fd8",
       "source_mtime_ns": 1794227092235024145
-    },
-    {
-      "path": "train/shards/rank_0007/captions/summary.json",
-      "bytes": 460,
-      "sha256": "f9bc3d24c2e71fb962a879719c64364763a3a5d974f4ec6cf97c1c500c27106f",
-      "source_mtime_ns": 1794227092706251884
     },
     {
       "path": "train/shards/rank_0007/captions/scenes/040cad5817625327.json",
@@ -4916,16 +6950,16 @@
       "source_mtime_ns": 1794227077300954428
     },
     {
+      "path": "train/shards/rank_0007/captions/summary.json",
+      "bytes": 460,
+      "sha256": "f9bc3d24c2e71fb962a879719c64364763a3a5d974f4ec6cf97c1c500c27106f",
+      "source_mtime_ns": 1794227092706251884
+    },
+    {
       "path": "train/shards/rank_0007/grounding/index.json",
       "bytes": 2303,
       "sha256": "dd9e9359b16ff77186e3025338d6186a884fb1e3ef116b9282ed466d692275bf",
       "source_mtime_ns": 1794227103746459236
-    },
-    {
-      "path": "train/shards/rank_0007/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "375ff2f561816af7d18a0f70dbd4ed74cbd529628a955ddc38acdcf1694694c6",
-      "source_mtime_ns": 1794227103753078112
     },
     {
       "path": "train/shards/rank_0007/grounding/masks/040cad5817625327.npz",
@@ -5168,6 +7202,12 @@
       "source_mtime_ns": 1794227103425076576
     },
     {
+      "path": "train/shards/rank_0007/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "375ff2f561816af7d18a0f70dbd4ed74cbd529628a955ddc38acdcf1694694c6",
+      "source_mtime_ns": 1794227103753078112
+    },
+    {
       "path": "train/shards/rank_0007/prepared/ground_truth.json",
       "bytes": 505481,
       "sha256": "d440bcd81b790d645a434d812306e4c5804299daf7785c4dbeee31db981c2431",
@@ -5180,6 +7220,24 @@
       "source_mtime_ns": 1794226736957350640
     },
     {
+      "path": "train/shards/rank_0007/run_config.json",
+      "bytes": 1201,
+      "sha256": "d5b593c836b61e777922548408b61363296402437be70292165be772b5d3c82e",
+      "source_mtime_ns": 1794226709625221767
+    },
+    {
+      "path": "train/shards/rank_0007/validation.json",
+      "bytes": 710,
+      "sha256": "7f7aad710e415f36fa460a5d7a36df7756f1b57000fd2bdb6925f7b6638c1f3e",
+      "source_mtime_ns": 1794227118425146858
+    },
+    {
+      "path": "train/summary.json",
+      "bytes": 6546,
+      "sha256": "151ef0e8204885388ff105bdf10519b230023f496080c1672d1f9a10196ffeaf",
+      "source_mtime_ns": 1794227313814419151
+    },
+    {
       "path": "val/COMPLETE.json",
       "bytes": 114,
       "sha256": "cdfd9cea59e811ddfcfabfd05aa246260feb22edd545260400ec96e0ff97331b",
@@ -5190,24 +7248,6 @@
       "bytes": 395335,
       "sha256": "eede59a902e9ff6ce831a598989f4a82899732b9964e58a418069a4518321c9b",
       "source_mtime_ns": 1794227841617535355
-    },
-    {
-      "path": "val/review_queue.json",
-      "bytes": 44173,
-      "sha256": "f4f337e83bc55d51cc587b20bdb8bfc32f64af2196a5fb4c4b4f9cc427ac6987",
-      "source_mtime_ns": 1794227841686535678
-    },
-    {
-      "path": "val/scene_text.json",
-      "bytes": 136970,
-      "sha256": "6820cc2fe97b98d90a8f8ed98cf82a24d27976f09ea0da544d0612d321353b1f",
-      "source_mtime_ns": 1794227841672535613
-    },
-    {
-      "path": "val/summary.json",
-      "bytes": 7020,
-      "sha256": "86cafc44f761579128447b3e239f165804defb5a8d37be2a2285b6cbd9cce4ef",
-      "source_mtime_ns": 1794227841714535810
     },
     {
       "path": "val/launcher_logs/e6b69653-82a5-4d47-9e0b-c92e4418b588_abqt6r6z/attempt_0/0/stderr.log",
@@ -5306,22 +7346,22 @@
       "source_mtime_ns": 1794227680309001480
     },
     {
+      "path": "val/review_queue.json",
+      "bytes": 44173,
+      "sha256": "f4f337e83bc55d51cc587b20bdb8bfc32f64af2196a5fb4c4b4f9cc427ac6987",
+      "source_mtime_ns": 1794227841686535678
+    },
+    {
+      "path": "val/scene_text.json",
+      "bytes": 136970,
+      "sha256": "6820cc2fe97b98d90a8f8ed98cf82a24d27976f09ea0da544d0612d321353b1f",
+      "source_mtime_ns": 1794227841672535613
+    },
+    {
       "path": "val/shards/rank_0000/COMPLETE.json",
       "bytes": 153,
       "sha256": "dd585d974886df5a82f7f5df492ffc53e00f7cdccf4b28aea769f86764b32b2f",
       "source_mtime_ns": 1794227724666987386
-    },
-    {
-      "path": "val/shards/rank_0000/run_config.json",
-      "bytes": 1197,
-      "sha256": "311db3f729c74ddb52a3635038e884c2417b7e1b3f20b777536dd0eb4c361374",
-      "source_mtime_ns": 1794227319934091023
-    },
-    {
-      "path": "val/shards/rank_0000/validation.json",
-      "bytes": 710,
-      "sha256": "20da0a1777227c758b8bd81ab319f5566e92dfaef186f8a7085c61fd9b384e27",
-      "source_mtime_ns": 1794227724347985891
     },
     {
       "path": "val/shards/rank_0000/captions/metadata.json",
@@ -5346,12 +7386,6 @@
       "bytes": 21022,
       "sha256": "b721c8db0841e5cec5ed1b10a5f34920306c114ba0087bbc818b0af8e6472228",
       "source_mtime_ns": 1794227706430901941
-    },
-    {
-      "path": "val/shards/rank_0000/captions/summary.json",
-      "bytes": 481,
-      "sha256": "2d68ad04efb9720ce82ac61c75b7e35a2335017e9363ea912bfa2f2c29f111f8",
-      "source_mtime_ns": 1794227706479902171
     },
     {
       "path": "val/shards/rank_0000/captions/scenes/10963ecdf8e15822.json",
@@ -5474,16 +7508,16 @@
       "source_mtime_ns": 1794227682694790725
     },
     {
+      "path": "val/shards/rank_0000/captions/summary.json",
+      "bytes": 481,
+      "sha256": "2d68ad04efb9720ce82ac61c75b7e35a2335017e9363ea912bfa2f2c29f111f8",
+      "source_mtime_ns": 1794227706479902171
+    },
+    {
       "path": "val/shards/rank_0000/grounding/index.json",
       "bytes": 2303,
       "sha256": "5d00760319e57ffb303fb2d867d36b433b27cad56420b7c9293a9a85cbee5387",
       "source_mtime_ns": 1794227714096937860
-    },
-    {
-      "path": "val/shards/rank_0000/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "c3b058a22b84ba69e765724af9f50e4c1f40056d21690bea4b10dfe153bb8de8",
-      "source_mtime_ns": 1794227714115937949
     },
     {
       "path": "val/shards/rank_0000/grounding/masks/10963ecdf8e15822.npz",
@@ -5726,6 +7760,12 @@
       "source_mtime_ns": 1794227713962651177
     },
     {
+      "path": "val/shards/rank_0000/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "c3b058a22b84ba69e765724af9f50e4c1f40056d21690bea4b10dfe153bb8de8",
+      "source_mtime_ns": 1794227714115937949
+    },
+    {
       "path": "val/shards/rank_0000/prepared/ground_truth.json",
       "bytes": 173114,
       "sha256": "0517226a67a33e45c9e200a4e5d53226144fc1477cfdf3720799da8f87da80af",
@@ -5738,22 +7778,22 @@
       "source_mtime_ns": 1794227339113180886
     },
     {
+      "path": "val/shards/rank_0000/run_config.json",
+      "bytes": 1197,
+      "sha256": "311db3f729c74ddb52a3635038e884c2417b7e1b3f20b777536dd0eb4c361374",
+      "source_mtime_ns": 1794227319934091023
+    },
+    {
+      "path": "val/shards/rank_0000/validation.json",
+      "bytes": 710,
+      "sha256": "20da0a1777227c758b8bd81ab319f5566e92dfaef186f8a7085c61fd9b384e27",
+      "source_mtime_ns": 1794227724347985891
+    },
+    {
       "path": "val/shards/rank_0001/COMPLETE.json",
       "bytes": 153,
       "sha256": "6a933c0543dccbd60e57b3b0f83966555ce6ed75b8ae36de94ef9cfd493fd0a2",
       "source_mtime_ns": 1794227798418456733
-    },
-    {
-      "path": "val/shards/rank_0001/run_config.json",
-      "bytes": 1197,
-      "sha256": "96a258ab0472f83787e1c0cf331d9c2bc33161756b63c5d66254c396e70d3cb5",
-      "source_mtime_ns": 1794227319934748862
-    },
-    {
-      "path": "val/shards/rank_0001/validation.json",
-      "bytes": 710,
-      "sha256": "b91338eb51351e451b1def93e0a5e45025057ae114765f178cf8d431d3905897",
-      "source_mtime_ns": 1794227798123813323
     },
     {
       "path": "val/shards/rank_0001/captions/metadata.json",
@@ -5778,12 +7818,6 @@
       "bytes": 21090,
       "sha256": "d82d9c279ad8b617e11c885d3a7422cd02d718086bc0a5ef02bcc76552b9aba5",
       "source_mtime_ns": 1794227783937265096
-    },
-    {
-      "path": "val/shards/rank_0001/captions/summary.json",
-      "bytes": 569,
-      "sha256": "0402280996e3af4520e491f266690b1ca528cbe3a3f196cf4223ceaf39fc264f",
-      "source_mtime_ns": 1794227783977265283
     },
     {
       "path": "val/shards/rank_0001/captions/scenes/1be5f436a8705cbc.json",
@@ -5906,16 +7940,16 @@
       "source_mtime_ns": 1794227401629473803
     },
     {
+      "path": "val/shards/rank_0001/captions/summary.json",
+      "bytes": 569,
+      "sha256": "0402280996e3af4520e491f266690b1ca528cbe3a3f196cf4223ceaf39fc264f",
+      "source_mtime_ns": 1794227783977265283
+    },
+    {
       "path": "val/shards/rank_0001/grounding/index.json",
       "bytes": 2303,
       "sha256": "400f7430f0b8b62b53a64cba1003b934af7ab48b5ebb5f7d5623c71f68e16d09",
       "source_mtime_ns": 1794227792138303522
-    },
-    {
-      "path": "val/shards/rank_0001/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "b621ca2b7c92397075fd949aa154221fdcbe07c3369f0e42daadeca3add55b6e",
-      "source_mtime_ns": 1794227792154303597
     },
     {
       "path": "val/shards/rank_0001/grounding/masks/1be5f436a8705cbc.npz",
@@ -6158,6 +8192,12 @@
       "source_mtime_ns": 1794227788121284700
     },
     {
+      "path": "val/shards/rank_0001/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "b621ca2b7c92397075fd949aa154221fdcbe07c3369f0e42daadeca3add55b6e",
+      "source_mtime_ns": 1794227792154303597
+    },
+    {
       "path": "val/shards/rank_0001/prepared/ground_truth.json",
       "bytes": 411002,
       "sha256": "1bcc87c9f6d82060c9a93f9e8967f633ca209e857ef137f6ebac1ce1b711fc12",
@@ -6170,22 +8210,22 @@
       "source_mtime_ns": 1794227339310181809
     },
     {
+      "path": "val/shards/rank_0001/run_config.json",
+      "bytes": 1197,
+      "sha256": "96a258ab0472f83787e1c0cf331d9c2bc33161756b63c5d66254c396e70d3cb5",
+      "source_mtime_ns": 1794227319934748862
+    },
+    {
+      "path": "val/shards/rank_0001/validation.json",
+      "bytes": 710,
+      "sha256": "b91338eb51351e451b1def93e0a5e45025057ae114765f178cf8d431d3905897",
+      "source_mtime_ns": 1794227798123813323
+    },
+    {
       "path": "val/shards/rank_0002/COMPLETE.json",
       "bytes": 153,
       "sha256": "1ea1a76f069a6f87c6adf5a196c15dea89d27fee0c7c680db61ce855c4b3acc2",
       "source_mtime_ns": 1794227839969850704
-    },
-    {
-      "path": "val/shards/rank_0002/run_config.json",
-      "bytes": 1197,
-      "sha256": "de5014e17f5c9828c56b356af1a90eb584d5cfe7b28706741803275ae7892a46",
-      "source_mtime_ns": 1794227319931091009
-    },
-    {
-      "path": "val/shards/rank_0002/validation.json",
-      "bytes": 710,
-      "sha256": "25e1b9baf87252edacf75329c4e822688601ecb04526ac3ec4d71f90ffe8f6e0",
-      "source_mtime_ns": 1794227839635526068
     },
     {
       "path": "val/shards/rank_0002/captions/metadata.json",
@@ -6210,12 +8250,6 @@
       "bytes": 17697,
       "sha256": "c23241fc5499adf4a7b2e48ea29550d9a128eed1d6140100ff4c49f2d207f26a",
       "source_mtime_ns": 1794227824286454151
-    },
-    {
-      "path": "val/shards/rank_0002/captions/summary.json",
-      "bytes": 529,
-      "sha256": "4b088a91f38b5f8d0fe6e113f63069a82166365a3e4b6b2dcc4f4203fed56478",
-      "source_mtime_ns": 1794227824579118172
     },
     {
       "path": "val/shards/rank_0002/captions/scenes/00477d2aabc05e56.json",
@@ -6338,16 +8372,16 @@
       "source_mtime_ns": 1794227589905355964
     },
     {
+      "path": "val/shards/rank_0002/captions/summary.json",
+      "bytes": 529,
+      "sha256": "4b088a91f38b5f8d0fe6e113f63069a82166365a3e4b6b2dcc4f4203fed56478",
+      "source_mtime_ns": 1794227824579118172
+    },
+    {
       "path": "val/shards/rank_0002/grounding/index.json",
       "bytes": 2303,
       "sha256": "946fb50c0b80354cbf20c318f1d720063434b4e43726e927013842dd7ceece35",
       "source_mtime_ns": 1794227831949490056
-    },
-    {
-      "path": "val/shards/rank_0002/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "91caff1269103f2f27c23861afb648bb99c44bf29226af0969bac565c604e02c",
-      "source_mtime_ns": 1794227831965490131
     },
     {
       "path": "val/shards/rank_0002/grounding/masks/00477d2aabc05e56.npz",
@@ -6590,6 +8624,12 @@
       "source_mtime_ns": 1794227830250067038
     },
     {
+      "path": "val/shards/rank_0002/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "91caff1269103f2f27c23861afb648bb99c44bf29226af0969bac565c604e02c",
+      "source_mtime_ns": 1794227831965490131
+    },
+    {
       "path": "val/shards/rank_0002/prepared/ground_truth.json",
       "bytes": 301025,
       "sha256": "972de8243ddbe8c2fc8a8f74e99e970375bc60aee0edfe11237dc0d8e9eaabe9",
@@ -6602,22 +8642,22 @@
       "source_mtime_ns": 1794227339255181551
     },
     {
+      "path": "val/shards/rank_0002/run_config.json",
+      "bytes": 1197,
+      "sha256": "de5014e17f5c9828c56b356af1a90eb584d5cfe7b28706741803275ae7892a46",
+      "source_mtime_ns": 1794227319931091009
+    },
+    {
+      "path": "val/shards/rank_0002/validation.json",
+      "bytes": 710,
+      "sha256": "25e1b9baf87252edacf75329c4e822688601ecb04526ac3ec4d71f90ffe8f6e0",
+      "source_mtime_ns": 1794227839635526068
+    },
+    {
       "path": "val/shards/rank_0003/COMPLETE.json",
       "bytes": 153,
       "sha256": "86242b30f26b5877e984d07aa68c808086e1bac8d59c3e3cde8c8a9868c574d4",
       "source_mtime_ns": 1794227801532347537
-    },
-    {
-      "path": "val/shards/rank_0003/run_config.json",
-      "bytes": 1197,
-      "sha256": "1bd601ba33d4b9ba147f6b1c234010097bfb78e781031534238ab07fe5249a08",
-      "source_mtime_ns": 1794227319938091042
-    },
-    {
-      "path": "val/shards/rank_0003/validation.json",
-      "bytes": 710,
-      "sha256": "aa067fc614a5fd6f2db19d1b1122c146922d650589b902788688d5e8b8979720",
-      "source_mtime_ns": 1794227801143345715
     },
     {
       "path": "val/shards/rank_0003/captions/metadata.json",
@@ -6642,12 +8682,6 @@
       "bytes": 19417,
       "sha256": "714fa541475f6e399996d1ab0b91b3c37f5cdfbfc60be03c1d296fd46f526a1a",
       "source_mtime_ns": 1794227787098279907
-    },
-    {
-      "path": "val/shards/rank_0003/captions/summary.json",
-      "bytes": 535,
-      "sha256": "f957cf5ed47c414a83e1371553b7caadaf74ad381dea45bfb16f6dfa0117e83e",
-      "source_mtime_ns": 1794227787160280197
     },
     {
       "path": "val/shards/rank_0003/captions/scenes/02fe04f7687353a3.json",
@@ -6770,16 +8804,16 @@
       "source_mtime_ns": 1794227510788985266
     },
     {
+      "path": "val/shards/rank_0003/captions/summary.json",
+      "bytes": 535,
+      "sha256": "f957cf5ed47c414a83e1371553b7caadaf74ad381dea45bfb16f6dfa0117e83e",
+      "source_mtime_ns": 1794227787160280197
+    },
+    {
       "path": "val/shards/rank_0003/grounding/index.json",
       "bytes": 2303,
       "sha256": "b0adec0fb9da335544cc07813a04dc1ef7d4e867613dc8dd95fcfecc081ca6b8",
       "source_mtime_ns": 1794227794232313333
-    },
-    {
-      "path": "val/shards/rank_0003/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "952a03769c7439d7524d766d989e5fc3c664e53220a53073edb73a76c0da07d1",
-      "source_mtime_ns": 1794227794245313394
     },
     {
       "path": "val/shards/rank_0003/grounding/masks/02fe04f7687353a3.npz",
@@ -7022,6 +9056,12 @@
       "source_mtime_ns": 1794227791861949384
     },
     {
+      "path": "val/shards/rank_0003/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "952a03769c7439d7524d766d989e5fc3c664e53220a53073edb73a76c0da07d1",
+      "source_mtime_ns": 1794227794245313394
+    },
+    {
       "path": "val/shards/rank_0003/prepared/ground_truth.json",
       "bytes": 214054,
       "sha256": "0d4f4c0cc14ca168171880410bd4af60857c15c58e23cb7e47b5f6afb9a9dc29",
@@ -7034,22 +9074,22 @@
       "source_mtime_ns": 1794227338992180319
     },
     {
+      "path": "val/shards/rank_0003/run_config.json",
+      "bytes": 1197,
+      "sha256": "1bd601ba33d4b9ba147f6b1c234010097bfb78e781031534238ab07fe5249a08",
+      "source_mtime_ns": 1794227319938091042
+    },
+    {
+      "path": "val/shards/rank_0003/validation.json",
+      "bytes": 710,
+      "sha256": "aa067fc614a5fd6f2db19d1b1122c146922d650589b902788688d5e8b8979720",
+      "source_mtime_ns": 1794227801143345715
+    },
+    {
       "path": "val/shards/rank_0004/COMPLETE.json",
       "bytes": 153,
       "sha256": "b9cf78bf7b8b6fc7cc1c3c7ae9c6b5dbb934dcefb7da87d4adf1a62bb732d805",
       "source_mtime_ns": 1794227631233549606
-    },
-    {
-      "path": "val/shards/rank_0004/run_config.json",
-      "bytes": 1197,
-      "sha256": "48b4fc360595061c39637aa3cddfb1e0fe9398e753ae858123e4de2283c2bd11",
-      "source_mtime_ns": 1794227319973005624
-    },
-    {
-      "path": "val/shards/rank_0004/validation.json",
-      "bytes": 709,
-      "sha256": "eea79d16dc3d83526258bb6c0f2cbccdad224bb29abf5ef1348357f5ee8b2927",
-      "source_mtime_ns": 1794227630847157283
     },
     {
       "path": "val/shards/rank_0004/captions/metadata.json",
@@ -7074,12 +9114,6 @@
       "bytes": 10865,
       "sha256": "4fde37b84aad86033f8557ed28aecf15d0a3bb07fab24c1c12649db64c812359",
       "source_mtime_ns": 1794227620776500609
-    },
-    {
-      "path": "val/shards/rank_0004/captions/summary.json",
-      "bytes": 572,
-      "sha256": "6907279ab9360c23ba79e16d13ab28fed55e588e79897f1b21b94144d92d8a38",
-      "source_mtime_ns": 1794227620815500792
     },
     {
       "path": "val/shards/rank_0004/captions/scenes/06d3eeb36d795c62.json",
@@ -7202,16 +9236,16 @@
       "source_mtime_ns": 1794227432069622436
     },
     {
+      "path": "val/shards/rank_0004/captions/summary.json",
+      "bytes": 572,
+      "sha256": "6907279ab9360c23ba79e16d13ab28fed55e588e79897f1b21b94144d92d8a38",
+      "source_mtime_ns": 1794227620815500792
+    },
+    {
       "path": "val/shards/rank_0004/grounding/index.json",
       "bytes": 2303,
       "sha256": "0685514e9a11218f8e2349dae37b922577627133d06faa879dabb6c479bdb12d",
       "source_mtime_ns": 1794227625672801174
-    },
-    {
-      "path": "val/shards/rank_0004/grounding/summary.json",
-      "bytes": 771,
-      "sha256": "bc8f2b700286243eaf27621d64d8029cd11b7e5d95c18a31fd63808ed2e7a244",
-      "source_mtime_ns": 1794227625680523588
     },
     {
       "path": "val/shards/rank_0004/grounding/masks/06d3eeb36d795c62.npz",
@@ -7454,6 +9488,12 @@
       "source_mtime_ns": 1794227625009520444
     },
     {
+      "path": "val/shards/rank_0004/grounding/summary.json",
+      "bytes": 771,
+      "sha256": "bc8f2b700286243eaf27621d64d8029cd11b7e5d95c18a31fd63808ed2e7a244",
+      "source_mtime_ns": 1794227625680523588
+    },
+    {
       "path": "val/shards/rank_0004/prepared/ground_truth.json",
       "bytes": 75506,
       "sha256": "a3045fba590f4e74479c5f1cae446267fb3e797d95267f3fd38d74ba57dfda46",
@@ -7466,22 +9506,22 @@
       "source_mtime_ns": 1794227338935180052
     },
     {
+      "path": "val/shards/rank_0004/run_config.json",
+      "bytes": 1197,
+      "sha256": "48b4fc360595061c39637aa3cddfb1e0fe9398e753ae858123e4de2283c2bd11",
+      "source_mtime_ns": 1794227319973005624
+    },
+    {
+      "path": "val/shards/rank_0004/validation.json",
+      "bytes": 709,
+      "sha256": "eea79d16dc3d83526258bb6c0f2cbccdad224bb29abf5ef1348357f5ee8b2927",
+      "source_mtime_ns": 1794227630847157283
+    },
+    {
       "path": "val/shards/rank_0005/COMPLETE.json",
       "bytes": 153,
       "sha256": "95af8f2f5a301a377ce88ad553378bd96a53e0f457b52a1a07000ea83c86a054",
       "source_mtime_ns": 1794227631919552821
-    },
-    {
-      "path": "val/shards/rank_0005/run_config.json",
-      "bytes": 1197,
-      "sha256": "45d73ec107a3118df511a5b8eb40cc2b054287e181597d7d1d020aa97f424776",
-      "source_mtime_ns": 1794227319962091154
-    },
-    {
-      "path": "val/shards/rank_0005/validation.json",
-      "bytes": 710,
-      "sha256": "d8a015a9e760e7ba261d21bfa16a384f6a3a45714b42a56f93324f81c231a46e",
-      "source_mtime_ns": 1794227631629551462
     },
     {
       "path": "val/shards/rank_0005/captions/metadata.json",
@@ -7506,12 +9546,6 @@
       "bytes": 12575,
       "sha256": "cf835357a44eebbdb1e8c1575f7272952e17f12b5dc47838564222c662a1aeab",
       "source_mtime_ns": 1794227608149710032
-    },
-    {
-      "path": "val/shards/rank_0005/captions/summary.json",
-      "bytes": 569,
-      "sha256": "76a4386ea27d1e5042f38d6c17d59dcf70b2a9563f802f7e84a4b4fbe4292d98",
-      "source_mtime_ns": 1794227608190441638
     },
     {
       "path": "val/shards/rank_0005/captions/scenes/00d311c079395e3a.json",
@@ -7634,16 +9668,16 @@
       "source_mtime_ns": 1794227418187738099
     },
     {
+      "path": "val/shards/rank_0005/captions/summary.json",
+      "bytes": 569,
+      "sha256": "76a4386ea27d1e5042f38d6c17d59dcf70b2a9563f802f7e84a4b4fbe4292d98",
+      "source_mtime_ns": 1794227608190441638
+    },
+    {
       "path": "val/shards/rank_0005/grounding/index.json",
       "bytes": 2303,
       "sha256": "5f769711750808f63e667c5050bf2a813166788d6768f6f1ba959de834a7b4d2",
       "source_mtime_ns": 1794227617252484097
-    },
-    {
-      "path": "val/shards/rank_0005/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "288800f20b846e8bd3ccf42bfe9b4f20fd9d7c51533f098de1bf80087fba7f9a",
-      "source_mtime_ns": 1794227617266100521
     },
     {
       "path": "val/shards/rank_0005/grounding/masks/00d311c079395e3a.npz",
@@ -7886,6 +9920,12 @@
       "source_mtime_ns": 1794227615967478077
     },
     {
+      "path": "val/shards/rank_0005/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "288800f20b846e8bd3ccf42bfe9b4f20fd9d7c51533f098de1bf80087fba7f9a",
+      "source_mtime_ns": 1794227617266100521
+    },
+    {
       "path": "val/shards/rank_0005/prepared/ground_truth.json",
       "bytes": 129883,
       "sha256": "747bab85b1bf40a18dedec086fee630fee39601cd6defccd7516eea43df0b3ec",
@@ -7898,22 +9938,22 @@
       "source_mtime_ns": 1794227339149850137
     },
     {
+      "path": "val/shards/rank_0005/run_config.json",
+      "bytes": 1197,
+      "sha256": "45d73ec107a3118df511a5b8eb40cc2b054287e181597d7d1d020aa97f424776",
+      "source_mtime_ns": 1794227319962091154
+    },
+    {
+      "path": "val/shards/rank_0005/validation.json",
+      "bytes": 710,
+      "sha256": "d8a015a9e760e7ba261d21bfa16a384f6a3a45714b42a56f93324f81c231a46e",
+      "source_mtime_ns": 1794227631629551462
+    },
+    {
       "path": "val/shards/rank_0006/COMPLETE.json",
       "bytes": 153,
       "sha256": "f69bd5e4a4b9af4fe325eb584452866961060f3b21e1ca754a0a18ea36487fee",
       "source_mtime_ns": 1794227793420084443
-    },
-    {
-      "path": "val/shards/rank_0006/run_config.json",
-      "bytes": 1197,
-      "sha256": "a904523c05259c49aab1b5efe2914ab041eb14a32d119ec4b5d01c1d290e9130",
-      "source_mtime_ns": 1794227319957091131
-    },
-    {
-      "path": "val/shards/rank_0006/validation.json",
-      "bytes": 710,
-      "sha256": "a7311fd0a746b860993c2f29ca7539336b2ff2241f823c1ca6200f9ade2f3375",
-      "source_mtime_ns": 1794227793135308193
     },
     {
       "path": "val/shards/rank_0006/captions/metadata.json",
@@ -7938,12 +9978,6 @@
       "bytes": 19029,
       "sha256": "51b775af2147cbbab92b15335ea796882eca973f6b2f605df0e8471339ed072d",
       "source_mtime_ns": 1794227772496211488
-    },
-    {
-      "path": "val/shards/rank_0006/captions/summary.json",
-      "bytes": 562,
-      "sha256": "cd0b5fcffdc24352e577fe19cc89cf36af380834c4699408cdb642967915cd51",
-      "source_mtime_ns": 1794227775708226539
     },
     {
       "path": "val/shards/rank_0006/captions/scenes/057a2ba75ace5b74.json",
@@ -8066,16 +10100,16 @@
       "source_mtime_ns": 1794227442885667107
     },
     {
+      "path": "val/shards/rank_0006/captions/summary.json",
+      "bytes": 562,
+      "sha256": "cd0b5fcffdc24352e577fe19cc89cf36af380834c4699408cdb642967915cd51",
+      "source_mtime_ns": 1794227775708226539
+    },
+    {
       "path": "val/shards/rank_0006/grounding/index.json",
       "bytes": 2303,
       "sha256": "21e03dc0bd5ee2dc1b1941564c1dba5d7f80bcc83e5f8064b76fcd30a2980d68",
       "source_mtime_ns": 1794227783974341606
-    },
-    {
-      "path": "val/shards/rank_0006/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "664b4af3807b19434bb1b22613e587ce7b100f01bc6188025b99bd6c6001a47e",
-      "source_mtime_ns": 1794227783982932125
     },
     {
       "path": "val/shards/rank_0006/grounding/masks/057a2ba75ace5b74.npz",
@@ -8318,6 +10352,12 @@
       "source_mtime_ns": 1794227781972229944
     },
     {
+      "path": "val/shards/rank_0006/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "664b4af3807b19434bb1b22613e587ce7b100f01bc6188025b99bd6c6001a47e",
+      "source_mtime_ns": 1794227783982932125
+    },
+    {
       "path": "val/shards/rank_0006/prepared/ground_truth.json",
       "bytes": 249916,
       "sha256": "103e9d94ebc164861fc7787a33253aafbc91cdb5dd3897e231bdd9728c98f82a",
@@ -8330,22 +10370,22 @@
       "source_mtime_ns": 1794227339213181354
     },
     {
+      "path": "val/shards/rank_0006/run_config.json",
+      "bytes": 1197,
+      "sha256": "a904523c05259c49aab1b5efe2914ab041eb14a32d119ec4b5d01c1d290e9130",
+      "source_mtime_ns": 1794227319957091131
+    },
+    {
+      "path": "val/shards/rank_0006/validation.json",
+      "bytes": 710,
+      "sha256": "a7311fd0a746b860993c2f29ca7539336b2ff2241f823c1ca6200f9ade2f3375",
+      "source_mtime_ns": 1794227793135308193
+    },
+    {
       "path": "val/shards/rank_0007/COMPLETE.json",
       "bytes": 153,
       "sha256": "d1d32c35d3367e5b3fd3ace71f3807e582caf9a50035643034be4c34cb1c659a",
       "source_mtime_ns": 1794227680275779391
-    },
-    {
-      "path": "val/shards/rank_0007/run_config.json",
-      "bytes": 1197,
-      "sha256": "3678bc2c669180b5c06ae53895ad08557a1a02db217311986f162915b39afe3a",
-      "source_mtime_ns": 1794227319955091121
-    },
-    {
-      "path": "val/shards/rank_0007/validation.json",
-      "bytes": 710,
-      "sha256": "338d549df369d06f0a1d3634d6ddb472d734f49e4aabd972ff5cd020122c3c03",
-      "source_mtime_ns": 1794227679998778093
     },
     {
       "path": "val/shards/rank_0007/captions/metadata.json",
@@ -8370,12 +10410,6 @@
       "bytes": 15296,
       "sha256": "bad83f6ac109a3a0ae013d86193e02d2722d30ec9b6daafa7be5b139a4b01a86",
       "source_mtime_ns": 1794227668937726267
-    },
-    {
-      "path": "val/shards/rank_0007/captions/summary.json",
-      "bytes": 545,
-      "sha256": "e9689d583edb245d05c7f9ecd5617f6f1da623e8eedfe3f57eeb74a288b04967",
-      "source_mtime_ns": 1794227668976726449
     },
     {
       "path": "val/shards/rank_0007/captions/scenes/029e703eb0375697.json",
@@ -8498,16 +10532,16 @@
       "source_mtime_ns": 1794227541285128155
     },
     {
+      "path": "val/shards/rank_0007/captions/summary.json",
+      "bytes": 545,
+      "sha256": "e9689d583edb245d05c7f9ecd5617f6f1da623e8eedfe3f57eeb74a288b04967",
+      "source_mtime_ns": 1794227668976726449
+    },
+    {
       "path": "val/shards/rank_0007/grounding/index.json",
       "bytes": 2303,
       "sha256": "f160140374e64cb47443f4d82347e950688ff567d0f3c3c13929164fc1e0f01e",
       "source_mtime_ns": 1794227674170137172
-    },
-    {
-      "path": "val/shards/rank_0007/grounding/summary.json",
-      "bytes": 772,
-      "sha256": "d34271807d76aae0357d404f94a9fe6bcabaa725f96db3b4258042d3dc4b62f4",
-      "source_mtime_ns": 1794227674176750814
     },
     {
       "path": "val/shards/rank_0007/grounding/masks/029e703eb0375697.npz",
@@ -8750,6 +10784,12 @@
       "source_mtime_ns": 1794227673916749596
     },
     {
+      "path": "val/shards/rank_0007/grounding/summary.json",
+      "bytes": 772,
+      "sha256": "d34271807d76aae0357d404f94a9fe6bcabaa725f96db3b4258042d3dc4b62f4",
+      "source_mtime_ns": 1794227674176750814
+    },
+    {
       "path": "val/shards/rank_0007/prepared/ground_truth.json",
       "bytes": 77088,
       "sha256": "7a70d08b3d7908affd5cad1e7058bf6b2a65a6bc455d46bd70f329c7e9da69d9",
@@ -8760,7 +10800,29 @@
       "bytes": 28745,
       "sha256": "db038c9ec4eb01d969efc1694e9daa397d757ec09e3e3ce03c6c7e7cde03e450",
       "source_mtime_ns": 1794227339143181026
+    },
+    {
+      "path": "val/shards/rank_0007/run_config.json",
+      "bytes": 1197,
+      "sha256": "3678bc2c669180b5c06ae53895ad08557a1a02db217311986f162915b39afe3a",
+      "source_mtime_ns": 1794227319955091121
+    },
+    {
+      "path": "val/shards/rank_0007/validation.json",
+      "bytes": 710,
+      "sha256": "338d549df369d06f0a1d3634d6ddb472d734f49e4aabd972ff5cd020122c3c03",
+      "source_mtime_ns": 1794227679998778093
+    },
+    {
+      "path": "val/summary.json",
+      "bytes": 7020,
+      "sha256": "86cafc44f761579128447b3e239f165804defb5a8d37be2a2285b6cbd9cce4ef",
+      "source_mtime_ns": 1794227841714535810
     }
   ],
-  "snapshot_refreshed_after_partitions_completed": true
+  "snapshot_refreshed_after_partitions_completed": true,
+  "stage": 2,
+  "additional_image_manifest": "stage2_focus_v1_8gpu_pilot160/image_manifest.json",
+  "additional_original_images": 1920,
+  "additional_original_image_bytes": 392487393
 }

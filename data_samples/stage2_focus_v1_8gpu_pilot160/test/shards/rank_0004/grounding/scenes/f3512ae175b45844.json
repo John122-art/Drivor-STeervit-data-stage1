@@ -1,0 +1,180 @@
+{
+  "token": "f3512ae175b45844",
+  "input_hash": "27bffd082efba8423d84deea3b0d3f589415e4fd070fd528e0d1d933b2a47233",
+  "image_size": [
+    1148,
+    672
+  ],
+  "coordinate_format": "xyxy",
+  "label_schema": "stage2_focus_v1",
+  "cameras": {
+    "cam_f0": {
+      "objects": [
+        {
+          "bbox": [
+            1048.6702751606415,
+            402.6446719129116,
+            1148.0,
+            672.0
+          ],
+          "near_clipped": true,
+          "category": "vehicle",
+          "gt_index": 0
+        }
+      ],
+      "selected_gt_indices": [
+        0
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_b0": {
+      "objects": [
+        {
+          "bbox": [
+            0.0,
+            404.5805393959711,
+            295.87767119700135,
+            672.0
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 1
+        },
+        {
+          "bbox": [
+            399.5549775885928,
+            398.4179700624347,
+            1072.2538105190924,
+            672.0
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 2
+        },
+        {
+          "bbox": [
+            192.19465666975725,
+            350.5416689046379,
+            440.8142452403658,
+            532.4872955881367
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 5
+        },
+        {
+          "bbox": [
+            528.9525354875786,
+            355.4404436014752,
+            710.8552034907145,
+            538.8911735498258
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 6
+        },
+        {
+          "bbox": [
+            367.640580973577,
+            374.8667736128197,
+            484.63744011581633,
+            459.6045010331521
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 7
+        },
+        {
+          "bbox": [
+            435.9849762231923,
+            357.73226076877575,
+            515.2055593347717,
+            432.4229708169952
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 8
+        },
+        {
+          "bbox": [
+            542.9223570555373,
+            365.7901553808193,
+            589.3299219726229,
+            410.33463170462625
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 9
+        }
+      ],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": {
+        "reason": "coverage_exceeded",
+        "covered_patches": 1585,
+        "rejected_gt_indices": [
+          2,
+          1,
+          6,
+          5
+        ]
+      }
+    },
+    "cam_l0": {
+      "objects": [
+        {
+          "bbox": [
+            594.0650503932324,
+            385.73149569359964,
+            612.3565706420183,
+            416.7323891316638
+          ],
+          "near_clipped": false,
+          "category": "traffic_cone",
+          "gt_index": 3
+        },
+        {
+          "bbox": [
+            633.920019151055,
+            379.55599102438936,
+            651.0620268778633,
+            416.3469286930903
+          ],
+          "near_clipped": false,
+          "category": "traffic_cone",
+          "gt_index": 4
+        }
+      ],
+      "selected_gt_indices": [
+        3
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_r0": {
+      "objects": [
+        {
+          "bbox": [
+            31.253715286719746,
+            395.80147214767027,
+            1148.0,
+            672.0
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 0
+        }
+      ],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": {
+        "reason": "coverage_exceeded",
+        "covered_patches": 1600,
+        "rejected_gt_indices": [
+          0
+        ]
+      }
+    }
+  }
+}

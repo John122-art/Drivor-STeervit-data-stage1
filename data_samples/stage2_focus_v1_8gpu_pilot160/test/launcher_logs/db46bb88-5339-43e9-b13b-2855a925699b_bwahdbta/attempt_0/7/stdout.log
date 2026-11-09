@@ -84,3 +84,43 @@ bed45577041051b8 cam_r0: ok, 13 tokens; a stop sign on a pole, white painted roa
 2251b1d81d0051c1 cam_b0: empty_scene, 2 tokens; 
 2251b1d81d0051c1 cam_l0: empty_scene, 2 tokens; 
 2251b1d81d0051c1 cam_r0: ok, 11 tokens; two pedestrians standing near the center of the image
+b1e78f926612520e cam_f0: ok, 18 tokens; a white box truck in the center lane, a colorful van in the left lane
+b1e78f926612520e cam_b0: empty_scene, 2 tokens; 
+b1e78f926612520e cam_l0: ok, 8 tokens; a silver car in the foreground
+b1e78f926612520e cam_r0: ok, 11 tokens; a pedestrian standing near the center of the image
+1db38f4b73ac5b62 cam_f0: ok, 18 tokens; a white box truck in the center lane, a colorful van in the left lane
+1db38f4b73ac5b62 cam_b0: empty_scene, 2 tokens; 
+1db38f4b73ac5b62 cam_l0: ok, 8 tokens; a silver sedan in the foreground
+1db38f4b73ac5b62 cam_r0: ok, 11 tokens; a pedestrian standing near the center of the image
+683e518fbfa650d5 cam_f0: ok, 27 tokens; a white box truck in the center lane, a colorful van in the left lane, a silver car in the bottom left corner
+683e518fbfa650d5 cam_b0: empty_scene, 2 tokens; 
+683e518fbfa650d5 cam_l0: ok, 8 tokens; a silver sedan in the foreground
+683e518fbfa650d5 cam_r0: ok, 11 tokens; a pedestrian standing near the center of the image
+7fad5a0c8cdd5fc4 cam_f0: ok, 27 tokens; a white box truck in the center lane, a colorful van in the left lane, a silver sedan in the bottom left corner
+7fad5a0c8cdd5fc4 cam_b0: empty_scene, 2 tokens; 
+7fad5a0c8cdd5fc4 cam_l0: ok, 8 tokens; a silver sedan in the foreground
+7fad5a0c8cdd5fc4 cam_r0: ok, 8 tokens; a pedestrian standing near the curb
+[test rank 7] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/grounding --resume
+Labelled a06715f1cb8358c0: valid=[True, True, False, True]
+Labelled 19cee80b71525f86: valid=[True, True, False, False]
+Labelled c07f609f83b85dd6: valid=[True, True, False, False]
+Labelled 4131dd1f0fd5571b: valid=[True, True, False, True]
+Labelled ce2de8af70e05a57: valid=[True, True, False, False]
+Labelled 3d2f4a8fb8b55572: valid=[True, True, False, False]
+Labelled 0c54c8dfbe56567f: valid=[True, True, False, True]
+Labelled b49e63992eee56b1: valid=[True, True, True, False]
+Labelled bed45577041051b8: valid=[True, True, True, False]
+Labelled 27209d511a785510: valid=[True, True, True, False]
+Labelled 62d339c4086d51ba: valid=[True, True, True, False]
+Labelled 26e6818bd14d52a5: valid=[True, True, False, True]
+Labelled 06bdef9a9bbc5aaf: valid=[True, True, False, False]
+Labelled 76dd2e9ad6f753b8: valid=[True, False, False, True]
+Labelled 50e871f60296566b: valid=[True, False, False, True]
+Labelled 2251b1d81d0051c1: valid=[True, False, False, True]
+Labelled b1e78f926612520e: valid=[True, False, True, True]
+Labelled 1db38f4b73ac5b62: valid=[True, False, False, True]
+Labelled 683e518fbfa650d5: valid=[True, False, False, True]
+Labelled 7fad5a0c8cdd5fc4: valid=[True, False, True, True]
+[test rank 7] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007/validation.json
+PASS: 20 scenes, 80 captions, 50 valid targets, 20 deep checks
+[test rank 7] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0007

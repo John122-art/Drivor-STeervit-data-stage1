@@ -1,0 +1,77 @@
+{
+  "tokens": [
+    "0928c39f05db52c5",
+    "169528411ca85ba4",
+    "e5fb0daef05956f0"
+  ],
+  "views": [
+    {
+      "token": "0928c39f05db52c5",
+      "camera": "cam_r0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a group of pedestrians walking behind the bollards",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "e5fb0daef05956f0",
+      "camera": "cam_r0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a pedestrian walking on the sidewalk to the right",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        },
+        {
+          "index": 1,
+          "phrase": "a pedestrian walking on the sidewalk to the left",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "169528411ca85ba4",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "multiple vehicles driving in the center lanes",
+          "category": "vehicle",
+          "raw_category": "vehicle",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "169528411ca85ba4",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "a metal fence separating the road from the sidewalk",
+          "category": "barrier",
+          "raw_category": "barrier",
+          "reason": "excluded_content"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

@@ -76,3 +76,51 @@ a0eb6fa78dc2558f cam_r0: empty_scene, 2 tokens;
 9f521d00c3ef55b7 cam_b0: ok, 33 tokens; a white car on the right side of the road, a dark car on the right side of the road, double yellow lines marking the center of the road
 9f521d00c3ef55b7 cam_l0: ok, 9 tokens; a white SUV on the left side
 9f521d00c3ef55b7 cam_r0: empty_scene, 2 tokens; 
+1fc3acd944ba540e cam_f0: ok, 20 tokens; a yellow pedestrian crossing sign on the right, a crosswalk spanning the road in the foreground
+1fc3acd944ba540e cam_b0: ok, 28 tokens; a white SUV on the right side, double yellow lines marking the center of the road, a dark vehicle positioned behind the white SUV
+1fc3acd944ba540e cam_l0: ok, 12 tokens; a crosswalk on the right side of the image
+1fc3acd944ba540e cam_r0: ok, 10 tokens; a yellow pedestrian crossing sign on the left
+52a4ade5aede53d9 cam_f0: ok, 25 tokens; a yellow pedestrian crossing sign on the right, a crosswalk in the foreground, a crosswalk in the middle distance
+52a4ade5aede53d9 cam_b0: ok, 26 tokens; a white SUV on the right side, double yellow lines marking the center, a yellow and black striped sign on the right
+52a4ade5aede53d9 cam_l0: ok, 12 tokens; a crosswalk in the lower right of the image
+52a4ade5aede53d9 cam_r0: ok, 10 tokens; a yellow pedestrian crossing sign on the left
+e62e904da0695956 cam_f0: ok, 22 tokens; a crosswalk in the foreground, double yellow lines in the center, a traffic sign on the left
+e62e904da0695956 cam_b0: ok, 26 tokens; a white SUV on the right side, double yellow lines marking the center, a yellow and black striped sign on the right
+e62e904da0695956 cam_l0: ok, 10 tokens; a crosswalk in the lower right foreground
+e62e904da0695956 cam_r0: ok, 10 tokens; a crosswalk in the lower left foreground
+fbd06f49da055ea8 cam_f0: ok, 23 tokens; a crosswalk in the foreground, double yellow lines in the center, a white diamond sign on the left
+fbd06f49da055ea8 cam_b0: ok, 29 tokens; a white car on the right side of the road, double yellow lines dividing the lanes, a yellow and black striped sign on the right
+fbd06f49da055ea8 cam_l0: ok, 8 tokens; a crosswalk in the foreground
+fbd06f49da055ea8 cam_r0: ok, 8 tokens; a crosswalk in the foreground
+1b88b298d405518e cam_f0: ok, 8 tokens; a stop sign at the intersection
+1b88b298d405518e cam_b0: ok, 8 tokens; double yellow lines dividing the road
+1b88b298d405518e cam_l0: empty_scene, 2 tokens; 
+1b88b298d405518e cam_r0: empty_scene, 2 tokens; 
+8f5b6181d28e5d4a cam_f0: ok, 8 tokens; a stop sign at the intersection
+8f5b6181d28e5d4a cam_b0: ok, 8 tokens; double yellow lines dividing the road
+8f5b6181d28e5d4a cam_l0: empty_scene, 2 tokens; 
+8f5b6181d28e5d4a cam_r0: empty_scene, 2 tokens; 
+[test rank 6] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/grounding --resume
+Labelled f424ee234e385b95: valid=[True, True, False, False]
+Labelled 56587c89d25856b7: valid=[True, True, False, False]
+Labelled 76cf7bb2e9625482: valid=[True, True, True, False]
+Labelled 29af925fc44b5380: valid=[True, True, True, False]
+Labelled efc87f8726645319: valid=[True, True, True, False]
+Labelled 2836705e16ba5691: valid=[True, True, True, False]
+Labelled 8fc0b7212263588f: valid=[True, True, True, False]
+Labelled 1a8da8e47d235dbe: valid=[True, True, True, False]
+Labelled 171e0bea742d52d0: valid=[True, False, False, False]
+Labelled ed2466a660ba5661: valid=[True, True, False, False]
+Labelled 10d9d6d0ad405b9d: valid=[True, True, True, False]
+Labelled d12fdbd7f3265051: valid=[True, True, True, False]
+Labelled a0eb6fa78dc2558f: valid=[False, True, True, False]
+Labelled 9f521d00c3ef55b7: valid=[False, True, True, False]
+Labelled 1fc3acd944ba540e: valid=[False, True, False, False]
+Labelled 52a4ade5aede53d9: valid=[False, True, False, False]
+Labelled e62e904da0695956: valid=[False, True, False, False]
+Labelled fbd06f49da055ea8: valid=[False, True, False, False]
+Labelled 1b88b298d405518e: valid=[False, False, False, False]
+Labelled 8f5b6181d28e5d4a: valid=[False, False, False, False]
+[test rank 6] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006/validation.json
+PASS: 20 scenes, 80 captions, 39 valid targets, 20 deep checks
+[test rank 6] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v1_8gpu_pilot160/test/shards/rank_0006

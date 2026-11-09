@@ -1,0 +1,50 @@
+{
+  "token": "fbd06f49da055ea8",
+  "input_hash": "ceb7b9dcd90eaf5d1905873d3414ecfa539ebf86d6383291f20dbbb2957710ca",
+  "image_size": [
+    1148,
+    672
+  ],
+  "coordinate_format": "xyxy",
+  "label_schema": "stage2_focus_v1",
+  "cameras": {
+    "cam_f0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    },
+    "cam_b0": {
+      "objects": [
+        {
+          "bbox": [
+            691.4222335532177,
+            386.90462021726,
+            747.8603006039084,
+            434.7276424602293
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 2
+        }
+      ],
+      "selected_gt_indices": [
+        2
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_l0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    },
+    "cam_r0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    }
+  }
+}
