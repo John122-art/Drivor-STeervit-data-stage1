@@ -1,0 +1,126 @@
+[val rank 4] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtrain --subset val --seed 3407 --rank 4 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: f203c18a4c7456a8 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 2/20: 39183a00744859c4 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 3/20: 072e8ec736965390 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 4/20: f8d5e995570e5c3a (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 5/20: 4bdd3915b64a5e09 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 6/20: 1a27e3142cb35b8d (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 7/20: 6eeebdeb7f655b71 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 8/20: c4ac2d2c2c525579 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 9/20: 06d3eeb36d795c62 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 10/20: 9f2429d63a5758d3 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 11/20: 69f4aafe98c05871 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 12/20: b74e31c3cd1f5980 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 13/20: eb2e311dd98552dd (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 14/20: 6b920eabd755539f (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 15/20: d7e3d874736858db (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 16/20: 6541d220c1d558f4 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 17/20: 0ead3230bfb0565a (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 18/20: c0671dca6d7e5c87 (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 19/20: 7b2fd02b344155eb (2021.10.05.07.10.04_veh-52_00418_00563)
+Prepared 20/20: a2a791a73d955510 (2021.10.05.07.10.04_veh-52_00418_00563)
+[val rank 4] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/captions --scenes 0 --resume --device cuda:4 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v2.txt
+f203c18a4c7456a8 cam_f0: ok, 28 tokens; two pedestrians on the left sidewalk, a traffic sign on the right side of the road, a white directional arrow painted on the road
+f203c18a4c7456a8 cam_b0: ok, 37 tokens; yellow chevron markings on the road surface, white directional arrow painted on the right lane, green street name sign on the left, white lane boundary line separating the travel lanes
+f203c18a4c7456a8 cam_l0: ok, 10 tokens; a pedestrian on the path to the right
+f203c18a4c7456a8 cam_r0: empty_scene, 2 tokens; 
+39183a00744859c4 cam_f0: ok, 27 tokens; two pedestrians on the left sidewalk, a warning sign on a pole near the center, a white directional arrow painted on the road
+39183a00744859c4 cam_b0: ok, 36 tokens; yellow chevron markings on the road surface, white directional arrow painted on the lane, green street name sign on the left, white solid line marking the right lane edge
+39183a00744859c4 cam_l0: ok, 10 tokens; two pedestrians on the path to the right
+39183a00744859c4 cam_r0: empty_scene, 2 tokens; 
+072e8ec736965390 cam_f0: ok, 28 tokens; a pedestrian on the left sidewalk, a traffic sign on the left side of the road, a white arrow painted on the road surface
+072e8ec736965390 cam_b0: ok, 41 tokens; yellow chevron markings on the road surface, white directional arrow painted on the lane, solid white line marking the right edge of the lane, green traffic sign on the left side of the road
+072e8ec736965390 cam_l0: ok, 10 tokens; three pedestrians on the path to the right
+072e8ec736965390 cam_r0: empty_scene, 2 tokens; 
+f8d5e995570e5c3a cam_f0: ok, 10 tokens; a white arrow painted on the road surface
+f8d5e995570e5c3a cam_b0: ok, 33 tokens; two pedestrians on the right sidewalk, white directional arrow painted on the road, solid white line marking the left lane boundary, yellow hatched markings on the road surface
+f8d5e995570e5c3a cam_l0: empty_scene, 2 tokens; 
+f8d5e995570e5c3a cam_r0: empty_scene, 2 tokens; 
+4bdd3915b64a5e09 cam_f0: ok, 10 tokens; a white arrow painted on the road surface
+4bdd3915b64a5e09 cam_b0: ok, 35 tokens; two pedestrians on the right sidewalk, white directional arrow painted on the road, solid white line marking the right lane edge, yellow hatched markings in the center of the road
+4bdd3915b64a5e09 cam_l0: empty_scene, 2 tokens; 
+4bdd3915b64a5e09 cam_r0: empty_scene, 2 tokens; 
+1a27e3142cb35b8d cam_f0: ok, 10 tokens; a white directional arrow painted on the road
+1a27e3142cb35b8d cam_b0: ok, 25 tokens; two pedestrians on the right sidewalk, white directional arrow painted on the road, solid white line marking the right lane boundary
+1a27e3142cb35b8d cam_l0: empty_scene, 2 tokens; 
+1a27e3142cb35b8d cam_r0: empty_scene, 2 tokens; 
+6eeebdeb7f655b71 cam_f0: ok, 10 tokens; a white directional arrow painted on the road
+6eeebdeb7f655b71 cam_b0: ok, 25 tokens; two pedestrians on the right sidewalk, white directional arrow painted on the road, solid white line marking the right lane edge
+6eeebdeb7f655b71 cam_l0: empty_scene, 2 tokens; 
+6eeebdeb7f655b71 cam_r0: empty_scene, 2 tokens; 
+c4ac2d2c2c525579 cam_f0: ok, 10 tokens; a white directional arrow painted on the road
+c4ac2d2c2c525579 cam_b0: ok, 27 tokens; a pedestrian on the right sidewalk, a white directional arrow painted on the road, a solid white line marking the right lane edge
+c4ac2d2c2c525579 cam_l0: empty_scene, 2 tokens; 
+c4ac2d2c2c525579 cam_r0: empty_scene, 2 tokens; 
+06d3eeb36d795c62 cam_f0: ok, 10 tokens; a white directional arrow painted on the road
+06d3eeb36d795c62 cam_b0: ok, 34 tokens; three pedestrians on the right sidewalk, white directional arrow painted on the road, solid white line marking the right lane edge, black and white curb lining the left side
+06d3eeb36d795c62 cam_l0: empty_scene, 2 tokens; 
+06d3eeb36d795c62 cam_r0: empty_scene, 2 tokens; 
+9f2429d63a5758d3 cam_f0: ok, 9 tokens; a white arrow painted on the road
+9f2429d63a5758d3 cam_b0: ok, 25 tokens; three pedestrians on the right sidewalk, white directional arrow painted on the road, solid white line marking the right lane edge
+9f2429d63a5758d3 cam_l0: empty_scene, 2 tokens; 
+9f2429d63a5758d3 cam_r0: empty_scene, 2 tokens; 
+69f4aafe98c05871 cam_f0: ok, 26 tokens; a white arrow painted on the road surface, a bus in the background on the left, double white lines separating the lanes
+69f4aafe98c05871 cam_b0: ok, 34 tokens; three pedestrians on the right sidewalk, white directional arrow painted on the road, double solid white lines in the center, black and white curb markings along the left edge
+69f4aafe98c05871 cam_l0: empty_scene, 2 tokens; 
+69f4aafe98c05871 cam_r0: empty_scene, 2 tokens; 
+b74e31c3cd1f5980 cam_f0: ok, 22 tokens; a white bus in the background, double white lines in the center, curved lane markings on the road
+b74e31c3cd1f5980 cam_b0: ok, 24 tokens; three pedestrians on the right sidewalk, white directional arrow painted on the road, double solid white lines in the center
+b74e31c3cd1f5980 cam_l0: empty_scene, 2 tokens; 
+b74e31c3cd1f5980 cam_r0: empty_scene, 2 tokens; 
+eb2e311dd98552dd cam_f0: ok, 19 tokens; a white bus on the left side of the road, double white lines dividing the lanes
+eb2e311dd98552dd cam_b0: ok, 16 tokens; three pedestrians on the right sidewalk, double solid white lines marking the lane
+eb2e311dd98552dd cam_l0: empty_scene, 2 tokens; 
+eb2e311dd98552dd cam_r0: empty_scene, 2 tokens; 
+6b920eabd755539f cam_f0: ok, 31 tokens; a white car in the distance, a pedestrian on the right sidewalk, yellow chevron markings on the road, a traffic light in the distance
+6b920eabd755539f cam_b0: ok, 43 tokens; a silver car in the center of the image, a white directional arrow in the lower center, a warning sign on the left side, a sign on the right side, a solid white line dividing the lanes
+6b920eabd755539f cam_l0: ok, 9 tokens; a green traffic sign on a pole
+6b920eabd755539f cam_r0: ok, 17 tokens; a green street sign on the right, white lane boundary lines on the road
+d7e3d874736858db cam_f0: ok, 31 tokens; a white car in the distance, a pedestrian on the right sidewalk, yellow chevron markings on the road, white directional arrow on the road
+d7e3d874736858db cam_b0: ok, 23 tokens; a silver vehicle in the distance, a warning sign on the left, a directional arrow painted on the road
+d7e3d874736858db cam_l0: ok, 12 tokens; yellow and black chevron signs on the right
+d7e3d874736858db cam_r0: ok, 12 tokens; yellow and black striped bollards lining the corner
+6541d220c1d558f4 cam_f0: ok, 24 tokens; a white car in the background, a yellow painted area on the right, a white painted area on the left
+6541d220c1d558f4 cam_b0: ok, 36 tokens; a silver vehicle in the background, a triangular warning sign on the left, a directional arrow painted on the road, a yellow and black striped bollard on the right
+6541d220c1d558f4 cam_l0: ok, 14 tokens; yellow and black chevron markings on the bollards
+6541d220c1d558f4 cam_r0: ok, 19 tokens; yellow chevron markings on the road surface, white directional arrow painted on the road
+0ead3230bfb0565a cam_f0: ok, 10 tokens; a white arrow painted on the road surface
+0ead3230bfb0565a cam_b0: ok, 31 tokens; a traffic sign on the right side of the image, a white arrow painted on the road surface, a silver vehicle in the background on the right
+0ead3230bfb0565a cam_l0: ok, 12 tokens; yellow and black striped bollards in the foreground
+0ead3230bfb0565a cam_r0: ok, 49 tokens; a white car in the distance on the left, a white directional arrow painted on the road, a pedestrian on the sidewalk in the distance, yellow chevron markings on the road surface, a street sign on a pole on the right
+c0671dca6d7e5c87 cam_f0: ok, 10 tokens; a white directional arrow painted on the road
+c0671dca6d7e5c87 cam_b0: ok, 31 tokens; a traffic sign on the right side of the image, a white arrow painted on the road surface, a white car in the background on the right
+c0671dca6d7e5c87 cam_l0: ok, 9 tokens; a green street sign on a pole
+c0671dca6d7e5c87 cam_r0: ok, 50 tokens; a white car in the distance on the left, a pedestrian on the left side of the road, yellow diagonal hatched markings on the road surface, a white directional arrow painted on the road, a traffic sign on the left side of the road
+7b2fd02b344155eb cam_f0: ok, 11 tokens; a white directional arrow painted on the road surface
+7b2fd02b344155eb cam_b0: ok, 36 tokens; a white directional arrow painted on the road, a yellow and black striped traffic sign, a yellow painted box junction in the foreground, white lane boundary lines defining the road path
+7b2fd02b344155eb cam_l0: ok, 9 tokens; a green street sign on a pole
+7b2fd02b344155eb cam_r0: ok, 29 tokens; a white car in the distance, a pedestrian standing on the sidewalk, yellow lane markings on the right, a traffic light in the distance
+a2a791a73d955510 cam_f0: ok, 10 tokens; a white directional arrow painted on the road
+a2a791a73d955510 cam_b0: ok, 23 tokens; white directional arrows painted on the road surface, white stop line across the intersection, white dashed lane boundary lines
+a2a791a73d955510 cam_l0: ok, 9 tokens; a green street sign on a pole
+a2a791a73d955510 cam_r0: ok, 30 tokens; a white car in the distance, a yellow crosswalk marking on the right, a traffic light in the background, a white lane boundary line
+[val rank 4] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/grounding --resume
+Labelled f203c18a4c7456a8: valid=[False, False, False, False]
+Labelled 39183a00744859c4: valid=[False, False, False, False]
+Labelled 072e8ec736965390: valid=[False, False, False, False]
+Labelled f8d5e995570e5c3a: valid=[False, False, False, False]
+Labelled 4bdd3915b64a5e09: valid=[False, False, False, False]
+Labelled 1a27e3142cb35b8d: valid=[False, False, False, False]
+Labelled 6eeebdeb7f655b71: valid=[False, False, False, False]
+Labelled c4ac2d2c2c525579: valid=[False, False, False, False]
+Labelled 06d3eeb36d795c62: valid=[False, False, False, False]
+Labelled 9f2429d63a5758d3: valid=[False, False, False, False]
+Labelled 69f4aafe98c05871: valid=[False, False, False, False]
+Labelled b74e31c3cd1f5980: valid=[False, False, False, False]
+Labelled eb2e311dd98552dd: valid=[False, False, False, False]
+Labelled 6b920eabd755539f: valid=[False, True, False, False]
+Labelled d7e3d874736858db: valid=[False, True, False, False]
+Labelled 6541d220c1d558f4: valid=[False, True, False, False]
+Labelled 0ead3230bfb0565a: valid=[False, True, False, False]
+Labelled c0671dca6d7e5c87: valid=[False, False, False, False]
+Labelled 7b2fd02b344155eb: valid=[False, False, False, False]
+Labelled a2a791a73d955510: valid=[False, False, False, False]
+[val rank 4] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004/validation.json
+PASS: 20 scenes, 80 captions, 4 valid targets, 20 deep checks
+[val rank 4] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0004

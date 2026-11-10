@@ -1,0 +1,39 @@
+{
+  "tokens": [
+    "428532e023bc5783",
+    "da3dac3ca6545198"
+  ],
+  "views": [
+    {
+      "token": "da3dac3ca6545198",
+      "camera": "cam_l0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a red fire alarm box on the left sidewalk",
+          "category": "traffic_sign",
+          "raw_category": "traffic_sign",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "428532e023bc5783",
+      "camera": "cam_l0",
+      "status": "filtered_empty",
+      "has_text": false,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "a red fire hydrant on the left sidewalk",
+          "category": "pedestrian",
+          "raw_category": "pedestrian",
+          "reason": "excluded_content"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

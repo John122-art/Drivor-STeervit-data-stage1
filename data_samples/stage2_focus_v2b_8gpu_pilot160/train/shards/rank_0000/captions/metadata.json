@@ -1,0 +1,333 @@
+{
+  "manifest_sha256": "97ffeba106a0af2e052046805dcaf16f559950014ee9e124365a68d5ab17e45d",
+  "camera_order": [
+    "cam_f0",
+    "cam_b0",
+    "cam_l0",
+    "cam_r0"
+  ],
+  "model": "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/checkpoint",
+  "model_weight_bytes": 9078630512,
+  "model_config_sha256": "91e765ca4a46e63b364b7e79f16bdb2b5d0e271684c566c03ae87d259c2d9ff8",
+  "model_weight_mtime_ns": 1791794214000000000,
+  "source_hashes": {
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/__init__.py": "a652d3c63ed876d27245cad0ad07ec25d060f5c8d59b37de6764d0625ee15d9a",
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/benchmarks.py": "f4b0deb629ea32f768b0365f5b2000b4f1663ef1a56cc782bb62dc8e8d2f1990",
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/configuration_qwen_drive.py": "106ab3cd0eec8adac209321df36f13ab33d1f99f67ecdfc461367cc2f658d961",
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/images.py": "006ac155a799935801906e4dc1d73acf5a144130870029ef94d6dea5937f71e6",
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/metrics.py": "321fb08f58baebd78e5c6a735073308dd9fb15f60f0a362868a44858bf3f8427",
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/modeling_qwen_drive.py": "dd2dc3bad492f9f53030f66495b2159093d5565a040459fa5308ebe8c812a18c",
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/planning_expert.py": "2d9330d71d4b7930ffedfdc2d842ece5d83d94d65960e26ea1473c80931c4ce1",
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/scene.py": "653519b847f2c1561352752277618a5b3625f24d67434ca0845d2a66c372e8d6",
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/trajectory.py": "b62f3c678f5243d2b3339d2caa3581e753a45ae074a82ad23a995ce36f013bd5",
+    "/mnt/zhaozc_workspace/project/LQH/Qwen-drive/Qwen-Drive-1.0-main/src/qwen_drive/visualize.py": "9f7579f5c57c98d4c5e80ffa5a49301de8795f4aaff08bcf420c166fe1346b85"
+  },
+  "backend_source_hashes": {
+    "data.py": "e130311fbc9ccdd3367474a99e7e798636668bcc40aa250becbbd905a56d7b49",
+    "prompts.py": "2879987aa7f82997f9c04a58700ddd469cccaa817a990a152f057d1f46384d8c",
+    "cache.py": "554d149e8a76e0a79e3047f719caf70c052a906ff0c275b52b440ffbddd46b60",
+    "__init__.py": "1bac145538a8b24c322198b187d7a56200e8963a1b81ca4bb2aaae146965daa0",
+    "backend.py": "4d833dc60e65be2cc2ca9905857a534da818e68693902b59afd8e63cb81600fd"
+  },
+  "pipeline_source_hashes": {
+    "build_grounding.py": "6cc09cc8ace2765fced048e2b1f07e8acf007a7f24667adf61b97f6832d33bdc",
+    "caption_cache.py": "6d562c378f2193ac635c28da212f90436347ab831642dafc6cc3feabc928c830",
+    "caption_repair.py": "dc0b37fe2e7321f7fc85cfa3d886d4192bc65db54a814a5acccf3cf780a2eda4",
+    "common.py": "0eebaff86654b3ea0be63497c99ce753b49be6fac79cd454815783c41def0a22",
+    "generate_captions.py": "f4c892d0845f9ba47569aee04c50392f12370ffc8242752bcf102cca1a8243ef",
+    "geometry.py": "e467ccf42579213e8065ac3df8b8324b5c10bf169e861941fdc47ee250eb030a",
+    "merge_stage1_shards.py": "1b3135b56c5bfddd75206ef6cd39ece54e7306439fd056967e0d483c33890797",
+    "navigation.py": "e9b823b57b6cd83621043633348fd7b59b4d1b236b5cffbe6081d19b5e8ebf83",
+    "prepare_navsim.py": "6c9baefd1edded8f1345ad8ae83d0ab2f8f681c51bdb44230a844b46f84668f1",
+    "render_2d_boxes.py": "1c58416aeebe9c3dcde3bcb0a8d3e3169a9cf03e7a158ac8748535073f7a544e",
+    "render_caption_preview.py": "a94b27db9e5f7e056f1bda662fcab3c840525e63cdadff52ebc03383df1b1870",
+    "selection.py": "3a1e8e3b54018c9bd9215940937392a960f886af7ac83c49a4842f65117c51f6",
+    "stage1_worker.py": "92da91e8780218fe0f02cc8908fc2e95ea5ec5f174aa03caa9599f2406e48cda",
+    "stage2_focus/build_focus_grounding.py": "363606235b3d5df6fbeeb95fe2df14dc753f43951847762482f456e9641ef330",
+    "stage2_focus/focus_policy.py": "b93d3eadb6ef426c55cab610c11df44437a9ab0b6bc002fa4ad32ff75378c7ef",
+    "stage2_focus/generate.py": "4fee5565d3b7b6806ebb447f2cd0d95c588d9333c970cb00d65073b8c70d0fe6",
+    "stage2_focus/merge.py": "65baa721751e2c12f285dbab5997718eaef36c9d246737ab1958a2ce7c65ec75",
+    "stage2_focus/test_focus_policy.py": "fbab646502cd9c8da2a4314cd304b9d5f9c42e889454fb077dd73445b8981958",
+    "stage2_focus/validate.py": "8713ac1a2203d9b8a20c4b1ba58c5907bf7f79202773fc0ba1e77dac2f23b423",
+    "stage2_focus/worker.py": "990c945d22bd188b5811c5654037b9c418e76590280fa1a238850c34523faa1d",
+    "test_data_pipeline.py": "53ab944737e8c2e00783c56a568f424fed23b04b41921757739a1919da68b1d4",
+    "text_processing.py": "08d5ed8233f871d045dc1fa90042367adade3907e1a2b4bea72641f032c85918",
+    "validate_pilot.py": "306be4641e4c6fd38559a6765e8f79bb25d88614a8f9c7b5ede34bff34fe525e"
+  },
+  "prompt": "You are looking at the {camera_name} camera image of a self-driving car.\nActive navigation command: [{navigation_command}].\n\nList what in THIS image the driver must watch to follow this navigation\ncommand safely. Choose by relevance to the command:\n- GO STRAIGHT: road users in or next to the visible lane corridor, traffic\n  lights and signs that apply to it, crosswalks and stop lines across it.\n- TURN LEFT / TURN RIGHT: road users, pedestrians, crosswalks and turn arrows\n  on the side of the turn, and the traffic lights or signs that control\n  the turn.\n- UNKNOWN: the nearest road users and traffic controls.\nIf this view does not show the route, list only nearby road users.\nWhatever the command, always include every clearly visible pedestrian or\ncyclist in the foreground or middle ground of THIS image.\nList objects and markings, never the road, lane, junction or intersection\nitself as an item.\nThe command is route intent, not evidence that any object, lane or sign exists.\n\nEach phrase describes ONE object or area: its appearance/type and its position\nIN THE IMAGE (left, center, right, upper, lower, foreground, background),\nusually 5-12 words. Example style: \"a white car near the center of the image\";\n\"a crosswalk across the lower part of the image\".\nThese are format examples, not facts about the input image.\nPut the most important item first. At most 5 phrases, together within\n60 English words. Fewer is fine.\n\nDo NOT include buildings, walls, fences, billboards, advertisements, trees,\nvegetation, sky, parking lots, street lamps, or parts of the camera vehicle.\nDo not read or quote text written on signs. Do not describe motion or state\n(driving, walking, crossing, moving, stopped, parked, turning), future\nbehavior, intentions, or driving advice. Do not use ego-relative words such as\nahead, directly in front, or directly behind; use image positions in ALL cameras.\n\nReturn JSON only:\n{\"focus\": [{\"phrase\": \"...\", \"category\": \"...\"}], \"context\": \"...\"}\ncategory is one of: vehicle, pedestrian, bicycle, traffic_cone, barrier,\ntraffic_light, traffic_sign, crosswalk, stop_line, lane_boundary\n(lane_boundary covers lane lines, curbs, turn arrows and other painted road markings).\ncontext: at most 8 words naming the visible road type, for example\n\"a signalized intersection\" or \"a straight multi-lane road\"; use \"\" if unclear.\nIf nothing relevant can be identified reliably, return {\"focus\": [], \"context\": \"\"}.",
+  "prompt_sha256": "446392585048369af327b13f4f74c3836c0fcaecd28db61e688db9307697a55c",
+  "prompt_file": "/mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v2.txt",
+  "python": "/mnt/zhaozc_workspace/envs/mot_vega/bin/python",
+  "torch": "2.6.0",
+  "transformers": "5.14.1",
+  "dtype": "bfloat16",
+  "attention": "eager",
+  "current_image_pixels": 921600,
+  "device": "cuda:0",
+  "roberta_tokenizer": "/mnt/zhaozc_workspace/project/LQH/RoBERTa",
+  "max_text_tokens": 128,
+  "scenes": 20,
+  "views": 80,
+  "batch_size": 1,
+  "navigation_conditioned": true,
+  "stage1": false,
+  "stream_cache": true,
+  "qwen_nav_commands": [
+    "GO STRAIGHT",
+    "TURN LEFT",
+    "TURN RIGHT"
+  ],
+  "navigation_by_scene": {
+    "cdec196208d65e81": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "fd13a1638794540a": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "53a38e67aaae5359": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "54d85d44f61f50cb": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "d04e000b6635531d": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "76f03f0c9918589a": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "46b00175edfd54a1": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "169de534b64e597d": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "08290f1b641c5b00": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "f95c9085fb4659a9": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "3c4d984ad7b95c81": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "43dfd3d6cfc65043": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "918e0bae1dee5bbd": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "f81cd30b084a5128": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "2fe8afdbe7a85789": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "6cb687e29a16504e": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "5da28aa8ef9a502b": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "28f4cb975cb25b2b": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "718a86bdd9cf565b": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    },
+    "28c53b0af33d5e0b": {
+      "driving_command": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "GO STRAIGHT",
+      "source": "AgentInput.ego_statuses[-1].driving_command"
+    }
+  },
+  "phrase_repair": {
+    "enabled": true,
+    "max_attempts_per_phrase": 2,
+    "same_current_image": true,
+    "category_preserved": true,
+    "reasons": [
+      "ambiguous_ego_relative_position",
+      "future_or_advice",
+      "sign_text",
+      "unverified_motion"
+    ]
+  },
+  "text_policy": "stage2_focus_v2",
+  "categories": [
+    "vehicle",
+    "pedestrian",
+    "bicycle",
+    "traffic_cone",
+    "barrier",
+    "traffic_light",
+    "traffic_sign",
+    "crosswalk",
+    "stop_line",
+    "lane_boundary"
+  ],
+  "supervised_categories": [
+    "vehicle",
+    "pedestrian",
+    "bicycle",
+    "traffic_cone"
+  ],
+  "limits": {
+    "items": 5,
+    "words": 60,
+    "tokens": 128,
+    "context_words": 12
+  },
+  "model_calls_per_view": "1-2 plus repairs",
+  "decoding": {
+    "do_sample": true,
+    "temperature": 0.01,
+    "top_k": 1,
+    "top_p": 0.001,
+    "repetition_penalty": 1.0,
+    "presence_penalty": 0.0,
+    "max_new_tokens": 1024,
+    "seed": 3407
+  },
+  "loading_errors": {},
+  "planner_instantiated": false,
+  "cache_version": "31c59d6d7fbe37a2ceb5c64cc0433fd8def4e3c31560034b48cbebe2c30f3bb1"
+}

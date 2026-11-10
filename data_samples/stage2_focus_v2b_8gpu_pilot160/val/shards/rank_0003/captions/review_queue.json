@@ -1,0 +1,55 @@
+{
+  "tokens": [
+    "16058a276acf543e",
+    "3b42e8cc5abc5d72",
+    "56689e0bece25792"
+  ],
+  "views": [
+    {
+      "token": "16058a276acf543e",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 4,
+          "phrase": "yellow double lines dividing the lanes",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "56689e0bece25792",
+      "camera": "cam_r0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 2,
+          "phrase": "a pedestrian crossing signal showing a hand",
+          "category": "pedestrian",
+          "raw_category": "traffic_light",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "3b42e8cc5abc5d72",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "yellow double lines on the road",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

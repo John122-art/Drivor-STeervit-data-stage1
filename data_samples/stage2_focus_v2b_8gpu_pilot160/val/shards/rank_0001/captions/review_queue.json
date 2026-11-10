@@ -1,0 +1,55 @@
+{
+  "tokens": [
+    "7a200a5aef7358a8",
+    "ce8effa389c157fc",
+    "e30788cda4155b09"
+  ],
+  "views": [
+    {
+      "token": "ce8effa389c157fc",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "the word ONLY painted on the road surface",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "e30788cda4155b09",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "the word ONLY painted on the road",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "7a200a5aef7358a8",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "the word ONLY painted on the road",
+          "category": "lane_boundary",
+          "raw_category": "lane_boundary",
+          "reason": "excluded_content"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

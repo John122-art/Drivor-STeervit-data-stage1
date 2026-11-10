@@ -1,0 +1,126 @@
+[val rank 2] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtrain --subset val --seed 3407 --rank 2 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: 00477d2aabc05e56 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 2/20: 7b054c9673a95ac3 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 3/20: 410570c23d275131 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 4/20: a6b12bd7134953c2 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 5/20: 10ab0437e2335e5f (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 6/20: c85c0e46ebaa5822 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 7/20: f92029b715b15e2a (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 8/20: 93669bcabb5d5718 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 9/20: fa97a4251c235e78 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 10/20: 3c5ef0ad03c35d04 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 11/20: 5e6054a4e8495959 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 12/20: 19b19b68cd08505b (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 13/20: da439db909975bdc (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 14/20: c846a2c6391851aa (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 15/20: 2bf1e8cde60d5475 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 16/20: 3abccc8dbdc258b2 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 17/20: 48797cedb37d5552 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 18/20: 91d80efcbe3151a1 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 19/20: 794bf0c2b69c5481 (2021.08.31.12.54.56_veh-40_00305_00667)
+Prepared 20/20: 724971ad30905b97 (2021.08.31.12.54.56_veh-40_00305_00667)
+[val rank 2] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/captions --scenes 0 --resume --device cuda:2 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v2.txt
+00477d2aabc05e56 cam_f0: ok, 42 tokens; a silver sedan in the foreground, a green traffic light in the upper right, a pedestrian standing on the sidewalk, a crosswalk in the middle of the image, a traffic sign on the median island
+00477d2aabc05e56 cam_b0: ok, 31 tokens; a crosswalk in the foreground, a traffic sign on the right, a line of vehicles along the left curb, a blue barrier on the left
+00477d2aabc05e56 cam_l0: ok, 45 tokens; a pedestrian wearing an orange shirt in the center, a white pickup truck in the left lane, a crosswalk in the foreground, a black pickup truck in the center lane, a pedestrian on the sidewalk to the right
+00477d2aabc05e56 cam_r0: ok, 40 tokens; a pedestrian near the construction barriers, a green traffic light at the intersection, a crosswalk marked with white stripes, orange traffic cones lining the right side, a yellow construction vehicle behind the fence
+7b054c9673a95ac3 cam_f0: ok, 32 tokens; a red SUV in the left lane, a black pickup truck on the right, orange traffic cones lining the right side, yellow lane markings in the center
+7b054c9673a95ac3 cam_b0: ok, 24 tokens; red traffic lights suspended over the intersection, orange and white striped traffic barrels, blue temporary barriers lining the construction zone
+7b054c9673a95ac3 cam_l0: ok, 27 tokens; a white pickup truck in the foreground, a pedestrian in an orange shirt on the left, a traffic light on the left side
+7b054c9673a95ac3 cam_r0: ok, 16 tokens; a black pickup truck in the foreground, a traffic sign on a pole
+410570c23d275131 cam_f0: ok, 25 tokens; a white car on the right side, a black car on the left side, a construction worker in a yellow vest
+410570c23d275131 cam_b0: ok, 53 tokens; a white truck on the left side of the image, a dark SUV on the right side of the image, a row of orange traffic cones on the left, a bicycle on the sidewalk to the right, a double yellow line dividing the lanes in the center
+410570c23d275131 cam_l0: ok, 55 tokens; a black car on the right side of the image, a yellow SUV near the center of the image, two pedestrians standing near the left side of the image, a crosswalk in the lower center of the image, orange traffic cones lining the left side of the image
+410570c23d275131 cam_r0: ok, 41 tokens; a black truck on the right side of the road, a pedestrian on the sidewalk in the background, a stop sign on a pole near the center, white painted crosswalk markings on the road surface
+a6b12bd7134953c2 cam_f0: ok, 31 tokens; a white car in the center of the image, concrete barriers lining the left side of the road, a yellow line marking the center of the road
+a6b12bd7134953c2 cam_b0: ok, 30 tokens; a white truck in the distance, a dark SUV on the left, an orange traffic cone on the right, a white truck on the right
+a6b12bd7134953c2 cam_l0: empty_scene, 2 tokens; 
+a6b12bd7134953c2 cam_r0: ok, 16 tokens; a dark sedan on the left, a silver car in the lower right
+10ab0437e2335e5f cam_f0: ok, 44 tokens; a white car in the center of the image, a black car on the right side of the image, a white car on the right side of the image, a yellow line dividing the lanes in the lower center
+10ab0437e2335e5f cam_b0: ok, 35 tokens; a black SUV on the left, a white truck on the left, a black SUV on the right, orange traffic cones on the right, orange barriers on the right
+10ab0437e2335e5f cam_l0: empty_scene, 2 tokens; 
+10ab0437e2335e5f cam_r0: ok, 15 tokens; a white SUV on the left, a black sedan in the foreground
+c85c0e46ebaa5822 cam_f0: ok, 33 tokens; a white car in the center of the image, a black car on the right side of the image, a yellow line dividing the lanes in the lower center
+c85c0e46ebaa5822 cam_b0: ok, 28 tokens; orange barriers on the right side, silver sedan in the foreground, traffic cones near the right curb, distant traffic lights in the background
+c85c0e46ebaa5822 cam_l0: empty_scene, 2 tokens; 
+c85c0e46ebaa5822 cam_r0: ok, 8 tokens; a white SUV on the left
+f92029b715b15e2a cam_f0: ok, 37 tokens; a white car in the center lane, a black car on the right, a silver SUV on the right, concrete barriers lining the left side, double yellow lines in the center
+f92029b715b15e2a cam_b0: ok, 31 tokens; orange barriers lining the right side, silver sedan in the foreground on the left, traffic cones near the right curb, distant traffic lights at the intersection
+f92029b715b15e2a cam_l0: empty_scene, 2 tokens; 
+f92029b715b15e2a cam_r0: ok, 15 tokens; a white car in the foreground, a black car on the left
+93669bcabb5d5718 cam_f0: ok, 41 tokens; a white sedan in the center lane, a dark sedan in the left lane, a silver SUV on the right side, a dark hatchback on the right side, double yellow lines separating the lanes
+93669bcabb5d5718 cam_b0: ok, 30 tokens; orange barriers on the right side, row of vehicles along the left curb, traffic cones near the right curb, distant traffic lights in the background
+93669bcabb5d5718 cam_l0: empty_scene, 2 tokens; 
+93669bcabb5d5718 cam_r0: ok, 9 tokens; a dark grey car on the left
+fa97a4251c235e78 cam_f0: ok, 30 tokens; a white sedan in the center lane, a silver SUV on the right, double yellow lines dividing the lanes, blue construction barriers on the left
+fa97a4251c235e78 cam_b0: ok, 35 tokens; a dark sedan on the left, orange barriers on the right, a silver car on the left, a white truck on the left, a dark SUV on the right
+fa97a4251c235e78 cam_l0: empty_scene, 2 tokens; 
+fa97a4251c235e78 cam_r0: ok, 9 tokens; a dark grey car in the foreground
+3c5ef0ad03c35d04 cam_f0: ok, 34 tokens; a white sedan in the center of the image, a silver SUV on the right, double yellow lines in the lower center, a construction crane in the upper left
+3c5ef0ad03c35d04 cam_b0: ok, 32 tokens; orange barriers lining the right side, row of vehicles lined up along the left curb, yellow lane marking in the center, traffic cones near the right curb
+3c5ef0ad03c35d04 cam_l0: empty_scene, 2 tokens; 
+3c5ef0ad03c35d04 cam_r0: ok, 10 tokens; a black car in the lower right foreground
+5e6054a4e8495959 cam_f0: ok, 41 tokens; a white sedan in the center of the image, a pedestrian standing near the white sedan, a black sedan on the right, a silver SUV on the right, a double yellow line dividing the lanes
+5e6054a4e8495959 cam_b0: ok, 38 tokens; a white SUV on the left, a row of vehicles lined up along the left curb, concrete barriers lining the right side of the road, a yellow lane boundary line in the center
+5e6054a4e8495959 cam_l0: empty_scene, 2 tokens; 
+5e6054a4e8495959 cam_r0: ok, 8 tokens; a silver SUV on the left
+19b19b68cd08505b cam_f0: ok, 41 tokens; a white sedan in the center of the image, a black SUV in the left lane, a silver SUV on the right, a pedestrian standing near the white sedan, double yellow lines dividing the lanes
+19b19b68cd08505b cam_b0: ok, 37 tokens; a white SUV on the left, a row of vehicles aligned along the left curb, concrete barriers lining the right side of the road, a yellow lane boundary line in the center
+19b19b68cd08505b cam_l0: ok, 17 tokens; a yellow construction vehicle on the left, a construction worker in a yellow vest
+19b19b68cd08505b cam_r0: ok, 8 tokens; a silver SUV on the left
+da439db909975bdc cam_f0: ok, 44 tokens; a white sedan in the center of the image, a black SUV on the right side of the image, a black car on the left side of the image, double yellow lines in the lower center of the image
+da439db909975bdc cam_b0: ok, 21 tokens; a white SUV on the left, concrete barriers lining the right side, a yellow lane boundary line
+da439db909975bdc cam_l0: empty_scene, 2 tokens; 
+da439db909975bdc cam_r0: ok, 8 tokens; a silver SUV on the left
+c846a2c6391851aa cam_f0: ok, 34 tokens; a white sedan in the center of the image, a black SUV in the left lane, a pedestrian standing near the white sedan, double yellow lines dividing the lanes
+c846a2c6391851aa cam_b0: ok, 26 tokens; a white SUV on the left, a row of concrete barriers on the right, a yellow lane boundary line in the center
+c846a2c6391851aa cam_l0: ok, 9 tokens; a construction worker in a yellow vest
+c846a2c6391851aa cam_r0: ok, 8 tokens; a silver SUV on the left
+2bf1e8cde60d5475 cam_f0: ok, 51 tokens; a white sedan in the center of the image, a black SUV on the left side of the image, a black sedan on the right side of the image, a pedestrian standing near the white sedan, double yellow lines in the center of the road
+2bf1e8cde60d5475 cam_b0: ok, 28 tokens; a black car on the left, a white SUV on the left, concrete barriers lining the right side, a yellow lane boundary line
+2bf1e8cde60d5475 cam_l0: ok, 19 tokens; a black SUV in the foreground on the right, a construction worker in a yellow vest
+2bf1e8cde60d5475 cam_r0: ok, 8 tokens; a silver SUV in the foreground
+3abccc8dbdc258b2 cam_f0: ok, 44 tokens; a white sedan in the right lane, a pedestrian standing near the white sedan, a black sedan on the right, concrete barriers lining the left side of the road, double yellow lines marking the center of the road
+3abccc8dbdc258b2 cam_b0: ok, 21 tokens; a black car on the left, concrete barriers lining the right side, a yellow lane boundary line
+3abccc8dbdc258b2 cam_l0: ok, 26 tokens; a concrete barrier along the bottom edge, a dark vehicle in the bottom left foreground, a construction worker in a yellow vest
+3abccc8dbdc258b2 cam_r0: ok, 15 tokens; a black sedan on the left, a silver SUV on the right
+48797cedb37d5552 cam_f0: ok, 28 tokens; a white car on the right side, yellow lane lines in the center, concrete barriers on the left, traffic lights at the intersection
+48797cedb37d5552 cam_b0: ok, 21 tokens; a black SUV on the right, a black car on the left, a yellow lane boundary line
+48797cedb37d5552 cam_l0: ok, 9 tokens; a construction worker in a yellow vest
+48797cedb37d5552 cam_r0: ok, 29 tokens; a white car in the foreground on the left, a black car in the foreground on the right, a black car on the left side
+91d80efcbe3151a1 cam_f0: ok, 31 tokens; a white truck on the right, a black SUV on the right, a double yellow line in the center, a construction crane in the upper left
+91d80efcbe3151a1 cam_b0: ok, 44 tokens; a black SUV in the center of the image, a silver SUV in the lower left of the image, a concrete barrier along the right side of the image, double yellow lines in the lower center of the image
+91d80efcbe3151a1 cam_l0: ok, 11 tokens; a person in a yellow jacket on the left
+91d80efcbe3151a1 cam_r0: ok, 22 tokens; a white car on the left, a black car on the right, a traffic sign on a pole
+794bf0c2b69c5481 cam_f0: ok, 33 tokens; a white box truck in the right lane, a double yellow line in the center, a red traffic light in the distance, blue construction barriers on the left
+794bf0c2b69c5481 cam_b0: ok, 29 tokens; a black SUV in the lane, a silver SUV on the left, concrete barriers lining the right side, double yellow lines in the center
+794bf0c2b69c5481 cam_l0: empty_scene, 2 tokens; 
+794bf0c2b69c5481 cam_r0: ok, 15 tokens; a white car in the foreground, a black SUV on the left
+724971ad30905b97 cam_f0: ok, 54 tokens; a white box truck in the center of the image, a dark SUV on the right side of the image, a black SUV in the foreground on the right, a white van on the right side of the image, double yellow lines in the center of the image
+724971ad30905b97 cam_b0: ok, 30 tokens; a black SUV in the lane, a white car in the foreground, concrete barriers lining the right side, a double yellow line in the center
+724971ad30905b97 cam_l0: empty_scene, 2 tokens; 
+724971ad30905b97 cam_r0: ok, 15 tokens; a black SUV on the left, a white car on the right
+[val rank 2] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/grounding --resume
+Labelled 00477d2aabc05e56: valid=[True, True, True, True]
+Labelled 7b054c9673a95ac3: valid=[True, True, False, True]
+Labelled 410570c23d275131: valid=[True, True, True, True]
+Labelled a6b12bd7134953c2: valid=[True, True, False, False]
+Labelled 10ab0437e2335e5f: valid=[True, True, False, False]
+Labelled c85c0e46ebaa5822: valid=[True, True, False, True]
+Labelled f92029b715b15e2a: valid=[True, True, False, False]
+Labelled 93669bcabb5d5718: valid=[True, True, False, True]
+Labelled fa97a4251c235e78: valid=[True, True, False, True]
+Labelled 3c5ef0ad03c35d04: valid=[True, True, False, True]
+Labelled 5e6054a4e8495959: valid=[True, True, False, True]
+Labelled 19b19b68cd08505b: valid=[True, True, False, True]
+Labelled da439db909975bdc: valid=[True, True, False, True]
+Labelled c846a2c6391851aa: valid=[True, True, False, True]
+Labelled 2bf1e8cde60d5475: valid=[True, True, True, False]
+Labelled 3abccc8dbdc258b2: valid=[True, True, True, False]
+Labelled 48797cedb37d5552: valid=[True, True, False, False]
+Labelled 91d80efcbe3151a1: valid=[True, True, False, True]
+Labelled 794bf0c2b69c5481: valid=[True, True, False, True]
+Labelled 724971ad30905b97: valid=[True, True, False, False]
+[val rank 2] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002/validation.json
+PASS: 20 scenes, 80 captions, 57 valid targets, 20 deep checks
+[val rank 2] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0002

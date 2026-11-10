@@ -1,0 +1,106 @@
+{
+  "token": "6717d46a593851f9",
+  "input_hash": "489590e898748a51b11de41699ca04099e55d7ab58643d0f6d2fa7ed51567db2",
+  "image_size": [
+    1148,
+    672
+  ],
+  "coordinate_format": "xyxy",
+  "label_schema": "stage2_focus_v1",
+  "cameras": {
+    "cam_f0": {
+      "objects": [
+        {
+          "bbox": [
+            424.93647369345,
+            323.92579478195745,
+            540.1407326117003,
+            403.9659456985155
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 15
+        },
+        {
+          "bbox": [
+            515.5036807547913,
+            319.0997508051748,
+            591.3558875291207,
+            371.06916172437576
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 16
+        }
+      ],
+      "selected_gt_indices": [
+        15,
+        16
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_b0": {
+      "objects": [
+        {
+          "bbox": [
+            995.841245926039,
+            345.33723886724334,
+            1148.0,
+            405.42206096527843
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 17
+        },
+        {
+          "bbox": [
+            783.9209313668248,
+            340.8437551304891,
+            897.1847069611764,
+            381.6816042168166
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 19
+        }
+      ],
+      "selected_gt_indices": [
+        17,
+        19
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_l0": {
+      "objects": [
+        {
+          "bbox": [
+            0.0,
+            0.0,
+            706.1224805782458,
+            672.0
+          ],
+          "near_clipped": true,
+          "category": "vehicle",
+          "gt_index": 0
+        }
+      ],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": {
+        "reason": "coverage_exceeded",
+        "covered_patches": 2448,
+        "rejected_gt_indices": [
+          0
+        ]
+      }
+    },
+    "cam_r0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    }
+  }
+}

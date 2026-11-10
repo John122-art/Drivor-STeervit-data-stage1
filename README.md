@@ -61,3 +61,8 @@ bash scripts/data_generation/run_stage1_data_8gpu_dlc.sh
 ## Stage 2 v22 数据快照
 
 [stage2_focus_v22_8gpu_pilot160](data_samples/stage2_focus_v22_8gpu_pilot160/)：本次生成输出和 1280 张对应四相机原图。各分区完成状态、文本缓存数量和便携索引见目录内 README；未生成的文本明确标记。
+
+
+## Stage 2 v2b 数据快照
+
+[stage2_focus_v2b_8gpu_pilot160](data_samples/stage2_focus_v2b_8gpu_pilot160/)：本次生成输出和 1920 张对应四相机原图。各分区完成状态、文本缓存数量和便携索引见目录内 README；未生成的文本明确标记。

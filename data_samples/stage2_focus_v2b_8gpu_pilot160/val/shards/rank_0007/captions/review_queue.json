@@ -1,0 +1,70 @@
+{
+  "tokens": [
+    "2c30fd3639a654fa",
+    "4a0141799e0a5f8f",
+    "4c98b2a043075bf0"
+  ],
+  "views": [
+    {
+      "token": "2c30fd3639a654fa",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 0,
+          "phrase": "yellow crisscross markings in the center of the road",
+          "category": "crosswalk",
+          "raw_category": "crosswalk",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "4c98b2a043075bf0",
+      "camera": "cam_l0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 1,
+          "phrase": "a bus stop shelter on the left",
+          "category": "barrier",
+          "raw_category": "barrier",
+          "reason": "excluded_content"
+        }
+      ]
+    },
+    {
+      "token": "4a0141799e0a5f8f",
+      "camera": "cam_f0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "a pedestrian crossing warning sign on the left",
+          "category": "pedestrian",
+          "raw_category": "traffic_sign",
+          "reason": "unverified_motion"
+        }
+      ]
+    },
+    {
+      "token": "4a0141799e0a5f8f",
+      "camera": "cam_b0",
+      "status": "ok",
+      "has_text": true,
+      "removed": [
+        {
+          "index": 3,
+          "phrase": "a bus stop shelter on the right side of the image",
+          "category": "barrier",
+          "raw_category": "barrier",
+          "reason": "excluded_content"
+        }
+      ]
+    }
+  ],
+  "meaning": "Review only; every scene and camera is retained"
+}

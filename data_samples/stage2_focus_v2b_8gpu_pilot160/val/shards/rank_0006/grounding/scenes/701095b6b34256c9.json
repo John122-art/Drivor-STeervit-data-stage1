@@ -1,0 +1,117 @@
+{
+  "token": "701095b6b34256c9",
+  "input_hash": "545a896ba7a6c4d592965a854f529d18654438f9ae765b0a07d4fc976d5d198a",
+  "image_size": [
+    1148,
+    672
+  ],
+  "coordinate_format": "xyxy",
+  "label_schema": "stage2_focus_v1",
+  "cameras": {
+    "cam_f0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    },
+    "cam_b0": {
+      "objects": [
+        {
+          "bbox": [
+            670.3163328102248,
+            332.49336184765417,
+            744.7798895877627,
+            393.29457743852464
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 5
+        },
+        {
+          "bbox": [
+            834.5568583736407,
+            367.7088676857275,
+            974.9624090804043,
+            437.3607355943048
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 6
+        },
+        {
+          "bbox": [
+            932.126584814578,
+            341.66631012745876,
+            1148.0,
+            478.97409957796765
+          ],
+          "near_clipped": false,
+          "category": "vehicle",
+          "gt_index": 7
+        },
+        {
+          "bbox": [
+            394.2710273838149,
+            347.9119420651456,
+            419.9791736450206,
+            392.7003378211097
+          ],
+          "near_clipped": false,
+          "category": "pedestrian",
+          "gt_index": 8
+        },
+        {
+          "bbox": [
+            752.7921450405661,
+            353.8536262149528,
+            778.9056386678665,
+            395.13382412712633
+          ],
+          "near_clipped": false,
+          "category": "pedestrian",
+          "gt_index": 9
+        },
+        {
+          "bbox": [
+            940.600822089089,
+            353.9474439781259,
+            991.1884746931233,
+            426.35991396954216
+          ],
+          "near_clipped": false,
+          "category": "pedestrian",
+          "gt_index": 10
+        },
+        {
+          "bbox": [
+            285.5200508652357,
+            336.2641335552276,
+            295.6597297792892,
+            362.61027872524556
+          ],
+          "near_clipped": false,
+          "category": "traffic_cone",
+          "gt_index": 15
+        }
+      ],
+      "selected_gt_indices": [
+        7,
+        6
+      ],
+      "valid": true,
+      "rejected": null
+    },
+    "cam_l0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    },
+    "cam_r0": {
+      "objects": [],
+      "selected_gt_indices": [],
+      "valid": false,
+      "rejected": null
+    }
+  }
+}

@@ -1,0 +1,126 @@
+[val rank 6] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtrain --subset val --seed 3407 --rank 6 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: 6e965f5b69905522 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 2/20: e816b44b7dc1524f (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 3/20: e9b1f24834895709 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 4/20: c19b68e7eab657f0 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 5/20: 057a2ba75ace5b74 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 6/20: 16a7baa523635842 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 7/20: e41d37a4ee2a5847 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 8/20: 76ab47d2e79750fe (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 9/20: 26406d3abc905c38 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 10/20: 9dffe4e7a06a5c6e (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 11/20: 1b2f76b19f7e5c5d (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 12/20: 802044be7dae5e03 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 13/20: 6496c039fd2b513f (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 14/20: e4473abcdfe85bcb (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 15/20: 701095b6b34256c9 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 16/20: 8082eb18509357e8 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 17/20: 1c154adadd295f19 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 18/20: 748fc544003b569b (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 19/20: 154d4bca95735b49 (2021.08.31.13.27.52_veh-40_01615_01687)
+Prepared 20/20: 2461fe26488e5da3 (2021.08.31.13.27.52_veh-40_01615_01687)
+[val rank 6] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/captions --scenes 0 --resume --device cuda:6 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v2.txt
+6e965f5b69905522 cam_f0: ok, 21 tokens; a white van on the right, a directional sign on a pole, white painted crosswalk lines
+6e965f5b69905522 cam_b0: ok, 43 tokens; a silver bus on the left side of the image, a white car in the center of the image, a large truck on the right side of the image, a pedestrian sitting on a bench on the left
+6e965f5b69905522 cam_l0: ok, 48 tokens; a pedestrian in a yellow vest standing near the center, a blue car on the left side, a crosswalk marked with white stripes in the foreground, a yellow construction vehicle on the left, white lane boundary lines defining the intersection area
+6e965f5b69905522 cam_r0: ok, 57 tokens; a pedestrian on the sidewalk to the right, a large white semi-truck with green stripes in the center, a stop sign on the right side of the road, a white van on the left side of the image, a crosswalk marked with white lines in the foreground
+e816b44b7dc1524f cam_f0: ok, 11 tokens; a white van in the center of the intersection
+e816b44b7dc1524f cam_b0: ok, 42 tokens; a white car in the center of the image, a bus on the left side of the image, a large truck on the right side of the image, a pedestrian sitting on a bench on the left
+e816b44b7dc1524f cam_l0: ok, 38 tokens; a pedestrian in a yellow vest near the center, a blue car on the left side of the road, white lane markings defining the intersection area, orange traffic cones on the far left
+e816b44b7dc1524f cam_r0: ok, 55 tokens; a large white semi-truck in the center of the image, a pedestrian on the sidewalk to the right, a stop sign on the right side of the image, a crosswalk marked with white lines in the foreground, white lane boundary lines on the road surface
+e9b1f24834895709 cam_f0: ok, 11 tokens; a white van in the center of the image
+e9b1f24834895709 cam_b0: ok, 42 tokens; a white car in the center of the image, a bus on the left side of the image, a pedestrian sitting on a bench on the left, a construction worker on the right side of the image
+e9b1f24834895709 cam_l0: ok, 45 tokens; a pedestrian standing near the center of the image, a blue car on the left side of the image, a crosswalk in the lower left of the image, a yellow construction vehicle on the left side of the image
+e9b1f24834895709 cam_r0: ok, 31 tokens; a large white semi-trailer truck, a pedestrian on the sidewalk, a stop sign on the right, white crosswalk markings on the road
+c19b68e7eab657f0 cam_f0: ok, 23 tokens; a white van in the foreground, a crosswalk in the lower right, a directional sign on a pole
+c19b68e7eab657f0 cam_b0: ok, 54 tokens; a silver bus on the left side of the image, a white car in the center of the image, a pedestrian sitting on a bench on the left, a pedestrian standing on the right side of the road, a pedestrian standing near a construction vehicle on the right
+c19b68e7eab657f0 cam_l0: ok, 49 tokens; a white van on the right side of the image, a pedestrian standing near the center of the image, a crosswalk in the lower left of the image, a yellow construction vehicle in the background, white lane markings on the road surface
+c19b68e7eab657f0 cam_r0: ok, 42 tokens; a large white semi-truck in the center of the image, a pedestrian on the sidewalk to the right, white painted crosswalk markings in the foreground, white lane boundary lines on the road surface
+057a2ba75ace5b74 cam_f0: ok, 41 tokens; a white van on the left side of the image, a crosswalk in the lower right of the image, a traffic sign on a pole in the center, white lane markings on the road surface
+057a2ba75ace5b74 cam_b0: ok, 53 tokens; a white car in the center of the image, a bus on the left side of the image, a pedestrian sitting on a bench on the left, a pedestrian standing on the right side of the road, a construction worker in a yellow vest on the right
+057a2ba75ace5b74 cam_l0: ok, 30 tokens; a white van in the foreground, a crosswalk in the lower left, a blue car in the background, white lane markings on the road
+057a2ba75ace5b74 cam_r0: ok, 28 tokens; a large white semi-trailer truck, a pedestrian on the sidewalk, a crosswalk in the foreground, white lane boundary lines
+16a7baa523635842 cam_f0: ok, 16 tokens; a traffic sign on a pole, a crosswalk in the lower right
+16a7baa523635842 cam_b0: ok, 51 tokens; a white car in the center of the image, a bus on the left side of the image, a pedestrian sitting on a bench on the left, pedestrians standing on the sidewalk on the right, a construction vehicle on the right side of the image
+16a7baa523635842 cam_l0: ok, 8 tokens; a white van in the foreground
+16a7baa523635842 cam_r0: ok, 28 tokens; a large white semi-trailer truck, a pedestrian on the sidewalk, a crosswalk in the foreground, white lane boundary lines
+e41d37a4ee2a5847 cam_f0: ok, 15 tokens; a crosswalk in the foreground, a traffic sign on the right
+e41d37a4ee2a5847 cam_b0: ok, 30 tokens; a white car in the right lane, a bus in the left lane, a pedestrian sitting on a bench, a pedestrian standing on the sidewalk
+e41d37a4ee2a5847 cam_l0: ok, 38 tokens; a pedestrian in a yellow vest near the crosswalk, a crosswalk across the lower left of the image, a white car on the road, a yellow construction vehicle on the side
+e41d37a4ee2a5847 cam_r0: ok, 38 tokens; a large white semi-trailer truck, a blue sedan in the background, a pedestrian on the far right sidewalk, white crosswalk markings in the foreground, white lane boundary lines
+76ab47d2e79750fe cam_f0: ok, 23 tokens; a crosswalk across the lower part of the image, a traffic sign on the right side of the image
+76ab47d2e79750fe cam_b0: ok, 23 tokens; a white car in the right lane, a bus in the center lane, a pedestrian sitting on a bench
+76ab47d2e79750fe cam_l0: ok, 42 tokens; a pedestrian in a yellow vest on the right, a crosswalk in the foreground, a white car in the distance on the left, a traffic cone near the left curb, lane markings defining the intersection
+76ab47d2e79750fe cam_r0: ok, 27 tokens; a blue sedan in the background, a large truck on the right side, white painted crosswalk markings, white lane boundary lines
+26406d3abc905c38 cam_f0: ok, 15 tokens; a crosswalk in the foreground, a traffic cone on the left
+26406d3abc905c38 cam_b0: ok, 30 tokens; a white car in the right lane, a bus in the center lane, a pedestrian sitting on a bench, a crosswalk in the foreground
+26406d3abc905c38 cam_l0: ok, 43 tokens; a pedestrian in a yellow vest on the right sidewalk, a crosswalk marked with white stripes across the foreground, a white pickup truck on the right side, orange traffic cones near the construction site on the left
+26406d3abc905c38 cam_r0: ok, 42 tokens; a blue car on the right side of the image, a crosswalk in the lower part of the image, a traffic sign on the left side of the image, lane boundary lines on the road surface
+9dffe4e7a06a5c6e cam_f0: ok, 33 tokens; a pedestrian in a yellow vest on the left, a crosswalk in the lower left of the image, a crosswalk in the lower right of the image
+9dffe4e7a06a5c6e cam_b0: ok, 52 tokens; a white car on the right side of the image, a bus on the right side of the image, a pedestrian sitting on a bench in the middle ground, a crosswalk in the foreground of the image, white lane boundary lines on the road surface
+9dffe4e7a06a5c6e cam_l0: ok, 38 tokens; a crosswalk in the foreground, pedestrians in orange vests on the left, a pedestrian on the right sidewalk, a white truck in the distance, orange traffic cones on the left
+9dffe4e7a06a5c6e cam_r0: ok, 24 tokens; a traffic sign on a pole, a crosswalk in the lower left, a crosswalk in the lower right
+1b2f76b19f7e5c5d cam_f0: ok, 41 tokens; a pedestrian in a yellow vest on the left sidewalk, a crosswalk marked with white stripes in the lower left, a yellow traffic cone on the right corner, a white car on the far left
+1b2f76b19f7e5c5d cam_b0: ok, 38 tokens; a pedestrian standing on the sidewalk to the left, a white bus on the right side of the image, white crosswalk markings across the foreground, white lane boundary lines defining the intersection
+1b2f76b19f7e5c5d cam_l0: ok, 37 tokens; pedestrians in high-visibility vests on the left, crosswalk markings in the foreground, orange traffic cones near the left curb, white lane markings on the road
+1b2f76b19f7e5c5d cam_r0: ok, 15 tokens; a crosswalk in the foreground, a traffic sign on the right
+802044be7dae5e03 cam_f0: ok, 43 tokens; a pedestrian in a yellow vest on the sidewalk, a crosswalk marked with white stripes in the foreground, a yellow construction vehicle on the left side, a traffic cone on the grassy area to the right
+802044be7dae5e03 cam_b0: ok, 41 tokens; a large truck on the left side of the image, a pedestrian on the sidewalk in the middle ground, a crosswalk in the lower part of the image, white lane markings on the road surface
+802044be7dae5e03 cam_l0: ok, 31 tokens; a crosswalk in the foreground, construction workers in the lower left, orange traffic cones near the construction site, a double yellow line on the right
+802044be7dae5e03 cam_r0: ok, 26 tokens; a crosswalk in the foreground, an orange traffic cone on the left, a yellow bollard on the left sidewalk
+6496c039fd2b513f cam_f0: ok, 35 tokens; a pedestrian in a yellow vest on the right sidewalk, a crosswalk in the foreground, a yellow construction vehicle on the right, a double yellow line dividing the road
+6496c039fd2b513f cam_b0: ok, 31 tokens; a large white truck in the center, a dark car on the left, a pedestrian standing near the center, white crosswalk markings across the foreground
+6496c039fd2b513f cam_l0: ok, 36 tokens; a stop sign on the left side, pedestrians in high-visibility vests near the stairs, orange traffic cones near the curb, white lane markings on the road surface
+6496c039fd2b513f cam_r0: ok, 37 tokens; an orange traffic cone on the sidewalk, a yellow bollard near the curb, concrete barriers lining the right side of the road, a crosswalk in the lower left foreground
+e4473abcdfe85bcb cam_f0: ok, 37 tokens; a pedestrian in a yellow vest on the right sidewalk, a yellow construction vehicle on the right side, a double yellow line dividing the lanes, a white car on the left side
+e4473abcdfe85bcb cam_b0: ok, 43 tokens; a dark sedan on the left side of the intersection, a large white truck in the center of the intersection, a pedestrian on the sidewalk to the right, a crosswalk marked with white stripes across the foreground
+e4473abcdfe85bcb cam_l0: ok, 28 tokens; a stop sign on the left side, a crosswalk in the foreground, pedestrians in high-visibility vests near the stairs
+e4473abcdfe85bcb cam_r0: ok, 19 tokens; a pedestrian in a yellow vest on the left, a crosswalk in the lower foreground
+701095b6b34256c9 cam_f0: ok, 29 tokens; a white van on the left side of the road, a dark vehicle in the background, double yellow lines in the center of the road
+701095b6b34256c9 cam_b0: ok, 29 tokens; a white van on the right, a grey sedan on the right, a cyclist on the left sidewalk, double yellow lines in the center
+701095b6b34256c9 cam_l0: empty_scene, 2 tokens; 
+701095b6b34256c9 cam_r0: empty_scene, 2 tokens; 
+8082eb18509357e8 cam_f0: ok, 41 tokens; a white van on the left side of the road, a pedestrian standing near the white van, a stop sign on the right side of the road, double yellow lines in the center of the road
+8082eb18509357e8 cam_b0: ok, 29 tokens; a white van on the right, a grey sedan on the right, a cyclist on the left sidewalk, double yellow lines in the center
+8082eb18509357e8 cam_l0: empty_scene, 2 tokens; 
+8082eb18509357e8 cam_r0: empty_scene, 2 tokens; 
+1c154adadd295f19 cam_f0: ok, 23 tokens; a stop sign on the right side, a white van on the left, double yellow lines in the center
+1c154adadd295f19 cam_b0: ok, 32 tokens; a white van on the right, a grey sedan on the right, a cyclist on the left side of the road, double yellow lines in the center
+1c154adadd295f19 cam_l0: empty_scene, 2 tokens; 
+1c154adadd295f19 cam_r0: empty_scene, 2 tokens; 
+748fc544003b569b cam_f0: ok, 30 tokens; a stop sign on the right side, a crosswalk across the road, a white van on the left, double yellow lines in the center
+748fc544003b569b cam_b0: ok, 31 tokens; a white van on the right side, a dark sedan on the right side, a white truck in the distance, double yellow lines dividing the road
+748fc544003b569b cam_l0: empty_scene, 2 tokens; 
+748fc544003b569b cam_r0: empty_scene, 2 tokens; 
+154d4bca95735b49 cam_f0: ok, 30 tokens; a black SUV on the right side, a crosswalk in the foreground, a traffic sign on the right, a white van on the left
+154d4bca95735b49 cam_b0: ok, 9 tokens; a white van on the right side
+154d4bca95735b49 cam_l0: ok, 15 tokens; a crosswalk in the foreground, a white van on the right
+154d4bca95735b49 cam_r0: ok, 23 tokens; a stop sign on a pole, a black SUV on the left, white lane boundary lines on the pavement
+2461fe26488e5da3 cam_f0: ok, 36 tokens; a black SUV on the right side, a crosswalk in the foreground, a traffic sign on the right, a white van on the left, lane markings on the road
+2461fe26488e5da3 cam_b0: ok, 9 tokens; a white van on the right side
+2461fe26488e5da3 cam_l0: ok, 15 tokens; a crosswalk in the foreground, a white van in the background
+2461fe26488e5da3 cam_r0: ok, 23 tokens; a stop sign on a pole, a black SUV on the left, white lane boundary lines on the pavement
+[val rank 6] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/grounding --resume
+Labelled 6e965f5b69905522: valid=[True, False, True, True]
+Labelled e816b44b7dc1524f: valid=[True, False, True, True]
+Labelled e9b1f24834895709: valid=[True, True, True, True]
+Labelled c19b68e7eab657f0: valid=[True, True, True, True]
+Labelled 057a2ba75ace5b74: valid=[True, True, False, True]
+Labelled 16a7baa523635842: valid=[False, True, False, True]
+Labelled e41d37a4ee2a5847: valid=[False, True, True, True]
+Labelled 76ab47d2e79750fe: valid=[False, True, True, True]
+Labelled 26406d3abc905c38: valid=[True, True, True, True]
+Labelled 9dffe4e7a06a5c6e: valid=[True, True, True, False]
+Labelled 1b2f76b19f7e5c5d: valid=[True, True, True, False]
+Labelled 802044be7dae5e03: valid=[True, True, True, True]
+Labelled 6496c039fd2b513f: valid=[True, True, True, True]
+Labelled e4473abcdfe85bcb: valid=[True, True, True, True]
+Labelled 701095b6b34256c9: valid=[False, True, False, False]
+Labelled 8082eb18509357e8: valid=[False, True, False, False]
+Labelled 1c154adadd295f19: valid=[False, True, False, False]
+Labelled 748fc544003b569b: valid=[True, True, False, False]
+Labelled 154d4bca95735b49: valid=[True, False, False, True]
+Labelled 2461fe26488e5da3: valid=[True, False, False, True]
+[val rank 6] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006/validation.json
+PASS: 20 scenes, 80 captions, 56 valid targets, 20 deep checks
+[val rank 6] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/val/shards/rank_0006

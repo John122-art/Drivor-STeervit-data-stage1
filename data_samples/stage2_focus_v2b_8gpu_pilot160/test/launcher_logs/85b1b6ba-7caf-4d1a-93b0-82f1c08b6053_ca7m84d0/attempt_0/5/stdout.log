@@ -1,0 +1,126 @@
+[test rank 5] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prepare_navsim.py --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/prepared --data-root /mnt/zhaozc_workspace/project/LQH/DrivoR-main-copy/dataset --split navtest --subset all --seed 3407 --rank 5 --world-size 8 --all-scenes --scenes 20
+Prepared 1/20: 70ee383e3b335c16 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 2/20: 6250b1bc5d735d1a (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 3/20: 625804443c0555ac (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 4/20: 26eeb11cbcd9593b (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 5/20: e6a94b91b19f5315 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 6/20: c6e19ffa3c34551c (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 7/20: 46b79218b0195050 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 8/20: e7a7c61c543e5b88 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 9/20: dd1ab5d48c6358ef (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 10/20: 7e2dc290d51f5137 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 11/20: 26c48df074d151c6 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 12/20: cd1234d5b4b2570d (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 13/20: 8b54e86cb8b05114 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 14/20: 626859d4351b5ffe (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 15/20: 9bd12765d98b514f (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 16/20: 75128a99a5765e31 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 17/20: a1e8639c17ac5089 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 18/20: 028d10ed5c105755 (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 19/20: 7736a52445b1522d (2021.09.16.15.12.03_veh-42_01037_01434)
+Prepared 20/20: 21b54e6d58985ae3 (2021.09.16.15.12.03_veh-42_01037_01434)
+[test rank 5] /mnt/zhaozc_workspace/envs/mot_vega/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/generate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/prepared --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/captions --scenes 0 --resume --device cuda:5 --prompt-file /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/prompts/stage2_focus_v2.txt
+70ee383e3b335c16 cam_f0: ok, 38 tokens; a cyclist in the left lane, a white car in the left lane, a dark car in the left lane, distant traffic lights at the intersection, double yellow lines in the center
+70ee383e3b335c16 cam_b0: ok, 39 tokens; a pedestrian standing in the crosswalk, a crosswalk spanning the width of the road, a white car on the side of the road, double yellow lines marking the center of the road
+70ee383e3b335c16 cam_l0: empty_scene, 2 tokens; 
+70ee383e3b335c16 cam_r0: empty_scene, 2 tokens; 
+6250b1bc5d735d1a cam_f0: ok, 39 tokens; a motorcyclist in the left lane, a silver sedan in the center lane, a pedestrian on the left sidewalk, yellow traffic lights at the intersection, double yellow lines dividing the lanes
+6250b1bc5d735d1a cam_b0: ok, 29 tokens; a crosswalk across the road, a black car on the left, double yellow lines in the center, a stop sign on the right
+6250b1bc5d735d1a cam_l0: ok, 40 tokens; a silver car on the right side of the image, a pedestrian on the sidewalk to the right, a dark sedan on the left side of the image, double yellow lines on the road surface
+6250b1bc5d735d1a cam_r0: ok, 11 tokens; a blue and white parking sign on a pole
+625804443c0555ac cam_f0: ok, 42 tokens; a motorcyclist on the left side of the road, a silver sedan in the center lane, a red bus in the background, yellow traffic lights at the intersection, double yellow lines dividing the lanes
+625804443c0555ac cam_b0: ok, 22 tokens; a crosswalk across the road, a black car on the left, double yellow lines in the center
+625804443c0555ac cam_l0: ok, 40 tokens; a silver car on the right side of the image, a pedestrian on the sidewalk to the right, a dark sedan on the left side of the image, double yellow lines on the road surface
+625804443c0555ac cam_r0: ok, 11 tokens; a blue and white parking sign on a pole
+26eeb11cbcd9593b cam_f0: ok, 39 tokens; a motorcyclist in the left lane, a silver sedan in the center lane, a red bus in the background, yellow traffic lights at the intersection, double yellow lines dividing the lanes
+26eeb11cbcd9593b cam_b0: ok, 33 tokens; a black SUV on the left side, a double yellow line dividing the road, a crosswalk marked with white stripes, a stop sign on the right side
+26eeb11cbcd9593b cam_l0: ok, 43 tokens; a silver car on the right side of the image, a pedestrian on the sidewalk on the right, a grey car on the left side of the image, double yellow lines on the road in the lower right
+26eeb11cbcd9593b cam_r0: ok, 11 tokens; a blue and white parking sign on a pole
+e6a94b91b19f5315 cam_f0: ok, 39 tokens; a motorcyclist in the left lane, a silver sedan in the center lane, a red bus in the background, yellow traffic lights at the intersection, double yellow lines dividing the lanes
+e6a94b91b19f5315 cam_b0: ok, 32 tokens; a black SUV near the center of the image, a crosswalk across the middle of the image, double yellow lines in the lower right of the image
+e6a94b91b19f5315 cam_l0: ok, 30 tokens; a silver car on the right side, a pedestrian on the right sidewalk, a dark sedan on the left, double yellow lines on the right
+e6a94b91b19f5315 cam_r0: ok, 11 tokens; a traffic sign on a pole in the foreground
+c6e19ffa3c34551c cam_f0: ok, 34 tokens; a motorcyclist in the left lane, a silver sedan in the center lane, traffic lights at the intersection in the background, double yellow lines dividing the lanes
+c6e19ffa3c34551c cam_b0: ok, 43 tokens; a black SUV near the center of the image, a double yellow line in the center of the image, a crosswalk in the middle of the image, a stop sign on the right side of the image
+c6e19ffa3c34551c cam_l0: ok, 40 tokens; a silver car on the right side of the image, a pedestrian on the sidewalk to the right, a grey car on the left side of the image, double yellow lines on the road surface
+c6e19ffa3c34551c cam_r0: ok, 8 tokens; a traffic sign on a pole
+46b79218b0195050 cam_f0: ok, 42 tokens; a motorcyclist on the left side of the road, a silver sedan in the center lane, an orange bus in the background, yellow traffic lights at the intersection, double yellow lines dividing the lanes
+46b79218b0195050 cam_b0: ok, 23 tokens; a black car in the distance, a double yellow line in the center, a crosswalk in the distance
+46b79218b0195050 cam_l0: ok, 40 tokens; a silver car on the right side of the image, a pedestrian on the sidewalk to the right, a dark sedan on the left side of the image, double yellow lines on the road surface
+46b79218b0195050 cam_r0: ok, 8 tokens; a traffic sign on a pole
+e7a7c61c543e5b88 cam_f0: ok, 40 tokens; a silver sedan in the center of the image, yellow traffic lights at the intersection, double yellow lines in the foreground, a white pickup truck on the left, a black SUV on the left
+e7a7c61c543e5b88 cam_b0: ok, 32 tokens; a black car in the center of the image, double yellow lines in the lower right of the image, a crosswalk in the middle of the image
+e7a7c61c543e5b88 cam_l0: ok, 40 tokens; a motorcyclist wearing a helmet in the foreground, a pedestrian standing on the sidewalk, a silver SUV on the right, a black SUV on the right, double yellow lines on the road
+e7a7c61c543e5b88 cam_r0: ok, 9 tokens; a parking sign on the right side
+dd1ab5d48c6358ef cam_f0: ok, 42 tokens; a silver sedan in the center of the image, traffic lights at the intersection in the background, double yellow lines in the foreground, a white pickup truck on the left, a black SUV on the left
+dd1ab5d48c6358ef cam_b0: ok, 22 tokens; a black car in the center of the image, double yellow lines in the lower right of the image
+dd1ab5d48c6358ef cam_l0: ok, 52 tokens; a motorcyclist on a black motorcycle in the foreground, a pedestrian standing on the sidewalk to the left, a silver SUV on the right side of the road, a black SUV behind the silver SUV, double yellow lines marking the center of the road
+dd1ab5d48c6358ef cam_r0: empty_scene, 2 tokens; 
+7e2dc290d51f5137 cam_f0: ok, 35 tokens; a silver sedan in the center of the image, traffic lights at the intersection in the background, a white pickup truck on the left, double yellow lines in the foreground
+7e2dc290d51f5137 cam_b0: ok, 22 tokens; a black car in the center of the image, double yellow lines in the lower right of the image
+7e2dc290d51f5137 cam_l0: ok, 34 tokens; a motorcyclist in the foreground on the left, a pedestrian standing near the curb, a silver SUV on the right, a black SUV behind the silver SUV
+7e2dc290d51f5137 cam_r0: empty_scene, 2 tokens; 
+26c48df074d151c6 cam_f0: ok, 35 tokens; a silver sedan in the center of the image, traffic lights at the intersection in the background, a silver pickup truck on the left, double yellow lines in the foreground
+26c48df074d151c6 cam_b0: ok, 11 tokens; a black car in the center of the image
+26c48df074d151c6 cam_l0: ok, 22 tokens; a silver SUV on the left, a black SUV on the right, a pedestrian standing on the sidewalk
+26c48df074d151c6 cam_r0: empty_scene, 2 tokens; 
+cd1234d5b4b2570d cam_f0: ok, 41 tokens; a silver sedan in the center of the image, yellow traffic lights at the intersection, a silver pickup truck on the left, double yellow lines in the foreground, a pedestrian standing on the left sidewalk
+cd1234d5b4b2570d cam_b0: ok, 22 tokens; a dark vehicle in the center of the image, double yellow lines in the lower right of the image
+cd1234d5b4b2570d cam_l0: ok, 23 tokens; a silver SUV on the left, a black SUV in the center, a silver pickup truck on the right
+cd1234d5b4b2570d cam_r0: ok, 12 tokens; a parking sign on the left side of the image
+8b54e86cb8b05114 cam_f0: ok, 38 tokens; a silver sedan in the center of the image, a white pickup truck on the left, a pedestrian on the left, traffic lights at the intersection, double yellow lines in the foreground
+8b54e86cb8b05114 cam_b0: ok, 16 tokens; a black car in the left lane, double yellow lines dividing the lanes
+8b54e86cb8b05114 cam_l0: ok, 24 tokens; a black SUV on the left side of the road, a silver pickup truck on the right side of the road
+8b54e86cb8b05114 cam_r0: ok, 12 tokens; a parking sign on the left side of the image
+626859d4351b5ffe cam_f0: ok, 36 tokens; a silver sedan in the center of the image, a pedestrian standing on the left side of the road, yellow traffic lights at the intersection, double yellow lines in the foreground
+626859d4351b5ffe cam_b0: ok, 22 tokens; a black car in the center of the image, double yellow lines in the lower right of the image
+626859d4351b5ffe cam_l0: ok, 16 tokens; a black SUV on the left, a silver pickup truck on the right
+626859d4351b5ffe cam_r0: ok, 12 tokens; a traffic sign on the left side of the image
+9bd12765d98b514f cam_f0: ok, 23 tokens; a silver sedan in the right lane, yellow traffic lights at the intersection, double yellow lines in the center
+9bd12765d98b514f cam_b0: ok, 11 tokens; a black car in the center of the image
+9bd12765d98b514f cam_l0: ok, 16 tokens; a silver pickup truck on the right, a black SUV on the left
+9bd12765d98b514f cam_r0: ok, 8 tokens; a traffic sign on a pole
+75128a99a5765e31 cam_f0: ok, 31 tokens; a silver sedan in the right lane, red traffic lights at the intersection, a white crosswalk across the intersection, double yellow lines in the foreground
+75128a99a5765e31 cam_b0: ok, 21 tokens; a black car in the center of the image, double yellow lines in the center of the image
+75128a99a5765e31 cam_l0: ok, 24 tokens; a silver pickup truck on the right, a black SUV on the left, a yellow traffic light at the intersection
+75128a99a5765e31 cam_r0: ok, 9 tokens; a traffic sign on a metal pole
+a1e8639c17ac5089 cam_f0: ok, 40 tokens; a silver sedan in the right foreground, a pedestrian standing in the crosswalk, red traffic lights suspended over the intersection, a white crosswalk spanning the intersection, double yellow lines dividing the lanes
+a1e8639c17ac5089 cam_b0: ok, 16 tokens; a black car in the left lane, double yellow lines dividing the road
+a1e8639c17ac5089 cam_l0: ok, 16 tokens; a silver pickup truck on the right, a black SUV on the left
+a1e8639c17ac5089 cam_r0: ok, 9 tokens; a traffic sign on a metal pole
+028d10ed5c105755 cam_f0: ok, 42 tokens; a silver sedan in the foreground right, a pedestrian wearing dark clothing in the center crosswalk, red traffic lights at the intersection, a white crosswalk across the intersection, double yellow lines on the left
+028d10ed5c105755 cam_b0: ok, 16 tokens; a black car in the left lane, double yellow lines in the center
+028d10ed5c105755 cam_l0: ok, 32 tokens; a silver pickup truck on the left, a black SUV on the far left, a yellow traffic light at the intersection, a crosswalk at the intersection
+028d10ed5c105755 cam_r0: ok, 9 tokens; a traffic sign on the right side
+7736a52445b1522d cam_f0: ok, 42 tokens; a silver sedan in the right foreground, a pedestrian wearing dark clothing in the center crosswalk, yellow traffic lights at the intersection, a white crosswalk across the intersection, double yellow lines in the foreground
+7736a52445b1522d cam_b0: ok, 16 tokens; a black car in the left lane, double yellow lines in the center
+7736a52445b1522d cam_l0: ok, 23 tokens; a silver pickup truck on the left, a crosswalk in the lower right, traffic lights at the intersection
+7736a52445b1522d cam_r0: ok, 10 tokens; a silver vehicle in the lower left foreground
+21b54e6d58985ae3 cam_f0: ok, 32 tokens; a silver sedan in the right lane, green traffic lights at the intersection, a pedestrian with a dog on the left, double yellow lines in the foreground
+21b54e6d58985ae3 cam_b0: ok, 32 tokens; a black car in the center of the image, a motorcycle on the right side of the image, double yellow lines in the lower right of the image
+21b54e6d58985ae3 cam_l0: ok, 24 tokens; a silver pickup truck on the left, a yellow traffic light at the intersection, a crosswalk at the intersection
+21b54e6d58985ae3 cam_r0: ok, 12 tokens; an orange truck on the left side of the image
+[test rank 5] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/build_focus_grounding.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/captions --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/grounding --resume
+Labelled 70ee383e3b335c16: valid=[False, True, False, False]
+Labelled 6250b1bc5d735d1a: valid=[True, True, True, False]
+Labelled 625804443c0555ac: valid=[True, True, True, False]
+Labelled 26eeb11cbcd9593b: valid=[True, True, True, False]
+Labelled e6a94b91b19f5315: valid=[True, True, True, False]
+Labelled c6e19ffa3c34551c: valid=[True, True, True, False]
+Labelled 46b79218b0195050: valid=[True, True, True, False]
+Labelled e7a7c61c543e5b88: valid=[True, True, True, False]
+Labelled dd1ab5d48c6358ef: valid=[True, True, True, False]
+Labelled 7e2dc290d51f5137: valid=[True, True, True, False]
+Labelled 26c48df074d151c6: valid=[True, True, False, False]
+Labelled cd1234d5b4b2570d: valid=[True, True, False, False]
+Labelled 8b54e86cb8b05114: valid=[True, True, True, False]
+Labelled 626859d4351b5ffe: valid=[True, True, False, False]
+Labelled 9bd12765d98b514f: valid=[True, True, False, False]
+Labelled 75128a99a5765e31: valid=[True, True, False, False]
+Labelled a1e8639c17ac5089: valid=[True, True, False, False]
+Labelled 028d10ed5c105755: valid=[True, True, False, False]
+Labelled 7736a52445b1522d: valid=[True, True, True, True]
+Labelled 21b54e6d58985ae3: valid=[True, True, True, True]
+[test rank 5] /mnt/zhaozc_workspace/envs/drivorpython/bin/python -B /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/scripts/data_generation/stage2_focus/validate.py --prepared /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/prepared --captions /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/captions --grounding /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/grounding --deep-scenes 20 --output /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005/validation.json
+PASS: 20 scenes, 80 captions, 53 valid targets, 20 deep checks
+[test rank 5] complete: /mnt/zhaozc_workspace/project/LQH/Driv-calude_data/DrivoR-main/outputs/stage2_focus_v2b_8gpu_pilot160/test/shards/rank_0005
